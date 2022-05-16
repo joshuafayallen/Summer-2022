@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Media</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Josh Allen" />
+    <meta name="date" content="2022-03-03" />
+    <script src="media_files/header-attrs/header-attrs.js"></script>
+    <link href="media_files/remark-css/default.css" rel="stylesheet" />
+    <link href="media_files/panelset/panelset.css" rel="stylesheet" />
+    <script src="media_files/panelset/panelset.js"></script>
+    <script src="media_files/clipboard/clipboard.min.js"></script>
+    <link href="media_files/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="media_files/shareon/shareon.min.js"></script>
+    <link href="media_files/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="media_files/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="media_files/tachyons/tachyons.min.css" rel="stylesheet" />
+    <link href="media_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="media_files/tile-view/tile-view.js"></script>
+    <link href="media_files/vembedr/css/vembedr.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Media
+### Josh Allen
+### 2022-03-03
+
+---
+
+
+
+
+
+&lt;style type="text/css"&gt;
+/*
+Title: GSU Xaraingan Theme
+Author: Josh Allen
+Updated: 12/26/2021
+Description: A GSU theme for Xaringan presentations. Modifid based on 
+             Joseph V. Casillas's Rutgers theme and Tuo Wang's UW-Madison Theme
+References: https://github.com/jvcasillas/ru_xaringan, https://github.com/ttuowang/Xaringan-wisconsin-theme. Colors and Logo from https://commkit.gsu.edu/university-logos/
+*/
+
+
+
+a, a &gt; code {
+  color: #cc0033; /* rgb(249, 38, 114) */
+  text-decoration: none;
+}
+
+/* slightly lower and bigger than default */
+.footnote {
+  position: absolute;
+  bottom: 1em;
+  padding-right: 4em;
+  font-size: 95%;
+}
+
+/* important code slightly red */
+.remark-code-line-highlighted {
+  background-color: #FFD3DE !important;
+}
+
+/* color tweak */
+.inverse {
+  background-color: #8f9186;
+  color: #FFFFFF;
+  text-shadow: 0 0 20px #333;
+}
+
+/* slightly spacing change */
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #f3f3f3;
+  line-height: 1.0em;
+}
+
+/* Two-column layout */
+.left-column {
+  color: #777;
+    width: 30%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+
+.left-column1 {
+  color: #777;
+    width: 34%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
+.right-column {
+  width: 67%;
+  float: right;
+  padding-top: 0em;
+}
+
+.right-column1 {
+  width: 63%;
+  float: right;
+  padding-top: 0em;
+}
+
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ * {
+  clear: both;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee }
+
+@page { margin: 0; }
+
+/* adjust table horizontal spacing */
+th, td {
+    padding:0 15px 0 15px;
+}
+
+.remark-slide table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+.remark-slide table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) { background: #eee }
+
+/* leave this alone */
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+/* gsu additions */
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Title slide */
+
+/* Add image and change bg color */
+.title-slide {
+  background-image: url(https://commkit.gsu.edu/files/2019/06/PrimaryLogo3color.jpg);
+  background-position: 100% 0%;
+  background-size: 300px;
+  background-color: #fff;
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+/* H1 fonts */
+.title-slide h1 {
+  color: #0039A6;
+  padding-top: 100px;
+  font-weight: normal;
+  font-size: 60px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+/* H2 fonts */
+.title-slide h2 {
+  color: #CC0000;
+  font-size: 34px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+
+/* H3 fonts */
+.title-slide h3 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #666666;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 15px;
+  margin: 0px;
+  line-height: 1;
+}
+
+/* Remove slide count shadow */
+.title-slide .remark-slide-number {
+  text-shadow: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~*/
+/* Global adjustments */
+/*~~~~~~~~~~~~~~~~~~~~*/
+
+/* Add padding to all slides for 16:9 aspect ratio */
+.remark-slide-content {
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+  font-size: 21px;
+}
+
+/* Color adjustments for text */
+
+strong {
+  color: #ea5455;
+}
+
+.bold { font-weight: bold; }
+
+.gsu-blue{
+  color: #0039A6;
+}
+
+.gsu-dark{
+  color: #776E64;
+}
+
+.gsu-gray-blue{
+  color: #dadfe1;
+}
+
+.gsu-gray-darker{
+  color: #646569;
+}
+
+.gsu-gray-darkest{
+  color: #282728;
+}
+
+.gsu-anchor-color{
+  color: #0479a8;
+}
+
+
+
+/* Colors are from the Met brewer package */
+
+.hiro-red{
+  color: #e76254;
+}
+
+.hiro-orange{
+  color: #ef8a47;
+}
+
+.hiro-light-orange{
+ color: #f7aa58; 
+}
+
+.hiro-yellow{
+  color: #ffd06f ;
+}
+
+.hiro-light-blue{
+  color: #528fad ;
+}
+
+.hiro-dark-blue{
+  color: #376795;
+}
+
+.vero-red{
+  color: #67322e;
+}
+
+.vero-brown{
+  color: #99610a;
+}
+
+.vero-yellow{
+  color: #c38f16;
+}
+
+
+.vero-teal{
+  color: #6e948c;
+}
+
+.vero-blue{
+  color: #122c43;
+}
+
+/* Color adjustments to headers */
+h1 {
+  color: #0039A6;
+}
+
+h2 {
+  color: #CC0000;
+}
+h3 {
+  color: #776E64;
+}
+
+/* Font size tags */
+.big {
+  font-size: 1.5em;
+}
+
+
+
+
+
+/* gsu blockquote */
+gsu-blockquote-red {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #c5050c;
+  border-right: solid 20px #c5050c;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+
+gsu-blockquote-blue {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #0039A6;
+  border-right: solid 20px #0039A6;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+gsu-blockquote-alt {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #776E64;
+  border-right: solid 20px #776E64;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/*~~~~~~~~~~~~~~*/
+/* I like the frames*/
+/* and cols in Allison Hill's */
+/* https://alison.netlify.app/ares-kind-tools/*/
+/*~~~~~~~~~~~~~~*/
+
+.frame h1 {
+  color: #0039A6;
+  padding-bottom: 1.0em !important;
+  border-bottom: 3px solid var(#7899d4ff);
+}
+
+
+
+
+/*~~~~~~~~~~~~~~*/
+/* Highlight    */
+/*~~~~~~~~~~~~~~*/
+
+.highlight-last-item &gt; ul &gt; li, 
+.highlight-last-item &gt; ol &gt; li {
+  opacity: 0.5;
+}
+.highlight-last-item &gt; ul &gt; li:last-of-type,
+.highlight-last-item &gt; ol &gt; li:last-of-type {
+  opacity: 1;
+}
+
+.bold-last-item &gt; ul &gt; li:last-of-type,
+.bold-last-item &gt; ol &gt; li:last-of-type {
+  font-weight: bold;
+}
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+/*
+GSU fonts
+Author: Josh Allen
+Updated: 05/24/2021
+
+I am just borrowing fonts used in the https://www.andrewheiss.com/blog/ 
+*/
+
+/* Add maven for code font (keep other xaringan defaults */
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&amp;display=swap');
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&amp;display=swap');
+
+body { font-family:'Roboto', 'Barlow Semi Condensed', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+
+h1, h2, h3 {
+  font-family: 'Archivo Narrow';
+  font-weight: normal;
+}
+
+/*
+h2, h3 {
+  font-family: 'Roboto Condensed';
+  font-weight: normal;
+}
+*/
+
+.remark-code, .remark-inline-code { font-family: 'Inconsolata', monospace; }
+.remark-code-line-highlighted     { background-color: #ffff88; }
+&lt;/style&gt;
+
+
+
+
+
+
+
+---
+## Looming Deadlines
+
+- Eh future you problem
+
+- Chapters
+---
+
+
+
+
+---
+class:center, middle 
+
+## Political Knowledge 
+
+&lt;img src="knows.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+???
+Survey after survey has demonstrated that Americans as a whole are not well informed about politics and public affairs.  Some analysts place most of the blame on the press, which, they say, is more concerned with entertaining its audience than informing it.  Other observers place most of the blame on the public. They point out that there is almost no vital piece of information about a policy issue that is not reported by the media at one time or another. From this perspective, the problem rests with the public’s failure to pay close attention to the news. 
+
+ In your opinion, is the press or the public primarily to blame for the citizenry’s low level of political awareness? What changes in news coverage might improve the public’s level of awareness? 
+
+---
+
+
+---
+## Try it out
+
+
+&lt;iframe src="https://www.pewresearch.org/politics/quiz/what-do-you-know-about-the-u-s-government/" width="100%" height="400px" data-external="1"&gt;&lt;/iframe&gt;
+
+
+---
+
+
+
+
+
+
+---
+## What Role Does the Media Play?
+
+Watchdogs of government
+
+Conveyors of information to the public
+
+Setting the agenda
+
+Promoter of free flow and exchange of ideas
+
+
+---
+
+---
+## Mass Media
+
+All companies, organizations, institutions, and other corporate entities who deliver information on politics and current events to the public at large
+
+Types of Media:
+  - Broadcast
+  - Print
+  - Social 
+  - New Media
+
+???
+
+Fourth branch?  The role of the mass media in a democratic society.
+
+Referred to “fourth branch” because of its essential role in a representative democracy. 
+
+Information in the news is the primary source of information about society, politics, and government.
+
+
+Without a free flow of accurate, timely and useful information, people cannot participate effectively. 
+
+More to the point, a free and active media is the central means through which citizens learn about and assess the claims and actions of government officials.  Essential to accountability. 
+
+Modern problems and their potential solutions are so complicated that the typical citizen must rely on various individuals in the media (experts, politicians, pundits, etc.) to make sense of it all.   
+
+  
+
+
+---
+
+
+----
+## History of the Media
+
+- The Era of Sensationalism and Muckraking: 1860-1920
+  - .bold[Yellow Journalism]: a style of reporting in which journalists exaggerate or even fabricate news stories to increase circulation.
+  - .bold[Muckraking]: journalism focused on exposing corruption in government or industry
+
+- 1920's and the Rise of the Radio  
+  - Introduction as a new sources of news. Significant rise in the use of the term, “Breaking News” 
+
+- The Rise of Television
+  - Communication Act of 1934
+  - The airways are public property and commercial broadcasters goal is to “serve the public interest, convenience, and necessity
+  - Freedom of Information Act(FOIA)
+  - Allows any citizen to get information from government records after filing an official request for the release of documents  
+- Television becomes primary source of news for citizens
+
+
+???
+
+Joseph Pulitzer and the New York World gave them what they wanted in the 1890s. The tabloid-style paper included editorial pages, cartoons, and pictures, while the front page news was sensational and scandalous, appealing to audience emotion and less on the substantive aspects of the important issues of the day. This style of coverage became known as yellow journalism. Ads quickly sold thanks to the paper’s popularity, and the Sunday edition became a regular feature of the newspaper. As the New York World’s circulation increased, other papers copied Pulitzer’s style in an effort to increase circulation. Competition between newspapers led to increasingly sensationalized covers and crude issues
+
+In 1896, Adolph Ochs purchased the New York Times with the goal of creating a dignified newspaper that would provide readers with important news about the economy, politics, and the world rather than gossip and comics. The New York Times brought back the informational model, which exhibits impartiality and accuracy while promoting transparency in government and politics.
+
+
+
+The Communicaion act of 1934 establishes the FCC how the airwaves work first starting 
+
+
+powerful entity to monitor the airwaves—a seven-member (now five-member) FCC to oversee both radio and telephone communication. The FCC requires radio stations to apply for licenses, which are granted only if stations follow rules about limiting advertising, providing a public forum for discussion, and serving local and minority communities. With the advent of television, the FCC was given the same authority to license and monitor television stations. The FCC now also enforces ownership limits to avoid monopolies and censors materials deemed inappropriate
+
+
+
+---
+
+---
+layout: false
+
+- Watchdog Journalism(1973-1991)
+  - The media adopts a much more aggressive and critical posture towards government 
+  - Ushered in by the release of The Pentagon Papers (1971) and Watergate Scandal 
+
+- The Era of Infotainment(1992-Present)
+- .bold[Soft News]: a type of media that provides a combination of information and entertainment.
+- Ex. Trevor Noah, Samantha Bee, John Oliver
+
+???
+IN 1996 a new communication act was passed that  dropped the limit on the number of radio stations (forty) and television stations (twelve) a single company could own. It also allowed networks to
+  
+---
+
+---
+## Types of Media
+
+- Television or Radio Media
+  - Provide Pictures or Scripts with a level of Immediacy to assist the viewing public 
+- Print Media
+  - most common form are newspapers (print or online)
+  - The depth and accuracy of sources is given more attention
+- Social Media
+  - Provides social interaction among people in which they create, share, or exchange info in virtual communities and networks
+  - It is considered a coordinating mechanism for political action 
+
+
+???
+The internet has lead to a drastic increase in the consumption of online news in the last 15-20 years 
+It solves many of the problems of print media by increasing the depth, but by limiting the time consumption 
+It is the most threatening form of media especially to print media. 
+50% of all social media users have posted about politics. 
+1/3 of all of those that have been surveyed have  changed their opinions or that of their friends based on a political comment made on Facebook or twitter.  
+
+---
+
+
+---
+## Where do People get their news
+
+.pull-left[
+
+&lt;img src="where.jpg" width="60%" style="display: block; margin: auto;" /&gt;
+
+
+
+]
+
+
+
+.pull-right[
+
+&lt;img src="age-breakdown.jpg" width="60%" style="display: block; margin: auto;" /&gt;
+
+
+
+]
+---
+
+---
+## Regulation of the Media
+
+- The print press enjoys relative freedom from government regulation thanks to the provision of the 1st Amendment 
+  - Content can be regulated when questions of libel and slander are brought forward 
+  - Must reach standard of .bold[”Actual Malice”] 
+  - Content can also be regulated sometimes via prior restraint 
+- .bold[Prior Restraint]: censorship imposed, usually by a government, on publication of documents or specific information. 
+  - Unconstitutional in the United States except in extremely limited circumstances such as national security. 
+
+
+???
+Remember the media has the right to get stuff wrong
+
+New York Times v. Sullivan – established the standard of actual malice in First amendment standards concerning the press. When discussing/writing/etc. about an individual the press much avoid making statements of malice (knowledge that they are false or in reckless disregard of their truth or falsity) especially against public figures. If such statements are made then the individual has the right to sue/you are not protected by first amendment.  This is partially where the Snyder v. Phelps decision rises from. 
+
+
+
+page report on the history of the United States’ political and military involvement in Vietnam between 1945 and 1967. The report, which was produced by the Department of Defense for internal purposes and was not intended to be made public, contained information demonstrating, among other things, that President Lyndon Johnson had lied repeatedly to Congress and the American public in an effort to build public support for a military escalation in Vietnam.
+
+The U.S. Supreme Court affirmed that the government’s power to prevent the publication of information, even classified information, is strongly limited by the First Amendment. The Court ruled the newspapers had a right to publish most of the Pentagon Papers. The Court also held, however, that revelations of troop movements and the names of undercover operatives are some of the few approved reasons for which the government can stop publication or reporting
+
+
+Some exceptions are stuff like troop movements, identities of like spies, etc things that would likely result in the loss of life 
+
+---
+
+
+
+---
+
+&lt;img src="freedom-of-the-press.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+???
+The 2018 world press freedom index compiled by Reporters without Borders (RSF) is based on incidents and types of attacks on the media across the world. The RSF classifies this time period as the “age of post truth” and propaganda. The suppression of these freedoms has become especially problematic in democracies. 
+
+
+
+The obsession with surveillance and violations of the right to the confidentiality of sources have contributed to the continuing decline of many countries previously regarded as virtuous. The rise of authoritarian strongman in democracies across the world (United States, Poland, Hungary, Turkey, etc.) combined with toxic anti-media discourse (United Kingdom, US, Poland, Chile, and New Zealand) have also led to significant drops in the position of many of these countries. 
+
+---
+
+
+---
+
+## Regulation of The Media
+
+- The Federal Communications Commission (FCC), the government issues licenses and regulates the business and content of broadcast media.
+  - Licenses are granted on a 1, 3, or 5 year term for TV 
+  - Radio Licenses are 17 year terms
+
+- It is an Independent Regulatory Commission 
+  - Members are appointed  by the President 
+  - 5 member commission 
+    - Chairman and 4 Commissioners 
+    - 5 year terms
+
+???
+The FCC’s goal is to regulate communications by radio, television, wire, satellite, and cable. It was created by the Communications Act of 1934.  It ensures that we all have access to affordable and reliable broadband services, that the market for such is competitive, it promotes growth in industry and technology, promotes a diversity of media, and provides media and communications during emergencies and national crisis. 
+
+---
+
+
+---
+## The FCC Regulates Broadcast Media through Various Rules
+
+.panelset[
+
+.panel[.panel-name[Fairness Doctrine]
+- Rule requiring holders of broadcast licenses to present controversial issues of public importance in a manner that is honest, equitable, and balanced 
+
+- Eliminated in 1987
+
+
+]
+
+.panel[.panel-name[Equal Time Rule]
+
+- Rule requiring radio and television stations to provide an equivalent opportunity to any opposing political candidate that request it 
+
+  Exceptions : 
+- Airing a documentary 
+- Talk Shows and News Syndicates 
+- Scheduled  “live” newscast or on-the-spot events 
+- News interviews 
+- Political debates not hosted by the media station  
+
+
+]
+
+
+.panel[.panel-name[Net Neutrality]
+
+- Internet service providers and governments must treat all data on the internet the same and not discriminate or charge differently by user, content, or website 
+
+
+]
+]
+
+???
+Introduced by the FCC in 1949 and suspended in 1987
+
+Where as the equal time rule is concerned with equal access, the fairness doctrine was concerned with making sure broadcasters provided a free and open discussion of public issues. 
+
+The Fairness Doctrine requires that stations (1) provide a reasonable amount of air time to coverage of controversial issues of public important, and (2) accord a reasonable opportunity for the voicing of contrasting viewpoints concerning these issues.
+
+Enforced through the license renewal process in which the states were required to document their compliance.
+
+FCC gradually extended the rules of the Fairness Doctrine to apply to statements about individuals rather than just abstract issues.  
+
+
+Thus, when a broadcast included a personal attack on a public figure, the station that aired the attack was required to notify the person who was attacked and offer him or her a reasonable opportunity to respond.
+Reagan appointed several new members to the FCC, all of whom were strongly committed to a free market approach to broadcasting. 
+
+
+In 1987 the FCC decided to repeal the fairness doctrine, on the grounds that technological advances had made it possible to accommodate many stations in a given local, making it unnecessary to force stations to present opposing viewpoints. The fairness doctrine ended in the 1980s, after a succession of court cases led to its repeal by the FCC in 1987, with stations and critics arguing the doctrine limited debate of controversial topics and placed the government in the role of editor 
+
+The F.C.C. says that the old rules are no longer necessary because the marketplace has changed. According to the official line, new media -- first cable television, then the Internet -- have given the public access to a diversity of news sources, eliminating the need for public guidelines. 
+
+
+ The equal-time rule, for instance, states that registered candidates running for office must be given equal opportunities for airtime and advertisements at non-cable television and radio stations beginning forty-five days before a primary election and sixty days before a general election. If WBNS in Columbus, Ohio, agreed to sell Joe Biden thirty seconds of airtime for a presidential campaign commercial in 2020, the station would also need to sell President Donald Trump thirty seconds of airtime at the same price.
+
+
+
+The idea that Internet Service Providers must treat all web traffic equally, and therefore may not be allowed to charge different rates or discriminate against different websites in any way, is known as net neutrality.
+
+so this website and amazon are to be treated equally by the internet service providers and they can't up charge you for going to high traffic websites. Under the Trump administration that 
+---
+
+
+
+
+
+
+
+---
+## Sources of Media Power
+
+.bold[Agenda Setting]:  The power of the media to bring public attention to particular issues and problems
+
+.bold[Framing]: The power of the media to influence how events and issues are interpreted
+  - the  words,  images,  phrases,  and  presentation  styles  that  a speaker  (e.g.,  a  politician,  a  media  outlet)  uses  when  relaying  information  about an issue or event to an audience\
+  
+.bold[Priming]: process of preparing the public to take a particular view of an event or political actor.
+
+
+
+???
+Agenda setting is imporant because the media can start to affect what we think of as important throught just the very act of covering things. There are sort of some issues that we can think of as sort of inherently news worthy. While other stuff maybe escape our attention because the public just isn't paying attention 
+
+
+Framing you can kind of think of it as the how it is being covered
+---
+
+
+---
+## Attitude Formation
+
+$$
+`\begin{align}
+\overbrace{A}^{\text{Attitude}} = \Sigma\overbrace{V_{i}}^\text{Dimensions used to evaluate something on} \underbrace{W_{i}}_{\text{Weight you give to individucal dimensions }}
+\end{align}`
+$$
+???
+So how do we get our attitudes about issues? When someone asks, what do you think of president Biden? How do you decide how to answer? Well political scientists have come up with a mathematical model which we think best explains the ways in which people form their attitudes?
+
+An attitude is an evaluation of an attitude object
+
+Draw the big head on the board.
+Use the example of presidential approval (Obama)
+
+Race 
+
+PartyID
+
+Charisma
+
+Policy positions – ObamaCare, Foreign Policy, Economic Stimulas
+
+Spouse – maybe they like Michelle
+
+---
+
+
+---
+## Attitude Formation
+
+
+$$
+`\begin{align}
+\overbrace{A}^{\text{Attitude}} = \Sigma\overbrace{V_{i}}^\text{Dimensions used to evaluate something on} \underbrace{W_{i}}_{\text{Weight you give to individucal dimensions }}
+\end{align}`
+$$
+
+- .bold[Frame]: communication that highlights some subset of the possible dimensions to evaluate an attitude object
+- .bold[Framing Effect]: Occurs when `\(W_{i}\)` changes
+  - Influences the value of the dimension you look at when forming an attitude
+  
+  
+???
+
+Framing – the process by which media encourages viewers to interpret journalistic stories in a particular way. Media can frame stories for the public using selective presentation of facts or specific descriptive language.
+
+---
+
+
+
+---
+## Why Does This Happen?
+
+.bold[Risk Averse]: the behavior of individuals that when exposed to uncertainty will attempt to lower that uncertainty. 
+
+.bold[Risk Seeking]: the behavior of individuals that when exposed to uncertainty will choose greater volatility in exchange for anticipated higher returns.  
+
+
+???
+A framing effect occurs when transparently and objectively identical situations generate dramatically different decisions depending on whether the situations are presented or perceived as either potential losses or gains
+
+This messes with peoples utility function making them either risk averse or risk seeking because of their perceived benefit or the percevied losses 
+
+Frames can also play up or down the frequency of an event changing our sort of internal calculations 
+
+
+---
+
+---
+class: middle
+## Real World Example
+
+
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/lAz-F1QnyCk?start=5" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+
+
+---
+
+
+
+
+---
+layout: false
+## Consumption
+&lt;img src="media-bias.jpg" width="70%" style="display: block; margin: auto;" /&gt;
+
+???
+Because things are complicated the book advises you to be good consumers of the media that don't consume political information for its entertainment value. You should tend toward the boring stuff. So my grandma loves the news especially Maddow. She loves her a lot but thats not always good because Maddow will tend to be very liberal and is more on the editorial side of news. The book and allsides where this graphic comes from argues that you should be up in the high news content side put sample from a range of outlets
+
+I tend to read news articles more often than not and essentially never look at the editorials. The sort of exception to this is monkey cage because it is where a lot of public facing scholarship lies. They tend to just be snapshots of political science articles but in ways that are accessbile to a general public and not just political scientists
+---
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true,
+"navigation": {
+"scroll": true
+}
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

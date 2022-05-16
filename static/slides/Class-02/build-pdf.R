@@ -1,0 +1,1 @@
+xaringanBuilder::build_pdf("Class-02/Government.html", complex_slides = TRUE, partial_slides = TRUE)

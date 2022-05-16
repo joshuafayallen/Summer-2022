@@ -1,0 +1,663 @@
+---
+title: "Class One "
+subtitle: "Getting to Know Me, The Class, and What Not"  
+author: "Josh Allen"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: ["default"]
+    self_containted: true
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+      navigation:
+        scroll: true
+---
+
+```{r preamble, child = here::here('preamble.Rmd')}
+```
+
+---
+# Outline 
+
+- About me 
+
+- About This Class
+
+- Working Definition of Government 
+
+???
+Today will be pretty light we are just going to go over some of the very very basics of the class. A bit about me and what not. Than hopefully we will get out of here pretty quickly. Just
+a few notes if there is a nickname or name that you go by that isn't on the official 
+role than just email me I'll put it into my little spreadsheet. If you have 
+any trouble with reading the slides or the viz than also email me.
+---
+
+
+---
+class: center, middle,  inverse
+# About Me 
+
+---
+
+---
+# What to Call Me
+
+.panelset[
+.panel[.panel-name[Josh Allen]
+<center>
+```{r, echo = FALSE}
+
+knitr::include_graphics("images-all/josh_allen_bills.png")
+
+```
+</center>
+]
+
+.panel[.panel-name[Mr Allen]
+<center>
+```{r, echo = FALSE}
+
+
+knitr::include_graphics("images-all/Tim_allen.jpg")
+
+```
+</center>
+]
+
+.panel[.panel-name[Professor Allen]
+<center>
+```{r echo = F, out.width= "40%"}
+
+knitr::include_graphics("images-all/me.png")
+
+```
+</center>
+]
+]
+
+???
+I mean if we are going to be honest I probably will respond to various versions of my name. But, I would prefer Professor Allen for a variety of reasons. I will get a little grumpy if you start calling me Mr. Allen because while the age gap between 18 and 27 may seem massive. I am in fact not my father. 
+
+---
+
+
+---
+## About Me 
+
+.pull-left[
+## Professional Stuff
+- I am a 3rd Year PhD Student in the Political Science Department
+
+- Research Interests: Political Legacies of Repression and Political violence
+
+- Grade: 23?
+
+- Number of Times I have taught this class: 1 
+
+- Number of Times I have taught this class in person: 0]
+
+--
+
+.pull-right[
+## Personal Stuff  
+- Makes Graphs for Fun
+
+- Bay Area Expat
+
+- Walk up song: Act Up- Rich Brian 
+
+- Generally can be found at a gym, my couch, or at the dog park with my dog Melonie
+]
+
+???
+So this is like my first time teaching this class in person so there will no doubt be some struggles lecturing and responding to questions. So while I know it may be frustrating at times but I promise you I am trying my best. I have been in school for longer than some way have you been alive. My research interests are focused on the enduring legacy of violence. Outside of class you will generally find me in like three or four places
+---
+
+
+---
+
+# Dog Pictures
+
+
+.pull-left[
+
+```{r echo = F, out.width="90%"}
+knitr::include_graphics("images-all/melon.png")
+```
+
+
+]
+
+.pull-right[
+
+```{r echo = F, out.width="90%"}
+knitr::include_graphics("images-all/melon_uno.png")
+```
+
+
+]
+
+
+???
+I have like a million pictures of my dog. These were from like a month ago. I will sprinkle in dog pictures whenever possible. So on the right there is the Melonie. On the right you have the melonie and one of her boyfriends. 
+---
+
+class: center, middle,  inverse
+# About the class 
+
+
+---
+# Where are the Slides?
+
+- The slides live on the website I put in the announcement [here](https://sppols110122.netlify.app/)
+
+- Practically the HTML version of the slides are gonna be the ones I use in class. 
+
+- The PDF versions of the slides will just be there for you guys to take notes on if you would like. 
+
+- If you are curious about how they are made just visit [this link](https://github.com/joshuafayallen/pols-1101-spring22/tree/main/static/slides) and click on the file with the ".Rmd" extension
+
+
+???
+Without getting into the the technical stuff to much basically each of the presentations are there own self contained webpage. The only difference between the HTML and PDF versions are going to be that some of the media and gifs are not gonna show up. This shouldn't be to big of an issue because for the most part it is just going to be pictures and what not that I am done fighting. 
+
+---
+
+---
+##  Schedule for the Semester
+
+
+```{r, include = TRUE, echo= FALSE}
+
+
+mon <- ymd(20220110)
+
+tues = ymd(20220111)
+
+# What are some dates you won't be here? In this example, I had a conference on 7 January 2022.
+# Spring Break was 15 March 2022 to 19 March 2022.
+not_here_dates <- c(
+  # SPSA 2022,
+  ymd(20220210),
+  # Spring Break
+  seq(ymd(20220314),ymd(20220320), by=1))
+
+# You can adjust this as you see fit. Basically: add assignment types (e.g. papers, quizzes).
+# My intro class was fairly simple: just exams.
+exam_dates <- c(ymd(20220207), ymd(20220321), ymd(20220425))
+
+
+ncchr_extra = ymd(20220227)
+
+
+activities = c(ymd(20220130), ymd(20220306), ymd(20220417))
+
+
+exam_weeks = c(6, 12, 17)
+
+# What are the full dates of the semester? Here, I'll exclude exam week as I like to do.
+# In this case: 6 January to 23 April
+semester_dates <- seq(ymd(20220110), ymd(20220503), by=1)
+
+# Custom function for treating the first day of the month as the first week
+# of the month up until the first Sunday (unless Sunday was the start of the month)
+wom <- function(date) {
+    first <- wday(as.Date(paste(year(date),month(date),1,sep="-")))
+    return((mday(date)+(first-2)) %/% 7+1)
+  }
+
+# Create a data frame of dates, assign to Cal
+tibble(date = seq(ymd(20220101), ymd(20220430), by=1))  %>%
+  mutate(mon = lubridate::month(date, label=T, abbr=F), # get month label
+         wkdy = weekdays(date, abbreviate=T), # get weekday label
+         wkdy = fct_relevel(wkdy, "Sun", "Mon", "Tue", "Wed", "Thu","Fri","Sat"),
+         weeks = lubridate::isoweek(date),# make sure Sunday comes first
+         semester = ifelse(date %in% semester_dates, 1, 0), # is date part of the semester?
+         exams = ifelse(date %in% exam_dates, 1, 0), # is it an exam?
+         not_here = ifelse(date %in% not_here_dates, 1, 0), # is it a day off?
+         day = lubridate::mday(date), # get day of month to add later as a label
+         # Below: our custom wom() function
+         week = wom(date),
+         exam_week = case_when(weeks %in% exam_weeks ~ "1",
+                               !weeks %in% exam_weeks ~ "0"),
+         ncchr = ifelse(date == ncchr_extra, 1, 0),
+         activities = ifelse(date %in% activities, 1, 0)) -> Cal
+
+
+
+
+
+Cal = Cal %>%
+  mutate(category = NA,
+         category = ifelse(semester == 1, "Semester", category),
+         category = ifelse(semester == 1 & wkdy %in% c("Tue", "Thu"), "Class Day", category),
+         category = ifelse(exam_week == 1, "Exams", category),
+         category = ifelse(is.na(category) | (semester == 1 & not_here == 1), "NA", category),                 
+         category = ifelse(ncchr == 1, "Extra Credit NCCHR", category),
+      category = ifelse(activities == 1, "Activity", category)) 
+
+calendar = Cal %>%
+  ggplot(.,aes(wkdy, week)) +
+  theme_allen() +
+  theme(panel.grid.major.x = element_blank(),
+        panel.grid.major.y = element_blank(),
+        axis.line.y = element_blank(),
+        axis.line.x = element_blank(),
+        panel.border = element_blank(),
+        axis.ticks.x = element_blank(),
+        legend.position = "right") +
+  # geom_tile and facet_wrap will do all the heavy lifting
+  geom_tile(alpha=0.8, aes(fill=category), color="black", size=.5) +
+  facet_wrap(vars(mon), scales="free", ncol=3) +
+  # fill in tiles to make it look more "calendary" (sic)
+  geom_text(aes(label=day),family="Roboto Condensed") +
+  # put your y-axis down, flip it, and reverse it
+  scale_y_reverse(breaks=NULL) +
+  # manually fill scale colors to something you like...
+  scale_fill_manual(values=c("Class Day"="steelblue",
+                             "Semester"="lightsteelblue",
+                             "NA" = "white", # I like these whited out...
+                             "Exams"="indianred4",
+                             "Extra Credit NCCHR" = "coral",
+                             "Activity" = "darkgoldenrod"),
+                    breaks=c("Class Day","Exams", "Extra Credit NCCHR", "Activity")) +
+  labs(fill = "", x="", y="", caption = "Note Exams Close at 11:59 Pm")  
+
+
+calendar
+
+```
+
+
+???
+These next two slides are basically like the tl;dr of the syllabus. This calendar is just taken directly from the syllabus. For February 10 I will try and get somebody to cover the class. March 10th I don't anticipate many of you will be here since it is the class before spring break. So I will try and figure out a lecture that is kind of fun and useful. I will let you know closer to the actual date, but I wouldn't anticipate y'all having class.
+Apologies that it is a little smushed. I tried fighting with the aspect ratios. I can post this and the table in the announcements for your purpose 
+---
+
+
+
+---
+## Grading Summary
+
+
+```{r echo = F}
+library(gt)
+gt_theme_espn <- function(data, ...){
+  data %>% 
+    opt_all_caps()  %>%
+    opt_table_font(
+      font = list(
+        google_font("Lato"),
+        default_fonts()
+      )
+    )  %>% 
+    opt_row_striping() %>% 
+    tab_options(
+      row.striping.background_color = "#fafafa",
+      table_body.hlines.color = "#f6f7f7",
+      source_notes.font.size = 12,
+      table.font.size = 16,
+      table.width = px(700),
+      heading.align = "left",
+      heading.title.font.size = 24,
+      table.border.top.color = "#0000ffff",
+      table.border.top.width = px(3),
+      data_row.padding = px(7),
+      ...
+    ) 
+}
+
+gt_theme_538 <- function(data,...) {
+  data %>%
+  opt_all_caps()  %>%
+  opt_table_font(
+    font = list(
+      google_font("Chivo"),
+      default_fonts()
+    )
+  ) %>%
+    tab_style(
+      style = cell_borders(
+        sides = "bottom", color = "#0000ffff", weight = px(2)
+      ),
+      locations = cells_body(
+        columns = everything(),
+        # This is a relatively sneaky way of changing the bottom border
+        # Regardless of data size
+        rows = nrow(data$`_data`)
+      )
+    )  %>% 
+  tab_options(
+    column_labels.background.color = "white",
+    table.border.top.width = px(3),
+    table.border.top.color = "#0000ffff",
+    table.border.bottom.color = "#0000ffff",
+    table.border.bottom.width = px(3),
+    column_labels.border.top.width = px(3),
+    column_labels.border.top.color = "#0000ffff",
+    column_labels.border.bottom.width = px(3),
+    column_labels.border.bottom.color = "black",
+    data_row.padding = px(3),
+    source_notes.font.size = 12,
+    table.font.size = 16,
+    heading.align = "left",
+    ...
+  ) 
+}
+
+grades = tribble(~Item, ~Percentage,
+                 "Syllabus Quiz", .02,
+                 "Surveys", .05,
+                  "Readings and Question Area9", .23,
+                 "Exams", .42,
+                 "Online Activities", .09,
+                 "NCCHR", .14,
+                 "End of Semester Assesment Quiz", .05)
+
+
+gt(grades) %>% 
+  gt_theme_538() %>% 
+	fmt_percent(columns = "Percentage", decimals = 0)
+
+```
+
+???
+While exams make up like the biggest item I just weight them. So your highest score is going to count for more and your lowest score is going to count for less. In my experience if you do all the readings and questions in AREA 9 and the rest of the work it will count towards a lot for your final grade. The NCCHR assignment is a short writing assignment basd on your visit toward the national center for civil and human rights. We have you go through various exhibits and experiences that help you learn about the American civil rights movement. THe writing assignment is only like 400 words and I give you questions to answer.
+---
+
+---
+## How to Do Well in This Class
+
+- Do the reading
+
+- Take good notes
+
+- Ask questions when you do not understand something
+
+- Participate
+
+???
+I know what you are thinking. "No shit professor Allen" and you know fair.
+I tend to take the view that this class is more about you guys understanding the 
+mechanics of politics. What I see the role of this class is for y'all to develop
+skills that you will use a lot. Mostly how to collaborate with peers and learning
+to ask for help when you do not understand something. This takes lots of practice.
+But they are ultimately things you will use a lot. Lots of things in your professional
+career are basically like large group projects. Free-riding in this case will have
+consequences. So practice being a good teammate now because there are like next
+to zero costs.
+---
+
+---
+# Break Time 
+
+
+```{r, echo=FALSE}
+countdown::countdown(minutes = 5, play_sound = TRUE)
+```
+
+---
+
+
+---
+class: section, center, middle, inverse
+
+# Stuff You Will be Tested On
+
+---
+
+---
+## What is a Government and What Does it Do?
+
+
+
+![](https://media.giphy.com/media/cNxai6sNvsplKYw8FD/giphy.gif)
+
+???
+Obviously as a Pols PhD student this could be a much longer conversation and has been the subject of a lot of study but let us wrap it up in a concise little definition and get outta here
+---
+
+
+
+
+
+
+
+
+---
+
+class: center, left
+# What are Governments and What Do they Do?
+
+.pull-left[
+
+```{r, echo=FALSE}
+knitr::include_graphics("images-all/capitol.png")
+```
+
+]
+
+.pull-right[
+```{r echo = FALSE}
+knitr::include_graphics( "images-all/state_of_the_union.png")
+```
+
+]
+
+???
+Typically we think of government as focused within these individuals. Which is fair we see these people all the time in their various capacities. We know their names and every 2, 4, or 6 years they are on tv 24/7 asking to be re-elected 
+---
+
+---
+## However, Consider This
+
+
+```{r echo = FALSE, warning=FALSE, message=FALSE}
+pacman::p_load("here", "gameofthrones", 
+               "scico")
+
+clean_list = read_csv(here::here("data", "class_list_majors.csv"))
+
+plot_data  = clean_list %>% 
+  group_by(major) %>% 
+  summarise(total = n()) %>% 
+  arrange(desc(total)) 
+
+
+most_freq = plot_data %>% 
+  slice(1:14)
+
+
+least_freq = plot_data %>% 
+  slice(15:28)
+
+ 
+
+
+```
+
+.pull-left[
+```{r, echo=FALSE}
+ggplot(most_freq, aes(x = total, y = fct_reorder(major,total),
+                                   color = major)) +
+  geom_pointrange(aes(xmin = 0, xmax = total), fatten = 5) + 
+  labs(x = "Total", y = NULL, title = "") +
+  guides(color = "none") +
+  scale_color_scico_d(palette = "vikO") +
+  theme_allen()
+```
+
+]
+
+--
+
+.pull-right[
+
+```{r, echo=FALSE}
+ggplot(least_freq, aes(x = total, y = fct_reorder(major,total),
+                                   color = major)) +
+  geom_pointrange(aes(xmin = 0, xmax = total), fatten = 5) + 
+  labs(x = "Total", y = NULL, title = "") +
+  guides(color = "none") +
+  scale_color_scico_d(palette = "vikO") +
+  theme_allen()
+```
+
+]
+
+
+
+???
+As is the nature of an intro class like this the bulk of you are not political science majors. Let us start to consider how you all will interact with government in your professional lives. Get in groups of like 3 or 4 and start brainstorming ways in which the government has a hand in these areas. TIf you don't know your colleague that you are working with. Introduce yourself. As an icebreaker you can choose one of these icebreakers
+
+---
+
+---
+
+## Activity Time 
+
+
+- What is something you would do that would slightly inconvenience an enemy
+
+- What is a hot take you have 
+```{r, echo=FALSE}
+countdown::countdown(minutes = 5, play_sound = TRUE)
+```
+
+---
+
+
+---
+class: center, right
+
+## Government 
+
+.pull-left[
+```{r, echo= FALSE}
+knitr::include_graphics("images-all/dmv.png")
+
+
+```
+
+]
+
+.pull-right[
+```{r echo = FALSE}
+
+knitr::include_graphics("images-all/highway.png")
+```
+
+
+]
+???
+Government extends to lots and lots of stuff that you may or may not think about. Whether it be zoning, permitting, in some cases what policies universities can and cannot enact. Government pretty much touches everything.
+
+
+---
+
+## Defintion of Government
+### Textbook's Definition
+A Set of institutions that 
+
+1. Endure overtime 
+--
+
+2. Has **authority over the people** of a specific territory
+--
+
+3. Authoritatively **makes and enforces laws**
+
+
+---
+
+
+---
+
+## A Common Defintion
+
+
+.pull-left[ 
+### Long Version
+
+we have to say that a state is a human community that (successfully) claims the monopoly of the legitimate use of physical force within a given territory...... Specifically, at the present time, the right to use physical force is ascribed to other institutions or to individuals only to the extent to which the state permits it..... Hence, 'politics' for us means striving to share power or
+striving to influence the distribution of power, either among states or among groups within a state
+]
+
+--
+.pull-right[
+
+### TL;DR
+we have to say that a state is a human community that (successfully) claims the monopoly of the legitimate use of physical force within a given territory
+]
+
+???
+So the most common way we start to understand the state in Political Science is with this old dead white guy named Max Weber. He was a fellow writing in the late 19th century. He defines the state this way. The book takes great issue wit this definition for god knows what reason. But it is kind of focused on the all the other stuff that government does. All its forms and what not. I personally think it is dumb
+---
+
+
+---
+
+## Why is the Book's Definition longer?
+
+
+--
+
+- The minimalist aspect of it
+
+--
+
+- the overemphasis of the coercive aspects of government 
+
+--
+
+- Federalism
+
+--
+
+- Popular Sovereignty 
+
+???
+There are huge debates about the state and statemaking, but in general it is accepted that the stuff that the book mentions is wrapped up in Weber. The debate is long and honestly kind of boring. But what you need to know is that the book has lots of opinions. Most of which I kind of disagree with The Federalism thing is also technically wrong because Weber says that other things can use force if and only if the state delegates them that authority. The reason it takes issue with this is that under federalism there are lots of "competing authorities. The book also makes the point that highest authority aka sovereignty resides in the people. And that there is an inherent tension between the government and the people in this arrangement 
+---
+
+
+---
+
+## Why is Weber so Popular
+
+What makes the state so special?
+
+--
+
+Think about other rule making organizations
+
+--
+
+The state is one among many in some respect (Midgal 1988, Spruyt 1996)
+
+
+--
+
+The definition is minimal
+
+???
+According Weber and many the most basic function of the state is to dominate other 
+social organizations. In Weber he does not distinguish states by their ends but by their means. There are lots of rules making organizations that we interact with. Most if not all of them have similar policy goals that make it difficult to seperate them from the state in this respect. However, how they can achieve this goal differs. The legitimate use of force according to Weber is what differentiates the state  Legitimation can come through many forms one is domination, using the power of a leaders' convincing, and through rational legal structure The state is the sole authority to use violence to enforce  their rules. The PTA, GSU student gov, etc cannot use violence to enforce those rules It would be pretty jarring if the GSU student government used Violence to uphold its bylaws.
+
+---
+
+---
+
+
+
+
+ ![](https://media.giphy.com/media/DAtJCG1t3im1G/giphy.gif)
+
+---
+
+
+

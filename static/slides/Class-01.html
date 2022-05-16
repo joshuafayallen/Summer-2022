@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Class One</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Josh Allen" />
+    <meta name="date" content="2022-04-29" />
+    <script src="Class-01_files/header-attrs/header-attrs.js"></script>
+    <link href="Class-01_files/remark-css/default.css" rel="stylesheet" />
+    <link href="Class-01_files/panelset/panelset.css" rel="stylesheet" />
+    <script src="Class-01_files/panelset/panelset.js"></script>
+    <script src="Class-01_files/clipboard/clipboard.min.js"></script>
+    <link href="Class-01_files/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="Class-01_files/shareon/shareon.min.js"></script>
+    <link href="Class-01_files/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="Class-01_files/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="Class-01_files/tachyons/tachyons.min.css" rel="stylesheet" />
+    <link href="Class-01_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="Class-01_files/tile-view/tile-view.js"></script>
+    <link href="Class-01_files/countdown/countdown.css" rel="stylesheet" />
+    <script src="Class-01_files/countdown/countdown.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Class One
+]
+.subtitle[
+## Getting to Know Me, The Class, and What Not
+]
+.author[
+### Josh Allen
+]
+.date[
+### 2022-04-29
+]
+
+---
+
+
+
+
+
+&lt;style type="text/css"&gt;
+/*
+Title: GSU Xaraingan Theme
+Author: Josh Allen
+Updated: 12/26/2021
+Description: A GSU theme for Xaringan presentations. Modifid based on 
+             Joseph V. Casillas's Rutgers theme and Tuo Wang's UW-Madison Theme
+References: https://github.com/jvcasillas/ru_xaringan, https://github.com/ttuowang/Xaringan-wisconsin-theme. Colors and Logo from https://commkit.gsu.edu/university-logos/
+*/
+
+
+
+a, a &gt; code {
+  color: #cc0033; /* rgb(249, 38, 114) */
+  text-decoration: none;
+}
+
+/* slightly lower and bigger than default */
+.footnote {
+  position: absolute;
+  bottom: 1em;
+  padding-right: 4em;
+  font-size: 95%;
+}
+
+/* important code slightly red */
+.remark-code-line-highlighted {
+  background-color: #FFD3DE !important;
+}
+
+/* color tweak */
+.inverse {
+  background-color: #0039A6;
+  color: #FFFFFF;
+  text-shadow: 0 0 20px #333;
+}
+
+/* slightly spacing change */
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #f3f3f3;
+  line-height: 1.0em;
+}
+
+/* Two-column layout */
+.left-column {
+  color: #777;
+    width: 30%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+
+.left-column1 {
+  color: #777;
+    width: 34%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
+.right-column {
+  width: 67%;
+  float: right;
+  padding-top: 0em;
+}
+
+.right-column1 {
+  width: 63%;
+  float: right;
+  padding-top: 0em;
+}
+
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ * {
+  clear: both;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee }
+
+@page { margin: 0; }
+
+/* adjust table horizontal spacing */
+th, td {
+    padding:0 15px 0 15px;
+}
+
+.remark-slide table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+.remark-slide table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) { background: #eee }
+
+/* leave this alone */
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+/* gsu additions */
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Title slide */
+
+/* Add image and change bg color */
+.title-slide {
+  background-image: url(https://commkit.gsu.edu/files/2019/06/PrimaryLogo3color.jpg);
+  background-position: 100% 0%;
+  background-size: 300px;
+  background-color: #fff;
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+/* H1 fonts */
+.title-slide h1 {
+  color: #0039A6;
+  padding-top: 100px;
+  font-weight: normal;
+  font-size: 60px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+/* H2 fonts */
+.title-slide h2 {
+  color: #CC0000;
+  font-size: 34px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+
+/* H3 fonts */
+.title-slide h3 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #666666;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 15px;
+  margin: 0px;
+  line-height: 1;
+}
+
+/* Remove slide count shadow */
+.title-slide .remark-slide-number {
+  text-shadow: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~*/
+/* Global adjustments */
+/*~~~~~~~~~~~~~~~~~~~~*/
+
+/* Add padding to all slides for 16:9 aspect ratio */
+.remark-slide-content {
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+  font-size: 21px;
+}
+
+/* Color adjustments for text */
+
+strong {
+  color: #ea5455;
+}
+
+.bold { font-weight: bold; }
+
+.gsu-blue{
+  color: #0039A6;
+}
+
+.gsu-dark{
+  color: #776E64;
+}
+
+.gsu-gray-blue{
+  color: #dadfe1;
+}
+
+.gsu-gray-darker{
+  color: #646569;
+}
+
+.gsu-gray-darkest{
+  color: #282728;
+}
+
+.gsu-anchor-color{
+  color: #0479a8;
+}
+
+
+
+/* Colors are from the Met brewer package */
+
+.hiro-red{
+  color: #e76254;
+}
+
+.hiro-orange{
+  color: #ef8a47;
+}
+
+.hiro-light-orange{
+ color: #f7aa58; 
+}
+
+.hiro-yellow{
+  color: #ffd06f ;
+}
+
+.hiro-light-blue{
+  color: #528fad ;
+}
+
+.hiro-dark-blue{
+  color: #376795;
+}
+
+.vero-red{
+  color: #67322e;
+}
+
+.vero-brown{
+  color: #99610a;
+}
+
+.vero-yellow{
+  color: #c38f16;
+}
+
+
+.vero-teal{
+  color: #6e948c;
+}
+
+.vero-blue{
+  color: #122c43;
+}
+
+/* Color adjustments to headers */
+h1 {
+  color: #0039A6;
+}
+
+h2 {
+  color: #CC0000;
+}
+h3 {
+  color: #776E64;
+}
+
+/* Font size tags */
+.big {
+  font-size: 1.5em;
+}
+
+
+
+
+
+/* gsu blockquote */
+gsu-blockquote-red {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #c5050c;
+  border-right: solid 20px #c5050c;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+
+gsu-blockquote-blue {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #0039A6;
+  border-right: solid 20px #0039A6;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+gsu-blockquote-alt {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #776E64;
+  border-right: solid 20px #776E64;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/*~~~~~~~~~~~~~~*/
+/* I like the frames*/
+/* and cols in Allison Hill's */
+/* https://alison.netlify.app/ares-kind-tools/*/
+/*~~~~~~~~~~~~~~*/
+
+.frame h1 {
+  color: #0039A6;
+  padding-bottom: 1.0em !important;
+  border-bottom: 3px solid var(#7899d4ff);
+}
+
+
+
+
+/*~~~~~~~~~~~~~~*/
+/* Highlight    */
+/*~~~~~~~~~~~~~~*/
+
+.highlight-last-item &gt; ul &gt; li, 
+.highlight-last-item &gt; ol &gt; li {
+  opacity: 0.5;
+}
+.highlight-last-item &gt; ul &gt; li:last-of-type,
+.highlight-last-item &gt; ol &gt; li:last-of-type {
+  opacity: 1;
+}
+
+.bold-last-item &gt; ul &gt; li:last-of-type,
+.bold-last-item &gt; ol &gt; li:last-of-type {
+  font-weight: bold;
+}
+
+
+.my-one-page-font {
+  font-size: 18px;
+}
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+/*
+GSU fonts
+Author: Josh Allen
+Updated: 05/24/2021
+
+I am just borrowing fonts used in the https://www.andrewheiss.com/blog/ 
+*/
+
+/* Add maven for code font (keep other xaringan defaults */
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&amp;display=swap');
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&amp;display=swap');
+
+body { font-family:'Roboto Condensed','Roboto', 'Barlow Semi Condensed', 'Palatino Linotype', 'Book Antiqua', 'Palatino', 'Microsoft YaHei', 'Songti SC', serif; }
+
+h1, h2, h3 {
+  font-family: 'Roboto Condensed';
+  font-weight: normal;
+}
+
+/*
+h2, h3 {
+  font-family: 'Roboto Condensed';
+  font-weight: normal;
+}
+*/
+
+.remark-code, .remark-inline-code { font-family: 'Inconsolata', monospace; }
+.remark-code-line-highlighted     { background-color: #ffff88; }
+&lt;/style&gt;
+
+
+
+
+
+---
+# Outline 
+
+- About me 
+
+- About This Class
+
+- Working Definition of Government 
+
+???
+Today will be pretty light we are just going to go over some of the very very basics of the class. A bit about me and what not. Than hopefully we will get out of here pretty quickly. Just
+a few notes if there is a nickname or name that you go by that isn't on the official 
+role than just email me I'll put it into my little spreadsheet. If you have 
+any trouble with reading the slides or the viz than also email me.
+---
+
+
+---
+class: center, middle,  inverse
+# About Me 
+
+---
+
+---
+# What to Call Me
+
+.panelset[
+.panel[.panel-name[Josh Allen]
+&lt;center&gt;
+&lt;img src="images-all/josh_allen_bills.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;/center&gt;
+]
+
+.panel[.panel-name[Mr Allen]
+&lt;center&gt;
+&lt;img src="images-all/Tim_allen.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;/center&gt;
+]
+
+.panel[.panel-name[Professor Allen]
+&lt;center&gt;
+&lt;img src="images-all/me.png" width="40%" style="display: block; margin: auto;" /&gt;
+&lt;/center&gt;
+]
+]
+
+???
+I mean if we are going to be honest I probably will respond to various versions of my name. But, I would prefer Professor Allen for a variety of reasons. I will get a little grumpy if you start calling me Mr. Allen because while the age gap between 18 and 27 may seem massive. I am in fact not my father. 
+
+---
+
+
+---
+## About Me 
+
+.pull-left[
+## Professional Stuff
+- I am a 3rd Year PhD Student in the Political Science Department
+
+- Research Interests: Political Legacies of Repression and Political violence
+
+- Grade: 23?
+
+- Number of Times I have taught this class: 1 
+
+- Number of Times I have taught this class in person: 0]
+
+--
+
+.pull-right[
+## Personal Stuff  
+- Makes Graphs for Fun
+
+- Bay Area Expat
+
+- Walk up song: Act Up- Rich Brian 
+
+- Generally can be found at a gym, my couch, or at the dog park with my dog Melonie
+]
+
+???
+So this is like my first time teaching this class in person so there will no doubt be some struggles lecturing and responding to questions. So while I know it may be frustrating at times but I promise you I am trying my best. I have been in school for longer than some way have you been alive. My research interests are focused on the enduring legacy of violence. Outside of class you will generally find me in like three or four places
+---
+
+
+---
+
+# Dog Pictures
+
+
+.pull-left[
+
+&lt;img src="images-all/melon.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+.pull-right[
+
+&lt;img src="images-all/melon_uno.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+
+???
+I have like a million pictures of my dog. These were from like a month ago. I will sprinkle in dog pictures whenever possible. So on the right there is the Melonie. On the right you have the melonie and one of her boyfriends. 
+---
+
+class: center, middle,  inverse
+# About the class 
+
+
+---
+# Where are the Slides?
+
+- The slides live on the website I put in the announcement [here](https://sppols110122.netlify.app/)
+
+- Practically the HTML version of the slides are gonna be the ones I use in class. 
+
+- The PDF versions of the slides will just be there for you guys to take notes on if you would like. 
+
+- If you are curious about how they are made just visit [this link](https://github.com/joshuafayallen/pols-1101-spring22/tree/main/static/slides) and click on the file with the ".Rmd" extension
+
+
+???
+Without getting into the the technical stuff to much basically each of the presentations are there own self contained webpage. The only difference between the HTML and PDF versions are going to be that some of the media and gifs are not gonna show up. This shouldn't be to big of an issue because for the most part it is just going to be pictures and what not that I am done fighting. 
+
+---
+
+---
+##  Schedule for the Semester
+
+
+&lt;img src="figs/unnamed-chunk-6-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+???
+These next two slides are basically like the tl;dr of the syllabus. This calendar is just taken directly from the syllabus. For February 10 I will try and get somebody to cover the class. March 10th I don't anticipate many of you will be here since it is the class before spring break. So I will try and figure out a lecture that is kind of fun and useful. I will let you know closer to the actual date, but I wouldn't anticipate y'all having class.
+Apologies that it is a little smushed. I tried fighting with the aspect ratios. I can post this and the table in the announcements for your purpose 
+---
+
+
+
+---
+## Grading Summary
+
+
+<div id="mypcevnlvs" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-family: Chivo, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#mypcevnlvs .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: #0000FF;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #0000FF;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#mypcevnlvs .gt_heading {
+  background-color: #FFFFFF;
+  text-align: left;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#mypcevnlvs .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#mypcevnlvs .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#mypcevnlvs .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#mypcevnlvs .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: #0000FF;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #000000;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#mypcevnlvs .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#mypcevnlvs .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#mypcevnlvs .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#mypcevnlvs .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#mypcevnlvs .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #000000;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#mypcevnlvs .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#mypcevnlvs .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#mypcevnlvs .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#mypcevnlvs .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#mypcevnlvs .gt_row {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#mypcevnlvs .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mypcevnlvs .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#mypcevnlvs .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#mypcevnlvs .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mypcevnlvs .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#mypcevnlvs .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#mypcevnlvs .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#mypcevnlvs .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mypcevnlvs .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#mypcevnlvs .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#mypcevnlvs .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#mypcevnlvs .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#mypcevnlvs .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mypcevnlvs .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#mypcevnlvs .gt_sourcenote {
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mypcevnlvs .gt_left {
+  text-align: left;
+}
+
+#mypcevnlvs .gt_center {
+  text-align: center;
+}
+
+#mypcevnlvs .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#mypcevnlvs .gt_font_normal {
+  font-weight: normal;
+}
+
+#mypcevnlvs .gt_font_bold {
+  font-weight: bold;
+}
+
+#mypcevnlvs .gt_font_italic {
+  font-style: italic;
+}
+
+#mypcevnlvs .gt_super {
+  font-size: 65%;
+}
+
+#mypcevnlvs .gt_two_val_uncert {
+  display: inline-block;
+  line-height: 1em;
+  text-align: right;
+  font-size: 60%;
+  vertical-align: -0.25em;
+  margin-left: 0.1em;
+}
+
+#mypcevnlvs .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#mypcevnlvs .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#mypcevnlvs .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#mypcevnlvs .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#mypcevnlvs .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Item</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">Percentage</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">Syllabus Quiz</td>
+<td class="gt_row gt_right">2%</td></tr>
+    <tr><td class="gt_row gt_left">Surveys</td>
+<td class="gt_row gt_right">5%</td></tr>
+    <tr><td class="gt_row gt_left">Readings and Question Area9</td>
+<td class="gt_row gt_right">23%</td></tr>
+    <tr><td class="gt_row gt_left">Exams</td>
+<td class="gt_row gt_right">42%</td></tr>
+    <tr><td class="gt_row gt_left">Online Activities</td>
+<td class="gt_row gt_right">9%</td></tr>
+    <tr><td class="gt_row gt_left">NCCHR</td>
+<td class="gt_row gt_right">14%</td></tr>
+    <tr><td class="gt_row gt_left" style="border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #0000ffff;">End of Semester Assesment Quiz</td>
+<td class="gt_row gt_right" style="border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #0000ffff;">5%</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+
+???
+While exams make up like the biggest item I just weight them. So your highest score is going to count for more and your lowest score is going to count for less. In my experience if you do all the readings and questions in AREA 9 and the rest of the work it will count towards a lot for your final grade. The NCCHR assignment is a short writing assignment basd on your visit toward the national center for civil and human rights. We have you go through various exhibits and experiences that help you learn about the American civil rights movement. THe writing assignment is only like 400 words and I give you questions to answer.
+---
+
+---
+## How to Do Well in This Class
+
+- Do the reading
+
+- Take good notes
+
+- Ask questions when you do not understand something
+
+- Participate
+
+???
+I know what you are thinking. "No shit professor Allen" and you know fair.
+I tend to take the view that this class is more about you guys understanding the 
+mechanics of politics. What I see the role of this class is for y'all to develop
+skills that you will use a lot. Mostly how to collaborate with peers and learning
+to ask for help when you do not understand something. This takes lots of practice.
+But they are ultimately things you will use a lot. Lots of things in your professional
+career are basically like large group projects. Free-riding in this case will have
+consequences. So practice being a good teammate now because there are like next
+to zero costs.
+---
+
+---
+# Break Time 
+
+
+<div class="countdown" id="timer_626c0518" style="right:0;bottom:0;" data-audio="true" data-warnwhen="0">
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
+---
+
+
+---
+class: section, center, middle, inverse
+
+# Stuff You Will be Tested On
+
+---
+
+---
+## What is a Government and What Does it Do?
+
+
+
+![](https://media.giphy.com/media/cNxai6sNvsplKYw8FD/giphy.gif)
+
+???
+Obviously as a Pols PhD student this could be a much longer conversation and has been the subject of a lot of study but let us wrap it up in a concise little definition and get outta here
+---
+
+
+
+
+
+
+
+
+---
+
+class: center, left
+# What are Governments and What Do they Do?
+
+.pull-left[
+
+&lt;img src="images-all/capitol.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+&lt;img src="images-all/state_of_the_union.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+???
+Typically we think of government as focused within these individuals. Which is fair we see these people all the time in their various capacities. We know their names and every 2, 4, or 6 years they are on tv 24/7 asking to be re-elected 
+---
+
+---
+## However, Consider This
+
+
+
+```
+
+The downloaded binary packages are in
+	/var/folders/0k/jvdgmwf56zg1dw7n9mm2wzvc0000gp/T//RtmpzGvtfM/downloaded_packages
+```
+
+.pull-left[
+&lt;img src="figs/unnamed-chunk-12-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+--
+
+.pull-right[
+
+&lt;img src="figs/unnamed-chunk-13-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+
+???
+As is the nature of an intro class like this the bulk of you are not political science majors. Let us start to consider how you all will interact with government in your professional lives. Get in groups of like 3 or 4 and start brainstorming ways in which the government has a hand in these areas. TIf you don't know your colleague that you are working with. Introduce yourself. As an icebreaker you can choose one of these icebreakers
+
+---
+
+---
+
+## Activity Time 
+
+
+- What is something you would do that would slightly inconvenience an enemy
+
+- What is a hot take you have 
+<div class="countdown" id="timer_626c0420" style="right:0;bottom:0;" data-audio="true" data-warnwhen="0">
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
+---
+
+
+---
+class: center, right
+
+## Government 
+
+.pull-left[
+&lt;img src="images-all/dmv.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+&lt;img src="images-all/highway.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+]
+???
+Government extends to lots and lots of stuff that you may or may not think about. Whether it be zoning, permitting, in some cases what policies universities can and cannot enact. Government pretty much touches everything.
+
+
+---
+
+## Defintion of Government
+### Textbook's Definition
+A Set of institutions that 
+
+1. Endure overtime 
+--
+
+2. Has **authority over the people** of a specific territory
+--
+
+3. Authoritatively **makes and enforces laws**
+
+
+---
+
+
+---
+
+## A Common Defintion
+
+
+.pull-left[ 
+### Long Version
+
+we have to say that a state is a human community that (successfully) claims the monopoly of the legitimate use of physical force within a given territory...... Specifically, at the present time, the right to use physical force is ascribed to other institutions or to individuals only to the extent to which the state permits it..... Hence, 'politics' for us means striving to share power or
+striving to influence the distribution of power, either among states or among groups within a state
+]
+
+--
+.pull-right[
+
+### TL;DR
+we have to say that a state is a human community that (successfully) claims the monopoly of the legitimate use of physical force within a given territory
+]
+
+???
+So the most common way we start to understand the state in Political Science is with this old dead white guy named Max Weber. He was a fellow writing in the late 19th century. He defines the state this way. The book takes great issue wit this definition for god knows what reason. But it is kind of focused on the all the other stuff that government does. All its forms and what not. I personally think it is dumb
+---
+
+
+---
+
+## Why is the Book's Definition longer?
+
+
+--
+
+- The minimalist aspect of it
+
+--
+
+- the overemphasis of the coercive aspects of government 
+
+--
+
+- Federalism
+
+--
+
+- Popular Sovereignty 
+
+???
+There are huge debates about the state and statemaking, but in general it is accepted that the stuff that the book mentions is wrapped up in Weber. The debate is long and honestly kind of boring. But what you need to know is that the book has lots of opinions. Most of which I kind of disagree with The Federalism thing is also technically wrong because Weber says that other things can use force if and only if the state delegates them that authority. The reason it takes issue with this is that under federalism there are lots of "competing authorities. The book also makes the point that highest authority aka sovereignty resides in the people. And that there is an inherent tension between the government and the people in this arrangement 
+---
+
+
+---
+
+## Why is Weber so Popular
+
+What makes the state so special?
+
+--
+
+Think about other rule making organizations
+
+--
+
+The state is one among many in some respect (Midgal 1988, Spruyt 1996)
+
+
+--
+
+The definition is minimal
+
+???
+According Weber and many the most basic function of the state is to dominate other 
+social organizations. In Weber he does not distinguish states by their ends but by their means. There are lots of rules making organizations that we interact with. Most if not all of them have similar policy goals that make it difficult to seperate them from the state in this respect. However, how they can achieve this goal differs. The legitimate use of force according to Weber is what differentiates the state  Legitimation can come through many forms one is domination, using the power of a leaders' convincing, and through rational legal structure The state is the sole authority to use violence to enforce  their rules. The PTA, GSU student gov, etc cannot use violence to enforce those rules It would be pretty jarring if the GSU student government used Violence to uphold its bylaws.
+
+---
+
+---
+
+
+
+
+ ![](https://media.giphy.com/media/DAtJCG1t3im1G/giphy.gif)
+
+---
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true,
+"navigation": {
+"scroll": true
+}
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Campaigns and Elections</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Josh Allen" />
+    <meta name="date" content="2022-03-01" />
+    <script src="elections_files/header-attrs/header-attrs.js"></script>
+    <link href="elections_files/remark-css/default.css" rel="stylesheet" />
+    <link href="elections_files/panelset/panelset.css" rel="stylesheet" />
+    <script src="elections_files/panelset/panelset.js"></script>
+    <script src="elections_files/clipboard/clipboard.min.js"></script>
+    <link href="elections_files/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="elections_files/shareon/shareon.min.js"></script>
+    <link href="elections_files/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="elections_files/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="elections_files/tachyons/tachyons.min.css" rel="stylesheet" />
+    <link href="elections_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="elections_files/tile-view/tile-view.js"></script>
+    <link href="elections_files/vembedr/css/vembedr.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Campaigns and Elections
+### Josh Allen
+### 2022-03-01
+
+---
+
+
+
+
+
+&lt;style type="text/css"&gt;
+/*
+Title: GSU Xaraingan Theme
+Author: Josh Allen
+Updated: 12/26/2021
+Description: A GSU theme for Xaringan presentations. Modifid based on 
+             Joseph V. Casillas's Rutgers theme and Tuo Wang's UW-Madison Theme
+References: https://github.com/jvcasillas/ru_xaringan, https://github.com/ttuowang/Xaringan-wisconsin-theme. Colors and Logo from https://commkit.gsu.edu/university-logos/
+*/
+
+
+
+a, a &gt; code {
+  color: #cc0033; /* rgb(249, 38, 114) */
+  text-decoration: none;
+}
+
+/* slightly lower and bigger than default */
+.footnote {
+  position: absolute;
+  bottom: 1em;
+  padding-right: 4em;
+  font-size: 95%;
+}
+
+/* important code slightly red */
+.remark-code-line-highlighted {
+  background-color: #FFD3DE !important;
+}
+
+/* color tweak */
+.inverse {
+  background-color: #8f9186;
+  color: #FFFFFF;
+  text-shadow: 0 0 20px #333;
+}
+
+/* slightly spacing change */
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #f3f3f3;
+  line-height: 1.0em;
+}
+
+/* Two-column layout */
+.left-column {
+  color: #777;
+    width: 30%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+
+.left-column1 {
+  color: #777;
+    width: 34%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
+.right-column {
+  width: 67%;
+  float: right;
+  padding-top: 0em;
+}
+
+.right-column1 {
+  width: 63%;
+  float: right;
+  padding-top: 0em;
+}
+
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ * {
+  clear: both;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee }
+
+@page { margin: 0; }
+
+/* adjust table horizontal spacing */
+th, td {
+    padding:0 15px 0 15px;
+}
+
+.remark-slide table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+.remark-slide table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) { background: #eee }
+
+/* leave this alone */
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+/* gsu additions */
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Title slide */
+
+/* Add image and change bg color */
+.title-slide {
+  background-image: url(https://commkit.gsu.edu/files/2019/06/PrimaryLogo3color.jpg);
+  background-position: 100% 0%;
+  background-size: 300px;
+  background-color: #fff;
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+/* H1 fonts */
+.title-slide h1 {
+  color: #0039A6;
+  padding-top: 100px;
+  font-weight: normal;
+  font-size: 60px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+/* H2 fonts */
+.title-slide h2 {
+  color: #CC0000;
+  font-size: 34px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+
+/* H3 fonts */
+.title-slide h3 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #666666;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 15px;
+  margin: 0px;
+  line-height: 1;
+}
+
+/* Remove slide count shadow */
+.title-slide .remark-slide-number {
+  text-shadow: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~*/
+/* Global adjustments */
+/*~~~~~~~~~~~~~~~~~~~~*/
+
+/* Add padding to all slides for 16:9 aspect ratio */
+.remark-slide-content {
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+  font-size: 21px;
+}
+
+/* Color adjustments for text */
+
+strong {
+  color: #ea5455;
+}
+
+.bold { font-weight: bold; }
+
+.gsu-blue{
+  color: #0039A6;
+}
+
+.gsu-dark{
+  color: #776E64;
+}
+
+.gsu-gray-blue{
+  color: #dadfe1;
+}
+
+.gsu-gray-darker{
+  color: #646569;
+}
+
+.gsu-gray-darkest{
+  color: #282728;
+}
+
+.gsu-anchor-color{
+  color: #0479a8;
+}
+
+
+
+/* Colors are from the Met brewer package */
+
+.hiro-red{
+  color: #e76254;
+}
+
+.hiro-orange{
+  color: #ef8a47;
+}
+
+.hiro-light-orange{
+ color: #f7aa58; 
+}
+
+.hiro-yellow{
+  color: #ffd06f ;
+}
+
+.hiro-light-blue{
+  color: #528fad ;
+}
+
+.hiro-dark-blue{
+  color: #376795;
+}
+
+.vero-red{
+  color: #67322e;
+}
+
+.vero-brown{
+  color: #99610a;
+}
+
+.vero-yellow{
+  color: #c38f16;
+}
+
+
+.vero-teal{
+  color: #6e948c;
+}
+
+.vero-blue{
+  color: #122c43;
+}
+
+/* Color adjustments to headers */
+h1 {
+  color: #0039A6;
+}
+
+h2 {
+  color: #CC0000;
+}
+h3 {
+  color: #776E64;
+}
+
+/* Font size tags */
+.big {
+  font-size: 1.5em;
+}
+
+
+
+
+
+/* gsu blockquote */
+gsu-blockquote-red {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #c5050c;
+  border-right: solid 20px #c5050c;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+
+gsu-blockquote-blue {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #0039A6;
+  border-right: solid 20px #0039A6;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+gsu-blockquote-alt {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #776E64;
+  border-right: solid 20px #776E64;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/*~~~~~~~~~~~~~~*/
+/* I like the frames*/
+/* and cols in Allison Hill's */
+/* https://alison.netlify.app/ares-kind-tools/*/
+/*~~~~~~~~~~~~~~*/
+
+.frame h1 {
+  color: #0039A6;
+  padding-bottom: 1.0em !important;
+  border-bottom: 3px solid var(#7899d4ff);
+}
+
+
+
+
+/*~~~~~~~~~~~~~~*/
+/* Highlight    */
+/*~~~~~~~~~~~~~~*/
+
+.highlight-last-item &gt; ul &gt; li, 
+.highlight-last-item &gt; ol &gt; li {
+  opacity: 0.5;
+}
+.highlight-last-item &gt; ul &gt; li:last-of-type,
+.highlight-last-item &gt; ol &gt; li:last-of-type {
+  opacity: 1;
+}
+
+.bold-last-item &gt; ul &gt; li:last-of-type,
+.bold-last-item &gt; ol &gt; li:last-of-type {
+  font-weight: bold;
+}
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+/*
+GSU fonts
+Author: Josh Allen
+Updated: 05/24/2021
+
+I am just borrowing fonts used in the https://www.andrewheiss.com/blog/ 
+*/
+
+/* Add maven for code font (keep other xaringan defaults */
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&amp;display=swap');
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&amp;display=swap');
+
+body { font-family:'Roboto', 'Barlow Semi Condensed', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+
+h1, h2, h3 {
+  font-family: 'Archivo Narrow';
+  font-weight: normal;
+}
+
+/*
+h2, h3 {
+  font-family: 'Roboto Condensed';
+  font-weight: normal;
+}
+*/
+
+.remark-code, .remark-inline-code { font-family: 'Inconsolata', monospace; }
+.remark-code-line-highlighted     { background-color: #ffff88; }
+&lt;/style&gt;
+
+
+
+
+
+
+---
+## Looming Deadlines 
+
+- Chapters
+
+- .bold[Exam 2]
+
+???
+So as the plan stands currently we will not have class on March 11th. Depending on how we much we get through today We will do media either thursday or next tuesday. Than depending on that we will do exam 2 review either in person tuesday or I will post a recording of me doing the review. Either way we won't have class March 11th. I am sure you guys have plans to take a much needed break plus my dad is coming into town so I also have plans to start off break.
+
+To do some cleanup from last class. I mixed up sociotropic voting and pocketbook voting. I have had post comps brain and I am starting to come down from it
+
+Sociotropic voting is assesing the overall economic performance of the nations
+
+
+Pocketbook voting: is how well you are doing fincancially 
+
+We  tend to be sociotropic voters because we can start to justify why our finances are doing bad. Our boss sucks, we overspent our budget a bit. Things of that nature. 
+
+
+
+
+
+---
+
+
+
+---
+class: center, middle, inverse
+
+# Campaigns and Elections 
+
+
+---
+
+
+---
+## Primary vs. General Election
+
+.hiro-red[Primary Elections]: An election conducted within a party to select its nominee for the general election
+
+.hiro-dark-blue[General Election]: An election between two parties to select a candidate for office
+
+???
+Back in the day think like pre-Nixon these things existed. But more in the sense that they were there to placate the unwashed masses. Back in the day party elites would choose the presidential candidates they thought. You had to work your way up in the party be drinking buddies with the right dudes be a dutiful member of the party you may be selected to be your parties candidate for president
+
+---
+
+---
+## Primary Elections
+
+.bold[Types of Elections]:
+  - Caucus
+  - Primary
+
+The type of contest that each state has depends on state laws and party rules
+  - Some states even have both types of contests
+
+
+.footnote[[1]:  [This](https://www.youtube.com/watch?v=_S2G8jhhUHg) is a good video for how wild this process can be]
+???
+
+
+Washington has both 
+
+
+In practice this gets very confusing and delegates are awarded in a variety of ways and each party has some a way of putting their thumnb on the scale 
+
+superdelegates are the democrats way of doing it: they are party elites that can basically vote for whoever 
+
+
+delegates in GOP conventions are usually unbound after the first round of voting. Meaning they can start voting for whoever they want 
+---
+
+
+---
+## Types of Primaries 
+
+
+.vero-red[Primary Election]: A type of election where voters cast secret ballots for the candidate they want to represent their party in the General Election
+
+.vero-blue[Caucus Convention]: A system of local gatherings where voters decide which candidate to support and select delegates for nominating convention
+
+???
+Caucus- A meeting of party leaders
+
+Caucuses occur in a variety of places including libraries and schools, and even people’s living rooms
+
+This occurs on one day, at a given time, and can last for HOURS
+
+Caucus goers don’t just vote for a candidate. They debate issues that are important to the party as well as about the candidates themselves. This is done to try to persuade others to support your preferred candidate and issue
+
+Voting takes place in a variety of ways, from standing in certain groups to raising your hand, but is always done publicly
+
+
+---
+
+
+
+---
+## Primary Election Voting Rules 
+
+.bold[Closed]: People may vote in a party's primary only if they are registered members of that party. Independents cannot participate.
+
+.bold[Open]: A registered voter may vote in any party primary regardless of his own party affiliation
+
+.bold[Semi-Closed]: As in closed primaries, registered party members can vote only in their own party's primary. However it allows unaffiliated voters to participate as well.
+
+.bold[Run-Offs]: In some states, if neither candidate receives a majority vote (50%+1) then the two candidates must face each other in a run off.
+
+???
+
+Primary
+Open- Anyone can vote in either party’s primary (regardless of how one is registered), but voters can generally only vote in one primary
+
+
+Semi-Open- Voters that are registered members of a political party can only vote in THAT party’s primary. But voters that aren’t registered with a particular party can vote in either party’s primary
+
+Closed- Voters can only vote in the primary of the party they are registered with. Independents cannot vote in either primary
+
+
+Two-round system, a voting system used to elect a single winner, whereby only two candidates from the first round continue to the second round, where one candidate will win.
+
+If you think back to the georgia senate runoff. Theoretically Senator Warnock could have won 50.1 percent of the vote and we wouldnt have gone to the january portion of the election. 
+
+---
+
+
+&lt;img src="primaries.png" width="100%" style="display: block; margin: auto;" /&gt;
+---
+
+
+
+---
+## Primary Elections
+
+Generally turnout is low in primaries and this doubles for caucuses. Why?
+  - Rules vary on who can participates
+  - Uninformed voters lack the cues they rely on 
+  - Primary rules are often complex and not well understood
+  
+What effects does this have on primary elections?
+  - Candidates tend to be more extreme
+
+---
+
+
+---
+## Tl;DR
+
+<div id="hhklhlawhk" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-family: Chivo, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#hhklhlawhk .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: none;
+  border-top-width: 3px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#hhklhlawhk .gt_heading {
+  background-color: #FFFFFF;
+  text-align: left;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#hhklhlawhk .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#hhklhlawhk .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#hhklhlawhk .gt_bottom_border {
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#hhklhlawhk .gt_col_headings {
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #000000;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#hhklhlawhk .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#hhklhlawhk .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#hhklhlawhk .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#hhklhlawhk .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#hhklhlawhk .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #000000;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#hhklhlawhk .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #000000;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#hhklhlawhk .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #000000;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #FFFFFF;
+  vertical-align: middle;
+}
+
+#hhklhlawhk .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#hhklhlawhk .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#hhklhlawhk .gt_row {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#hhklhlawhk .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-right-color: #FFFFFF;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#hhklhlawhk .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#hhklhlawhk .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#hhklhlawhk .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#hhklhlawhk .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#hhklhlawhk .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#hhklhlawhk .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#hhklhlawhk .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#hhklhlawhk .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#hhklhlawhk .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#hhklhlawhk .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#hhklhlawhk .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#hhklhlawhk .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#hhklhlawhk .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#hhklhlawhk .gt_sourcenote {
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#hhklhlawhk .gt_left {
+  text-align: left;
+}
+
+#hhklhlawhk .gt_center {
+  text-align: center;
+}
+
+#hhklhlawhk .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#hhklhlawhk .gt_font_normal {
+  font-weight: normal;
+}
+
+#hhklhlawhk .gt_font_bold {
+  font-weight: bold;
+}
+
+#hhklhlawhk .gt_font_italic {
+  font-style: italic;
+}
+
+#hhklhlawhk .gt_super {
+  font-size: 65%;
+}
+
+#hhklhlawhk .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#hhklhlawhk .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#hhklhlawhk .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#hhklhlawhk .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#hhklhlawhk .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+
+tbody tr:last-child {
+  border-bottom: 2px solid #ffffff00;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;"> </th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;">Caucus</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black;">Primary</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">Voting Method</td>
+<td class="gt_row gt_left">Voting is conducted at local party meetings by raising hands or breaking into groups</td>
+<td class="gt_row gt_left">An election is held by secret ballot</td></tr>
+    <tr><td class="gt_row gt_left">Who Can Vote</td>
+<td class="gt_row gt_left">Only members who physically attend the local party meeting can participate</td>
+<td class="gt_row gt_left">Depends on Open, closed, or semi-closed primary rules</td></tr>
+    <tr><td class="gt_row gt_left">States That Do it</td>
+<td class="gt_row gt_left">Only members who physically attend the local party meeting can participate
+Alaska, Colorado, Hawaii, Kansas, Maine, Minnesota, Nevada, North Dakota, Wyoming, and Iowa</td>
+<td class="gt_row gt_left">Pretty Much Everyone Else</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+
+---
+
+---
+## Effects of the Current System 
+
+1. More Candidates Run
+2. Frontloading 
+3. Campaings are longer
+4. Campaigns are more expensive
+5. Power fo the Media(Horserace coverage)
+
+???
+Way more people run- remember before, candidates had to work their way up the party structure, be beholden to party bosses, now they can have less political experience- also, many candidates who may not be the most popular in their party, but are very popular with the public will now run- that opens the field to a lot more people.
+
+The early primaries are the most important- why? B/c candidates that win in the early primaries (Iowa, N.Hampshire, etc) often do much better overall- have a higher chance at capturing the nomination- b/c they can gain momentum (candidates get much more attention from the media, are able to raise a lot more money, are perceived by voters in other states to be more viable, get a lot more attention). Because the early primaries are so important, candidates spend a lot of time with those states (ex. Iowa, eating in pancake House, etc)- so states try to have primaries early to increase their importance on the nomination process.
+
+
+ Campaigns are much longer now- example- look at the candidates now- many announced and started campaigning a full 12 months before the first primary, over a year and a half before the election- that is a SUPER long campaign. Candidates, like Clinton, have had offices in Iowa and N. Hampshire for over 1 year now- already on the campaign trial in early primary states. *states are making primaries earlier and earlier to draw candidates to them.
+
+ B/c its so long, campaigns are VERY expensive- require several hundred million dollars to be competitive for the presidency now- in many cases the thing that keeps candidates in the race is their money - remember Kerry was behind in the polls going into the first few primaries, he had to mortgage his house to keep going- made the money back once he won the nomination, but it takes a lot.
+
+Media coverage- media is crazy with primaries now- already telling us who is ahead, who is more popular, polling voters, etc. (horserace) – Contributes to how people vote in primaries….people want to vote for “winner”
+
+
+---
+
+---
+## Who Votes When?
+
+2020 Primary/Caucus Schedule 
+
+- .bold[Frontloading]: Process whereby states schedule their primaries earlier in the year
+
+- .bold[Bandwagon effect]: When people support a candidate because “everyone else does”
+
+
+- Candidates who win early primaries are inclined to win future primaries because of the bandwagon effect; people view this candidate as the most successful
+
+---
+
+---
+class: center, middle, inverse
+
+# General Election
+
+---
+
+---
+## General Election
+
+- Officially Starts following the conclusion of the national conferences of both political parties 
+  - National conferences are meetings held by both major parties to create the party platform and OFFICIALLY select the presidential candidates and their running mates
+
+- Most voters, however, don’t really start paying attention to the election until Labor Day
+
+
+---
+
+
+---
+## Electoral College
+
+&lt;iframe src="https://abcnews.go.com/Politics/2020-Electoral-Interactive-Map/" width="100%" height="400px" data-external="1"&gt;&lt;/iframe&gt;
+
+
+
+
+---
+
+
+---
+## Electoral College
+
+- Article 2 Section 1
+
+-   Details about Electors
+  - Number of Electors per state
+  - Qualification to be an Elector
+  - The ACTUAL Elctions
+  
+- If no candidates wins a majority or there is a tie the vote goes to the House of Representatives
+  
+???
+So when it comes to presidential elections, we do not directly elect our presidents. Instead, Article 2, Section 1 of the Constitution mandates that presidents be elected by an electoral college.
+
+Elector Details
+Number of Votes per State= The number of Representatives, plus the number of Senators
+
+No one holding public office may act as an elector
+
+Electors must submit votes to the President of the Senate, who counts the votes aloud in front of the House and Senate
+
+Who is the president of the Senate?
+Initially, the first place winner became president while the second place winner became vice president
+
+Super awkward when the president and the vice president are from different parties
+Solved with the 12th amendment
+
+Now what happens if no-one wins a majority in the electoral college?
+
+This does not mean that every representative gets to vote rather each state only gets one vote 
+---
+
+
+---
+## Problems with the Electoral College 
+
+1. Popular vote winner may lose the election
+2. Contingency Problem 
+3. "Constant Two"
+4. Faithless Elector 
+
+
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/ZlwbTUs-17k" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+
+???
+
+In addition to the fact that the election may end in a tie, there are a number of problems with the electoral college. While each of these is a significant problem, they will all be discussed individually.
+
+It’s important to keep in mind that ALL of these problems surfaced in the 2000 election.
+
+It took 5 weeks to decide who had won the election
+
+While early polls called the election in Florida for Gore (which both candidates needed to win), these polls were biased (they were collected wrong and in too many Democratic precincts)
+
+Then came the re-counts
+
+Finally, both candidate’s campaigns went to the Supreme Court, which stopped the recounts causing Bush to win the state
+
+---
+
+
+---
+
+## Problem 1
+
+- Popular Vote Winner May Lose in the Electoral College
+  - 1876
+  - 1888
+  - 2000
+  - 2016
+
+- Why does it happen?
+  - Winner-take-all System
+
+???
+Why does it happen?
+
+In all states, except Maine and Nebraska, the winner of a plurality of the vote, they receive all of that states electoral votes.
+
+TX example: Whoever wins more of the popular vote than any other candidate receives all 34 of the states vote
+
+
+Nebraska and Maine award candidates 1 electoral vote to popular vote winner in each district and then give their two remaining votes to state-wide popular vote winner
+
+Why is it a problem?
+This is particularly problematic for voters in the minority of each state (ex. Democrats in GA)
+
+This is also a problem when the majority of Americans vote for someone else. While it is highly unlikely, it is possible to win the electoral college with a remarkably small portion of the popular vote
+
+---
+
+---
+## Contingency Plan Problem 
+
+- It isn't great
+  - Each state only gets one vote
+  - Only the House of Representatives gets to votes
+  - Each delagate from each state must agreee on the vote
+  - If there is a tie the VPOTUS is the tie breaker
+  
+???
+While this is technically a thing that could happen it is not really going to 
+
+Only 1 vote per state- so now it doesn’t matter if you come from California or North Dakota- you have the same influence on the election.
+
+Only involves the house- no senate, so involves 435 people out of 300 million.
+
+Since each state only gets 1 vote- what happens if state is split with its delegates (half dems., half rep.- like AZ is now- 4 and 4)? Within the state delegation or within the House itself, there may be a politically brokered deal- VERY undemocratic.
+
+If there is no clear majority (very possible b/c while 1 party may hold the majority- that may be b/c of a few states) and there is a tie, the Vice President breaks the tie- b/c designated in Constitution to break ties (problem w/ Al Gore in 2000). 
+
+This was a major concern in 2000 b/c the House would have been close (b/c so many Republicans came from a few states) so Gore would have had to break the tie- not really a good plan- may have resulted in political brokering like in 1824- although we mostly assume now it would be a straight party line vote. 
+
+Remember in 2000 there were questions about the counting (hanging chads have a problem with machines- so machine recount was certified, but FL S. Court said their could be a hand recount in 3 counties- S. Court said no (b/c would have taken too long to recount by hand by time electoral college had to meet)
+So essentially a Constitutional Crisis in 2000- need a new Plan!
+
+---
+
+
+---
+## "Constant Two"
+
+What is it
+
+- `\(\text{Electoral College Votes} = \text{House Reps} + \text{Senators}\)`
+
+- Citizens from small states have relatively more representation in the electoral college than their couterparts from large states
+
+
+???
+After 2, explain how small state citizens get relatively more vote than those in large states
+ex. 
+
+Wyoming = 504,294 people- in most states 1 district has approximately 640,000 citizens- but those 504,000 get 3 electoral votes, 
+
+while in a big state like CA, every 640,000 get 1 vote and the extra 2 are dispersed among 54 districts and 34,132, 147 people (as of 2005). 
+
+After #3- put up colored slide of 2000 &amp; 1992 elections- show how candidates can win elections by carrying some small states and the South- since 1960’s- this is critical for Republicans. 
+
+-So- in other words its important b/c small states can impact election if candidate wins a lot of them.
+
+idaho = 1.87
+
+utah 3.2
+
+new mexic = 2.111
+
+colorado = 5.7
+
+
+wyoming  = 500,00
+
+montana = 1.00
+
+north dakota = 700,00
+
+South Dakota = 888,894
+
+nebraska = 1.934
+
+kansas = 2.913
+
+okalhoma = 3957000
+
+
+
+1870000 + 3200000 +2111000 + 5700000 +1000000 + 700000 +888894 + 1934000 + 2913000 + 3957000 = 24,273,894
+---
+
+---
+## Faithless Electors 
+
+- What are they?
+  - Few states have laws requiring electors to vote the way the population voted
+
+- Why is it a problem?
+  - Especially during a controversial election, like 2000, an elector may change his or her vote, altering the election
+
+
+???
+SO there are few laws (and those are usually fines) requiring electors to vote the way that they are supposed to, based on the popular vote. *However, electors selected by parties, usually very loyal.
+
+*In fact 1 elector from DC abstained from voting in 2000 election- but was more of a concern in 2000 b/c of the close election and b/c so controversial.
+
+Problem because if an elector or electors alter the course of the election, there is little recourse- pretty big deal, all those millions of votes not counting, etc. 
+
+---
+
+
+---
+## Why is this still a thing
+
+- Constitution
+
+- Small States
+
+- Political Parties 
+
+???
+So why do we keep the college if it is so problematic and in some ways undemocratic?
+
+3 big reasons:
+
+Constitution is hard to change- 2/3 votes in house, ¾ states have to ratify it.
+
+Small states have a big incentive to keep it b/c it gives them more political power (otherwise candidates would NEVER come to their states)
+
+Parties want to keep it b/c winner take all system keeps 3rd parties out (explain)
+
+---
+
+
+---
+## Duverger's Law
+
+- Imagine an election with three parties
+
+- Two big parties and a third smaller party
+
+- Context: First past the post system
+
+
+???
+Essentially Duverger's law argues that in first past the post systems there will likely only be two parties.
+ 
+  So think of a congressional district in the United States there is a limmited set of voters to compete over. You have the democratic party and the Republican party. Then we have the party that you guys created competiting in that same election.
+
+ Your party may represent that salient issue perfectly but either the democratic or republican party represents that issue imperfectly but other issues better than that party.
+ 
+You the voter knows that one of the larger parties will likely win but will not have that interest perfectly represented. You do not want to waist your vote so you choose the big party.
+---
+
+---
+class: center, middle, inverse
+
+# Election Rules
+
+
+---
+
+
+---
+layout:false
+
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/rHFOwlMCdto" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+
+
+
+
+---
+
+---
+## Gerrymandering 
+
+.pull-left[
+
+&lt;img src="gerrymandering.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+.pull-right[
+&lt;gsu-blockquote-red&gt;
+
+The process in which district lines are redrawn to benefit specific political parties, protect incumbents, or to change minority proportions for representation
+
+
+&lt;/gsu-blockquote-red&gt;
+]
+
+???
+
+The word gerrymandering is a portmanteau
+
+the word was created in reaction to a redrawing of Massachusetts Senate election districts under Governor Elbridge Gerry, later Vice President of the United States. Gerry, who personally disapproved of the practice, signed a bill that redistricted Massachusetts for the benefit of the Democratic-Republican Party. 
+
+When mapped, one of the contorted districts in the Boston area was said to resemble a mythological salamander. Appearing with the term, and helping spread and sustain its popularity, was a political cartoon depicting a strange animal with claws, wings and a dragon-like head that supposedly resembled the oddly shaped district.
+---
+
+---
+## Types 
+
+.bold[Partisan]: When state legislature draws district lines to favor members of a political party
+
+.bold[Incumbent]: When the state legislature draws district lines to keep party incumbent in office 
+
+.bold[Racial]: When state legislature draws district liines to advantage or disadvantage specific racial groups
+
+
+---
+
+
+---
+## Try it out 
+
+&lt;iframe src="https://projects.fivethirtyeight.com/redistricting-maps/georgia/" width="100%" height="400px" data-external="1"&gt;&lt;/iframe&gt;
+
+---
+
+---
+## Gerrymandering Strategies 
+
+- .bold[Cracking]: Diluting the voting power of the opposing party's supporters across many districts
+
+- .bold[Packing]: Concentrating the opposing party’s voting power in one/a few districts to reduce their voting power in other districts
+
+
+
+
+
+???
+Electoral maps can and should be redrawn to reflect the underlying population trends however the problem. However the problem is that these lines are drawn more strategically. The ease of this is pretty remarkable. 
+
+All you really need in census tract level data. I didnt actually want to go through the trouble of getting that data. But like it isn't hard to find and then code up. The census has an API that  you can use to download the data it produces and then if you would maybe need precint level data and then just wrangle the data a bit. 
+
+---
+
+
+---
+## Midterm Voting Behavior 
+
+Presidential popularity
+
+Health of the economy
+
+International issues
+
+District composition
+
+Redistricting
+
+
+???
+The number of seats that the president’s party loses varies significantly from election to election. These 5 indicators help us predict how severe the party’s loses will be. We’re going to discuss these indicators in a little bit more detail, so just write them down for now.
+
+---
+
+
+---
+## Midterm Voting Behavior
+
+- Presidential Popularity
+  - Higher popularity generally means lower seat losses
+- Economic Conditions
+  - Better economic conditions generally mean lower seat losses
+- International Issues
+  - Exceptional international conditions generally mean lower seat losses
+- District Composition
+  - Competitive districts generally end in greater seat loss
+- Redistricting
+  - In the event that favorable redistricting has occurred since the previous election, the president’s party may have a slight advantage in midterm elections
+
+???
+Midterm elections are often considered a referendum on presidential performance on different issues- people can’t vote for or against the president, so they may vote for or against his party (b/c they don’t know very much about their representatives, so tend to vote for or against presidents’ party because they know about him)
+
+Higher presidential popularity therefore leads to less seat loss- 
+
+Also- remember people vote sociotropically  (ask class: what does that mean?)- so when the economy is bad, people vote against president’s party.
+
+The thing that can counteract the effect of bad economy is exception international conditions (like war in Iraq)- example: 2002 economy not going well, but people perceive the terrorist attacks to be the reason for that and the presidents’ party actually picked up seats during the election.
+
+So in predicting where the presidents’ party will lose seats- a big part is district competition- over 80% of house seats are not competitive- many do not even have challengers, but if they are competitive (large numbers of republicans and democrats) presidents’ party may pick up seats during presidential elections, and these are the first to go to the opposite party.
+
+If there has been redistricting since the last election, usually to favor which ever party has been in power in the state legislatures- that will impact which seats are lost- ex. Redistricting in IL in 2000- political brokering led to a Democrat losing a district and the other districts becoming safer = less likelihood of loss for Rep. in those districts. 
+
+
+---
+
+
+---
+## Theories of Midterm Voting Behavior 
+Why do citizens vote against the president’s party in midterm election?
+- Negative vote
+- Checks and balances
+- Strategic politicians
+
+
+???
+Negative Vote Theory
+
+We’ve already discussed this, voters want to punish the president for bad economy, etc
+
+Punish or reward president (more often punish) for things he’s done
+Ex. Low approval of Iraq- voters may have wanted to punish president Bush in 2004 for the Iraq War, but they couldn’t because he wasn’t up for re-election. So they punished his party at the polls, instead.
+
+Checks and Balances
+
+Voters have a need to balance the power of the president by electing members of the opposition party
+
+Voters believe that presidents’ had too much power since his election with a Congress of the same party, try to balance it by electing members of the opposition party
+
+Problem with this?- voters probably don’t think in these terms about government or their vote. 
+
+Most popular theory- Strategic politicians theory that 
+
+Strategic politicians wait until they have a good chance at winning to throw their money at races and run quality challengers (Wait until popularity is low, economy is bad, no exceptional IR conditions, run in mixed districts)- explain what each of these mean
+
+This is the most popular theory b/c we know that politicians are elites, parties are well oiled machines, and they are strategic thinkers- Quality challengers (popular, with money) will maximize their likelihood of winning by only running when conditions are right. 
+
+---
+
+---
+## Challenges to Campaigning
+
+- Campaign strategies that work in one place might not work in others. Members of Congress must develop a “home style” that meets the expectation of district voters
+
+- Metropolitan v. Rural Districts
+- Liberal areas v. Conservative Districts
+- Richer v. Poorer Districts
+- Homogenous v. Heterogeneous Districts
+
+
+
+.footnote[[2]: Link to summary of study [here](https://www.vox.com/policy-and-politics/2017/9/28/16367580/campaigning-doesnt-work-general-election-study-kalla-broockman)]
+???
+We don't really spend a ton of times on campaigns. From what I gather the American Politics literature has generally found that campaigns don't really matter. By that I mean they don't find a lot evidence that people are all that persuaded or change their minds due to campaigns
+---
+
+
+---
+## Campaign Strategy
+
+- Campaign Manager
+  - Responsible for the overall strategy and planning in a campaign organization
+  - Responsible for making a number of decisions for campaigns
+
+- Field Workers
+  - Help with the smaller campaign duties
+  - Play an important role in maintaining the positive image of the candidate
+  
+- Debates
+
+- Stump speeches and rallies
+
+???
+The first major actor in a political campaign is the campaign manager
+
+The campaign manager is responsible for the overall strategy and planning in a campaign organization
+
+They are responsible for making many of decisions about the activities that campaigns will actually donate resources towards. They make decisions like:
+
+Should the candidate wage an aggressive attack on their opponent?- This is frequently referred to as “going negative”
+
+What should the theme or slogan of the campaign be?- In 2000, the Bush campaign’s theme was “compassionate conservatism”
+
+What issues should be stressed?- In 1992, Clinton stressed the role of the economy and taxes (ie. “It’s the economy, stupid”)
+
+How much money should be spent on TV/Radio/Newspaper advertisement?
+
+What goes into advertisements?
+
+Next are field workers
+
+These are frequently volunteers (especially college students) who help perform many of the smaller duties of a campaign. These duties include:
+
+Ringing doorbells
+
+Manning phone banks
+
+Hanging up signs
+
+As representatives of the candidate, field workers strive to maintain the positive image of the candidate at all times
+
+
+Turning to another important aspect of political campaigns, events play a fairly significant role in campaigns
+
+Debates are some of the most high profile events that candidates will engage in
+They allow candidates to come together and discuss issues publically
+They has been included in every election since 1976
+Their primary role is to influence undecided voters
+
+Stump Speeches and Rallies are another prominent way that candidates attempt to persuade and engage with voters
+
+Often given to specific interest groups, usually to encourage turnout amongst specific populations
+
+Candidates tend to focus these appearances on key swing states
+These are less about persuading voters to support a candidate, rather than trying to generate enthusiasm
+
+
+
+---
+
+---
+
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/Y_zTN4BXvYI" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+
+
+---
+
+---
+## Notable Negative Campaign Ads
+
+- [Daisy](https://www.youtube.com/watch?v=dDTBnsqxZ3k)
+- [I'm Just Like You](https://www.youtube.com/watch?v=uxJyPsmEask)
+- [Look at this Face](https://www.youtube.com/watch?v=ODfUOnw2x0g)
+- [Swiftboat](https://www.youtube.com/watch?v=phqOuEhg9yE)
+- [#TheseHands](https://www.youtube.com/watch?v=zkXDQ4l0Uhc)
+- [America](https://www.youtube.com/watch?v=LIZW5trdE5o)
+- [Squel](https://www.youtube.com/watch?v=zc8uLuHsNw0)
+- [Got Ball?](https://www.youtube.com/watch?v=8Gl7xcy8ILU)
+- [Role Models](https://www.youtube.com/watch?v=mrX3Ql31URA)
+
+
+???
+Negative campaign ads work in the sense that they are likely to inform people about policy positions of various candidates and are good at depressing turnout 
+---
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true,
+"navigation": {
+"scroll": true
+}
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

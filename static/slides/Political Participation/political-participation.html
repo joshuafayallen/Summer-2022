@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Political Participation &amp; Voting</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Josh Allen" />
+    <meta name="date" content="2022-02-24" />
+    <script src="political-participation_files/header-attrs/header-attrs.js"></script>
+    <link href="political-participation_files/remark-css/default.css" rel="stylesheet" />
+    <link href="political-participation_files/panelset/panelset.css" rel="stylesheet" />
+    <script src="political-participation_files/panelset/panelset.js"></script>
+    <script src="political-participation_files/clipboard/clipboard.min.js"></script>
+    <link href="political-participation_files/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="political-participation_files/shareon/shareon.min.js"></script>
+    <link href="political-participation_files/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="political-participation_files/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="political-participation_files/tachyons/tachyons.min.css" rel="stylesheet" />
+    <link href="political-participation_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="political-participation_files/tile-view/tile-view.js"></script>
+    <link href="political-participation_files/vembedr/css/vembedr.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Political Participation &amp; Voting
+### Josh Allen
+### 2022-02-24
+
+---
+
+
+
+
+
+&lt;style type="text/css"&gt;
+/*
+Title: GSU Xaraingan Theme
+Author: Josh Allen
+Updated: 12/26/2021
+Description: A GSU theme for Xaringan presentations. Modifid based on 
+             Joseph V. Casillas's Rutgers theme and Tuo Wang's UW-Madison Theme
+References: https://github.com/jvcasillas/ru_xaringan, https://github.com/ttuowang/Xaringan-wisconsin-theme. Colors and Logo from https://commkit.gsu.edu/university-logos/
+*/
+
+
+
+a, a &gt; code {
+  color: #cc0033; /* rgb(249, 38, 114) */
+  text-decoration: none;
+}
+
+/* slightly lower and bigger than default */
+.footnote {
+  position: absolute;
+  bottom: 1em;
+  padding-right: 4em;
+  font-size: 95%;
+}
+
+/* important code slightly red */
+.remark-code-line-highlighted {
+  background-color: #FFD3DE !important;
+}
+
+/* color tweak */
+.inverse {
+  background-color: #8f9186;
+  color: #FFFFFF;
+  text-shadow: 0 0 20px #333;
+}
+
+/* slightly spacing change */
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #f3f3f3;
+  line-height: 1.0em;
+}
+
+/* Two-column layout */
+.left-column {
+  color: #777;
+    width: 30%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+
+.left-column1 {
+  color: #777;
+    width: 34%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
+.right-column {
+  width: 67%;
+  float: right;
+  padding-top: 0em;
+}
+
+.right-column1 {
+  width: 63%;
+  float: right;
+  padding-top: 0em;
+}
+
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ * {
+  clear: both;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee }
+
+@page { margin: 0; }
+
+/* adjust table horizontal spacing */
+th, td {
+    padding:0 15px 0 15px;
+}
+
+.remark-slide table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+.remark-slide table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) { background: #eee }
+
+/* leave this alone */
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+/* gsu additions */
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Title slide */
+
+/* Add image and change bg color */
+.title-slide {
+  background-image: url(https://commkit.gsu.edu/files/2019/06/PrimaryLogo3color.jpg);
+  background-position: 100% 0%;
+  background-size: 300px;
+  background-color: #fff;
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+/* H1 fonts */
+.title-slide h1 {
+  color: #0039A6;
+  padding-top: 100px;
+  font-weight: normal;
+  font-size: 60px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+/* H2 fonts */
+.title-slide h2 {
+  color: #CC0000;
+  font-size: 34px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+
+/* H3 fonts */
+.title-slide h3 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #666666;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 15px;
+  margin: 0px;
+  line-height: 1;
+}
+
+/* Remove slide count shadow */
+.title-slide .remark-slide-number {
+  text-shadow: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~*/
+/* Global adjustments */
+/*~~~~~~~~~~~~~~~~~~~~*/
+
+/* Add padding to all slides for 16:9 aspect ratio */
+.remark-slide-content {
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+  font-size: 21px;
+}
+
+/* Color adjustments for text */
+
+strong {
+  color: #ea5455;
+}
+
+.bold { font-weight: bold; }
+
+.gsu-blue{
+  color: #0039A6;
+}
+
+.gsu-dark{
+  color: #776E64;
+}
+
+.gsu-gray-blue{
+  color: #dadfe1;
+}
+
+.gsu-gray-darker{
+  color: #646569;
+}
+
+.gsu-gray-darkest{
+  color: #282728;
+}
+
+.gsu-anchor-color{
+  color: #0479a8;
+}
+
+
+
+/* Colors are from the Met brewer package */
+
+.hiro-red{
+  color: #e76254;
+}
+
+.hiro-orange{
+  color: #ef8a47;
+}
+
+.hiro-light-orange{
+ color: #f7aa58; 
+}
+
+.hiro-yellow{
+  color: #ffd06f ;
+}
+
+.hiro-light-blue{
+  color: #528fad ;
+}
+
+.hiro-dark-blue{
+  color: #376795;
+}
+
+.vero-red{
+  color: #67322e;
+}
+
+.vero-brown{
+  color: #99610a;
+}
+
+.vero-yellow{
+  color: #c38f16;
+}
+
+
+.vero-teal{
+  color: #6e948c;
+}
+
+.vero-blue{
+  color: #122c43;
+}
+
+/* Color adjustments to headers */
+h1 {
+  color: #0039A6;
+}
+
+h2 {
+  color: #CC0000;
+}
+h3 {
+  color: #776E64;
+}
+
+/* Font size tags */
+.big {
+  font-size: 1.5em;
+}
+
+
+
+
+
+/* gsu blockquote */
+gsu-blockquote-red {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #c5050c;
+  border-right: solid 20px #c5050c;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+
+gsu-blockquote-blue {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #0039A6;
+  border-right: solid 20px #0039A6;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+gsu-blockquote-alt {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #776E64;
+  border-right: solid 20px #776E64;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/*~~~~~~~~~~~~~~*/
+/* I like the frames*/
+/* and cols in Allison Hill's */
+/* https://alison.netlify.app/ares-kind-tools/*/
+/*~~~~~~~~~~~~~~*/
+
+.frame h1 {
+  color: #0039A6;
+  padding-bottom: 1.0em !important;
+  border-bottom: 3px solid var(#7899d4ff);
+}
+
+
+
+
+/*~~~~~~~~~~~~~~*/
+/* Highlight    */
+/*~~~~~~~~~~~~~~*/
+
+.highlight-last-item &gt; ul &gt; li, 
+.highlight-last-item &gt; ol &gt; li {
+  opacity: 0.5;
+}
+.highlight-last-item &gt; ul &gt; li:last-of-type,
+.highlight-last-item &gt; ol &gt; li:last-of-type {
+  opacity: 1;
+}
+
+.bold-last-item &gt; ul &gt; li:last-of-type,
+.bold-last-item &gt; ol &gt; li:last-of-type {
+  font-weight: bold;
+}
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+/*
+GSU fonts
+Author: Josh Allen
+Updated: 05/24/2021
+
+I am just borrowing fonts used in the https://www.andrewheiss.com/blog/ 
+*/
+
+/* Add maven for code font (keep other xaringan defaults */
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&amp;display=swap');
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&amp;display=swap');
+
+body { font-family:'Roboto', 'Barlow Semi Condensed', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+
+h1, h2, h3 {
+  font-family: 'Archivo Narrow';
+  font-weight: normal;
+}
+
+/*
+h2, h3 {
+  font-family: 'Roboto Condensed';
+  font-weight: normal;
+}
+*/
+
+.remark-code, .remark-inline-code { font-family: 'Inconsolata', monospace; }
+.remark-code-line-highlighted     { background-color: #ffff88; }
+&lt;/style&gt;
+
+
+
+
+
+
+---
+## Looming Deadlines 
+
+
+- .bold[NCCHR] Extra Credit 02-27
+
+
+
+
+----
+
+---
+class:center, middle,inverse
+
+.col[ # Political Participation]
+
+
+---
+
+---
+class:middle, center
+## What is it?
+
+![](https://media.giphy.com/media/fveKCnZRN7aOrtWNfj/giphy.gif)
+
+---
+
+---
+## Types of Political Participation 
+
+.bold[Political Participation]: Any action aimed at changing or supporting the actions of political agents and officials 
+
+.pull-left[
+
+.hiro-red[Conventional Participation]: Common actions considered culturally acceptable political activity that communicates preferences through established institutions
+
+
+]
+
+
+.pull-right[
+.hiro-dark-blue[Unconventional Participation]: Political activity that takes place outside of established institutions and challenges cultural norms
+
+]
+???
+What is an example of each? 
+---
+
+---
+## What is Political Participation?
+
+Participating in politics can take many forms
+
+- Voting
+
+- Working for campaigns
+
+- Contributing to campaigns
+
+- Contributing to political movements or interest groups 
+
+- Contacting public/political officials
+
+- Protesting
+
+- Community work
+
+- Serving on local boards or councils 
+
+- Joining political organizations 
+
+- Political conversations 
+
+
+???
+These are all specific acts of political participation. Which of these would be considered Conventional? Which would be Unconventional?
+
+Beyond that, are all of these forms of participation equal, in terms of costs (time, money) and benefit (how much you get back from politicians for participating in these activities (ie. listen to your concerns, address policies that are important to you)?
+
+In other words, are all people equally capable of participating in these different activities? And if not, are all these activities equal in the messages they convey to politicians?
+
+---
+
+
+---
+## Types of Participation 
+
+
+.pull-left[
+
+### Conventional 
+
+- Voting
+
+- Volunteering
+
+- Working on campaigns 
+
+- Writing your Congressman
+
+- Writing the editor of a paper
+
+- Signing petitions
+
+
+
+]
+
+.pull-right[
+### Unconventional 
+
+- Protests
+
+- Strikes
+
+- Boycotts
+
+- Sit-ins
+
+- Riots
+
+- Marches
+
+- Political Violence 
+]
+
+???
+As a political violence scholar I would remissed if I didnt add that political violence is a form of political participation. The use of violence by groups and by people is often used in the pursuit of political goals. 
+
+---
+
+---
+## Political Participation the Volume it speaks
+
+<div id="nxsbrrletf" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#nxsbrrletf .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #F6F6F6;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #40C5FF;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#nxsbrrletf .gt_heading {
+  background-color: #F6F6F6;
+  text-align: left;
+  border-bottom-color: #F6F6F6;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#nxsbrrletf .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #F6F6F6;
+  border-bottom-width: 0;
+}
+
+#nxsbrrletf .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #F6F6F6;
+  border-top-width: 0;
+}
+
+#nxsbrrletf .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-bottom-color: #D3D3D3;
+}
+
+#nxsbrrletf .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #40C5FF;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #ECECEC;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#nxsbrrletf .gt_col_heading {
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#nxsbrrletf .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#nxsbrrletf .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#nxsbrrletf .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#nxsbrrletf .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #ECECEC;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#nxsbrrletf .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #BEBEBE;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #BEBEBE;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#nxsbrrletf .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: bold;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #BEBEBE;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #BEBEBE;
+  vertical-align: middle;
+}
+
+#nxsbrrletf .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#nxsbrrletf .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#nxsbrrletf .gt_row {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: white;
+  border-top-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#nxsbrrletf .gt_stub {
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nxsbrrletf .gt_stub_row_group {
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#nxsbrrletf .gt_row_group_first td {
+  border-top-width: 1px;
+}
+
+#nxsbrrletf .gt_summary_row {
+  color: #333333;
+  background-color: #F6F6F6;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nxsbrrletf .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#nxsbrrletf .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#nxsbrrletf .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#nxsbrrletf .gt_grand_summary_row {
+  color: #333333;
+  background-color: #F6F6F6;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nxsbrrletf .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#nxsbrrletf .gt_striped {
+  background-color: #ECECEC;
+}
+
+#nxsbrrletf .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #FFFFFF;
+}
+
+#nxsbrrletf .gt_footnotes {
+  color: #333333;
+  background-color: #F6F6F6;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#nxsbrrletf .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nxsbrrletf .gt_sourcenotes {
+  color: #333333;
+  background-color: #F6F6F6;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#nxsbrrletf .gt_sourcenote {
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nxsbrrletf .gt_left {
+  text-align: left;
+}
+
+#nxsbrrletf .gt_center {
+  text-align: center;
+}
+
+#nxsbrrletf .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#nxsbrrletf .gt_font_normal {
+  font-weight: normal;
+}
+
+#nxsbrrletf .gt_font_bold {
+  font-weight: bold;
+}
+
+#nxsbrrletf .gt_font_italic {
+  font-style: italic;
+}
+
+#nxsbrrletf .gt_super {
+  font-size: 65%;
+}
+
+#nxsbrrletf .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#nxsbrrletf .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#nxsbrrletf .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#nxsbrrletf .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#nxsbrrletf .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Activity</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Capacity for conveying Info</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Impact</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Requirments</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: white;">Voting</td>
+<td class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: white;">Low</td>
+<td class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: white;">Low</td>
+<td class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: white;">Time</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Campaign Work</td>
+<td class="gt_row gt_left gt_striped">Mixed</td>
+<td class="gt_row gt_left gt_striped">High</td>
+<td class="gt_row gt_left gt_striped">Time and Skill</td></tr>
+    <tr><td class="gt_row gt_left">Campaign Contributions</td>
+<td class="gt_row gt_left">Mixed</td>
+<td class="gt_row gt_left">Highest</td>
+<td class="gt_row gt_left">Money</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Interst Group Contribution</td>
+<td class="gt_row gt_left gt_striped">Mixed</td>
+<td class="gt_row gt_left gt_striped">Highest</td>
+<td class="gt_row gt_left gt_striped">Money</td></tr>
+    <tr><td class="gt_row gt_left">Contacting Public/Political Officials</td>
+<td class="gt_row gt_left">High</td>
+<td class="gt_row gt_left">Medium</td>
+<td class="gt_row gt_left">Time, Skill</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Protesting</td>
+<td class="gt_row gt_left gt_striped">High</td>
+<td class="gt_row gt_left gt_striped">Medium</td>
+<td class="gt_row gt_left gt_striped">Time</td></tr>
+    <tr><td class="gt_row gt_left">Community Work</td>
+<td class="gt_row gt_left">High</td>
+<td class="gt_row gt_left">High</td>
+<td class="gt_row gt_left">Time and Skill</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Serving on Local Boards/Councils</td>
+<td class="gt_row gt_left gt_striped">High</td>
+<td class="gt_row gt_left gt_striped">High</td>
+<td class="gt_row gt_left gt_striped">Time and Skills</td></tr>
+    <tr><td class="gt_row gt_left">Joining Political Organizations</td>
+<td class="gt_row gt_left">Mixed</td>
+<td class="gt_row gt_left">High</td>
+<td class="gt_row gt_left">Time, Skills, and Money</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+
+???
+So not all political participation is equal
+
+They require different things and they accomplish different things. This chart is taken from a book called Voice and Equality, which surveyed 15,000 Americans about political participation.
+
+Here we see the different levels of information that forms of participation can communicate to public officials, which communicate the loudest (in other words, which do public officials and politicians pay the most attention to) and what each form of participation requires.
+
+So looking at this table, we can see that while voting is the easiest form of participation (requiring only time) it is the lowest in its ability to convey specific information (because it is so general) and in its volume (because so many people vote). Voting is often called “the great equalizer” because every citizen has the same voice with voting, but when voting does not speak as specifically or loudly to public officials as less equal activities, there may be a reason to be concerned.
+
+So why does this matter? What’s the big deal about the variation in these types of participation?
+
+Because different groups of people participate in different activities to different extents. Those that participate in the most information rich and loudest activities will have their needs heard the most by public officials, and will receive more representation than those that participate in the least loud and information rich activities
+
+
+Today we are focusing on row one. mostly 
+
+---
+
+---
+class: center, middle, inverse
+
+# Voting
+
+
+---
+
+---
+## Voting
+
+- Who votes? 
+
+- What drives people to vote?
+
+- What determines vote choice
+
+???
+Picking up on a broad theme of this class is you could take a graduate class just on voting and then dedicate an entire academic career to that. Today will be a tour de force of this and will largely think of it as like a neat little prediction problem. Than we are going to move onto next week where we will focus on the barriers in practice 
+
+---
+
+---
+## Voting
+
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/Vr-ZeToI4R8?start=738" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+
+
+???
+end 22:22
+
+Now we’re going to focus on voting. While we just talked about how voting is one of the less effective means of participation, it is something that all citizens are equally able to do, and it is the basis of electoral politics
+---
+
+
+---
+## Two Types of Voting
+
+- .bold[Prospective Voting]: voter behavior that evaluates candidates based on forecasts of their future political behavior.
+
+
+- .bold[Retrospective Voting]: voter behavior that evaluates candidates based on their experience or past performance. 
+
+Mediated Retrospective Evaluations
+
+
+Simple Retrospective Evaluations
+
+
+???
+
+prospective voting: voting on the promise of the future 
+
+Retrospective voting tends to be used more by voters, and can be used in two ways
+
+MRE’s: Mediated through personal predispositions (PID) and experiences
+
+SRE’s: Has a direct effect on vote choice
+
+---
+
+
+---
+## Why Do We Not  Vote? 
+
+Lack of Mandatory registration
+
+Lack of mandatory voting
+
+Lack of proportional representation
+
+Too many elections
+
+It’s irrational
+
+
+???
+Americans have much lower turnout that citizens in many other advanced industrialized democracies. This is often though of as a surprise because Americans generally have equal or higher education levels and high levels of political efficacy, trust in government, and sense of civic duty (all things that increase turnout at the individual level).
+So why don’t Americans vote as much?
+
+Mandatory registration: Citizens in the United States are not automatically registered, they have to register themselves when they turn 18. Registration also has to be updated every time you move. Additionally, states have their own rules about registration deadlines, the information that is required to register, the information that you have to take with you to vote, who can register, etc.
+Mandatory voting: Several other countries REQUIRE their citizens to vote, like Australia and Belgium where citizens are fined for not voting
+
+Some people blame it on the lack or proportional representation. Under winner-take-all systems if you vote for the losing candidate you may feel that you wasted resources because you didn’t receive the benefit of electing your preferred candidate
+
+
+The US holds A LOT of elections: Presidential, Midterm, Gubernatorial, State, Local, Special, Run-offs (Ex. Georgia)
+It’s irrational: We’ll return to this concept in just a little
+
+
+---
+
+---
+## Rational Voting Calculus
+
+
+
+$$
+`\begin{align}
+\overbrace{R}^\text{Reward for Voting} = \underbrace{\text{P}}_{\text{Probability Vote Decides Election}} \times \overbrace{\text{B}}^{\text{Benefit Received if your Candidate Wins}} - \underbrace{\text{C}}_{\text{Cost of Voting}}(B	&gt; C)
+\end{align}`
+$$
+
+???
+In the 50's a guy named Anthony Downs came up with this little diddy. We assume that voters are rational actors. meaning that voters are profit maximizing individuals. They want to make sure they derive the most amount of benefit from voting. They do not want the benefit to exceed the cost of voting 
+
+
+P denotes the probability that your vote will be the deciding vote. You, me and Big Downes know the likelihood of this being the case is pretty low. 
+
+Costs are fairly intuitive: They can be a simple as the amount of time it takes to commute to the polling place, the amount of time it takes to commute to the both 
+
+So people end up being free riders, because their individual vote will not influence the outcome of the election – therefore it is more rational for you to stay home and enjoy the benefit of other people voting, rather than vote yourself. 
+
+Downs essentially argues that the indivdual is better of free-riding 
+
+---
+
+---
+## Consumptive Model of Voting
+
+
+$$
+`\begin{align}
+\overbrace{R}^\text{Reward for Voting} = \underbrace{\text{P}}_{\text{Probability Vote Decides Election}} \times \overbrace{\text{B}}^{\text{Benefit Received if your Candidate Wins}} - \underbrace{\text{C}}_{\text{Cost of Voting}} + \overbrace{\text{D}}^\text{Duty}
+\end{align}`
+$$
+
+
+
+???
+Riker and Ordeshook don't neccessarily disagree with Downes if you view voting solely through the lens of this strict rational choice lens. But we vote because of lots things and those things can be squishier than just does my paycheck increase. They introduce what is known as the d term
+
+The D term can be a whole host of stuff like a sense of civic duty, social pressure, patriotism etc essentially D is the satisfaction that people derive from the act of voting. My kind of rough heuristic for understanding the D term is that there is inherent non-material benefit to voting. There is nothing quite like telling somebody fuck you. And in this case if you are voting against somebody it is a form of the middle finger 
+---
+
+---
+## Who Votes?
+
+
+&lt;img src="images/voter-turnout.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+
+
+
+???
+So before we go any further we need to talk about two distinct populations that go out and vote. 
+
+There is the Voting Age Population (VAP) – which is all the voters who are eligible based on age (18+) to vote. This does not take into account legal or citizen status. Thanks to a variety of different amendments this is possible. Review: 
+
+15th Amendment – made it possible for any adult male citizen to vote despite his race. 
+
+19th Amendment – made it possible for any adult female to vote. 
+
+23rd – DC citizens can vote/ be represented in EC 
+
+24th – Abolished Poll Taxes 
+
+26th Amendment - make it possible for anyone 18 and older to vote. It lowered the voting age from 21. 
+
+Then there is the Voting Eligible Population (VEP) – which is all the voters who are eligible to vote based on voting status. This includes all individuals who are citizens, who are registered to vote, and in some states that are not convicted felons
+---
+
+
+
+---
+## Who is *most likely* to vote?
+
+
+&lt;img src="images/income.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+
+???
+For this portion we are going to think about what are consistent predictors of voting. 
+
+Wealth vs. Poverty 
+Those with higher economic status are most likely to go out and vote.  This is because they possess the resources and the time to be able to not only vote but to participate in political events. 
+
+As you can see from this graph those that have higher incomes are most likely to vote. Roughly incomes that make more than $50,000 per year increase the likelihood well above 60% of those that are eligible. 
+
+This is a strong predictor of voting behavior, and is dependent of all other factors that influence voting behavior. 
+
+There are three key factors to determine whether an individual will vote or not. 
+1. Resources 
+2. Interest 
+3. Motivation. 
+
+Think of it as: People can’t (resources), won’t (don’t care/not interested) or haven’t been asked to participate (motivation)
+Socioeconomic status = the combination of education, occupation, and income that can be used to gauge one’s position in society. 
+
+---
+
+---
+layout: false 
+
+
+&lt;img src="images/gender.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+???
+Men versus Women 
+
+Women have on average a higher political participation rate then men consistently since the 1960’s, but there average voting rates are roughly the same.  This graph is from the turnout rates from the 2008 election and woman and men were almost equally represented in every age group, but in this election women were the more likely voters. 
+
+This is a weak predictor of voting behavior. It is often a codependent factor of voting behavior. (meaning that it is only effective when taken into account with other factors). 
+
+---
+
+
+---
+layout: false 
+
+&lt;img src="images/education'.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+???
+Education level is the strongest predictor of an individuals voting behavior. The more educated a person is, the more likely they are to vote, as they have a better understanding of how the system works, how to influence the system, and why participation is important.
+
+
+
+---
+
+---
+layout: false 
+
+.pull-left[
+
+&lt;img src="images/race.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+.pull-right[
+- Other Predictors of Voting Behavior: 
+- Race 
+- Religion 
+- Marital Status 
+- Ethnicity 
+
+
+]
+???
+Race: 
+African American: While African American turnout is the highest it has ever been historical in the last two elections (2008 and 2012) it still is generally well below that of the national average. 
+
+Latino: On average, Latino citizens continue to vote at significantly lower rates that non-Latino white voters. However, in recent years, a larger number of organizations that serve immigrant and Latino communities have become involved in political participation. The Language Minority Provision of the Voting Rights Act, first introduced in 1975, aims to lower the cost of participation for Latino voters by requiring election material be provided in Spanish where appropriate.
+
+
+Asian American: This diversity and polarization makes it difficult to generalize the voting patterns for the Asian American community. Specifically in certain areas of the country the voting rates are much higher. 
+
+Religion:  Is a codependent factor of voting. We often associate voting with religion since it is so deeply tied to political identity specifically of the Republican Party, but more often then not it has little effect on voting by itself.  
+
+Marital Status: Those that are married are far more likely (10x) to vote than those that are single or divorced
+---
+
+
+
+
+
+---
+## What factors in Influence our Vote 
+
+- PID
+
+
+&lt;img src="images/clinton-trump.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+
+
+???
+Yeah I'll admit that this is kind of an anti climatic answer but for the most part PID is a pretty good indicator. Indpendents tend to lean toward one party or another and tend to vote like their partisan couterparts 
+
+
+When I talk about PID, I’m talking about a psychological attachment to one party or another. 
+The stronger your PID, the more likely you are to vote, and the more likely you are to vote for one particular party. 
+
+Just like with public opinion, people do not have the time, energy, education necessary to learn everything they need to know about candidates. Therefore, they tend to rely on PID as a shortcut.
+People do this all the time, especially with state and local level offices
+
+Party attachment tends to come from two primary sources
+Socialization: Most people tend to adopt the PID of their parents
+Retrospective: Voters keep a tally of the good/bad things each party has done (ex. Great Depression &amp; FDR led many voters to become Democrats)
+.
+
+---
+
+---
+## What Factors Influence our Vote
+
+- Different issues may affect individual voters
+- Nationally salient issues may significantly impact vote choice
+- Major event
+- Media
+- Candidate
+
+One issue that always influences vote choice:
+
+
+
+&lt;img src="images/econ.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+
+???
+
+Different issues hold meaning for different voters
+Issues that sway elections on a national level include salient issues (issues that are important to the American public)
+
+What makes an issue salient?
+
+Major Events (Obama and McCain and the Economic Collapse of 2008)
+
+Media (Clinton and Benghazi)
+
+Candidates also set the agenda (Sanders and Income Inequality; Trump and Immigration)
+
+One issue that is always salient to American voters is the economy, but economic well being effects voting in varied ways
+Sociotropic: How well you think the nation is doing economically
+
+Pocketbook: How well are you doing personally?
+
+People tend to blame themselves for their own financial state, so your own situation does not effect your vote that much, BUT people ten to blame the government for how well the nation as a whole is doing- so that significantly impacts vote choice (Republicans and Pres. Bush punished in 2008)
+
+
+Political scientist to disagree what economy we consider the most. Does the broader health of the economy matter or is it just self interst all the way down? Comparative political scientists definitely still fight about this.
+
+The Economy – single more important flux topic when it comes to voter decision. If the economy is good, voter support the incumbent. If economy is bad, voters (undecided) are more likely to support challenger. 
+
+
+
+
+---
+
+
+---
+## Declining Voter Turnout since the `\(20^{th}\)`
+
+- Growing Mobility of Voters
+
+- The decline of social capital
+
+- Declines in party attachment and external efficacy during this period
+  - Watergate
+  - Assassinations
+
+???
+Why would party attachment and external efficacy decline during this period?
+Four Major Things Happened
+
+Assassinations
+
+Remember, that during this time period there was a LOT of political activity happening. There were a lot of marches and calls for a lot of social and political changes. Some of the big movements included the Civil Rights movement, the black power movement, the brown power movement, the women’s rights movement, etc. 
+As a result, there were several prominent political activists and public figures that had a lot of support during this time period, and were ultimately assassinated.
+
+Beginning with President Kennedy, who was shot Nov. 22, 1963 in Dallas, the Kennedy’s were America’s golden family. JFK was young, he was the first Catholic president. Jackie Kennedy was adored. They had several young children. So this assassination was particularly shocking
+Only two years later, Malcolm X, who was prominent leader of the black nationalist movement, a prominent leader died on Feb. 21, 1965, shocking the nation.
+
+Martin Luther King, Jr., the most prominent civil rights leader of the 1960s, was instrumental in the Birmingham bus boycott, pushed for the passage of the Civil Rights Act, was the youngest man, at the time, to be awarded the Nobel Peace Prize, was assassinated April 4, 1968 in Memphis, where he was working to secure safer working conditions for the city’s sanitation workers
+.
+Finally, Robert F. Kennedy (JFK’s brother) was died June 5, 1968. He was prominent as a presidential candidate, his opposition to the Vietnam War, and had recently taken on urban poverty as an issue.
+These assassinations shocked people who supported these men, discourage Americans (because these were enthusiastic, popular leaders, who were all killed in their prime), and created a general sense of apathy on the part of voters (why support a candidate if they are just going to be assassinated?).
+
+The Vietnam War
+
+This war was fought to halt the spread of communism from Northern Vietnam to Southern Vietnam. Approximately 500,000 troops were there by 1969. 
+Americans were divided on this war, but had largely come to dislike the war by the late 1960s. Ultimately, there were two sides to the war, Hawks (who supported escalation of the war) and Doves (who support withdrawal from the war).
+
+This effected party attachment and external efficacy because politicians from both political parties ran on a platform of winning the war in Vietnam, however, neither did during this period.
+This alienated Doves because neither parties politicians withdrew, and alienated Hawks because neither side would escalate the war to a full on attack, meaning that territory was frequently won and lost because troops were unable to hold their positions.
+
+Civil Rights Movement Turns Violent
+Although the Civil Rights movement had been non-violent and peaceful during the late 1950s and early 1960s, following the passage of the 1964 Civil Rights Act aspects of the movement became increasingly violent. 
+
+The tipping point here is when race riots began breaking out, starting in 1965 with Harlem and Watts, with more occurring in later years in Atlanta, Detroit, etc. These were in reaction to police officers and in some cases private citizens. Depressingly the congressional reports that these 
+
+On one side of the issue were some people that thought the Civil Rights movement was moving too slow, not enough was getting done to get rid of discrimination. These people were frustrated by the riots, but still felt that politicians (both Republicans and Democrats) weren’t moving fast enough on the issue of race and discrimination.
+
+On the other side were people that thought the Civil Rights movement was moving too fast and were frightened by riots and felt that more needed to be done to control population, and were also not satisfied with government (again both Republicans and Democrats)
+So no matter how you feel about Civil Rights, your party and government was letting you down.
+
+Watergate
+
+The break in and resulting scandal totally obliterated trust in government
+Conclusion: No matter who you were or what you thought during this time period, you were let down by your party and your government, decreasing PID and efficacy for everyone. This trend was stuck for Baby Boomers who still vote less than other generations. As a result, turnout continues to stay low because of generational replacement (Boomers outnumber New Dealers 2:1)
+
+
+---
+
+---
+class: center, middle
+
+
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/rHFOwlMCdto" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+
+
+
+???
+we have sort of discussed the voting population in way that doesnt acknowledge some of the other structural issues that impact people who do want to vote but face barriers to do so. I want to leave you with this as we move to talk about campaingss and elections next week
+---
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true,
+"navigation": {
+"scroll": true
+}
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

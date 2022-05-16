@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Exam 1 Review</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Josh Allen" />
+    <meta name="date" content="2022-02-01" />
+    <script src="exam-1_files/header-attrs/header-attrs.js"></script>
+    <link href="exam-1_files/remark-css/default.css" rel="stylesheet" />
+    <link href="exam-1_files/panelset/panelset.css" rel="stylesheet" />
+    <script src="exam-1_files/panelset/panelset.js"></script>
+    <script src="exam-1_files/clipboard/clipboard.min.js"></script>
+    <link href="exam-1_files/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="exam-1_files/shareon/shareon.min.js"></script>
+    <link href="exam-1_files/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="exam-1_files/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="exam-1_files/tachyons/tachyons.min.css" rel="stylesheet" />
+    <link href="exam-1_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="exam-1_files/tile-view/tile-view.js"></script>
+    <link href="exam-1_files/vembedr/css/vembedr.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Exam 1 Review
+### Josh Allen
+### 2022-02-01
+
+---
+
+
+
+
+
+&lt;style type="text/css"&gt;
+/*
+Title: GSU Xaraingan Theme
+Author: Josh Allen
+Updated: 12/26/2021
+Description: A GSU theme for Xaringan presentations. Modifid based on 
+             Joseph V. Casillas's Rutgers theme and Tuo Wang's UW-Madison Theme
+References: https://github.com/jvcasillas/ru_xaringan, https://github.com/ttuowang/Xaringan-wisconsin-theme. Colors and Logo from https://commkit.gsu.edu/university-logos/
+*/
+
+
+
+a, a &gt; code {
+  color: #cc0033; /* rgb(249, 38, 114) */
+  text-decoration: none;
+}
+
+/* slightly lower and bigger than default */
+.footnote {
+  position: absolute;
+  bottom: 1em;
+  padding-right: 4em;
+  font-size: 95%;
+}
+
+/* important code slightly red */
+.remark-code-line-highlighted {
+  background-color: #FFD3DE !important;
+}
+
+/* color tweak */
+.inverse {
+  background-color: #8f9186;
+  color: #FFFFFF;
+  text-shadow: 0 0 20px #333;
+}
+
+/* slightly spacing change */
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #f3f3f3;
+  line-height: 1.0em;
+}
+
+/* Two-column layout */
+.left-column {
+  color: #777;
+    width: 30%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+
+.left-column1 {
+  color: #777;
+    width: 34%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
+.right-column {
+  width: 67%;
+  float: right;
+  padding-top: 0em;
+}
+
+.right-column1 {
+  width: 63%;
+  float: right;
+  padding-top: 0em;
+}
+
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ * {
+  clear: both;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee }
+
+@page { margin: 0; }
+
+/* adjust table horizontal spacing */
+th, td {
+    padding:0 15px 0 15px;
+}
+
+.remark-slide table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+.remark-slide table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) { background: #eee }
+
+/* leave this alone */
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+/* gsu additions */
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Title slide */
+
+/* Add image and change bg color */
+.title-slide {
+  background-image: url(https://commkit.gsu.edu/files/2019/06/PrimaryLogo3color.jpg);
+  background-position: 100% 0%;
+  background-size: 300px;
+  background-color: #fff;
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+/* H1 fonts */
+.title-slide h1 {
+  color: #0039A6;
+  padding-top: 100px;
+  font-weight: normal;
+  font-size: 60px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+/* H2 fonts */
+.title-slide h2 {
+  color: #CC0000;
+  font-size: 34px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+
+/* H3 fonts */
+.title-slide h3 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #666666;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 15px;
+  margin: 0px;
+  line-height: 1;
+}
+
+/* Remove slide count shadow */
+.title-slide .remark-slide-number {
+  text-shadow: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~*/
+/* Global adjustments */
+/*~~~~~~~~~~~~~~~~~~~~*/
+
+/* Add padding to all slides for 16:9 aspect ratio */
+.remark-slide-content {
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+  font-size: 21px;
+}
+
+/* Color adjustments for text */
+
+strong {
+  color: #ea5455;
+}
+
+.bold { font-weight: bold; }
+
+.gsu-blue{
+  color: #0039A6;
+}
+
+.gsu-dark{
+  color: #776E64;
+}
+
+.gsu-gray-blue{
+  color: #dadfe1;
+}
+
+.gsu-gray-darker{
+  color: #646569;
+}
+
+.gsu-gray-darkest{
+  color: #282728;
+}
+
+.gsu-anchor-color{
+  color: #0479a8;
+}
+
+
+
+/* Colors are from the Met brewer package */
+
+.hiro-red{
+  color: #e76254;
+}
+
+.hiro-orange{
+  color: #ef8a47;
+}
+
+.hiro-light-orange{
+ color: #f7aa58; 
+}
+
+.hiro-yellow{
+  color: #ffd06f ;
+}
+
+.hiro-light-blue{
+  color: #528fad ;
+}
+
+.hiro-dark-blue{
+  color: #376795;
+}
+
+.vero-red{
+  color: #67322e;
+}
+
+.vero-brown{
+  color: #99610a;
+}
+
+.vero-yellow{
+  color: #c38f16;
+}
+
+
+.vero-teal{
+  color: #6e948c;
+}
+
+.vero-blue{
+  color: #122c43;
+}
+
+/* Color adjustments to headers */
+h1 {
+  color: #0039A6;
+}
+
+h2 {
+  color: #CC0000;
+}
+h3 {
+  color: #776E64;
+}
+
+/* Font size tags */
+.big {
+  font-size: 1.5em;
+}
+
+
+
+
+
+/* gsu blockquote */
+gsu-blockquote-red {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #c5050c;
+  border-right: solid 20px #c5050c;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+
+gsu-blockquote-blue {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #0039A6;
+  border-right: solid 20px #0039A6;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+gsu-blockquote-alt {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #776E64;
+  border-right: solid 20px #776E64;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/*~~~~~~~~~~~~~~*/
+/* I like the frames*/
+/* and cols in Allison Hill's */
+/* https://alison.netlify.app/ares-kind-tools/*/
+/*~~~~~~~~~~~~~~*/
+
+.frame h1 {
+  color: #0039A6;
+  padding-bottom: 1.0em !important;
+  border-bottom: 3px solid var(#7899d4ff);
+}
+
+
+
+
+/*~~~~~~~~~~~~~~*/
+/* Highlight    */
+/*~~~~~~~~~~~~~~*/
+
+.highlight-last-item &gt; ul &gt; li, 
+.highlight-last-item &gt; ol &gt; li {
+  opacity: 0.5;
+}
+.highlight-last-item &gt; ul &gt; li:last-of-type,
+.highlight-last-item &gt; ol &gt; li:last-of-type {
+  opacity: 1;
+}
+
+.bold-last-item &gt; ul &gt; li:last-of-type,
+.bold-last-item &gt; ol &gt; li:last-of-type {
+  font-weight: bold;
+}
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+/*
+GSU fonts
+Author: Josh Allen
+Updated: 05/24/2021
+
+I am just borrowing fonts used in the https://www.andrewheiss.com/blog/ 
+*/
+
+/* Add maven for code font (keep other xaringan defaults */
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&amp;display=swap');
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&amp;display=swap');
+
+body { font-family:'Roboto', 'Barlow Semi Condensed', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+
+h1, h2, h3 {
+  font-family: 'Archivo Narrow';
+  font-weight: normal;
+}
+
+/*
+h2, h3 {
+  font-family: 'Roboto Condensed';
+  font-weight: normal;
+}
+*/
+
+.remark-code, .remark-inline-code { font-family: 'Inconsolata', monospace; }
+.remark-code-line-highlighted     { background-color: #ffff88; }
+&lt;/style&gt;
+
+
+
+
+
+
+---
+class: center, middle
+
+## Looming Deadlines
+![](https://media.giphy.com/media/6Gy6EgcQMesXS/giphy.gif)
+
+
+
+---
+
+
+---
+class: center, middle, inverse 
+
+# Chapter 1 
+
+
+
+
+---
+
+
+---
+## What is Government 
+
+A Set of institutions that 
+
+- Endure overtime 
+--
+
+- Has **authority over the people** of a specific territory
+--
+
+- Authoritatively **makes and enforces laws**
+
+
+---
+
+
+
+---
+## Authoritative 
+
+.pull-left[
+- The ability to issue commands with the *expectation* that they will be followed
+
+- .bold[Legitimate] Authority: A rightful or justified authority to claim authority over another]
+
+
+.pull-right[
+
+- .bold[Ordinances]: A law made by a city (or municipal) legislature (such as the Atlanta City Council).
+
+- .bold[Statutes]: A law made by Congress or a state legislature
+
+- .bold[Regulations]: Rules made by bureaucratic agencies that have the force of law
+
+
+]
+
+???
+Where does the US government derive their legitimate authority to make and enforce laws. The book frames laws as the way governments formally issue commands. The enforcement  can have lots of interpretations making regulations slightly inconcsistent. When you get to the federal levels there are lots of lawyers who spend their time figuring this stuff out. And like really good ones who once they leave will go and teach at fancy law schools
+
+
+
+---
+
+
+---
+## Our Aside on Weber 
+
+.pull-left[
+
+&lt;gsu-blockquote-red&gt;
+We have to say that a state is a human community that (successfully) claims the monopoly of the legitimate use of physical force within a given territory
+&lt;/gsu-blockquote-red&gt;
+
+]
+
+
+.pull-right[
+### Why Does the Book Not Like Weber?
+
+- Emphasis on the *Executive* function of government
+
+- The concept of the  *monopoly* of the use of force 
+
+- Sovereignty
+
+
+
+]
+???
+Can some body remind us what sovereignty is? 
+
+Sovereignty: To have sovereignty is to be the highest authority to rule over a given territory
+
+The book in particular gets huffy about this. Because ultimately the U.S government derives its ultimate authority from the people. The book kind of sees Weber as the state inherently having the ultimate authority. This is not an unfair reading of Weber. There are parts of the same piece that elude to popular sovereignty but it not really elucidated. Conceptually we can kind of think of this difference as like how is the power to use force elucidated
+
+Does this substantively matter for your day to day experience with government? No not really.  
+---
+
+
+---
+## The Collective Action Problem 
+
+.pull-left[
+.bg-light-blue.b--blue.ba.bw2.br3.shadow-5.ph4.mt5[
+
+Multiple individuals would benefit from a certain action,  but this action has a cost that makes it implausible that any individual can or will undertake and solve it alone 
+
+.tr[- Mancur Olson]
+
+
+]]
+
+
+.pull-right[
+### Public Goods 
+
+- Non-rivalrious 
+
+- Non-excludable
+
+]
+
+
+
+---
+
+
+---
+## What Other Kinds of Goods Are There??
+
+- Lots!!
+&lt;center&gt;
+![](https://quickonomics.com/wp-content/uploads/2016/10/TypesOfGoods.jpg)
+
+&lt;/center&gt;
+
+---
+
+---
+## Selective Incentives 
+
+<div id="dvwkzyvybv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#dvwkzyvybv .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#dvwkzyvybv .gt_heading {
+  background-color: #FFFFFF;
+  text-align: left;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#dvwkzyvybv .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#dvwkzyvybv .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#dvwkzyvybv .gt_bottom_border {
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dvwkzyvybv .gt_col_headings {
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 1px;
+  border-bottom-color: #334422;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#dvwkzyvybv .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#dvwkzyvybv .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#dvwkzyvybv .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#dvwkzyvybv .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#dvwkzyvybv .gt_column_spanner {
+  border-bottom-style: none;
+  border-bottom-width: 1px;
+  border-bottom-color: #334422;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#dvwkzyvybv .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#dvwkzyvybv .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#dvwkzyvybv .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#dvwkzyvybv .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#dvwkzyvybv .gt_row {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#dvwkzyvybv .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#dvwkzyvybv .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dvwkzyvybv .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#dvwkzyvybv .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dvwkzyvybv .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#dvwkzyvybv .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#dvwkzyvybv .gt_table_body {
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #FFFFFF;
+}
+
+#dvwkzyvybv .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#dvwkzyvybv .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#dvwkzyvybv .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#dvwkzyvybv .gt_sourcenote {
+  font-size: 90%;
+  padding: 4px;
+}
+
+#dvwkzyvybv .gt_left {
+  text-align: left;
+}
+
+#dvwkzyvybv .gt_center {
+  text-align: center;
+}
+
+#dvwkzyvybv .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#dvwkzyvybv .gt_font_normal {
+  font-weight: normal;
+}
+
+#dvwkzyvybv .gt_font_bold {
+  font-weight: bold;
+}
+
+#dvwkzyvybv .gt_font_italic {
+  font-style: italic;
+}
+
+#dvwkzyvybv .gt_super {
+  font-size: 65%;
+}
+
+#dvwkzyvybv .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="color: #A9A9A9; font-family: &#39;Source Sans Pro&#39;; text-transform: uppercase;">Positive Incentives</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="color: #A9A9A9; font-family: &#39;Source Sans Pro&#39;; text-transform: uppercase;">Negative Incentives</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left" style="font-family: 'Source Sans Pro'; font-weight: 400;">Tax Credits</td>
+<td class="gt_row gt_left" style="font-family: 'Source Sans Pro'; font-weight: 400;">Fines</td></tr>
+    <tr><td class="gt_row gt_left" style="font-family: 'Source Sans Pro'; font-weight: 400;">Tax Breaks</td>
+<td class="gt_row gt_left" style="font-family: 'Source Sans Pro'; font-weight: 400;">Higher Taxes</td></tr>
+    <tr><td class="gt_row gt_left" style="font-family: 'Source Sans Pro'; font-weight: 400;">Convincing</td>
+<td class="gt_row gt_left" style="font-family: 'Source Sans Pro'; font-weight: 400;">Shaming</td></tr>
+    <tr><td class="gt_row gt_left" style="font-family: 'Source Sans Pro'; font-weight: 400;">Production Based Incentives</td>
+<td class="gt_row gt_left" style="font-family: 'Source Sans Pro'; font-weight: 400;">Jail Time</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+
+
+???
+Okay using what we know about government so far how can we start to think of what the book calls the power of the purse and the power of the sword? Well start to think of the little graphic I keep posting 
+
+---
+
+
+
+---
+class: center, middle, inverse
+
+# American Way of Politics
+
+
+---
+
+---
+## Rule of Law 
+
+## Constitutional Democracy
+.pull-left[
+&lt;center&gt;
+&lt;gsu-blockquote-alt&gt;
+
+
+Governments, like the United States, that are effectively bound by fundamental laws are called “constitutional governments.”
+
+
+
+
+&lt;/gsu-blockquote-alt&gt;
+&lt;/center&gt;
+]
+
+.pull-right[
+
+- **Rule of Law**: The idea that **all** citizens, **including government officials**, are bound by laws
+
+- **Fundamental law**: The federal government is bound by the laws declared in the Constitution. If a statute is in conflict with the law of the constitution, then the statute is considered unlawful. ] 
+
+
+
+
+---
+
+
+---
+## Constitutional Government 
+
+.pull-left[
+
+&lt;gsu-blockquote-blue&gt; 
+If men were angels, no government would be necessary. If angels were to govern men, neither external nor internal controls on government would be necessary. In framing a government which is to be administered by men over men, the great difficulty lies in this: you must first enable the government to control the governed; and in the next place oblige it to control itself. 
+
+&lt;/gsu-blockquote-blue&gt;
+
+]
+
+--
+
+
+.pull-right[
+
+The purpose of constitutional government is to empower and limit its power
+
+Done Through auxiliry precautions 
+  - Dependence of the people
+  - Checks and Balances 
+
+
+
+]
+
+---
+
+
+---
+class: center, middle, inverse
+
+# The American Way of Politics
+
+
+---
+
+---
+## A Ideological Positions 
+
+<div id="hktonndede" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-family: Lato, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#hktonndede .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: #FFFFFF;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#hktonndede .gt_heading {
+  background-color: #FFFFFF;
+  text-align: left;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#hktonndede .gt_title {
+  color: #333333;
+  font-size: 24px;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#hktonndede .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#hktonndede .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#hktonndede .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#hktonndede .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#hktonndede .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#hktonndede .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#hktonndede .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#hktonndede .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#hktonndede .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#hktonndede .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#hktonndede .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#hktonndede .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#hktonndede .gt_row {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #F6F7F7;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#hktonndede .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 80%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#hktonndede .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#hktonndede .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#hktonndede .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#hktonndede .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#hktonndede .gt_striped {
+  background-color: #FAFAFA;
+}
+
+#hktonndede .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#hktonndede .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#hktonndede .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#hktonndede .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#hktonndede .gt_sourcenote {
+  font-size: 12px;
+  padding: 4px;
+}
+
+#hktonndede .gt_left {
+  text-align: left;
+}
+
+#hktonndede .gt_center {
+  text-align: center;
+}
+
+#hktonndede .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#hktonndede .gt_font_normal {
+  font-weight: normal;
+}
+
+#hktonndede .gt_font_bold {
+  font-weight: bold;
+}
+
+#hktonndede .gt_font_italic {
+  font-style: italic;
+}
+
+#hktonndede .gt_super {
+  font-size: 65%;
+}
+
+#hktonndede .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 65%;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Issue Area</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Liberals</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Conservatives</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left">Regulating the Economy</td>
+<td class="gt_row gt_left">Supports Govt Regulations</td>
+<td class="gt_row gt_left">Supports Less Govt Regulation</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Economic Security</td>
+<td class="gt_row gt_left gt_striped">More Supportive Programs</td>
+<td class="gt_row gt_left gt_striped">Supports Programs but at lower levels</td></tr>
+    <tr><td class="gt_row gt_left">Government Promotion of Social Equality</td>
+<td class="gt_row gt_left">Wants laws/programs to increase social standing of historically oppressed groups</td>
+<td class="gt_row gt_left">Generally favor the status quo</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Traditional Moral Values(Abortion, prayer in schools, same-sex marriage etc</td>
+<td class="gt_row gt_left gt_striped">Generally oppose</td>
+<td class="gt_row gt_left gt_striped">Supports laws/programs that uphold these traditional values</td></tr>
+    <tr><td class="gt_row gt_left">Law Enforcement and Criminal Justice</td>
+<td class="gt_row gt_left">Want body cams on police/dashboard.  Oppose: death penalty, long prison sentence, mandatory minimum sentencing laws, restrictions of felons after serving their time.</td>
+<td class="gt_row gt_left">Greater leeway to police.  More likely to support “Law &amp; Order” policies like the death penalty, long prison sentences, mandatory minimums, restricted rights for former felons.</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+
+???
+Politics of Interest: Struggle to exert influence over government emanating from conflicting economic interests and the efforts by individuals and groups to advance public policies that benefit themselves and pass burdens onto others. (Contrast with Politics of Principle)
+
+
+Politics of Principle: Political conflicts emanating from genuine disagreements over ideology, justice (e.g. what rights we have), and/or what will truly be advantageous for the people.
+
+---
+
+
+
+
+
+---
+class: center, middle, inverse 
+
+# The Constitution
+
+---
+
+
+---
+## Design Principles (AOC)
+
+- Confederacy 
+
+- Weak Central Authority
+
+- No Clear Supremacy of Authority 
+
+- Super Majority Required to do Anything
+
+- **No** Direct Authority Over the People
+
+???
+The articles of confederation is interesting. The last bullet point limits the way in which the government has power over people. Instead, it only claims authority, and seeks to exercise power, over the state governments. In this sense, the central government in a confederacy is best described as a government over governments instead of a government over individuals
+
+This is kind of bold because if you have done the chapter you know that states could only be requistioned. Which is just fancy for "be asked nicely to pay the federal government" 
+
+The great vice of that the study guide refers to is the first bullet point. Effectively as we have covered the states held so much power that the centeral government could not excercise any of the limited power that it had. If this part of the study guide was confusing it was because it is like a snippet of an entire essay that you could only find if you clicked on an endnote.
+
+---
+
+
+---
+## Design Principles of The Constitution
+
+- Federalism 
+
+- Popular Sovereignty 
+
+- Representative Democracy 
+
+- Separation of Powers 
+
+- Small List of Civil Liberties
+
+
+???
+Federalism: Splits the difference  between full unitary or full confederacy 
+The early federalism kind of made clearer distinctions over what policy areas should be handled by the Federal gov and what responsibilities were the states. While also making sure there was a clear mechanism between resolving conflicts between state and federal law.
+
+
+Popular Sovereignty: The book highlights how the constitution has many avenues to amending the constitution. It also highlights that the constitution is ratifyied under the authority of the sovereign people. 
+
+Representative Democracy: the direct enshrinement of the right to elect politicians. While there is some odditites like how senators are elected and how we (still) elect the president. However, this was pretty unique at the time. While who was allowed to do this was severly constrained
+
+Seperation of powers: This is still a pretty interesting idea. Among the institutions in the US each has some unique authorities, and has the ability to make the others life harder. The original idea was to create branches that were co-equal but were not really meant to be trusted. To ensure that the protections they wrote down were protected
+
+seperation of powers just comes from a dead french guy named Montesquieu.
+
+civil liberties: part of the opposition to the constitution was just how powerful the central government was. To ensure that they had enough support to actually past the thing they had to concede to some anti-federalist systems. Part of this was to specifically guarantee protections for individual rights 
+
+
+---
+
+
+---
+
+---
+## The Branches 
+
+&lt;img src="images/Branches.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+---
+class: center, middle
+## Checks and Balances
+
+![](https://abaforlawstudents.com/wp-content/uploads/2018/05/separation-of-powers-2.jpg)
+
+---
+
+
+
+
+---
+class: center, middle, inverse
+
+# Federalism 
+
+
+---
+
+---
+## Benefits and Weaknesses 
+
+.pull-left[
+### Greater National Authority
+Preserves the union
+
+Reduces compliance costs
+
+Provides national public goods
+
+Reduces negative externalities
+
+Protects minority rights
+
+Prevents races to the bottom
+
+]
+
+.pull-right[
+### Greater State Authority
+
+Protects liberty
+
+Represents local diversity
+
+Allows for policy experimentation
+
+Benefits from foot voting
+
+Fosters democratic citizenship
+
+
+]
+???
+Preserving the union: If we give to much power to the states they start acting like their own mini countries making the union weaker
+
+reducing compliance costs: if we have one set of rules it makes things easier to monitor and there are clearer red lines. Rather than lots of different red lines
+
+negative externalities: stronger national governments are in better positions to monitor and fix market failures. If we remember back to our collective action problem. An externality is: A cost or benefit to someone who did not choose that cost or benefit. In essence it is something that is outside the price but effects the price. The cost of something is lower than it should because the producer is not actually bearing that cost. We will inevitably end up with a lot stuff like pollution because producers bear none of the costs but in essence we all do. Stronger central governments are in better positions to ensure that somebody bears the cost 
+
+Preventing races to the bottom: This is kind of intersting because as we went over there are a whole host of regulations. States use attractive tax packages to get companies to relocate. This brings a whole host of benefits. If you are trying to bring in big tech you get prestige, an influx of higher incomes, a natural demand for more stuff, and lots of capital
+
+The federal government is in a much better position to bargain vis a vis larger corporations in some respects. States want to keep businesses and jobs within there states rather than in somebody elses state. So they are more willing to make favorable deals. The federal government is primarily concerned about keeping some industries within the US. The threat of exit for some industries are less credible than others. While some politicians rely on certain sectors to provide votes due to the make up of factors in their districts. 
+
+---
+
+
+---
+## Races to the Bottom
+
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/3XE5m_meLVw?start=81" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+
+
+
+---
+
+
+
+
+---
+
+## That Federalism Video
+
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/J0gosGXSgsI?start=5" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+
+---
+
+
+---
+## The Phase of Federalism I didn't Cover
+
+
+- Grants in Aid: money or land provided to state or local governments conditional on meeting federal requirements 
+
+- Categorical grants: a type of federal grant-in-aid that provides relatively strict and specific guidelines on how the state or local government receiving the money must spend it.
+
+- Block Grants: A block grant is a federal grant-in-aid that provides states and/or local governments with significant freedom to decide how to spend the money.
+
+- unfunded mandates: Federal regulatory or spending requirements placed on states that states need to pay for with their own funds
+
+???
+Once we move to the great society program lots of federal funds to the state took the form of grant money. The federal government started to use these to get states closer aligned to federal priorities. However, conservatives did not like this because they thought that states should have more public policy power and that the liberal approach to providing funds to the state were coercive. 
+
+One particular example is how the federal government made the drinking age 21 across the nation. States were required to enforce the current drinking age or risk losing out of 10% of federal highway funds. Louisana was like the last state to do this with the Clinton administration threatening to withhold 17 million dollars in federal highway funds.
+
+
+---
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true,
+"navigation": {
+"scroll": true
+}
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

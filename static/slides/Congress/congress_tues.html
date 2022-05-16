@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Congress</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Josh Allen" />
+    <meta name="date" content="2022-04-12" />
+    <script src="congress_tues_files/header-attrs/header-attrs.js"></script>
+    <link href="congress_tues_files/remark-css/default.css" rel="stylesheet" />
+    <link href="congress_tues_files/panelset/panelset.css" rel="stylesheet" />
+    <script src="congress_tues_files/panelset/panelset.js"></script>
+    <script src="congress_tues_files/clipboard/clipboard.min.js"></script>
+    <link href="congress_tues_files/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="congress_tues_files/shareon/shareon.min.js"></script>
+    <link href="congress_tues_files/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="congress_tues_files/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="congress_tues_files/tachyons/tachyons.min.css" rel="stylesheet" />
+    <link href="congress_tues_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="congress_tues_files/tile-view/tile-view.js"></script>
+    <link href="congress_tues_files/vembedr/css/vembedr.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Congress
+## Class 2
+### Josh Allen
+### 2022-04-12
+
+---
+
+
+
+
+
+&lt;style type="text/css"&gt;
+/*
+Title: GSU Xaraingan Theme
+Author: Josh Allen
+Updated: 12/26/2021
+Description: A GSU theme for Xaringan presentations. Modifid based on 
+             Joseph V. Casillas's Rutgers theme and Tuo Wang's UW-Madison Theme
+References: https://github.com/jvcasillas/ru_xaringan, https://github.com/ttuowang/Xaringan-wisconsin-theme. Colors and Logo from https://commkit.gsu.edu/university-logos/
+*/
+
+
+
+a, a &gt; code {
+  color: #cc0033; /* rgb(249, 38, 114) */
+  text-decoration: none;
+}
+
+/* slightly lower and bigger than default */
+.footnote {
+  position: absolute;
+  bottom: 1em;
+  padding-right: 4em;
+  font-size: 95%;
+}
+
+/* important code slightly red */
+.remark-code-line-highlighted {
+  background-color: #FFD3DE !important;
+}
+
+/* color tweak */
+.inverse {
+  background-color: #0039A6;
+  color: #FFFFFF;
+  text-shadow: 0 0 20px #333;
+}
+
+/* slightly spacing change */
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #f3f3f3;
+  line-height: 1.0em;
+}
+
+/* Two-column layout */
+.left-column {
+  color: #777;
+    width: 30%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+
+.left-column1 {
+  color: #777;
+    width: 34%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
+.right-column {
+  width: 67%;
+  float: right;
+  padding-top: 0em;
+}
+
+.right-column1 {
+  width: 63%;
+  float: right;
+  padding-top: 0em;
+}
+
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ * {
+  clear: both;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee }
+
+@page { margin: 0; }
+
+/* adjust table horizontal spacing */
+th, td {
+    padding:0 15px 0 15px;
+}
+
+.remark-slide table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+.remark-slide table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) { background: #eee }
+
+/* leave this alone */
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+/* gsu additions */
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Title slide */
+
+/* Add image and change bg color */
+.title-slide {
+  background-image: url(https://commkit.gsu.edu/files/2019/06/PrimaryLogo3color.jpg);
+  background-position: 100% 0%;
+  background-size: 300px;
+  background-color: #fff;
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+/* H1 fonts */
+.title-slide h1 {
+  color: #0039A6;
+  padding-top: 100px;
+  font-weight: normal;
+  font-size: 60px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+/* H2 fonts */
+.title-slide h2 {
+  color: #CC0000;
+  font-size: 34px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+
+/* H3 fonts */
+.title-slide h3 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #666666;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 15px;
+  margin: 0px;
+  line-height: 1;
+}
+
+/* Remove slide count shadow */
+.title-slide .remark-slide-number {
+  text-shadow: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~*/
+/* Global adjustments */
+/*~~~~~~~~~~~~~~~~~~~~*/
+
+/* Add padding to all slides for 16:9 aspect ratio */
+.remark-slide-content {
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+  font-size: 21px;
+}
+
+/* Color adjustments for text */
+
+strong {
+  color: #ea5455;
+}
+
+.bold { font-weight: bold; }
+
+.gsu-blue{
+  color: #0039A6;
+}
+
+.gsu-dark{
+  color: #776E64;
+}
+
+.gsu-gray-blue{
+  color: #dadfe1;
+}
+
+.gsu-gray-darker{
+  color: #646569;
+}
+
+.gsu-gray-darkest{
+  color: #282728;
+}
+
+.gsu-anchor-color{
+  color: #0479a8;
+}
+
+
+
+/* Colors are from the Met brewer package */
+
+.hiro-red{
+  color: #e76254;
+}
+
+.hiro-orange{
+  color: #ef8a47;
+}
+
+.hiro-light-orange{
+ color: #f7aa58; 
+}
+
+.hiro-yellow{
+  color: #ffd06f ;
+}
+
+.hiro-light-blue{
+  color: #528fad ;
+}
+
+.hiro-dark-blue{
+  color: #376795;
+}
+
+.vero-red{
+  color: #67322e;
+}
+
+.vero-brown{
+  color: #99610a;
+}
+
+.vero-yellow{
+  color: #c38f16;
+}
+
+
+.vero-teal{
+  color: #6e948c;
+}
+
+.vero-blue{
+  color: #122c43;
+}
+
+/* Color adjustments to headers */
+h1 {
+  color: #0039A6;
+}
+
+h2 {
+  color: #CC0000;
+}
+h3 {
+  color: #776E64;
+}
+
+/* Font size tags */
+.big {
+  font-size: 1.5em;
+}
+
+
+
+
+
+/* gsu blockquote */
+gsu-blockquote-red {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #c5050c;
+  border-right: solid 20px #c5050c;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+
+gsu-blockquote-blue {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #0039A6;
+  border-right: solid 20px #0039A6;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+gsu-blockquote-alt {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #776E64;
+  border-right: solid 20px #776E64;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/*~~~~~~~~~~~~~~*/
+/* I like the frames*/
+/* and cols in Allison Hill's */
+/* https://alison.netlify.app/ares-kind-tools/*/
+/*~~~~~~~~~~~~~~*/
+
+.frame h1 {
+  color: #0039A6;
+  padding-bottom: 1.0em !important;
+  border-bottom: 3px solid var(#7899d4ff);
+}
+
+
+
+
+/*~~~~~~~~~~~~~~*/
+/* Highlight    */
+/*~~~~~~~~~~~~~~*/
+
+.highlight-last-item &gt; ul &gt; li, 
+.highlight-last-item &gt; ol &gt; li {
+  opacity: 0.5;
+}
+.highlight-last-item &gt; ul &gt; li:last-of-type,
+.highlight-last-item &gt; ol &gt; li:last-of-type {
+  opacity: 1;
+}
+
+.bold-last-item &gt; ul &gt; li:last-of-type,
+.bold-last-item &gt; ol &gt; li:last-of-type {
+  font-weight: bold;
+}
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+/*
+GSU fonts
+Author: Josh Allen
+Updated: 05/24/2021
+
+I am just borrowing fonts used in the https://www.andrewheiss.com/blog/ 
+*/
+
+/* Add maven for code font (keep other xaringan defaults */
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&amp;display=swap');
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&amp;display=swap');
+
+body { font-family:'Roboto', 'Barlow Semi Condensed', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+
+h1, h2, h3 {
+  font-family: 'Archivo Narrow';
+  font-weight: normal;
+}
+
+/*
+h2, h3 {
+  font-family: 'Roboto Condensed';
+  font-weight: normal;
+}
+*/
+
+.remark-code, .remark-inline-code { font-family: 'Inconsolata', monospace; }
+.remark-code-line-highlighted     { background-color: #ffff88; }
+&lt;/style&gt;
+
+
+
+
+
+---
+# Looming Deadlines
+
+.bold[Misinfo Activity] Due Sunday
+
+---
+
+
+
+---
+class: center, middle, inverse
+
+# Rules and Procedures
+
+---
+
+---
+## Powers of Congress
+
+- .vero-red[Enumerated Power]: Powers that are explicitly stated in Constitution
+  - 17 powers - Article I Section VIII
+  
+- .vero-blue[Implied Powers]: powers implied by the Neccessary and Proper (Elastic) Clause beyond those of the enumerated powers 
+
+
+???
+Before we again really explore the powers of Congress, we should remember the two kinds of powers that Congress has. 
+
+The first kind of powers that Congress has are enumerated powers. Remember that enumerated powers are those that are explicitly state in the Constitutions. Congress has 17 enumerated powers, which are all specified in Article 1, Section 8 of the Constitution.
+
+The second kind of powers that Congress has are implied powers. These are powers that are implied by the Necessary and Proper Clause and are powers beyond those that are explicitly enumerated
+
+
+---
+
+---
+## Enumerated Powers of Congress
+
+
+- Lay and collect taxes 
+- To borrow on the credit of the US
+- To regulate Commerce 
+- To establish uniform rule of Naturalization
+- To Coin Money 
+- To Provide for Punishment of Counterfeiting Money 
+- To Establish Post Offices 
+- To Promote the Progress of Science and useful Arts– Copyrights 
+- To constitute Tribunals inferior to the  Court 
+- To define and punish Piracy and Crimes on the High Seas 
+- To Declare War
+-  To raise and support Armies 
+- To provide and maintain a Navy 
+- To make rules for governing and regulating the military 
+- To provide for militias to suppress insurrection or repel invasion
+- To organize, arm, and discipline the Militia in service to the US
+- To make laws  
+
+
+
+
+---
+
+---
+## Special Powers of Each Chamber
+
+
+- House
+  - Vote to impeach
+  - Origination of all Revenue bills
+- Senate
+  - Nominations &amp; confirmations 
+  - Holds the trial to impeach
+  - Ratify all treaties
+
+
+
+---
+
+
+
+---
+## The Ones We Will Focus On
+
+- Impeachment
+
+- War Powers
+
+- Oversight
+
+- Lawmaking
+
+???
+We will not be exploring all of the enumerated powers of Congress. Rather, we will be focusing on the five listed here.
+
+
+Oversight – (key term) – efforts by congress to make sure that laws are implemented correctly by the bureaucracy after they have been passed. 
+
+
+
+War powers – Congress has to officially declare war. Does this happen every time? Are there examples of when this did not happen? 
+	Fun fact: Last official declared war by Congress was WWII.   
+
+ 
+
+---
+
+---
+## Impeachement 
+
+- The check that Congress has over the other branches that - allows them to remove officers of the United States for - various different abuses of powers
+ 
+- Does _*NOT*_ mean removal from office
+  - 4 Presidents
+  - 15 Federal Court Judges
+  - 1 Senator
+
+
+???
+Impeachment is the check that Congress has over the other branches that allows them to bring charges against and remove officers of the United States for various different abuses of powers.  
+
+THIS DOES NOT MEAN REMOVAL FROM OFFICE. Impeachment is merely the first step of bringing charges against an individual. Removal from office is a separate procedure.
+
+Impeachment proceedings begin in the House of Representatives. If an impeachment vote is passed in the House, the chargers are forwarded to the Senate. In the Senate, once the charges have been forwarded, a trial takes place on the floor of the Senate, which is presided over by the Chief Justice of the Supreme Court. At the end of the trial, a vote to remove the official is brought and must be passed with a 2/3 majority for the official to be removed from office.
+
+Impeachment proceedings have occurred for three presidents (Clinton, Johnson, and Nixon), senators (1) and Federal Judges (15).  
+
+Some of the offenses for which impeachment charges have been brought include: abuse of power, drunkenness, rebelling against the government, and perjury.  
+
+
+----
+
+
+---
+## War Powers
+
+- .vero-red[War Powers Clause]: [The Congress shall have Power…] To declare War, grant Letters of Marque and Reprisal, and make Rules - concerning Captures on Land and Water
+
+- .vero-blue[War Powers Act of 1941]
+  - American emergency law that increased Federal power during World War II
+
+- .vero-brown[War Powers Resolution of 1973]
+  - Federal law intended to check the president’s power to commit - the United States to an armed conflict without the consent of - Congress
+
+
+???
+The second enumerated power of Congress is the War Powers.
+Congress has the exclusive power to officially declare war. However, in the modern era, this power has rarely been used. The last time war was officially declared by Congress was during World War II.
+Despite it’s rare usage, Congress has passed a number of bills related to it’s war making powers.
+The first was the War Powers Act of 1941. This act dramatically increased federal power during World War II, authorizing Franklin Roosevelt to reorganize the Executive branch and the Bureaucracy to streamline the war effort. A subsequent act passed in 1942 which allowed the federal government to acquire any land within the United States for the war effort, among other things.
+
+Following the Executive branches continued willingness to engage in military conflicts without a declaration of war, Congress passed the War Powers Resolution of 1973. This act requires the president to notify Congress within 48 hours of committing armed forces to military action, and requires the president to seek continued approval for troop deployments within the first 60 days.
+
+
+---
+
+
+---
+## What About...
+
+
+
+<div id="kudgifpbol" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#kudgifpbol .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #F6F6F6;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #40C5FF;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#kudgifpbol .gt_heading {
+  background-color: #F6F6F6;
+  text-align: left;
+  border-bottom-color: #F6F6F6;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#kudgifpbol .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #F6F6F6;
+  border-bottom-width: 0;
+}
+
+#kudgifpbol .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #F6F6F6;
+  border-top-width: 0;
+}
+
+#kudgifpbol .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kudgifpbol .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #40C5FF;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #ECECEC;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#kudgifpbol .gt_col_heading {
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#kudgifpbol .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#kudgifpbol .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#kudgifpbol .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#kudgifpbol .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #ECECEC;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#kudgifpbol .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #BEBEBE;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #BEBEBE;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#kudgifpbol .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: bold;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #BEBEBE;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #BEBEBE;
+  vertical-align: middle;
+}
+
+#kudgifpbol .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#kudgifpbol .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#kudgifpbol .gt_row {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: white;
+  border-top-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#kudgifpbol .gt_stub {
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kudgifpbol .gt_stub_row_group {
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#kudgifpbol .gt_row_group_first td {
+  border-top-width: 1px;
+}
+
+#kudgifpbol .gt_summary_row {
+  color: #333333;
+  background-color: #F6F6F6;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kudgifpbol .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#kudgifpbol .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#kudgifpbol .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kudgifpbol .gt_grand_summary_row {
+  color: #333333;
+  background-color: #F6F6F6;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kudgifpbol .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#kudgifpbol .gt_striped {
+  background-color: #ECECEC;
+}
+
+#kudgifpbol .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #FFFFFF;
+}
+
+#kudgifpbol .gt_footnotes {
+  color: #333333;
+  background-color: #F6F6F6;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#kudgifpbol .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kudgifpbol .gt_sourcenotes {
+  color: #333333;
+  background-color: #F6F6F6;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#kudgifpbol .gt_sourcenote {
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kudgifpbol .gt_left {
+  text-align: left;
+}
+
+#kudgifpbol .gt_center {
+  text-align: center;
+}
+
+#kudgifpbol .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#kudgifpbol .gt_font_normal {
+  font-weight: normal;
+}
+
+#kudgifpbol .gt_font_bold {
+  font-weight: bold;
+}
+
+#kudgifpbol .gt_font_italic {
+  font-style: italic;
+}
+
+#kudgifpbol .gt_super {
+  font-size: 65%;
+}
+
+#kudgifpbol .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#kudgifpbol .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#kudgifpbol .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#kudgifpbol .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#kudgifpbol .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Conflict</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Legal Basis</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: white;">Korea (1950-1955)</td>
+<td class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: white;">Police Action</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Vietnam (1961 - 1975)</td>
+<td class="gt_row gt_left gt_striped"> Joint Resolution of Congress </td></tr>
+    <tr><td class="gt_row gt_left">Lebanon (1982-1983)</td>
+<td class="gt_row gt_left">Lebanon Emergency Assistance Act/UN multinational force</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Gulf War (1990 - 1991)</td>
+<td class="gt_row gt_left gt_striped">UN Security Council Resolution</td></tr>
+    <tr><td class="gt_row gt_left">Afghanistan (2001 - 2021)</td>
+<td class="gt_row gt_left">Authorization for the Use of Military Force 2001</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Iraq (2003 - 2011)</td>
+<td class="gt_row gt_left gt_striped">AUMF</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+
+
+
+---
+
+---
+## Oversight 
+
+- Oversight – over Bureaucracy
+  - Efforts by Congress to make sure that laws are implemented correctly by the bureaucracy after they have been passed
+
+
+???
+Congress’s oversight abilities apply to the Bureaucracy, and refers to their efforts to make sure that laws are implemented correctly after they have been passed. This is usually done through a series of hearings in which members of the bureaucracy are called to Congress to discuss the procedures that they have implemented to enact laws.
+
+
+
+
+---
+
+
+---
+## Leadership Positions in Congress
+
+- Vice President
+
+- Speaker of the House
+
+- Majority/Minority Leaders
+
+- Majority/Minority Whips
+
+- President Pro Tempore
+
+???
+Before we dive into the lawmaking powers and process of Congress, we need to take sometime to explore the role that political parties play in Congress. Parties serve to help coordinate the actions of members of their parties, especially in the lawmaking process. By far, the most important parts of parties are the leadership roles that are occupied by high-ranking members of each part.
+
+---
+
+---
+
+## Political Parties in Government
+
+- Unified Government – Presidency, House and the Senate are all controlled by the same party
+Fast policy changes
+
+- Divided Government – when one party controls the Presidency, and another party controls the House, the Senate or both
+  - Leads to gridlock or slow policy changes
+  - Can lead to government shutdowns
+
+
+
+---
+
+
+---
+layout: false
+
+&lt;img src="dem-leadership.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+
+???
+The first leadership role in the House is the Speaker. The Speaker of the House is the elected leader of the House and their primary role is to lead the majority power and essentially “control the fate” of legislation in the house. She is the second in line for succession after the President and the Vice-President.  Speakers control the fate of legislation by determining which committees bills are assigned to as they work their way through the legislative process. Finally, the Speaker of the House controls the floor schedule, determining when bills will be debated on the floor and for how long they will be debated.
+
+Next, the Majority and Minority Leaders assist leadership by guiding, articulating, planning, and implementing the legislative agenda/strategy of their party. They also determine which committees individuals will serve on. The Majority Leader in the House is currently Steny Hoyer, and the Minority Leader is Kevin McCarthy.
+
+Finally, the Majority and Minority Whips further help leadership in the passage or opposition to proposed pieces of legislation. Their job is literally to “whip” their members into line, and to leverage future pieces of legislation, specific amendments, committee assignments, and future electoral support to encourage their members to vote for/against pieces of legislation. The Majority Whip is currently James Clyburn and the Minority Whip is Steve Scalise.
+
+
+
+---
+
+
+
+---
+layout: false
+
+
+&lt;img src="gop-leadership.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+
+---
+## House Partisan Breakdown 
+
+
+&lt;img src="figs/unnamed-chunk-4-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+
+
+---
+layout: false
+&lt;img src="senate-dem.jpg" width="58%" style="display: block; margin: auto;" /&gt;
+
+???
+The first leadership position in the Senate actually lies in the Executive branch. The Vice President serves as the president of the senate and casts the tie breaking votes within the Senate. 
+
+Next, the President Pro Tempore serves as the president of the Senate when the Vice President is not in Senate session. This position is always given to the longest serving member of the majority party in the Senate. He is the third in line for succession after the speaker of the house. This is generally considered an ornamental title since often the job of senate president is shared among junior senators (of the majority party) in an effort to teach them parliamentary procedure. 
+
+The role of the Majority and Minority Leaders and Whips in the Senate is largely the same as in the House. The only difference is that the Majority Leaders ability to control the floor schedule is minimized in the Senate because of the need for Cloture and the possibility of Fillibusters, but we will talk about both of those in more detail later.
+
+
+
+---
+
+
+
+---
+layout: false
+
+&lt;img src="senate-gop.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+---
+## Senate Partisan Breakdown 
+
+&lt;img src="figs/unnamed-chunk-7-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+
+
+
+
+---
+## How a Bill Becomes a law
+
+
+.pull-left[
+### Path of Least Resistance
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/OgVKvqTItto" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+]
+
+
+.pull-right[
+### How the Sausage Gets Made
+
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/s5eILKG5oSE" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+
+]
+???
+Now, the Schoolhouse Rock example is really the best case scenario. Now watch the video hyperlinked in this slide. It provides a much more realistic example of the lawmaking practice works in person, and the role that parties and party leadership can play in the process.
+
+---
+## How the Sausage Gets Made
+
+
+.pull-left[
+### House 
+
+- Speaker of the House decides where to send a bill
+  - Committee
+  - Subcommittee
+  - Subcommittee Committee Hearing
+- Report to full Chamber of House
+- Referred to Rules Committee
+  - Here they place a “rule” on the bill
+  - OPEN Rule – No limits on Amendments
+  - CLOSED Rule – No Amendments at all
+- Goes to the House floor for votes
+- If approved, the bill goes to the Senate
+
+
+
+
+]
+
+.pull-right[
+### Senate
+- President of the Senate sends to committee
+  - Committee
+  - Subcommittee
+  - Subcommittee Committee Hearing
+  - Report to full Chamber of Senate
+- .bold[NO RULES COMMITTEE IN SENATE]
+- Goes to Senate floor for votes
+  - Here Senators may filibuster bills 
+  - Filibusters are ended with a cloture vote
+- If Senate version is different from the original House - version the bill is sent to a Conference Committee: 
+  - Conference Committee - members _from both chambers review the new bill_ 
+- If the Conference Committee’s proposal is approved in both Chambers the bill is sent to the President of the United States
+
+
+]
+
+???
+Now that we’ve watched these two separate examples of two very different ways that laws can be made, let’s look at this process in detail. We are going to assume that bills begin in the House for this step-by-step explanation, but you should note that, with the exception of tax legislation and budgets, bills can begin in either the House or the Senate. The overall process is the same regardless of where a bill begins, though.
+
+So once a bill has been written and proposed, it is presented to the Speakers of the House.
+
+The Speaker of the House then decides which committees to send the bill too. The Speaker can assign the bill to as many committees and subcommittees as they wish. If the Speaker does not want the bill to come to a vote, they will frequently use this process to “kill” the bill by assigning it to as many committees as they can.
+Once the bill is assigned a committee, the committee will hold a series of hearings where they ask for testimony from those that may be affected by the legislation and any relevant bureaucratic agencies that will be impacted by the bill. Additionally, each of these committees can propose changes and amendments to the bill. These are all voted on by the committee members and are either added to the bill or rejected at this stage. Once a committee is done with their hearings and proposed changes, they will take one final vote on whether they should report favorably on a bill or not. This is a simple majority vote.
+
+If a bill is reported on favorably in all of the committees it is assigned to, then it (and all of the amendments that the committees may have added) are reported to the full Chamber of the House. However, before the full House can begin debating the bill, the piece of legislation is sent to the Rules Committee
+
+The Rules Committee is unique to the House and determines whether amendments from the full House will be allowed to be debated and added. If the Rules Committee assigns an Open rule, then there are no limits placed on the ability of any member of the House to propose an amendment. However, if the Committee assigns a Closed rule, then no amendments to the bill can be proposed, debated, or added to the piece of legislation.
+
+Assuming that an Open rule has been placed on the legislation, once the bill is reported out of the Rules Committee it goes to the floor of the House where it is debated, and amendments are proposed, debated, and voted on. Remember that the Speaker of the House controls how long legislation is debated in the House, so this can either be a very long or very slow process.
+
+However, once debate on the legislation is ended, the full House votes. If it is approved with a simple majority vote, then the legislation is passed on to the senate. If it is not approved by a majority of the House, then the bill dies, and must be re-proposed in future terms.
+
+If the bill is advanced to the Senate, it’s first stop is to the President of the Senate. The President of the Senate then assigns the committees and subcommittees that the bill will be assigned to. There the same process of hearings, amendments, and changes as in the House takes place. Again, at the end of this process, each committee votes on whether to advance the legislation to the full Senate.
+
+If the legislation is reported favorably out of each of the Senate committees it has been assigned to, it is reported to the full Chamber of the Senate. One major difference between the House and Senate processes is that the Senate does NOT have a Rules Committee. Rather, all pieces of legislation can have amendments from the full Senate proposed and voted on. Additionally, unlike the House, there is no limit on how long the Senate can debate a bill. This is due to the filibuster process that exists in the Senate; we will talk about this more in just a minute, but for now you can think of filibustering as just talking a bill to death. The only way to end debate is with a Cloture vote. Once debate has ended, a full vote on the bill takes place.
+
+Assuming that the bill also passes the Senate, it is not automatically sent to the President, even if it has already been approved by the House. At the end of this process, it is extremely likely that the pieces of legislation that have been passed by the House and the Senate are different from each other. In this case, both versions of the bill are sent to a Conference Committee, which is made up of members from both the House and the Senate. The job of the Conference Committee is not to make the two versions of the bill identical. Once these changes are made, the new version of the bill is sent back to the House AND the Senate to be voted on again.
+
+If this piece of legislation is then passed by both chambers of Congress again, the bill is FINALLY sent to the president’s desk.
+
+
+---
+
+
+---
+## How the Sausage Gets Made continued
+
+Once a bill reaches the President he has 10 days to act:
+
+- Sign the Bill and it becomes law
+-  Veto
+  - 2/3 Support from both chambers may override a veto
+
+- Not Sign
+  - Automatically becomes law after 10 days while Congress is in  session
+  - Pocket Veto – If Congress adjourns during the 10 day period and the president does NOT sign, then the bill is vetoed and does not become law
+
+
+---
+
+---
+## Committees
+
+ Committee Types:
+ 
+ 
+ 
+- Standing: Committees that exist from session to session and have the power to propose and write legislation over a - particular subject matter
+Subcommittees
+
+- Select: Non-permanent committees that are established that highlight particular issues that arise within legislation
+
+- Joint: Committees that are formed with joint membership from - the House and the Senate
+  - Four are permanent
+
+- Conference: Temporary committees appointed by Speaker and the presiding Senate leadership intended to form a consensus of legislation between the two chambers
+
+???
+The last part of Congress’s structure that we need to spend a bit more time discussing. I’ve talked a lot about committees in the last few minutes, there are important difference between different types of committees.
+
+First, committees are specialized units created in Congress to provide functionality and due process to the creation of legislation. These committees are often broken down even further into subcommittee units in order for more specialization on bill content, and take many different forms. 
+
+Standing committees–are committees that exist from session to session and have the power to propose and write legislation over a particular subject matter. They generally correlate in subject matter to specific executive branch departments or agencies. 
+
+Select committees– are non-permanent committees that are established the highlight particular issues that arise within legislation that may or may not be under the jurisdiction of other existing committees. 
+
+Joint committees– are committees that are formed with joint membership from the House and the Senate. There are 4 that exist permanently. They are powerful in the investigative sense but do not have the power to present legislation.
+
+Conference committees– temporary committees appointed by Speaker and the presiding Senate leadership. They are formed in an effort to form a consensus on legislation between the House and the Senate.  These committees are crucial during times when the House and Senate majority are of opposing parties. 
+
+---
+
+
+---
+## Most Powerful Committees in Congress
+
+.pull-left[
+### House
+
+- Appropriations 
+  - Money - regulate expenditure of US govt 
+- Budget 
+  - Reviews Federal budget process 
+- Rules 
+  - Determines all the rules of how a bill can come to the floor 
+  - “traffic cop of Congress” 
+- Ways and Means 
+  - Writes all tax legislation and revenue programs 
+  - If a member it is only committee member can serve on 
+
+
+]
+
+.pull-right[
+
+### Senate
+
+- Appropriations 
+  - Money - regulate expenditure of US govt
+- Armed Services 
+  - Legislative oversight of all US military branches 
+- Finance 
+  - Legislation concerning taxation and other revenue programs 
+- Foreign Relations 
+  - Oversees all foreign-policy legislation including foreign aid, funding, and treaty ratification 
+
+
+]
+
+---
+
+---
+## Special Votes
+
+- Filibuster: Tactic used by senators to block a bill by - holding the floor and speaking to extend debate and prevent a  vote.
+
+- Cloture: Procedure in which senators can limit the amount of  debate on a bill with a supermajority (60) votes.
+
+- Override: In the case of a president vetoes a bill each House of Congress can vote for an override (2/3) to pass the bill.
+
+
+???
+
+Finally, there are a few special kinds of votes that we’ve discussed that you will need specific definitions for.
+
+The first of these is the filibuster vote. Filibustering is a tactic used by senators to block a bill by holding the floor and speaking to extend debate and prevent a vote. Filibusters can only last for as long as a senator, or a group of senators, can hold the floor for and prevent the ending of the debate period.
+
+Cloture is a procedure in which senators can limit the amount of debate on a bill with a supermajority vote.
+Cloture was first introduced in 1917 and remained a senate rule until 1949. 
+The rule was reinstated in 1959 and required a 2/3 majority. 
+This was revised in 1975 so that 3/5 of sworn senators could limit debate, except for changes to Senate rules which still require a 2/3 vote.
+
+Because of the extensive time that filibusters can take, the preference in recent years has been to move to other business when a filibuster has been threatened and cloture attempts have failed.
+
+
+Finally, override votes are only done in the case of a bill being vetoed by the president. This vote requires a 2/3 majority in both the House and the Senate to be successful.
+
+---
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": false,
+"navigation": {
+"scroll": true
+}
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

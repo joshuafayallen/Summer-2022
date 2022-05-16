@@ -1,0 +1,600 @@
+---
+title: "Presentation Ninja"
+subtitle: "⚔<br/>with xaringan"
+author: "Yihui Xie"
+institute: "RStudio, PBC"
+date: "2016/12/12 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: ["default"]
+    self_containted: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+
+---
+
+background-image: url(https://content.gallup.com/origin/gallupinc/GallupSpaces/Production/Cms/PMCMS/yu19hlkifeqot5afgos7hg.jpg)
+
+
+# Outline 
+
+- What are Governments and what do they do?
+
+- What Else is Out There?
+
+- American Gov Basics 
+
+---
+
+---
+class: center, middle
+# Definining What We Mean
+---
+
+---
+
+class: center, left
+# What are Governments and What Do they Do?
+
+.pull-left[
+
+```{r, echo=FALSE}
+knitr::include_graphics("images/capitol.png")
+```
+
+]
+
+.pull-right[
+```{r echo = FALSE}
+knitr::include_graphics("images/state_of_the_union.png")
+```
+
+]
+
+???
+Typically we think of government as focused within these individuals. Which is fair
+we see these people all the time in their various capacities. We know their names
+and every 2, 4, or 6 years they are on tv 24/7 asking to be re-elected 
+---
+
+---
+class: center, right
+
+## Government 
+
+.pull-left[
+```{r, echo= FALSE}
+knitr::include_graphics("images/dmv.png")
+
+
+```
+
+]
+
+.pull-right[
+```{r echo = FALSE}
+
+knitr::include_graphics("images/highway.png")
+```
+
+
+]
+???
+Government extends to lots and lots of stuff that you may or may not think about. Whether it be zoning, permitting, in some cases what policies universities can and cannot enact. Government pretty much touches everything.
+
+
+---
+
+## Defintion of Government
+### Textbook's Definition
+A Set of institutions that 
+
+1. Endure overtime 
+--
+
+2. Has **authority over the people** of a specific territory
+--
+
+3. Authoritatively **makes and enforces laws**
+
+
+---
+
+
+---
+
+## A Common Defintion
+
+
+.pull-left[ 
+### Long Version
+
+we have to say that a state is a human community that (successfully) claims the monopoly of the legitimate use of physical force within a given territory...... Specifically, at the present time, the right to use physical force is ascribed to other institutions or to individuals only to the extent to which the state permits it..... Hence, 'politics' for us means striving to share power or
+striving to influence the distribution of power, either among states or among groups within a state
+]
+
+--
+.pull-right[
+
+### TL;DR
+we have to say that a state is a human community that (successfully) claims the monopoly of the legitimate use of physical force within a given territory
+]
+
+???
+So the most common way we start to understand the state in Political Science is with 
+this old dead white guy named Max Weber. He was a fellow writing in the late 19th 
+century. He defines the state this way. The book takes great issue wit this definition for god knows what reason. But it is kind of focused on the all the other stuff that government does. All its forms
+and what not. I personally think it is dumb
+---
+
+
+---
+
+## Why is the Book's Definition longer?
+
+
+--
+
+- The minimalist aspect of it
+
+--
+
+- the overemphasis of the coercive aspects of government 
+
+--
+
+- Federalism
+
+--
+
+- Popular Sovereignty 
+
+???
+There are huge debates about the state and statemaking,
+but in general it is accepted that the stuff that the book mentions is wrapped up in Weber. The debate is long and honestly kind of boring. But what you need to know is that the book has lots of opinions. Most of which I kind of disagree with
+The Federalism thing is also technically wrong because Weber says that other things can use 
+force if and only if the state delegates them that authority. The book also makes the point that highest authority aka soveriegnty resides in the people. And that there is an inherent tension between the governemtn and the people in this arrangement 
+---
+
+
+---
+
+## Why is Weber so Popular
+
+.box-1[Think about other rule making organizations]
+
+--
+
+.box-2[The state is one among many in some respect (Midgal 1988, Spruyt 1996)]
+
+.box-3[ What makes the state so special?]
+
+--
+
+.box-4[The definition is minimal]
+
+???
+According Weber and many the most basic function of the state is to dominate other 
+social organizations. The state is the sole authority to use violence to enforce 
+their rules. The PTA, GSU student gov, etc cannot use violence to enforce those rules
+It would be pretty jarring if the local HOA started to kill people for violations of 
+HOA policies. 
+
+---
+
+
+# Break Time
+
+```{r echo=FALSE}
+countdown(minutes = 5, play_sound = TRUE, font_size = "1.5em")
+```
+
+
+---
+
+
+---
+class: center, middle, inverse
+
+# What is the Point of Government?
+
+
+---
+
+
+---
+class: center, left
+## The Game
+
+- If **all** of you choose A then you will get **10 points** toward your final grade
+
+--
+
+- If **one** of you chooses B then that person gets **50 points**toward their final grade
+
+--
+
+- But the class gets **no points**
+
+--
+
+- If **more than two people** choose B  than the class gets **no points**
+
+
+
+???
+There is no catch all you have to do is play. Monitor the situation however you 
+want. 
+
+---
+
+---
+
+class: center, middle
+## The Prisoners Dilemma
+
+
+- To understand the purpose of government we have to start with the prisoners dilemma
+
+- Basically the goal of the game is to maximize the number of points
+
+
+???
+The prisoners dilemma sets up nicely to talk about the role of government. Classically 
+the game is setup where two people are being questioned about a crime in seperate room.
+The suspects can either cooperate with each other and not say anything and be set free.
+One can confess and be set free and the other is sent to jail. They can both confess
+and both go to jail. This stylized game highlights when people incur costs themselves
+cooperation is hard.
+
+---
+
+---
+
+## The Collective Action Problem
+
+
+.pull-left[ 
+```{r echo = FALSE, out.width= "80%"}
+knitr::include_graphics("images/collective action.jpeg")
+```
+
+
+]
+
+--
+
+.pull.right[multiple individuals would benefit from a certain action,  but this action has a cost that makes it implausible that any individual can or will undertake and solve it alone - Olson]
+
+
+
+???
+The collective action problem is kind of a scaled up version of this.
+The personal costs that people incur make it difficult for people to get the group benefit. 
+This is sort of an interesting idea because the classical liberal view of the free market
+is that the pursuit of self interest leads to the collective good.
+
+---
+
+---
+
+## Enter Government
+
+- Cooperation is hard as we have seen 
+
+--
+
+- To entice people to cooperate we have to offer people selective incentives
+
+- This is where government comes in 
+
+
+
+---
+
+---
+# Selective Incentives
+
+## What Are They?
+
+
+.pull-left[
+### Negative (Sticks)
+
+- Fines
+
+- Imprisonement
+
+]
+
+.pull-right[
+### Positive (Carrots)
+
+- Payements
+
+- tax credits
+
+
+]
+
+???
+So the way you will most often hear about this is through carrots and sticks.
+This comes from how you bribe a stubborn horse to move. You can either get it 
+to move by dangling a carrot in front of it or you can hit it with a stick.
+
+---
+
+
+---
+## Get to the Point
+
+- Governments ultimately provide what are known as public goods 
+
+- Public Goods have two components 
+  1. Non-Rivalrious
+  
+  2. Non-Excludable
+  
+???
+Non-Rivalrious basically means my consumption of the good does not reduce the supply of the good
+so there is equal supply for everybody. 
+
+Non-excludable is the part of the definition that is straightforward it just means
+everybody can consume the good 
+
+Public goods are very expensive difficult to provide,
+and are to costly for private actors to provide
+
+
+---
+## Problems 
+
+.panelset[
+.panel[.panel-name[Free Riding]
+
+- It would be pretty great to benefit from stuff without paying for it, right?
+
+- paying taxes is not fun for anybody
+]
+
+
+.panel[.panel-name[Common-Pool/Tragedy of the Commons]
+<center>
+```{r echo = FALSE, out.width= "80%"}
+knitr::include_graphics("images/tragedy-of-the-commons.png")
+```
+
+</center>
+]
+]
+
+???
+As is the case in the class the world is complicated and the book tries to distill
+an entire graduate class into like a chapter or paragraph. Free riding is the most common problem
+that arises in this literature. Generally people want to reap as much as possible without
+paying into stuff. If this happens at a scale the good will be underprovided, overused, or degraded
+The tragedy of the commons is a kind problem that arises when the good is rivalrious but non-excludable.
+This comes up in environmental politics and economics a lot. 
+---
+
+
+---
+## What is a Government to Do?
+
+.pull-left[
+
+### Free Riding
+- Selective incentives typically of the stick variety
+
+]
+
+.pull-right[
+
+### Tragedy of the Commons
+
+```{r echo = FALSE, out.width= "80%"}
+
+knitr::include_graphics("images/ostrom-design.png")
+
+```
+]
+
+
+???
+the cop out answer is usually just to make things private goods. But that isn't really an option in most cases so  governments have to get more creative than that. Not that there is a lot that 
+goes into both of them. Ostrom actually got her Nobel Prize in 2009 for her work on the common pool problem. So this is very much an active research area.
+---
+class: center, middle, inverse
+
+
+# Kinds of Governments 
+
+---
+
+
+
+---
+## Governments in the World
+
+---
+## Governments in the World
+
+
+```{r, echo=FALSE, warning=FALSE}
+#| fig.align: "center"
+#| fig.alt: >
+#| This map shows the spread of various regime types in the world
+#| using the varieties of democracy dataset you can see that
+#| liberal democracies are mostly concentrated 
+#| in western europe
+
+devtools::install_github("vdeminstitute/vdemdata")
+devtools::install_github("BlakeRMills/MetBrewer")
+
+pacman::p_load("sf", "ggmap", "wesanderson", "countrycode", 
+               "scico", "MetBrewer", "WDI")
+
+vdem_raw = vdemdata::vdem 
+
+indicators =  c("SP.DYN.LE00.IN")
+
+wdi_raw = WDI(country = "all", indicators, extra = TRUE, 
+               start = 2015, end = 2015)
+
+wdi_clean = wdi_raw %>% 
+  select(ISO_A3 = iso3c, region)
+
+
+
+vdem_cleanish = vdem_raw %>% 
+  select(v2x_regime, country_name, country_text_id, year) %>% 
+  filter(year == "2019") %>% 
+  mutate(ISO_A3 = countrycode(country_name, origin = "country.name",
+                              destination = "iso3c"),
+         regime_type = case_when(v2x_regime == 0 ~ "Full Autocracy",
+                                 v2x_regime == 1 ~ "Electoral Autocracy",
+                                 v2x_regime == 2 ~ "Electoral Democracy",
+                                 v2x_regime == 3 ~ "Liberal Democracy"),
+         regime_type = as.factor(regime_type)) %>% 
+  arrange(ISO_A3)
+
+
+
+
+
+world_map  = read_sf("data/ne_110m_admin_0_countries.shp")
+
+world_map_fixed = world_map %>% 
+  mutate(ISO_A3 = case_when(
+    # If the country name is Norway or France, redo the ISO3 code
+    ADMIN == "Norway" ~ "NOR",
+    ADMIN == "France" ~ "FRA",
+    # Otherwise use the existing ISO3 code
+    TRUE ~ ISO_A3)) %>% 
+    filter(ISO_A3 != "ATA") 
+
+
+
+plot_data_world = left_join(world_map_fixed, vdem_cleanish, wdi_clean, by = "ISO_A3")  
+
+
+
+plot_data_world$regime_type = factor(plot_data_world$regime_type,
+                                     levels = c("Full Autocracy",
+                                                "Electoral Autocracy",
+                                                "Electoral Democracy",
+                                                 "Liberal Democracy"))
+
+troy= MetBrewer::met.brewer("Troy")
+
+ ggplot() + 
+  geom_sf(data = plot_data_world, aes(fill = regime_type),
+          color = "#CDCDCD") +
+   coord_sf(crs = st_crs("ESRI:54030")) +
+   scale_fill_manual(values = troy) +
+   labs(fill = "Regime Types",
+        caption = "Data are derived from the Varities of Democracy Project") +
+   theme_void(base_family = "Roboto Condensed") +
+   theme(legend.position = "top", 
+         legend.text = element_text(color = "white"),
+         legend.title = element_text(color = "white"),
+         plot.caption = element_text(hjust = 0.8, color = "white"), 
+         plot.background = element_rect(fill = "#006994"))
+ 
+
+
+```
+???
+Using data from VDEM I mapped all the regime types in the dataset in 2019. 
+I kind of just choose 2019 out of laziness. Plus I am not sure if they have
+the 2021 data since big projects like these are a bit slow to update. So the book
+doesn't really follow the comparative politics convention of referring to regimes 
+in this way. 
+---
+
+---
+## Distributions 
+
+```{r}
+ggplot(plot_data_world, aes(x = v2x_regime)) +
+  geom_histogram(bins = 4) +
+  labs(x = "Regime Type", caption = "0 = Full Autocracy, 3 = Liberal Democracy") +
+  theme_allen() +
+  facet_wrap(vars(REGION_WB))
+```
+
+
+---
+
+
+---
+## Lets Break Down this Scale 
+
+.panelset[
+
+.panel[.panel-name[Closed Autocracy]
+
+<center>
+
+*No multiparty elections for the chief executive or the legislature*
+
+</center>
+
+
+]
+
+.panel[.panel-name[Electoral Autocracy]
+
+<center>
+
+*De-jure multiparty elections for the chief executive and the
+legislature, but failing to achieve that elections are free and fair,
+or de-facto multiparty, or aminimum level of Dahl’s institutional prerequisites 
+of polyarchy as measured by V-Dem’s*
+
+</center>
+
+]
+
+
+.panel[.panel-name[Electoral democracy]
+
+<center>
+
+*De-facto free and fair multiparty elections and a minimum level of
+Dahl’s institutional prerequisites for polyarchy as measured by V- Dem’s Electoral
+Democracy Index (v2x_polyarchy), but either access to justice, or transparent law
+enforcement, or liberal principles of respect for personal liberties, rule of law, and judicial as
+well as legislative constraints on the executive not satisfied as measured by V-Dem’s Liberal
+Component Index*
+
+</center>
+
+]
+
+
+.panel[.panel-name[Liberal Democracy]
+
+<center>
+De-facto free and fair multiparty elections and a minimum level of
+Dahl’s institutional prerequisites for polyarchy as measured by V- Dem’s Electoral
+Democracy Index (v2x_polyarchy) are guaranteed as well as access to justice, transparent
+law enforcement and the liberal principles of respect for personal liberties, rule of law, and
+judicial as well as legislative constraints on the executive satisfied as measured by V-Dem’s
+Liberal Component Index (v2x_liberal)
+
+</center>
+
+
+]
+]
+
+???
+To be fair to the book defininig regimes is pretty difficult and the comparative
+politics literature still spends a considerable amount of time fighting about
+regime classification.
+---

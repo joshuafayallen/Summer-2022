@@ -1,0 +1,375 @@
+---
+title: "Exam 3 Review"
+author: "Josh Allen"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: ["default"]
+    self_containted: true
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: false 
+      navigation:
+        scroll: true
+---
+
+```{r preamble, child = here::here('preamble.Rmd')}
+```
+
+```{r xaringan-extras}
+
+
+xaringanExtra::use_search()
+
+```
+
+
+
+
+
+---
+class: center, middle, inverse 
+
+## Civil Rights 
+
+
+---
+
+---
+## Definition
+
+
+.pull-left[
+
+```{r out.width="80%"}
+knitr::include_graphics("images/civil_rights_gate.jpg")
+```
+
+
+]
+
+
+.pull-right[
+
+.bold[Definition]
+
+
+]
+
+???
+the rights that protect individuals from discrimination by other individuals and government. 
+
+These protections are applied to the federal government, and are applicable to the states through incorporation under the 14th amendment Equal Protection clause. 
+
+“Nor deny to any person within its jurisdiction the equal protection of the laws”
+
+---
+
+
+---
+## Types of Discrimination 
+
+
+.pull-left[
+
+### Public Discrimination 
+
+.bold[Definition]
+
+
+]
+
+.pull-right[
+
+### Private Discrimination
+
+.bold[Definition]
+
+
+
+
+
+]
+
+???
+
+Public Discrimination
+
+ Discrimination by national, state, or local governments
+
+Prevented by the equal protections clause of the $14^{th}$ Amendment
+
+
+
+Private Discrimination 
+
+
+Discrimination by private individuals, social groups, or businesses. 
+
+The 14th Amendment cannot  directly protect individuals from private discrimination 
+
+The Court has used its authority to broadly protect individuals  from this type of discrimination 
+
+---
+
+---
+## Suspect Class
+
+
+.pull-left[
+
+
+
+.bold[defintion]
+
+
+
+]
+
+-- 
+
+.pull-right[
+
+.bold[criteria]
+
+
+]
+
+???
+
+Definition 
+
+Any classification of groups meeting a series of criteria suggesting that they are likely the subject of discrimination. These groups generally have strict  or intermediate (if considered quasi-suspect) scrutiny applied to them
+
+
+
+The group has a history of being discriminated against or has been subject to prejudice, stigma, or genuine hostility 
+
+They are powerless to protect themselves via the political process. 
+
+They possess a highly visible and immutable trait, that does not inhibit them from contributing meaningfully to society 
+
+Protected Classes Race, religion, national origin, and alienage.
+
+---
+
+---
+```{r}
+df = tibble::tribble(~Test, ~Application, ~`Suspect Status`, ~`Standard Used`,
+                     "Strict Scrutiny", "Race, Ethnicity, Religion, and Citizenship", "Suspect Class", "", "Intermediate Scrutiny", "Gender or Sexual Orientation", "Quasi-Suspect Class", "", "Rational Bias", "Age, Disability, Wealth, Political Preference, and Criminal Background", "Not suspect category", "")
+
+gt(df) %>% 
+  tab_header(title = "How Do Judges Make Decisions") %>% 
+  opt_align_table_header(align = "center") %>% 
+  gtExtras::gt_theme_guardian()
+
+```
+
+???
+strict scrutiny: Law is assumed unconstitutional in the absence of an overwhelming justification
+
+intermediate scrutiny: Law is assumed  unconstitutional unless the law serves a clearly compelling and justified purpose
+
+rational bias: Law assumed constitutional unless no sound rationale for the law can be provided
+
+---
+
+---
+## What are the differences?
+
+- _De Jure_
+
+- _De Facto_
+
+???
+De Jure - Equal protection under the laws
+
+De Facto - Equal access to opportunity & societal benefits
+---
+
+
+---
+## Civil Rights
+
+- .bold[Plessy v. Ferguson]
+
+- .bold[Brown v. Board of Education of Topeka KS]
+
+- .bold[Civil Rights Act of 1964]
+
+- .bold[Voting Rights Act 1965]:
+
+
+???
+Unfortunately, the Court found that his rights had not been violated by the Louisiana law since the accommodations were equal in quality ( this was not true for other accommodations that the court did not analyze).  Thus segregation law could stand and the doctrine of separate but equal became entirely legal in the United States 
+
+
+he court accepted the case and in an unanimous decision they found that racial segregation was unconstitutional under the protections of the 14th amendment’s equal protection clause.  
+
+“We conclude that in the field of public education the doctrine of “separate but equal” has no place. Separate educational facilities are inherently unequal.” 
+
+civil rights act: A federal law that prohibits discrimination based on race, color, national origin, and religion in areas like education, employment, and (privately owned) "public accommodations" such as restaurants, theatres, and hotels
+
+
+voting rights act: outlawed any state or local barriers that prevented blacks from being able to exercise their right to vote.  Also , it created the “Coverage Formula”
+
+
+---
+
+---
+class: center, middle, inverse
+
+## Political Parties & Interest Groups
+
+
+---
+
+---
+## Definitions 
+
+
+.bold[Political Parties]
+
+
+
+.bold[Interest Groups]
+
+
+.bold[Duverger's Law]
+
+
+.bold[Party Platform]
+
+
+
+???
+political parties: An organization that seeks to influence government by getting members elected to office and by coordinating the actions of elected officials in government.
+
+
+interest groups: An association of individuals or organizations that seeks to influence government to benefit members of the association or advance a cause they share a belief in.
+
+Duverger's law The observed tendency for single-member district / winner-take-all elections to favor two-party systems and for proportional representation (PR) elections to favor multiparty systems.
+
+
+party platform A document expressing a political party’s principles, goals, and policy positions on domestic and foreign affairs.
+
+---
+
+
+---
+class: center, middle, inverse
+
+
+# Congress
+
+---
+
+---
+## Assume the Bill starts in the House of Reps 
+### How does it become a law?
+
+
+.pull-left[
+### House 
+
+- 
+  - 
+  - 
+  - 
+- 
+- 
+  - 
+  - 
+  - 
+- 
+- 
+
+
+]
+
+
+.pull-right[
+### Senate
+President of the Senate sends to committee
+- Committee
+- Subcommittee
+- Subcommittee Committee Hearing
+- Report to full Chamber of Senate
+.bold[NO RULES COMMITTEE IN SENATE]
+Goes to Senate floor for votes
+- Here Senators may filibuster bills 
+- Filibusters are ended with a cloture vote
+If Senate version is different from the original House - version the bill is sent to a Conference Committee: 
+- Conference Committee - members _from both chambers review the new bill_ 
+If the Conference Committee’s proposal is approved in both Chambers the bill is sent to the President of the United States
+
+
+]
+
+
+???
+Speaker of the House decides where to send a bill
+
+Committee
+
+Subcommittee
+
+Subcommittee Committee Hearing
+
+Report to full Chamber of House
+
+Referred to Rules Committee
+
+Here they place a “rule” on the bill
+
+OPEN Rule – No limits on Amendments
+
+CLOSED Rule – No Amendments at all
+Goes to the House floor for votes
+
+If approved, the bill goes to the Senate
+
+
+President of the Senate sends to committee
+
+Committee
+
+Subcommittee
+
+Subcommittee Committee Hearing
+
+Report to full Chamber of Senate
+
+NO RULES COMMITTEE IN SENATE
+
+Goes to Senate floor for votes
+
+Here Senators may filibuster bills 
+
+Filibusters are ended with a cloture vote
+
+If Senate version is different from the original House - version the bill is sent to a Conference Committee: 
+
+Conference Committee - members from both chambers review the new bill
+
+If the Conference Committee’s proposal is approved in both Chambers the bill is sent to the President of the United States
+
+
+---
+
+
+
+---
+
+class: center, middle, inverse
+
+
+# The Presidency
+
+
+
+---
+

@@ -1,0 +1,1 @@
+xaringanBuilder::build_pdf("Class-03/Ideology.html", complex_slides = TRUE, partial_slides = TRUE)

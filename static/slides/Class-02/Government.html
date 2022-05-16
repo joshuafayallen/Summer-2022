@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Governments</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Josh Allen" />
+    <meta name="date" content="2022-01-31" />
+    <script src="Government_files/header-attrs/header-attrs.js"></script>
+    <link href="Government_files/remark-css/default.css" rel="stylesheet" />
+    <link href="Government_files/panelset/panelset.css" rel="stylesheet" />
+    <script src="Government_files/panelset/panelset.js"></script>
+    <script src="Government_files/clipboard/clipboard.min.js"></script>
+    <link href="Government_files/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="Government_files/shareon/shareon.min.js"></script>
+    <link href="Government_files/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="Government_files/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="Government_files/tachyons/tachyons.min.css" rel="stylesheet" />
+    <link href="Government_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="Government_files/tile-view/tile-view.js"></script>
+    <link href="Government_files/countdown/countdown.css" rel="stylesheet" />
+    <script src="Government_files/countdown/countdown.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Governments
+## Chapters 01 and Chapters 02
+### Josh Allen
+### 2022-01-31
+
+---
+
+
+
+
+
+
+&lt;style type="text/css"&gt;
+/*
+Title: GSU Xaraingan Theme
+Author: Josh Allen
+Updated: 12/26/2021
+Description: A GSU theme for Xaringan presentations. Modifid based on 
+             Joseph V. Casillas's Rutgers theme and Tuo Wang's UW-Madison Theme
+References: https://github.com/jvcasillas/ru_xaringan, https://github.com/ttuowang/Xaringan-wisconsin-theme. Colors and Logo from https://commkit.gsu.edu/university-logos/
+*/
+
+
+
+a, a &gt; code {
+  color: #cc0033; /* rgb(249, 38, 114) */
+  text-decoration: none;
+}
+
+/* slightly lower and bigger than default */
+.footnote {
+  position: absolute;
+  bottom: 1em;
+  padding-right: 4em;
+  font-size: 95%;
+}
+
+/* important code slightly red */
+.remark-code-line-highlighted {
+  background-color: #FFD3DE !important;
+}
+
+/* color tweak */
+.inverse {
+  background-color: #8f9186;
+  color: #FFFFFF;
+  text-shadow: 0 0 20px #333;
+}
+
+/* slightly spacing change */
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #f3f3f3;
+  line-height: 1.0em;
+}
+
+/* Two-column layout */
+.left-column {
+  color: #777;
+    width: 30%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+
+.left-column1 {
+  color: #777;
+    width: 34%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
+.right-column {
+  width: 67%;
+  float: right;
+  padding-top: 0em;
+}
+
+.right-column1 {
+  width: 63%;
+  float: right;
+  padding-top: 0em;
+}
+
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ * {
+  clear: both;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee }
+
+@page { margin: 0; }
+
+/* adjust table horizontal spacing */
+th, td {
+    padding:0 15px 0 15px;
+}
+
+.remark-slide table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+.remark-slide table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) { background: #eee }
+
+/* leave this alone */
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+/* gsu additions */
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Title slide */
+
+/* Add image and change bg color */
+.title-slide {
+  background-image: url(https://commkit.gsu.edu/files/2019/06/PrimaryLogo3color.jpg);
+  background-position: 100% 0%;
+  background-size: 300px;
+  background-color: #fff;
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+/* H1 fonts */
+.title-slide h1 {
+  color: #0039A6;
+  padding-top: 100px;
+  font-weight: normal;
+  font-size: 60px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+/* H2 fonts */
+.title-slide h2 {
+  color: #CC0000;
+  font-size: 34px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+
+/* H3 fonts */
+.title-slide h3 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #666666;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 15px;
+  margin: 0px;
+  line-height: 1;
+}
+
+/* Remove slide count shadow */
+.title-slide .remark-slide-number {
+  text-shadow: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~*/
+/* Global adjustments */
+/*~~~~~~~~~~~~~~~~~~~~*/
+
+/* Add padding to all slides for 16:9 aspect ratio */
+.remark-slide-content {
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+  font-size: 21px;
+}
+
+/* Color adjustments for text */
+
+strong {
+  color: #ea5455;
+}
+
+.bold { font-weight: bold; }
+
+.gsu-blue{
+  color: #0039A6;
+}
+
+.gsu-dark{
+  color: #776E64;
+}
+
+.gsu-gray-blue{
+  color: #dadfe1;
+}
+
+.gsu-gray-darker{
+  color: #646569;
+}
+
+.gsu-gray-darkest{
+  color: #282728;
+}
+
+.gsu-anchor-color{
+  color: #0479a8;
+}
+
+
+
+/* Colors are from the Met brewer package */
+
+.hiro-red{
+  color: #e76254;
+}
+
+.hiro-orange{
+  color: #ef8a47;
+}
+
+.hiro-light-orange{
+ color: #f7aa58; 
+}
+
+.hiro-yellow{
+  color: #ffd06f ;
+}
+
+.hiro-light-blue{
+  color: #528fad ;
+}
+
+.hiro-dark-blue{
+  color: #376795;
+}
+
+.vero-red{
+  color: #67322e;
+}
+
+.vero-brown{
+  color: #99610a;
+}
+
+.vero-yellow{
+  color: #c38f16;
+}
+
+
+.vero-teal{
+  color: #6e948c;
+}
+
+.vero-blue{
+  color: #122c43;
+}
+
+/* Color adjustments to headers */
+h1 {
+  color: #0039A6;
+}
+
+h2 {
+  color: #CC0000;
+}
+h3 {
+  color: #776E64;
+}
+
+/* Font size tags */
+.big {
+  font-size: 1.5em;
+}
+
+
+
+
+
+/* gsu blockquote */
+gsu-blockquote-red {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #c5050c;
+  border-right: solid 20px #c5050c;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+
+gsu-blockquote-blue {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #0039A6;
+  border-right: solid 20px #0039A6;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+gsu-blockquote-alt {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #776E64;
+  border-right: solid 20px #776E64;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/*~~~~~~~~~~~~~~*/
+/* I like the frames*/
+/* and cols in Allison Hill's */
+/* https://alison.netlify.app/ares-kind-tools/*/
+/*~~~~~~~~~~~~~~*/
+
+.frame h1 {
+  color: #0039A6;
+  padding-bottom: 1.0em !important;
+  border-bottom: 3px solid var(#7899d4ff);
+}
+
+
+
+
+/*~~~~~~~~~~~~~~*/
+/* Highlight    */
+/*~~~~~~~~~~~~~~*/
+
+.highlight-last-item &gt; ul &gt; li, 
+.highlight-last-item &gt; ol &gt; li {
+  opacity: 0.5;
+}
+.highlight-last-item &gt; ul &gt; li:last-of-type,
+.highlight-last-item &gt; ol &gt; li:last-of-type {
+  opacity: 1;
+}
+
+.bold-last-item &gt; ul &gt; li:last-of-type,
+.bold-last-item &gt; ol &gt; li:last-of-type {
+  font-weight: bold;
+}
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+/*
+GSU fonts
+Author: Josh Allen
+Updated: 05/24/2021
+
+I am just borrowing fonts used in the https://www.andrewheiss.com/blog/ 
+*/
+
+/* Add maven for code font (keep other xaringan defaults */
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&amp;display=swap');
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&amp;display=swap');
+
+body { font-family:'Roboto', 'Barlow Semi Condensed', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+
+h1, h2, h3 {
+  font-family: 'Archivo Narrow';
+  font-weight: normal;
+}
+
+/*
+h2, h3 {
+  font-family: 'Roboto Condensed';
+  font-weight: normal;
+}
+*/
+
+.remark-code, .remark-inline-code { font-family: 'Inconsolata', monospace; }
+.remark-code-line-highlighted     { background-color: #ffff88; }
+&lt;/style&gt;
+
+
+
+
+
+---
+## Looming Deadlines
+
+- Syllabus Quiz 01-16
+
+- Pre-Course Survey 01-16
+
+---
+
+
+
+
+---
+class: center, middle, inverse
+
+# What is the Point of Government?
+
+
+---
+
+
+---
+## The Game
+
+- If **all** of you choose A then you will get **10 points** toward your final grade
+
+--
+
+- If **one** of you chooses B then that person gets **50 points** toward their final grade
+
+--
+
+- If **more than one person** choose B  than the class gets **no points**
+
+
+- Follow this [link](https://gsu.qualtrics.com/jfe/form/SV_b9hBhrLJC9203bL)
+
+
+
+???
+There is no catch all you have to do is play. Monitor the situation however you 
+want. 
+
+---
+
+---
+
+## The Prisoners Dilemma
+
+
+- To understand the purpose of government we have to start with the prisoners dilemma
+
+- Basically the goal of the game is to maximize the number of points
+
+--
+
+&lt;img src="images/prisoners-dileman.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+
+
+???
+The prisoners dilemma sets up nicely to talk about the role of government. Classically 
+the game is setup where two people are being questioned about a crime in seperate room.
+The suspects can either cooperate with each other and not say anything and be set free.
+One can confess and be set free and the other is sent to jail. They can both confess
+and both go to jail. This stylized game highlights when people incur costs themselves
+cooperation is hard. If you watch football then this was brought up endlessly in 
+the Raiders Chargers game. If I am remembering correctly there was also a prisioners dilemma
+in Survivor 
+
+---
+
+---
+
+## The Collective Action Problem
+
+
+.pull-left[ 
+&lt;img src="images/collective action.jpeg" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+--
+
+.pull.right[multiple individuals would benefit from a certain action,  but this action has a cost that makes it implausible that any individual can or will undertake and solve it alone - Olson]
+
+
+
+???
+The collective action problem is kind of a scaled up version of this.
+The personal costs that people incur make it difficult for people to get the group benefit. 
+This is sort of an interesting idea because the classical liberal view of the free market
+is that the pursuit of self interest leads to the collective good.
+
+---
+
+---
+
+## Enter Government
+
+- Cooperation is hard as we have seen 
+
+--
+
+- To entice people to cooperate we have to offer people selective incentives
+
+- This is where government comes in 
+
+
+
+
+---
+
+---
+# Selective Incentives
+
+## What Are They?
+
+
+.pull-left[
+### Negative (Sticks)
+
+- Fines
+
+- Imprisonement
+]
+
+.pull-right[
+### Positive (Carrots)
+
+- Payements
+
+- tax credits
+
+
+]
+
+???
+So the way you will most often hear about this is through carrots and sticks.
+This comes from how you bribe a stubborn horse to move. You can either get it 
+to move by dangling a carrot in front of it or you can hit it with a stick. Essentially you are trying to penalize non-cooperation
+
+---
+
+
+---
+## Get to the Point
+
+- Governments, and the goal of collective action, ultimately provide what are known as public goods 
+
+- Public Goods have two components 
+
+  1. Non-Rivalrious
+  
+  2. Non-Excludable
+  
+???
+Non-Rivalrious basically means my consumption of the good does not reduce the supply of the good
+so there is equal supply for everybody. 
+
+Non-excludable is the part of the definition that is straightforward it just means
+everybody can consume the good 
+
+Public goods are very expensive difficult to provide,
+and are to costly for private actors to provide. The reason why this is occur is that we are making the prisoners dilemma iterated. In a iterated prisoners dilemma what happens is if its played over and over again you can start to credibly punish people. 
+
+
+---
+## Problems 
+
+.panelset[
+.panel[.panel-name[Free Riding]
+
+- It would be pretty great to benefit from stuff without paying for it, right?
+
+- paying taxes is not fun for anybody
+]
+
+
+.panel[.panel-name[Common-Pool/Tragedy of the Commons]
+&lt;center&gt;
+&lt;img src="images/tragedy-of-the-commons.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+&lt;/center&gt;
+]
+]
+
+???
+As is the case in the class the world is complicated and the book tries to distill
+an entire graduate class into like a chapter or paragraph. Free riding is the most common problem
+that arises in this literature. Generally people want to reap as much as possible without
+paying into stuff. If this happens at a scale the good will be underprovided, overused, or degraded
+The tragedy of the commons is a kind problem that arises when the good is rivalrious but non-excludable.
+This comes up in environmental politics and economics a lot. 
+---
+
+
+---
+## What is a Government to Do?
+
+.pull-left[
+
+### Free Riding
+- Selective incentives typically of the stick variety
+
+]
+
+.pull-right[
+
+### Tragedy of the Commons
+
+&lt;img src="images/ostrom-design.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+
+???
+the cop out answer is usually just to make things private goods. But that isn't really an option in most cases so  governments have to get more creative than that. Not that there is a lot that 
+goes into both of them. Ostrom actually got her Nobel Prize in 2009 for her work on the common pool problem. So this is very much an active research area. Governments have to step into solve these problems. And the tools by which they do that is often tricky.
+
+---
+## What Other Kinds of Goods Are There??
+
+- Lots!!
+&lt;center&gt;
+![](https://quickonomics.com/wp-content/uploads/2016/10/TypesOfGoods.jpg)
+
+&lt;/center&gt;
+
+---
+
+
+
+
+---
+
+<div class="countdown" id="timer_61f81ba6" style="right:0;bottom:0;" data-audio="true" data-warnwhen="0">
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
+---
+
+
+
+---
+## The Englightenment
+Main Ideas: 
+- Natural Rights
+
+- the Social Contract
+
+- Legal Rights
+
+
+???
+I found this part to be the least interesting part when I was in your shoes so we are going to fast forward through this. During this time period lots of very smart people like Locke, Rosseeau, Hobbes, etc thought a lot about what the role of government should be why we have it etc. However, the concepts are the basis upon which we get the constitution and the declaration of independence.
+---
+
+
+---
+## Hobbes
+
+.pull-left[
+&lt;img src="images/hobbes.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+--
+
+.pull-right[
+
+- State of Nature-a state in which self-interest and anarchy prevents society from existing “civilly” 
+
+- Humans would all be “dirty, poor, brutish, and short"
+
+
+- Social Contract - individuals give up some of their rights so others will give up theirs, and agree to be governed by a state
+
+- "If protection rackets represent organized crime at its smoothest, then war making and state making – quintessential protection rackets with the advantage of legitimacy – qualify as our largest examples of organized crime" Tilly 1985
+
+
+]
+
+???
+They sort of started off in a similar place as you guys did in our little game. What happens 
+if there is no government. Well you are pretty much free to do whatever you want. You are totally and completely free. But that means  nothing is off thee table. The strong take what they will and the weak suffer what they must. In essence government serves to alleviate that problem. You incur some short term costs by giving up some of that freedom but in turn you get a public good. Governments in this case provide violence as the one and only public good
+---
+
+---
+## Locke
+
+.pull-left[
+
+&lt;img src="images/locke.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+.pull-right[
+
+Natural rights: rights that are not dependent on any laws or customs of a particular society or government. They are universal and inalienable.
+
+Legal rights – rights that are bestowed upon an individual within any given legal system. They can be modified or removed
+
+
+
+]
+
+???
+However the framers and other scholars at the time rightly went. That sounds kind of shitty. The easiest way to achieve Hobbes's solution is to invest all the coercive capacity into the "Leviathan" Aka a strong state. However, another central concept is this idea of natural rights. Natural rights are things you are just born with. For the founders this is encapsulated in the Declaration of Independence. They highlight the sort of inherent tension between having a strong state and wanting these natural rights. Any government strong enough to uphold these rights is strong enough to violate these rights. We sort of make compromise again but with the caveat that we give up this ultimate freedom so long as the government does not violate our natural rights. We consent to be governed and if we feel the government no longer lives up to their promise we can kick the bums out.
+---
+
+
+---
+## Economic Systems 
+
+### Capitalism
+
+.pull-left[
+
+
+![](https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTgwMzQyOTE2MTY4ODIwNTg4/gettyimages-843192764.jpg)
+
+]
+
+
+.pull-right[
+- Capitalism was an emerging concept during the Enlightenment
+
+- Smith argues that the allocation of the factors of production should be determined
+by the "market"
+
+- For **any** good to be produced you need: Land, Labor, and Capital
+
+- Most important Economic actor: the individual
+
+- The Invisible Hand
+
+]
+???
+Capitalism grows up alongside other enlightenment ideas. Prior to this system Europe had what was known as mercantilism were the main economic actor was the crown. The sole purpose of the economy was to enrich the nation. The power of the state is interconnected very deeply with the wealth of the state. Smith comes along in an age where the focus turns toward the individual. He argues that for economies to progress the individual must set off to maximize their personal profit. The pursuit of this profit by every leads to what Smith calls the social good. In the classic liberal economy. The invisible hand is when under perfect factor mobility and perfect competition the market will determine the most efficient because of supply and demand. Sellers want to sell their stuff that benefits them the most. Buyers want to buy stuff at a price that is advantageous to them. Crucially the owners of the factors of the production are private actors rather than the state. This is like the quickest and dirtiest explanation of Macroeconomics possible. For more thorough explanations you are going to take some classes in our Econ department or with Dr. Hankla. The role of the state in this case is to correct market failures. These arise for various reasons and are altogether pretty common. 
+
+
+---
+## State Socialism
+.panelset[
+.panel[.panel-name[Book Definition]
+
+State socialists believe market capitalism necessarily results in too much economic inequality and in oppressive relationships between workers and the owners of capital. [Part of] the purpose of government is for it to take over ownership of all major parts of the economy and forcefully enact a social revolution that brings about perfect economic equality and the end of all class oppression.
+]
+
+.panel[.panel-name[Command Economy]
+
+The state owns and controls most of the factors of production, including
+land and capital goods. The state also engages in central planning.
+Production of goods and services, as well as their prices and distribution,
+are centrally controlled by the state.
+
+]
+]
+
+
+???
+We sort of like to charecterize like all the things as state socialism because it has a particular sort of connotation. The book essentially describes what is known as a command economy. State socialism is a particular flavor of a command economy. Where the state determines the allocation of goods and owns all the factors. The sort of difference is the ideological tint that state socialism takes on. The classic example of a command economy is the USSR. State socialism has a particular ideological tint to a command economy. 
+
+---
+
+--- 
+
+
+## Democratic Socialism
+
+- It's in the news a lot but .gsu-blue[what is it?]
+
+--
+
+&lt;gsu-blockquote-red&gt; Democratic Socialist: Ideology of those on the left-wing of the Democratic Party (and of mainstream American politics), which advocates for a more substantial role by government in promoting equality and other distinctive left values than does center-left liberalism &lt;/gsu-blockquote-red&gt;
+
+
+
+???
+So Marxism arises in the Industrial revolution as a response to capitalism during the Industrial revoloution. The basic tenets of Marx are outlined in Kapital. It is honestly kind of funny book. It is really hard to read but Marx kind of just trails off randomly to rail against the Bourgeiouse clas. Which is basic crux his argument. In Kapital he argued that capital class was exploiting the proletariat to benefit from their labor. While the proletariat was not benefitting from the fruits of their labor. Marx called for the proletariat to take back the means of production (land, labor, and capital). So democratic socialists a faction that broke away from Marxism. They didn't disagree that something needed to change. Conditions in these factories were about as bad as you can imagine. Democratic socialists essentially argued that the role of government is to help deal witth the inequality and working conditions that capitilism caused.
+
+---
+
+---
+class: section, center, middle, inverse
+
+
+# Kinds of Governments 
+
+---
+
+
+
+---
+## Regime Types According to VDEM
+
+
+
+&lt;img src="figs/unnamed-chunk-8-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+???
+As somebody who studies comparative politics I get pretty jazzed when we are
+talking kinds of government. Purpose of Government etc. So I decided to use data
+from two of the most popular measures of regime to color our discussion
+---
+
+
+---
+## Regimes According to Polity IV
+
+&lt;img src="figs/unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+
+---
+## Lets Break Down VDEM  
+
+.panelset[
+
+.panel[.panel-name[Closed Autocracy]
+
+
+
+&lt;gsu-blockquote-red&gt;No multiparty elections for the chief executive or the legislature
+&lt;/gsu-blockquote-red&gt;
+
+
+
+]
+
+.panel[.panel-name[Electoral Autocracy]
+
+
+
+&lt;gsu-blockquote-alt&gt;De-jure multiparty elections for the chief executive and the legislature, but failing to achieve that elections are free and fair, or de-facto multiparty, or a minimum level of Dahl’s institutional prerequisites of polyarchy as measured by V-Dem
+&lt;/gsu-blockquote-alt&gt;
+
+
+]
+
+
+.panel[.panel-name[Electoral Democracy]
+
+
+&lt;gsu-blockquote-alt&gt;De-facto free and fair multiparty elections and a minimum level of Dahl’s institutional prerequisites for polyarchy as measured by V- Dem’s Electoral Democracy Index (v2x_polyarchy), but either access to justice, or transparent law enforcement, or liberal principles of respect for personal liberties, rule of law, and judicial as well as legislative constraints on the executive not satisfied &lt;/gsu-blockquote-alt&gt;
+
+]
+
+
+.panel[.panel-name[Liberal Democracy]
+
+
+&lt;gsu-blockquote-blue&gt; De-facto free and fair multiparty elections and a minimum level of Dahl’s institutional prerequisites for polyarchy as measured by V-Dem’s are guaranteed as well as access to justice, transparent law enforcement and the liberal principles of respect for personal liberties, rule of law, and judicial as well as legislative constraints on the executive satisfied as measured by V-Dem &lt;/gsu-blockquote-blue&gt;
+
+
+
+
+]
+]
+
+???
+To be fair to the book defining regimes is pretty difficult and the comparative
+politics literature still spends a considerable amount of time fighting about
+regime classification. The book has a bit of an old school definition of how we think about
+regime types in comparative politics. When we think about how we classify different regimes
+in the world we should separate the issues that we face. The first is what sorts of stuff
+make a regime authoritarian and what stuff makes it a liberal democracy. Then the part
+that for this class we are going to set aside is how do we measure that stuff.
+---
+
+
+---
+## Polyarchy 
+### What is it
+
+1. Freedom of Expression 
+
+--
+
+2. Freedom of Association
+
+--
+
+3. Who chooses our leaders
+
+--
+
+4. That choice is open to all and can unseat those in power
+
+--
+
+5.  People from different backgrounds can be our leaders
+
+--
+
+6. Those making that decision can consume a variety of information to make that choice
+
+
+???
+VDEM embraces what is known as Dahl's polyarchy. In the early days of political science a lot of theorizing went into what we meant by "Democracy" and "Authoritarianism" one of the most prominent of these theories was Dahl's polyarchy. In our sort of folk theories of democracy we these things are fairly intuitive. Liberal democracies do all these things but as citizens are mostly in disagreement about the how they do this and how much leeway they have to do this. But it is very much informed by the Enlightenment. \
+---
+
+---
+
+## Authoritarianism
+
+---
+
+## How Do Authoritarian Leaders Exit
+
+&lt;img src="figs/unnamed-chunk-10-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+
+???
+Our folk theorem of democracy and authoritarianism a bit misguided. The book views authoritarian politics through the lens of "what is the recourse for the people." A more informative approach is figuring out who matters in these systems. The book sort of argues that the institutions in authoritarian regimes are "window dressing."  However, this is not entirely helpful. If we take the view that the book does that is not unfair. Think about this graph. I have highlighted the things we typically think of the people participating in. But notice that the bulk of exits happen because of things that happen between elite actors.  Institutions in all regimes structure the interactions of individual actors. they constrain the choices available to each actor and good ones endure across generations. The party for the CCP is an institution that constrains the President. This wasn't always the case. The sort of distinction that VDEM makes between kinds of authoritarian regimes who is allowed to compete. Authortarian regimes have elections all the time. Elections have various functions in authoritarian regimes. I feel like this was long a potentially unhelpful. Any questions?
+---
+
+---
+
+class: section, center, middle, inverse
+
+
+.col[
+# The American Way of Government
+]
+
+# AFLD (American Flavored Liberal Democracy)
+
+---
+
+
+
+---
+## Demcracy
+
+.pull-left[
+&lt;gsu-blockquote-blue&gt; Direct Democracy: “pure” democracy - one in which the people make the decisions in the manner in which political powers should be exercised. &lt;/gsu-blockquote-blue&gt;
+]
+
+.pull-right[
+&lt;gsu-blockquote-red&gt; 
+Representative democracy – where the authority of the governments lies with the people (the electorate) that elect representatives to support their interests
+
+&lt;/gsu-blockquote-red&gt; 
+
+]
+
+???
+Direct democracy is the original form of democracy. Democracy like 0.1 or raw dogging democracy. There is an important distinction between direct democracy and 
+representative democracy. The key distinction is that we delegate some our power to our elected officials. We will talk about this more later on, but this is essentially a principal-agent problem. For direct democracy you gotta determine like all the things. If any of you have ever voted at like the end of your ballot you have various things like "Do you want to enact this tax? It pays for schools" You cast your ballot and then boom its law. Just start expanding it out more. As a Californian we have a lot of these. Sometimes they are kind of innocuous like every election cycle somebody tries to get CA seceding on the ballot. Other times civil rights like Gay marriage are put on the ballot. I was like little when this happened. I dont know if this will be brought up in the Civil Rights/Civil Libertis weeks. But Prop 8 was defeated and gay marriage was not legalized in CA. But Prop 8 was crafted to be as like confusing as possible, but with the end goal of homophobia
+
+---
+
+
+---
+## Constitutional Democracy
+.pull-left[
+&lt;center&gt;
+&lt;gsu-blockquote-alt&gt;
+
+
+Governments, like the United States, that are effectively bound by fundamental laws are called “constitutional governments.”
+
+
+
+
+&lt;/gsu-blockquote-alt&gt;
+&lt;/center&gt;
+]
+
+.pull-right[
+
+- **Rule of Law**: The idea that **all** citizens, **including government officials**, are bound by laws
+
+- **Fundamental law**: The federal government is bound by the laws declared in the Constitution. If a statute is in conflict with the law of the constitution, then the statute is considered unlawful. ] 
+
+???
+In particular the American flavor of Liberal democracy is all about the our Constitution. In other liberal democracies interpretation of the founding documents is less of a thing. In some cases like in England there is an informal Constitution but not like a piece of paper you can go see in the national archive. The idea of rule of law is sort of intuitive regardless and that is everybody is bound to the same laws. Put another way. Me and Joe Biden can both go shop lift stuff. If we get caught stealing shit we will both be prosecuted by the law. Fundamental law is just the idea that no basic ass laws are higher can take precedence oveer the constitution. The book uses establishing an official religion as an example. It is in clear conflict with the first amendment. However, if a state decides to say fuck it and makes WAP, All to Well(Taylor's Version), or something else as their official state anthem over the star spangled banner their is no conflict between fundamental and ordidnary law because the constitution doesnt say anything about an official song.
+
+
+---
+## Role of Government 
+
+- What it provides
+
+- What it ignores
+
+- How it provides
+
+
+???
+So we went over a lot of stuff in this class. What I think it is important to takeaway is that cooperation is hard and governments are supposed to help us cooperate at a minimum. If we think back to the first class remember that the minimal definintion of government is that it has the monopoly over the use of force. The use of coercion is the basic public good that every government must provide. In the American Liberal Democracy we frequently debate about how and what stuff the government provides. A central insight is that an entity strong enough to secure these contracts has the ability to violate our rights. Much of the political discourse in our country has been about how big or small the government should be.
+---
+
+
+---
+## Constitutional Government 
+
+.pull-left[
+
+&lt;gsu-blockquote-blue&gt; 
+If men were angels, no government would be necessary. If angels were to govern men, neither external nor internal controls on government would be necessary. In framing a government which is to be administered by men over men, the great difficulty lies in this: you must first enable the government to control the governed; and in the next place oblige it to control itself
+
+&lt;/gsu-blockquote-blue&gt;
+
+]
+
+--
+
+
+.pull-right[
+
+The purpose of constitutional government is to empower and limit its power
+
+Done Through auxiliry precautions 
+  - Dependence of the people
+  - Checks and Balances 
+
+
+
+]
+
+---
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true,
+"navigation": {
+"scroll": true
+}
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

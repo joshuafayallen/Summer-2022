@@ -1,0 +1,616 @@
+---
+title: "Exam 2 Review"
+author: "Josh Allen"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: ["default"]
+    self_containted: true
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+      navigation:
+        scroll: true
+---
+
+```{r preamble, child = here::here('preamble.Rmd')}
+```
+
+
+---
+## Looming Deadlines
+
+- Exam 02 opens .bold[03-21]
+
+
+---
+
+
+---
+class: center, middle, inverse
+
+# Civil Liberties 
+
+---
+
+
+---
+## The Basics 
+
+- What are they?
+
+- What is incorporation?
+  - How does it work?
+
+
+???
+ Civil liberties Legal rights designed to protect individuals from abuse of power by government.
+ 
+ incorporation:  Name for when the U.S. Supreme Court holds that a civil liberty from the Bill of Rights applies to state governments (rather than only the federal government) through the Fourteenth Amendment Due Process Clause’s command that no “State deprive any person of … liberty … without due process of law.” (See also Selective Incorporation and Total Incorporation
+
+---
+
+---
+## First Amendment
+
+- Free Exercise Clause
+  - What is it?
+  - What are its limits?
+
+
+- Establishment Clause
+  - What is it?
+  - What are its limits?
+  - What are the components of the Lemon Test?
+  - What aree the components of the Sherbert Test?
+
+???
+interfere with religious practice or opinion, but laws can be made to regulate certain religious practices
+
+Individuals have the right to hold whatever religious beliefs that they would like, but this does not mean that they are exempt from criminal prosecution under other laws. 
+
+Employment division v smith 
+
+the Court decided against the two employees, the law that they had been charged for was not aimed at religious practices specifically. It was a neutral law put in place to protect all the citizens of that state from the repercussions that could have happened from peyote use. 
+
+The government and the church cannot be this entangled in one another, and if it happens again here is a test that will tell us whether or not it is a violation of the Establishment Clause. 
+
+When does the law violate the establishment clause? If it fails the lemon test
+
+Have a non-religious Purpose
+
+Neither Advances nor prohibits religion
+
+Not Promote excessive government entanglement 
+
+Sherbert test: used for determining whether a government action interferes with the legal right to the free exercise of religion. By this test, if a government action imposes an actual burden on the ability for a person to act upon a sincere religious belief, then the government action is unlawful unless it can withstand strict scrutiny. 
+
+---
+
+
+---
+## Freedom of Speech
+
+- How is it limited?
+  - Symbolic speech? 
+  - Hate speech & Fighting Words?
+  - Iminent Lawless Action?
+  
+???
+
+The government cannot punish inflammatory speech (essentially they thought Brandenburg was just making a bunch of noise he wouldn’t/couldn’t follow through on) unless that speech is directed to inciting, and is likely to incite imminent lawless action (essentially an actual violent over throw of the government/military coup/junta etc.) 
+
+
+the limits on student speech are essentially that it can't be like really disruptive to the classroom. If you remember back to Morse v Fedrick  court said, yes this is considered school speech, but since it was promoting the use of illicit drugs it was not considered protected speech. 
+
+
+In practicallity these are often really squishy and hard to enforce 
+
+---
+
+
+
+---
+## Freedom of the Press
+
+- How is it limited
+  - "I know it when I see it"
+  - Libel/Slander
+  - defamation
+
+???
+
+Miller v. California
+the supreme court said sorry buddy, this is not a protected form of speech and to avoid further confusion we are going to create a test so you know whether your material is safe or not. 
+
+Is the speech of lewd interest to the average person?
+
+Does the speech depict or describe sexual acts or conduct in an offensive manner?
+
+ Does the speech have a serious literary, political, artistic, or scientific interest
+
+
+
+Is the speech of lewd interest to the average person?
+
+ Does the speech depict or describe sexual acts or conduct in an offensive manner?
+
+Does the speech have a serious literary, political, artistic, or scientific interest
+
+slander defamation of an individual that takes place in a transient form. It is most often speech. 
+
+ libel defamation of an individual that takes place by written or printed words or pictures. 
+---
+
+
+---
+## 4th Amendment
+
+- Search 
+
+
+- Seizure
+ - Fruit of the poison tree
+ 
+- Expections? 
+
+???
+
+arch – The main point I want you all to take away when we are talking about the fourth amendment and the element concerning search is that an individual has a reasonable expectation of privacy into which the government cannot intrude. This is a moveable bubble, and covers an individual rather then a specific location. (Prior cases had limited to only the home). Privacy is portable!!!
+
+The officers must have cause to issue a warrant. Cause is established when the facts and knowledge the officer has is of trustworthy nature and can lead to an individual that has committed or is in the act of committing a crime.
+
+Police may conduct searches of automobiles without a warrant so long as they have probable cause for believing the owner of the vehicle is guilty of a crime
+Exclusionary rule – evidence that is seized during violations of the fourth amendment are excluded from use as evidence in the court of law. As it was stated by one Felix Frankfurter – “it becomes fruit of the poisonous tree” and is useless
+---
+
+
+---
+##  5th Amendment 
+
+.hiro-light-blue[Grand Jury]
+
+.hiro-red[Double Jeopardy]
+
+
+.hiro-orange[Eminent Domain]
+
+
+
+.hiro-dark-blue[Habeas Corpus]
+
+- Miranda Warning and the right to remain silent 
+
+
+
+???
+Grand Jury: a step within the criminal/civil trial in which a jury decides whether there is sufficient evidence available in a case to justify a trial
+
+Double Jeopardy: the instance where an individual is being tried before a court of law for the same crime twice. 
+
+
+Eminent Domain: the right of the government to take private property for public use with just compensation
+
+
+Habeas Corpus: a protection against illegal imprisonment requiring that those detained have access to a court of law concerning the reasons for their detention
+
+
+Miranda warning: You have the right to remain silent. Anything you say can and will be used against you in a court of law. You have the right to speak to an attorney, and to have an attorney present during any questioning. If you cannot afford a lawyer, one will be provided for you at government expense.”
+
+established miranda v Arizona
+
+Miranda’s lawyer objected that because Miranda was not advised of his rights, the confession was not truly voluntary and should be excluded. Moore's objection was overruled and based on this confession and other evidence, Miranda was convicted of rape and kidnapping and sentenced to 20 to 30 years imprisonment on each charge, with sentences to run concurrently. Moore filed Miranda's appeal to the Arizona Supreme Court claiming that Miranda's confession was not fully voluntary and should not have been admitted into the court proceedings.  And the court said, while you are an unfortunate human being, you still deserve to have your rights read to you. 
+
+
+
+---
+
+---
+## $6^{th}$ Amendment: Fair Trial
+
+ Gideon 
+
+Trial by Jury
+
+Speedy Trial
+
+Right to an Attorney
+
+???
+the Supreme Court heard his case, and decided that despite the type of case (capital or not), all indigent defendants had a right to counsel. After 4 years in prison, Gideon was released from prison when he was found not guilty due to a lack of evidence.
+
+---
+
+---
+## $8^{th}$ Amendment 
+
+
+
+- Protection from excessive bail and fines 
+
+- Protection from cruel and unusual punishment 
+  - The Death Penalty
+  - Brennan's Qualification?
+
+???
+Brennan's qulification 
+
+The punishment shall not degrade human dignity. 
+
+The punishment shall not be inflicted in an arbitrary fashion 
+
+The punishment shall not be a type that is totally rejected throughout society 
+
+The punishment shall not be considered unnecessary 
+
+
+
+---
+
+---
+## $9^{th}$ Amendment 
+
+.vero-red[Enumerated Rights]
+
+
+.vero-blue[Implied Rights]
+
+???
+We already discussed the concept of enumerated vs. implied when we were talking about the powers of the branches of government. This same concept applies here. 
+
+The court has found that while the rights in the first 8 amendments are basic and fundamental in liberty they are by no means exhaustive and that there still exist ways and means in society for the government (at first only the federal government with the creation of the Bill of Rights) and then the states (after the addition of the 14th amendment and the Due Process Clause which allowed for selective incorporation).  
+
+---
+
+
+
+---
+class: center, middle 
+
+# Public Opinion
+---
+
+
+---
+## What makes a bad poll?
+
+
+- .bold[Leading Questions]: 
+
+- .bold[Double Barrelled Questions]: 
+
+- .bold[Social Desirability Bias]: 
+
+- .bold[Priming]
+
+???
+Leading Questions encourage the respondent to give a certain answer
+
+Double Barrelled Questions Ask for opinions about more than one issue
+
+Social Desirability Bias Frames questions in a way that it makes one believe tthat a certain answer is not preferred
+
+Priming a previous question which influences answers to future questions
+
+---
+
+---
+
+.pull-left[
+```{r}
+pacman::p_load("stevemisc", "dqrng")
+Population = rbnorm(250000, mean = 40.01578, sd = 40.24403,
+                     lowerbound = 0, 
+                     upperbound = 100,
+                     round = TRUE,
+                     seed = 1994)
+
+
+
+Popsamples = tibble(
+  samplemean=sapply(1:1000000, 
+           function(i){ x = mean(
+             dqsample(Population, 10, 
+                    replace = FALSE)) 
+           })) 
+sample_sizes = c(10, 25, 100, 400, 1000, 2000)
+
+Samps = list() 
+set.seed(1994)
+for (j in sample_sizes) {
+   Samps[[paste0("Sample size: ", j)]] = data.frame(sampsize=j, samp=sapply(1:10, function(i){ x = sample(Population, j, replace = TRUE) }))
+}
+
+Samps = Samps %>%
+  map_df(as_tibble) %>%
+  gather(samp, value, samp.1:samp.10)
+
+
+
+Samps %>%
+  group_by(sampsize, samp) %>%
+  summarize(sampmean = mean(value)) %>%
+  ggplot(., aes(as.factor(sampsize),sampmean)) + 
+  geom_point(size=3, color="black", alpha=0.5) +
+  theme_allen() +
+  geom_hline(yintercept = mean(Population), linetype="dashed") +
+  labs(x = "Sample Size",
+       y = "Sample Means",
+       title = "Ten Sample Means of Varying Sample Sizes from a Population",
+       subtitle = "The diminishing returns of increasing sample size emerge around 1,000 observations.")
+
+```
+
+]
+
+
+.pull-right[
+
+```{r}
+Samps %>%
+  group_by(sampsize, samp) %>%
+  mutate(sampmean = mean(value),
+         se = sd(Population)/sqrt((sampsize)),
+         lb95 = sampmean - 1.96*se,
+         ub95 = sampmean + 1.96*se) %>%
+  distinct(sampsize, samp, sampmean, se, lb95, ub95) %>%
+  ungroup() %>%
+  mutate(sampsize = fct_inorder(paste0("Sample Size: ", sampsize)),
+         samp = as.numeric(str_replace(samp, "samp.", ""))) %>%
+  ggplot(.,aes(as.factor(samp), sampmean, ymax=ub95, ymin=lb95)) +
+  theme_allen() +
+  facet_wrap(vars(sampsize)) +
+  geom_hline(yintercept = mean(Population), linetype="dashed") +
+  geom_pointrange() + coord_flip() +
+  labs(y = "Sample Mean (with 95% Intervals)",
+       x = "Sample Number [1:10]",
+       title = "Ten Sample Means of Varying Sizes\n (with 95% Intervals) from a Population")
+```
+
+
+]
+???
+What does this tell us about polling
+
+
+we are just showing the central limit theorem and that as we taken infinite samples our means will be normally distributed and as we increase the sample size not  only do our confidence intervals get tighter but we get closer and closer to the sample mean
+---
+
+
+
+
+---
+## Models of socialization and What we think our Reps should be
+Delegate:
+
+Trustee:
+
+Funnel of Causality
+???
+Normative conception of political representation that holds the first duty of representatives is to follow the opinions of their constituents. By this view, the people who vote for representatives are the ones who should exercise judgment over questions of public policy, and if representatives do not follow their lead, they deserve to be voted out of office in the next election.
+
+
+Normative conception of political representation that says an elected representative is obligated to act according to their own best judgment of what is just or what will promote the public good even if it is unpopular and leads to their being voted out of office in the next election.
+
+
+Political scientific theory that posits that over the course of a lifetime, the environmental factors that influence our political predispositions become fewer in number and more limited in impact—just as space becomes more limited as material moves from the wide end of a funnel toward the narrow. 
+
+This is another way of thinking of of our frames of references
+
+The funnel metaphor represents something called the primacy principle: the idea that early socialization creates a base of values, attitudes, and beliefs that tend to be quite stable, and that this early learning shapes and conditions all future learning
+
+---
+
+
+---
+class: middle,center
+
+# Political Participation
+
+---
+
+
+---
+## What does this tell us about voting?
+
+
+$$
+\begin{align}
+R = P \times B - C(B	> C)
+\end{align}
+$$
+???
+What does this tell us about the benefit of voting 
+
+R- The reward you get from voting
+P- The probability that your vote matters
+B- The benefit you will directly receive if your candidate wins
+C- The cost of voting
+
+
+---
+
+
+---
+## Consumptive Model of Voting
+
+
+$$
+\begin{align}
+R = P \times B - C + D 
+\end{align}
+$$
+
+???
+D is equal to the amount of duty felt by an individual
+
+
+---
+## Voting
+
+Pocketbook:
+
+
+Sociotropic:
+
+
+???
+Sociotropic: how well the overall econmy is doing
+
+
+pocketbook voting: 
+
+---
+
+
+
+---
+
+---
+class: center, middle 
+
+# Media 
+
+---
+
+
+--- 
+## Power of the Media 
+
+- Agenda Setting 
+
+- Priming
+
+- Framing
+
+
+---
+
+
+---
+## The Doctrines
+
+## The FCC Regulates Broadcast Media through Various Rules
+
+- Fairness Doctrine
+
+- Equal Time Rule
+
+- Net Neutrality
+
+???
+Introduced by the FCC in 1949 and suspended in 1987
+
+Where as the equal time rule is concerned with equal access, the fairness doctrine was concerned with making sure broadcasters provided a free and open discussion of public issues. 
+
+The Fairness Doctrine requires that stations (1) provide a reasonable amount of air time to coverage of controversial issues of public important, and (2) accord a reasonable opportunity for the voicing of contrasting viewpoints concerning these issues.
+
+Enforced through the license renewal process in which the states were required to document their compliance.
+
+FCC gradually extended the rules of the Fairness Doctrine to apply to statements about individuals rather than just abstract issues.  
+
+
+Thus, when a broadcast included a personal attack on a public figure, the station that aired the attack was required to notify the person who was attacked and offer him or her a reasonable opportunity to respond.
+Reagan appointed several new members to the FCC, all of whom were strongly committed to a free market approach to broadcasting. 
+
+
+In 1987 the FCC decided to repeal the fairness doctrine, on the grounds that technological advances had made it possible to accommodate many stations in a given local, making it unnecessary to force stations to present opposing viewpoints. The fairness doctrine ended in the 1980s, after a succession of court cases led to its repeal by the FCC in 1987, with stations and critics arguing the doctrine limited debate of controversial topics and placed the government in the role of editor 
+
+The F.C.C. says that the old rules are no longer necessary because the marketplace has changed. According to the official line, new media -- first cable television, then the Internet -- have given the public access to a diversity of news sources, eliminating the need for public guidelines. 
+
+
+ The equal-time rule, for instance, states that registered candidates running for office must be given equal opportunities for airtime and advertisements at non-cable television and radio stations beginning forty-five days before a primary election and sixty days before a general election. If WBNS in Columbus, Ohio, agreed to sell Joe Biden thirty seconds of airtime for a presidential campaign commercial in 2020, the station would also need to sell President Donald Trump thirty seconds of airtime at the same price.
+
+
+
+The idea that Internet Service Providers must treat all web traffic equally, and therefore may not be allowed to charge different rates or discriminate against different websites in any way, is known as net neutrality.
+
+so this website and amazon are to be treated equally by the internet service providers and they can't up charge you for going to high traffic websites. Under the Trump administration that 
+---
+
+
+---
+## Power of the Media
+
+- Agenda Setting:
+
+- Framing
+
+- Priming
+
+???
+Agenda setting is imporant because the media can start to affect what we think of as important throught just the very act of covering things. There are sort of some issues that we can think of as sort of inherently news worthy. While other stuff maybe escape our attention because the public just isn't paying attention 
+
+
+Framing you can kind of think of it as the how it is being covered
+
+---
+
+---
+class:center, middle
+# Appendix
+
+---
+
+
+
+
+---
+## Agenda Seeding? 
+### Wasow(2020)
+.pull-left[
+
+<gsu-blockquote-red>
+
+News organization still set public
+agendas but social movements, like any group seeking
+greater attention or publicity, attempt to entice media to
+prioritize their concerns. Southern civil rights protests,
+for example, were often planned for mornings so
+footage could be flown to New York in time to air
+nationally on the evening news 
+
+
+</gsu-blockquote-red>
+
+]
+
+--
+
+.pull-right[
+
+<gsu-blockquote-blue>
+
+Media attention, however, can be sympathetic or
+hostile. Even presented with similar facts, different
+reporters and news organizations often structure stories
+in systematically different ways
+</gsu-blockquote-blue>
+
+]
+
+???
+There are lots of arguments about what shifts the needle in public opinion. In particular whether the public is affected more by elites or social movements. The role of one versus the other is the subject of a long debate and is sort of field specific. Political scientists point out that mass opinion and positions are often dominated by elites. However, social movements can pierce these asymmetries
+
+
+What is interesting in this model is that the strategic timing of these events to not only get maximum coverage but it allows activists to generate a state response that is then covered by the media. This affects not only coverage but the frames that are used. 
+
+---
+
+
+---
+layout: false
+
+
+```{r  out.width= "80%"}
+knitr::include_graphics("wasow_fig_1.png")
+```
+
+???
+The verical lines denote presidential elections but the author put them on the exact date so they are slightly off kilter. 
+
+
+---

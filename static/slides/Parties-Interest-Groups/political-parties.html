@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Political Parties &amp; Interest Groups</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Josh Allen" />
+    <meta name="date" content="2022-04-05" />
+    <script src="political-parties_files/header-attrs/header-attrs.js"></script>
+    <link href="political-parties_files/remark-css/default.css" rel="stylesheet" />
+    <link href="political-parties_files/panelset/panelset.css" rel="stylesheet" />
+    <script src="political-parties_files/panelset/panelset.js"></script>
+    <script src="political-parties_files/clipboard/clipboard.min.js"></script>
+    <link href="political-parties_files/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="political-parties_files/shareon/shareon.min.js"></script>
+    <link href="political-parties_files/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="political-parties_files/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="political-parties_files/tachyons/tachyons.min.css" rel="stylesheet" />
+    <link href="political-parties_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="political-parties_files/tile-view/tile-view.js"></script>
+    <link href="political-parties_files/vembedr/css/vembedr.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Political Parties &amp; Interest Groups
+### Josh Allen
+### 2022-04-05
+
+---
+
+
+
+
+
+&lt;style type="text/css"&gt;
+/*
+Title: GSU Xaraingan Theme
+Author: Josh Allen
+Updated: 12/26/2021
+Description: A GSU theme for Xaringan presentations. Modifid based on 
+             Joseph V. Casillas's Rutgers theme and Tuo Wang's UW-Madison Theme
+References: https://github.com/jvcasillas/ru_xaringan, https://github.com/ttuowang/Xaringan-wisconsin-theme. Colors and Logo from https://commkit.gsu.edu/university-logos/
+*/
+
+
+
+a, a &gt; code {
+  color: #cc0033; /* rgb(249, 38, 114) */
+  text-decoration: none;
+}
+
+/* slightly lower and bigger than default */
+.footnote {
+  position: absolute;
+  bottom: 1em;
+  padding-right: 4em;
+  font-size: 95%;
+}
+
+/* important code slightly red */
+.remark-code-line-highlighted {
+  background-color: #FFD3DE !important;
+}
+
+/* color tweak */
+.inverse {
+  background-color: #8f9186;
+  color: #FFFFFF;
+  text-shadow: 0 0 20px #333;
+}
+
+/* slightly spacing change */
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #f3f3f3;
+  line-height: 1.0em;
+}
+
+/* Two-column layout */
+.left-column {
+  color: #777;
+    width: 30%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+
+.left-column1 {
+  color: #777;
+    width: 34%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
+.right-column {
+  width: 67%;
+  float: right;
+  padding-top: 0em;
+}
+
+.right-column1 {
+  width: 63%;
+  float: right;
+  padding-top: 0em;
+}
+
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ * {
+  clear: both;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee }
+
+@page { margin: 0; }
+
+/* adjust table horizontal spacing */
+th, td {
+    padding:0 15px 0 15px;
+}
+
+.remark-slide table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+.remark-slide table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) { background: #eee }
+
+/* leave this alone */
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+/* gsu additions */
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Title slide */
+
+/* Add image and change bg color */
+.title-slide {
+  background-image: url(https://commkit.gsu.edu/files/2019/06/PrimaryLogo3color.jpg);
+  background-position: 100% 0%;
+  background-size: 300px;
+  background-color: #fff;
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+/* H1 fonts */
+.title-slide h1 {
+  color: #0039A6;
+  padding-top: 100px;
+  font-weight: normal;
+  font-size: 60px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+/* H2 fonts */
+.title-slide h2 {
+  color: #CC0000;
+  font-size: 34px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+
+/* H3 fonts */
+.title-slide h3 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #666666;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 15px;
+  margin: 0px;
+  line-height: 1;
+}
+
+/* Remove slide count shadow */
+.title-slide .remark-slide-number {
+  text-shadow: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~*/
+/* Global adjustments */
+/*~~~~~~~~~~~~~~~~~~~~*/
+
+/* Add padding to all slides for 16:9 aspect ratio */
+.remark-slide-content {
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+  font-size: 21px;
+}
+
+/* Color adjustments for text */
+
+strong {
+  color: #ea5455;
+}
+
+.bold { font-weight: bold; }
+
+.gsu-blue{
+  color: #0039A6;
+}
+
+.gsu-dark{
+  color: #776E64;
+}
+
+.gsu-gray-blue{
+  color: #dadfe1;
+}
+
+.gsu-gray-darker{
+  color: #646569;
+}
+
+.gsu-gray-darkest{
+  color: #282728;
+}
+
+.gsu-anchor-color{
+  color: #0479a8;
+}
+
+
+
+/* Colors are from the Met brewer package */
+
+.hiro-red{
+  color: #e76254;
+}
+
+.hiro-orange{
+  color: #ef8a47;
+}
+
+.hiro-light-orange{
+ color: #f7aa58; 
+}
+
+.hiro-yellow{
+  color: #ffd06f ;
+}
+
+.hiro-light-blue{
+  color: #528fad ;
+}
+
+.hiro-dark-blue{
+  color: #376795;
+}
+
+.vero-red{
+  color: #67322e;
+}
+
+.vero-brown{
+  color: #99610a;
+}
+
+.vero-yellow{
+  color: #c38f16;
+}
+
+
+.vero-teal{
+  color: #6e948c;
+}
+
+.vero-blue{
+  color: #122c43;
+}
+
+/* Color adjustments to headers */
+h1 {
+  color: #0039A6;
+}
+
+h2 {
+  color: #CC0000;
+}
+h3 {
+  color: #776E64;
+}
+
+/* Font size tags */
+.big {
+  font-size: 1.5em;
+}
+
+
+
+
+
+/* gsu blockquote */
+gsu-blockquote-red {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #c5050c;
+  border-right: solid 20px #c5050c;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+
+gsu-blockquote-blue {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #0039A6;
+  border-right: solid 20px #0039A6;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+gsu-blockquote-alt {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #776E64;
+  border-right: solid 20px #776E64;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/*~~~~~~~~~~~~~~*/
+/* I like the frames*/
+/* and cols in Allison Hill's */
+/* https://alison.netlify.app/ares-kind-tools/*/
+/*~~~~~~~~~~~~~~*/
+
+.frame h1 {
+  color: #0039A6;
+  padding-bottom: 1.0em !important;
+  border-bottom: 3px solid var(#7899d4ff);
+}
+
+
+
+
+/*~~~~~~~~~~~~~~*/
+/* Highlight    */
+/*~~~~~~~~~~~~~~*/
+
+.highlight-last-item &gt; ul &gt; li, 
+.highlight-last-item &gt; ol &gt; li {
+  opacity: 0.5;
+}
+.highlight-last-item &gt; ul &gt; li:last-of-type,
+.highlight-last-item &gt; ol &gt; li:last-of-type {
+  opacity: 1;
+}
+
+.bold-last-item &gt; ul &gt; li:last-of-type,
+.bold-last-item &gt; ol &gt; li:last-of-type {
+  font-weight: bold;
+}
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+/*
+GSU fonts
+Author: Josh Allen
+Updated: 05/24/2021
+
+I am just borrowing fonts used in the https://www.andrewheiss.com/blog/ 
+*/
+
+/* Add maven for code font (keep other xaringan defaults */
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&amp;display=swap');
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&amp;display=swap');
+
+body { font-family:'Roboto', 'Barlow Semi Condensed', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+
+h1, h2, h3 {
+  font-family: 'Archivo Narrow';
+  font-weight: normal;
+}
+
+/*
+h2, h3 {
+  font-family: 'Roboto Condensed';
+  font-weight: normal;
+}
+*/
+
+.remark-code, .remark-inline-code { font-family: 'Inconsolata', monospace; }
+.remark-code-line-highlighted     { background-color: #ffff88; }
+&lt;/style&gt;
+
+
+
+
+
+---
+# Looming Deadlines
+
+.bold[April 10]: Last chance to turn in NCCHR assignment
+
+
+???
+Scholars as a reminder if you have not completed the NCCHR assignment please do so this week! Some of you have also been asking me about grades! If you want there is a posted grade calculator tool on iCollege. You can play around with the grade calculator tool to see what you will need on the next exam. Unfortunately I have not baked in a solve for y bit. Where you plug in your grades and it will solve for what test grade you need to get a C. If you have any concerns about it than plase
+
+---
+
+
+---
+class: middle, center, inverse
+
+# Political Parties 
+
+
+
+---
+
+---
+
+## What are They?
+
+&lt;center&gt;
+
+&lt;gsu-blockquote-red&gt;
+.bold[Political Party]: is an organization that seeks to influence government by getting members elected to office and by coordinating the actions of elected officials in government
+
+&lt;/gsu-blockquote-red&gt;
+&lt;/center&gt;
+
+???
+ In comparative politics the age old debate is between what is known as structure and agency. We generally define agency as stuff that impacts individual level decisions. In unit 2 we focused on individual level factors whether we are talking about information processing, broadly defined identity, etc. However, we also have some stuff about institutions. Institutions whether we are talking about voting and how we the constraints on voting, the media is an institutions. Institutions they are the agreed upon rules of the game that we must all abide by. They limit the available choices for the individual. Institutions establish acceptable forms of dissent and cooperation and are supposed to make breaking of the rules costly and make compliance cheaper. Importantly they are also enduring and reinforce these practices.
+ 
+ Parties are just small institutions or in the parlance of CP are endogenous institutions. Political institutions influence  policy, but they are themselves endogenous since they are chosen, in some way, by members of the polity. They make and reinforce the acceptable practice of politics, they structure preferences, and punish members when they stray outside the norms and practices of the party institutions. 
+ 
+Side note once you start a political science or Economics grad degree you basically lose all ability to spell it right on the first try
+
+---
+
+---
+## How Parties _Contribute_ to Our Democracy 
+
+- Organize and operate the government
+
+- Focus responsibility for government action
+
+- Develop issues/educate the public
+
+- Synthesize interests
+
+- Recruit and develop new talent
+
+- Simplify the electoral system
+
+???
+Parties coordinate actions of thousands of public officials, across levels of government
+
+They attempt to have politicians maintain unity or suffer electorally
+
+So they try to get public officials to work together, so they can win re-election
+
+Because they share a label, party members feel responsible for collective performance (this motivates them to try to accomplish things voters want. 
+
+ Because they want to win office, they are constantly identifying problems and discussing who is to blame, what their position is and how they may solve the problem
+	So they are constantly discussing issues in the media- educating the public on important issues.
+
+ Parties offer a mix of benefits and burdens to all
+To win re-election, the must often compromise for the larger good, not to give in to one or two individual demand 
+This forces politicians to compromise, creating policies that help more Americans.
+
+ Parties are: on lookout for promising candidates
+Keep track of weak members in opposition and bring along potential replacements from their own ranks (WEED OUT THE BAD POLITICIANS THROUGH PRESENTING NEW TALENT DURING ELECTIONS). 
+
+Also support talented candidates, help them get started which brings qualified people into government. 
+
+
+---
+
+
+---
+## Three Components of Parties 
+
+- .bold[Party Organization]: The formal structure of the political party and the active members responsible for coordinating party behavior and supporting party candidates.
+
+
+- .bold[Party-in-the-Electorate]: Members of the voting public who consider themselves part of a political party or who consistently prefer the candidates of one party over the other
+
+
+- .bold[Party-in-Government]: Party identifiers who have been elected to office and are responsible for coordinating governance.
+
+???
+
+
+party organization 
+
+is the formal structure of the political party, and its active members are responsible for coordinating party behavior and supporting party candidates. It is a vital component of any successful party because it bears most of the responsibility for building and maintaining the party “brand.” It also plays a key role in helping select, and elect, candidates for public office
+
+
+When we think about parties we can think of them as having many faces. The faces of the party range from the how we see oursleves and see the role of the party. We bring the stuff that we think are important to the party. We have some set of stuff that we find important. The parties represent that imperfectly in many cases. Party in the electorate is just people who consider themselves a member of the party. There has been a general decline in party id with the democrats and republicans with increases in identification as an independent. These people are kind of just partisans in hiding. When polling houses and poltical scientists start poking them they tend to look and act like their partisan counterparts. As we have covered in the past PID is a really good predictor of who is going to vote for who an election 
+
+
+The party in government
+
+Arguably, this is where political parties have the most power today. Parties work hard to provide organization and coordination amongst individuals in government, especially at the federal level. This is particularly true in Congress, where we talked about the important role that parties play in the leadership of Congress, assigning committee membership and roles, and coordinating action on various legislative initiatives across the two chambers.
+
+
+
+---
+
+
+---
+## Party Organization 
+
+- National
+  - Coordinates with lower levels
+  
+- State
+  - State committees recruit/nominate candidates, define the party platform, and get candidates elected
+
+- Local 
+  - Local committees primarily raise money, and mobilize and register voters
+
+
+
+
+---
+
+---
+## Platforms 
+
+.bold[Political Platforms]: The party manifesto or political agenda that is created by the centralized power of either party (DNC or RNC)  on issues. 
+
+ - It is made up of “planks” which are associated with individual political issues and proposed actions that the party will take to address that issue. 
+
+
+
+---
+
+
+
+---
+## Limits of Party Organization 
+- Very Decentralized
+  - Nation Committee has no power to appoint all members at state and local level
+  - National Committee cannot make unilateral policy decisions
+
+- Weak Enforcement
+   - The National Committee has little power to force state/local committees to adopt it’s policy agenda (besides cutting off funding)
+
+- Little Control over Who Runs
+  - Candidates get money from private donors instead
+
+- Death of Political Machines
+  - Since 1888, working a government job requires merit not patronage
+
+
+
+
+
+---
+
+
+
+---
+## How Parties May _Detract_ from Democracy
+
+- Capture government and dictate what it does
+
+- Confuse responsibilities
+
+- Suppress the issues
+
+- Divide society
+
+- Recruiting candidates for the wrong reasons
+
+- Oversimplify the electoral system
+
+???
+A strong party will control its members and become machines, and this could lead to dictator-like behavior
+In other words, when a party has too much control (over government and its own members), can pass legislation that may be too liberal or too conservative
+
+Parties always blame one another for pitfalls and take credit when it’s not really their responsibility
+Makes it harder for voters to figure out who to blame or reward for certain policies.
+
+May suppress issues that are important but difficult to deal with for political reasons
+Ex. Both parties failed to deal with the issues of slavery for many years prior to the Civil war b/c both parties had members in the north and south. 
+
+Rather than compromise and unite Americans, may exploit existing divisions, polarizing the electorate.
+
+May recruit candidates not because they are qualified, but because they are popular actors or athletes and will win on their fame in another area
+These people may not be the best choice to run government. 
+
+May offer too narrow of a choice
+Voters may prefer another 3rd party, but may feel that is a waste of their vote, so they have to choose between two general parties. 
+
+
+---
+
+
+---
+layout: false 
+
+
+
+&lt;img src="figs/unnamed-chunk-1-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+  
+
+???
+We generally have two kinds of systems. The first is PR that looks a little something like this. Electoral system in which the number of legislative seats a party receives is a function of the share of votes it receives in an election. Once parties clear a threshold, meaning a minimum percentage of votes. Than they will get that percent of seats. As is the case of the Bundestag we start to get stuff like this.  In order to govern they form what are known as minimum winning coalitions. The party with the majority of seats may not have enough votes to pass what they want so they have to do some manuevering to ensure that they can pass their stuff so they extend some concessions to another party. 
+---
+
+---
+layout:false 
+
+&lt;img src="figs/unnamed-chunk-2-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+---
+layout: false
+
+
+
+&lt;img src="figs/unnamed-chunk-3-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+---
+## Duverger's Law
+
+- The principle in which political systems that are represented by a single elected official are most likely to be a two-party system. 
+
+
+
+- The Constitution creates Single-Member Districts (SMD) that run in a winner-take-all system
+
+
+
+
+???
+Like many former British colonies we have a bicameral first past the post system with single member districts. Also known as winner take all. As you can see in the British system there are more parties but it really is a Conservative vs Labour breakdown. Most of the time in the British system in order to form a government the party that wins the most seats won't have enough seats to get their  stuff  through so they will have to form a coalition government with another party. In lots of years this was the Lib Dems one year in the last decade or so the Conservatives had to form a coalition that included the  Ulster Party who are the party that represented the Ulster Defense forces during the troubles. 
+
+
+Why do we see such contrasts between the UK and US versus Germany. 
+
+
+Essentially Duverger's law argues that in first past the post systems there will likely only be two parties.
+ 
+  So think of a congressional district in the United States there is a limmited set of voters to compete over. You have the democratic party and the Republican party. Then we have the party that you guys created competing in that same election.
+
+ Your party may represent that salient issue perfectly but either the democratic or republican party represents that issue imperfectly but other issues better than that party.
+ 
+You the voter knows that one of the larger parties will likely win but will not have that interest perfectly represented. You do not want to waist your vote so you choose the big party.
+
+
+
+---
+
+---
+class: center, middle, inverse
+
+# Parties Over the Years
+
+---
+
+---
+## First Parties (1796 - 1827)
+
+.pull-left[
+### Federalist Party
+
+The offshoot of the Federalists 
+
+
+]
+
+.pull-right[
+### Democratic-Republicans
+
+The offshoot of the Anti-Federalists
+
+]
+
+???
+
+
+Election of 1796 – Federalist President John Adams and Democratic-Republican Vice President Thomas Jefferson elected. This was due to a split of the electoral college votes. The 12th amendment was added to the Constitution in the wake of this so that Presidential and Vice Presidential candidates ran on the same ticket with partisan opposition to avoid splitting the votes again in the electoral college
+
+The primary factions at the time were the Federalists, based in New England, and the Jeffersonians (or Democratic-Republicans), based in the South and West where agriculture was the primary industry.
+
+Jeffersonians dominated this time period, winning the presidency 7 consecutive times
+
+1816-1824 was considered the ‘era of good feeling’ because there was very little partisan competition
+
+The Democratic-Republican party finally splintered when Jackson was denied the presidency in 1824. Remember that while Jackson won the 
+popular vote, he did not win a majority of the popular vote or the electoral college, because there were three Democratic-Republican candidates. As a result, the election went to the House which selected John Quincy Adams. Consequently, when Jackson began campaigning for the 1828 election, and won, he did so under the ‘Democrat’ label
+
+---
+
+
+---
+## Jacksonian Era (1828- 1859)
+
+
+.pull-left[
+### Jacksonian Democratic Party
+
+- Promoted policies for the common man-extended voting rights to all white men
+
+- Laissez-faire economic policies
+
+- Advocated a government “hands-off” agenda
+
+
+]
+
+
+.pull-right[
+### Whig Party
+
+- Favored Congress over the President
+
+- Economic protectionism
+
+- Wanted strict government regulation
+
+]
+
+???
+
+The second party system: Jacksonian-Democrats were the dominant party and, like the Jeffersonians, focused on state’s rights
+
+The whigs are the sort of forerunner of the Republican party that would form. One of the issues of the whigs was that they did not have any coherent stance on slavery more specifically its expansion out west. Which would eventually part of many reasons why it would dissolve 
+
+---
+
+
+---
+## Civil War &amp; Reconstruction (1860 - 1894)
+
+.pull-left[
+### Democratic Party
+- Maintains government “hands-off” approach
+
+- Pro-slavery
+
+- Southerners upset over Civil War and Reconstruction fled to Democratic Party
+
+
+]
+
+
+.pull-right[
+
+- Whigs dissolve into newly formed Republican Party
+
+- “Hands-on” Policies
+
+- Anti-slavery
+
+- Dominated the North
+
+
+]
+???
+The third party system was brought about by the Critical Election of 1960
+
+Critical Election are those in which large groups of voters change their loyalty from one party to another
+
+This time period was focused on the issue of reconstruction and other economic issues
+
+Memories of the Civil War left people either committed to the party of the Union (Republicans) or the party of the rebels (Democrats)
+
+After Reconstruction ended in the 1870s, economic issues took center stage. Additionally, party machines became extremely powerful during this time.
+
+This period ended during the Depression in the 1890s, Democrats controlled the presidency at the time and were blamed
+
+---
+
+---
+## Industrial Republicans 
+
+.pull-left[
+### Democratic Party
+
+- William Jennings Bryan runs for president and is WAY too liberal
+
+- More conservative democrats switch to GOP and vote for William McKinley
+
+
+
+]
+
+.pull-right[
+### Republican Party
+
+- Republicans adopt the policies from the Progressives (suffrage expansion, fighting political corruption) and dominate politics
+
+
+- End patronage system with Pendleton Act 1883
+
+
+
+]
+
+???
+The fourth party system:
+As a result of the depression, Republican dominance started. Democrats won only twice during this time period, with W. Wilson in 1912 and 1916.
+
+Additionally, the progressive movement took hold. Progressives were middle class reformers that tried to clean up politics. They undermined party power through the beginning of direct primaries.
+
+The stock market crash of 1929 and the onset of the Great Depression in the 30s sparked a new party system. Republicans were in office at the time of the crash, so voters blamed them and punished them electorally
+
+---
+
+
+---
+## New Deal(1932 - 1966)
+
+
+.pull-left[
+### Democratic Party
+
+- Critical Election of 1932
+
+- FDR runs on platform to end Republican dominance
+
+- Institutes wild plans to fix economy with very “hands-on” government approach
+
+
+]
+
+.pull-right[
+
+More Democrats, especially from the South, feel alienated again with the “hands-on” government approach and switch to Republican party from 1932-1960s
+
+
+]
+
+???
+Democrats became the party of the “common” people (blue collar workers, farmers, etc.), while Republicans became associated with affluent, business people
+
+
+Democrats oversaw the Great Depression, the defeat of Germany and Japan in WW2, and the beginning of the Cold War during this time period.
+
+
+---
+
+
+---
+## The Partisan Realignment of the 1960s
+
+.pull-left[
+### Democrats 
+
+JFK and LBJ continue the “hands-on” government approach by stepping in ending racial discrimination in the 1960s
+
+
+
+]
+
+.pull-right[
+### Republicans 
+
+Southerners have had ENOUGH of the “hands-on” Democratic approach and Nixon sweeps the election with southern support in 1968
+
+
+]
+
+???
+
+The rising importance of race issues hurt the Democratic party
+
+When the Civil Rights Movement moved from equality of opportunity to equality of socioeconomic conditions, White Americans withdrew their support and blue collar/urban whites joined Southerners and abandoned Democratic candidates, through a process called REALIGNMENT.
+
+
+In more recent years, parties have seen a pretty considerable reduction in power
+
+Rise of split-ticket voting: Voters support a presidential candidate and Congressional candidates from different parties in the same election, resulting in divided control in Washington
+
+---
+
+
+---
+## Video Version 
+
+
+.pull-left[
+
+### GOP
+
+
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/s8VOM8ET1WU" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+
+]
+
+
+
+.pull-right[
+### Democrats
+
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/Z6R0NvVr164" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+
+
+
+]
+
+---
+
+
+
+---
+class: center, middle, inverse
+
+# Interest Groups 
+
+
+---
+
+---
+## What Are Interest Groups?
+
+.bold[Interest Groups]: Organizations of people with similar policy goals who enter the political process to achieve those aims.  
+
+- Linkage Institutions
+  - Organizations or bodies that provide entry points into the American political process. 
+  - Provide a “link” between government and the people. 
+  
+
+???
+Americans are more likely than any other people to join a group: book clubs, social groups and most especially church related organizations
+More than ¾ of Americans belong to at least one group (incl. book clubs, social groups, and most especially church related organizations).
+Majority of Americans make financial contributions to 4 different groups (political or non-political)
+
+Linkage institution: there are multiple points of entry into the American system at all levels of government. These institutions create a “link” between the government and the people.
+
+How many times have you heard politicians talk about “special interests” within American politics? 
+
+---
+
+---
+layout:false 
+class: center, middle 
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/MepXBJjsNxs" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+
+
+---
+
+---
+
+
+&lt;img src="figs/unnamed-chunk-7-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+
+
+
+
+???
+These are the top spending interst groups from 2020
+
+It is something like 80% of all lobbyists are business groups. They tend to be the best funded. 
+
+
+	
+
+
+---
+
+
+
+
+---
+## What Do These Groups Do? 
+
+- Grassroots Advocacy  
+
+- Direct Lobbying
+
+- Cultivate Access 
+
+- Litigation and the use of the Courts 
+
+- Mobilize Public Opinion 
+
+- Use Electoral Politics 
+
+???
+Cultivating Access – Providing access to individual legislators via email, petition,  media, or personal to have perspectives shared 
+
+Litigation – this is supported through First amendment protections ( the right to petition the government) 
+
+This also allows IG to submit Amicus Briefs to inform the court of their opinion (or the manner in which they feel they should decide the case) 
+	You most often see this in public policy issues (examples  ACLU and NAACP action 
+	discrimination cases) 
+	
+
+---
+
+
+---
+## Grassroots Advocacy 
+
+- Focuses on organizing large groups of people.
+
+- Immediate + direct electoral pressure on politicians
+
+- Large scale fundraising opportunities
+
+- High percentages of free riders that are very hard to stop
+
+- Why it works? 
+
+???
+These are the radicals with bullhorns
+Why does it work-
+2 reasons
+The first of which has to do with aesthetics- having huge marches or people flooding representatives offices is something the media can hold on to (can mobilize the major functions of the media in your favor)
+The second reason it works has to do with the idea of the importance of public opinion- if you can convince a representative that the country is united they will likely follow suit- it is why corporate lobbies use “astro turf” protests to simulate protests
+
+Disadvantages
+If violence results then your group takes the blame for the action even if they did not initiate it. 
+
+Americans typically view groups and individuals who engage in civil disobedience as “troublemakers,” “radicals,” and  “Un-American” &amp; often there is a public backlash as even people who initially supported your group or agreed with your stand on that issue turn against you 
+
+
+---
+
+
+---
+## Direct Lobbying
+
+Who does what? 
+
+- Lobbyists – an individual with access and resources that works to influence policy-makers to create policy in a direction that is directly beneficial to them or their organization 
+
+- They are often former Congress members or former Congressional Staff  
+
+- The process in which lobbyists introduce specific legislation or information to legislators that supports their position on the issue in order to garner favors 
+
+
+
+---
+
+
+---
+## How Do Interest Groups Influence Government?
+
+- Lobbyists engage in a number of activities to influence government, including: 
+
+- Research 
+
+- Witnesses 
+
+- Position taking
+
+- Coalition Building
+
+- Socializing
+
+- Grassroots campaigning 
+
+- Concierge 
+
+???
+Research – Members of congress have a lot to do- lobbyists can provide very specific and timely resarch on their interest area to help educate members and convince them to vote in their favor.
+
+Witnesses – they often act and provide witnesses for congressional hearings- which also inform and influence members of congress..
+
+Position taking- they routinely take public positions on the issues of interest to them- through media, announcements and events.
+
+Coalition Building- create coalitions with other groups who share their interests- for example, healthcare is a broad issue- several pro-healthcare IG’s have worked with health insurance companies to lobby for and implement the Affordable Healthcare Act….similary there are a lot of opponents to this legislation working together right now to influence gov’t and the public. 
+
+Socializing – they socialize with congressional staffers- maintain relationships with them that will pay off later when they need something. 
+
+One example of this is that when I was an intern in DC my friends that interned on the Hill got to go to lots of receptions where special intersts would pay for food and stuff. 
+
+
+Grassroots campaigning – use social media to push people to contact gov’t, engage in social 
+
+activism- essentially act as mobilizers for their interests…most of us have probably been contacted in the past by a group we belong to (ex. I get solicited from the ASPCA b/c we donate to them). 
+
+Concierge – highlight legislative concerns, introduce people, solve problems for legislators to facilitate action.
+
+
+---
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": false,
+"navigation": {
+"scroll": true
+}
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

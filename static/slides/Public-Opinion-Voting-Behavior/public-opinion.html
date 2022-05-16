@@ -1,0 +1,2337 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Chapter 9</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Josh Allen" />
+    <meta name="date" content="2022-02-22" />
+    <script src="public-opinion_files/header-attrs/header-attrs.js"></script>
+    <link href="public-opinion_files/remark-css/default.css" rel="stylesheet" />
+    <link href="public-opinion_files/panelset/panelset.css" rel="stylesheet" />
+    <script src="public-opinion_files/panelset/panelset.js"></script>
+    <script src="public-opinion_files/clipboard/clipboard.min.js"></script>
+    <link href="public-opinion_files/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="public-opinion_files/shareon/shareon.min.js"></script>
+    <link href="public-opinion_files/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="public-opinion_files/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="public-opinion_files/tachyons/tachyons.min.css" rel="stylesheet" />
+    <link href="public-opinion_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="public-opinion_files/tile-view/tile-view.js"></script>
+    <link href="public-opinion_files/vembedr/css/vembedr.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Chapter 9
+## Public Opinion
+### Josh Allen
+### 2022-02-22
+
+---
+
+
+
+
+
+&lt;style type="text/css"&gt;
+/*
+Title: GSU Xaraingan Theme
+Author: Josh Allen
+Updated: 12/26/2021
+Description: A GSU theme for Xaringan presentations. Modifid based on 
+             Joseph V. Casillas's Rutgers theme and Tuo Wang's UW-Madison Theme
+References: https://github.com/jvcasillas/ru_xaringan, https://github.com/ttuowang/Xaringan-wisconsin-theme. Colors and Logo from https://commkit.gsu.edu/university-logos/
+*/
+
+
+
+a, a &gt; code {
+  color: #cc0033; /* rgb(249, 38, 114) */
+  text-decoration: none;
+}
+
+/* slightly lower and bigger than default */
+.footnote {
+  position: absolute;
+  bottom: 1em;
+  padding-right: 4em;
+  font-size: 95%;
+}
+
+/* important code slightly red */
+.remark-code-line-highlighted {
+  background-color: #FFD3DE !important;
+}
+
+/* color tweak */
+.inverse {
+  background-color: #8f9186;
+  color: #FFFFFF;
+  text-shadow: 0 0 20px #333;
+}
+
+/* slightly spacing change */
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #f3f3f3;
+  line-height: 1.0em;
+}
+
+/* Two-column layout */
+.left-column {
+  color: #777;
+    width: 30%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+
+.left-column1 {
+  color: #777;
+    width: 34%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
+.right-column {
+  width: 67%;
+  float: right;
+  padding-top: 0em;
+}
+
+.right-column1 {
+  width: 63%;
+  float: right;
+  padding-top: 0em;
+}
+
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ * {
+  clear: both;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee }
+
+@page { margin: 0; }
+
+/* adjust table horizontal spacing */
+th, td {
+    padding:0 15px 0 15px;
+}
+
+.remark-slide table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+.remark-slide table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) { background: #eee }
+
+/* leave this alone */
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+/* gsu additions */
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Title slide */
+
+/* Add image and change bg color */
+.title-slide {
+  background-image: url(https://commkit.gsu.edu/files/2019/06/PrimaryLogo3color.jpg);
+  background-position: 100% 0%;
+  background-size: 300px;
+  background-color: #fff;
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+/* H1 fonts */
+.title-slide h1 {
+  color: #0039A6;
+  padding-top: 100px;
+  font-weight: normal;
+  font-size: 60px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+/* H2 fonts */
+.title-slide h2 {
+  color: #CC0000;
+  font-size: 34px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+
+/* H3 fonts */
+.title-slide h3 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #666666;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 15px;
+  margin: 0px;
+  line-height: 1;
+}
+
+/* Remove slide count shadow */
+.title-slide .remark-slide-number {
+  text-shadow: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~*/
+/* Global adjustments */
+/*~~~~~~~~~~~~~~~~~~~~*/
+
+/* Add padding to all slides for 16:9 aspect ratio */
+.remark-slide-content {
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+  font-size: 21px;
+}
+
+/* Color adjustments for text */
+
+strong {
+  color: #ea5455;
+}
+
+.bold { font-weight: bold; }
+
+.gsu-blue{
+  color: #0039A6;
+}
+
+.gsu-dark{
+  color: #776E64;
+}
+
+.gsu-gray-blue{
+  color: #dadfe1;
+}
+
+.gsu-gray-darker{
+  color: #646569;
+}
+
+.gsu-gray-darkest{
+  color: #282728;
+}
+
+.gsu-anchor-color{
+  color: #0479a8;
+}
+
+
+
+/* Colors are from the Met brewer package */
+
+.hiro-red{
+  color: #e76254;
+}
+
+.hiro-orange{
+  color: #ef8a47;
+}
+
+.hiro-light-orange{
+ color: #f7aa58; 
+}
+
+.hiro-yellow{
+  color: #ffd06f ;
+}
+
+.hiro-light-blue{
+  color: #528fad ;
+}
+
+.hiro-dark-blue{
+  color: #376795;
+}
+
+.vero-red{
+  color: #67322e;
+}
+
+.vero-brown{
+  color: #99610a;
+}
+
+.vero-yellow{
+  color: #c38f16;
+}
+
+
+.vero-teal{
+  color: #6e948c;
+}
+
+.vero-blue{
+  color: #122c43;
+}
+
+/* Color adjustments to headers */
+h1 {
+  color: #0039A6;
+}
+
+h2 {
+  color: #CC0000;
+}
+h3 {
+  color: #776E64;
+}
+
+/* Font size tags */
+.big {
+  font-size: 1.5em;
+}
+
+
+
+
+
+/* gsu blockquote */
+gsu-blockquote-red {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #c5050c;
+  border-right: solid 20px #c5050c;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+
+gsu-blockquote-blue {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #0039A6;
+  border-right: solid 20px #0039A6;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+gsu-blockquote-alt {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #776E64;
+  border-right: solid 20px #776E64;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/*~~~~~~~~~~~~~~*/
+/* I like the frames*/
+/* and cols in Allison Hill's */
+/* https://alison.netlify.app/ares-kind-tools/*/
+/*~~~~~~~~~~~~~~*/
+
+.frame h1 {
+  color: #0039A6;
+  padding-bottom: 1.0em !important;
+  border-bottom: 3px solid var(#7899d4ff);
+}
+
+
+
+
+/*~~~~~~~~~~~~~~*/
+/* Highlight    */
+/*~~~~~~~~~~~~~~*/
+
+.highlight-last-item &gt; ul &gt; li, 
+.highlight-last-item &gt; ol &gt; li {
+  opacity: 0.5;
+}
+.highlight-last-item &gt; ul &gt; li:last-of-type,
+.highlight-last-item &gt; ol &gt; li:last-of-type {
+  opacity: 1;
+}
+
+.bold-last-item &gt; ul &gt; li:last-of-type,
+.bold-last-item &gt; ol &gt; li:last-of-type {
+  font-weight: bold;
+}
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+/*
+GSU fonts
+Author: Josh Allen
+Updated: 05/24/2021
+
+I am just borrowing fonts used in the https://www.andrewheiss.com/blog/ 
+*/
+
+/* Add maven for code font (keep other xaringan defaults */
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&amp;display=swap');
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&amp;display=swap');
+
+body { font-family:'Roboto', 'Barlow Semi Condensed', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+
+h1, h2, h3 {
+  font-family: 'Archivo Narrow';
+  font-weight: normal;
+}
+
+/*
+h2, h3 {
+  font-family: 'Roboto Condensed';
+  font-weight: normal;
+}
+*/
+
+.remark-code, .remark-inline-code { font-family: 'Inconsolata', monospace; }
+.remark-code-line-highlighted     { background-color: #ffff88; }
+&lt;/style&gt;
+
+
+
+
+
+---
+
+## Looming Deadlines 
+
+- Extra Credit for completing NCCHR early .bold[02/27]
+
+- Chapters
+
+---
+
+
+---
+class: center, middle
+
+# Public Opinion
+--
+
+# The Stats Part
+
+---
+
+---
+class: center, middle
+
+&lt;gsu-blockquote-red&gt;
+It seems to me that statistics is often sold as a sort
+of alchemy that transmutes randomness into certainty, an “uncertainty laundering” that begins with data and concludes with success as measured by statistical significance - Andrew Gelman(2016)
+&lt;/gsu-blockquote-red&gt;
+
+???
+The book tends to spend a bit to much time on the stats part of public opinion while not really giving you guys an intuition. If you have questions speak up. I also kind of decided to put this before everything else because I figured this would be painful for some of you and just to get it over with.
+---
+
+---
+
+## The Basics 
+
+- .bold[Population]: all the cases of interest in existence, all of something, group, large or small, that we are interested in
+
+- .bold[Sample]: a selected subset of the population from which data is collected for study
+
+- .bold[Parameter]: measurements of population quantities
+
+- .bold[Statistics]: measurements of the sample quantities are called
+
+
+???
+The book tries to skirt around "scary concepts like these". In public opinion we are trying to understand what the broader population of the United States feels like but it is a bit more difficult than asking each and every person what they think about the something. In the next few classes we will cover why that is. What is important to keep in mind that the book doesn't talk about is that it covers one very widely used paradigm very poorly. The paradigm that it uses is what is known as frequentism. In frequentism we assume that the sample is random but the world is fixed. The population parameter in frequentist statistics is essentially an unknowable thing that we are trying to figure out. 
+---
+
+---
+## Basics Continued
+
+-  .bold[Probability]: is the proportion of times that the outcome would occur in a very long sequence of observations
+
+
+- .bold[Confidence-Interval]: the probability that a population parameter will fall between a set of values for a certain proportion of times. 
+
+- .bold[Random Sampling]: With random selection, every person in the population has equal probability of being selected into the sample.
+
+???
+These concept s are depeely interconnected not only to how we conduct statistics in polling but to each other. The p-value is a threshold that we apply all the time in when doing statististics in political science, economics, sociology, psychology, epidemiology, education, and biostatistics literature. The p-value is a threshold that we often use to set a minimal standard that there is a relationship between our variables. If we reject the null hypothesis than this is a weak test that the thing we say is there is there. 
+
+
+The confidence interval is just essentially a net. What ever quanitity of interst we are calculating there is going to be some error in real life analysis that will make our sample quantity differ from the population quanitity. The key question is whether or not that deviation is so extreme that we aren't actually capturing the population parameter.
+
+The problem with the statistics we normally used and what is widely taught is kind of encapsulated for bu the confidence interval. What do you think that the plain english interpretation of the confidence interval is? 
+
+
+The problem is that the confidence interval is us saying that 95% of the time we believe that our net captures the true population parameter. The stats we use do not really track with how we think or in practice what we are doing. 
+---
+
+---
+## Confidence Intervals in Practice
+
+&lt;img src="figs/unnamed-chunk-1-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+???
+You are going to see a lot of simulations because that is what I find most intuitive. Here is what is going on. I set a value for the population parameter and then took random samples from that population. Than what i did was calculte the 95% confidence intervals. About 95% of the time I capture the true value with my net. There are a few times where I don't. Effectively when polls report margin of errors they are in effect reporting a confidence interval
+
+Even when we are conducting polls in the best way possible our net is not going to capture what we say it captures from time to time. Or even if we say that it is .45 due to things out of control the quanitity in our sample will be slightly off
+
+---
+
+
+
+
+---
+## Probability 
+
+.pull-left[
+
+-	We think of probability is indicated as number between 0 (never happens) and 1 (always happened) repeated over an infinite number of times
+
+- The probability of picking a certain color candy from a jar given a set of candies in the jar
+
+- Lets say we have 2 red candies and 3 blue candies and we want to know the probability of picking a red one. 
+]
+
+--
+
+
+.pull-right[
+
+
+```r
+set.seed(1994)
+
+candies = rep(c("red","blue"), times = c(2,3))
+
+candies 
+```
+
+```
+[1] "red"  "red"  "blue" "blue" "blue"
+```
+
+]
+
+
+???
+This is pretty easy! it is just 2/5 or 40% and this should be true as we pick candies. So lets test this out with some simulations! 
+
+
+---
+
+---
+layout: false
+
+.pull-left[
+### Sampling Once
+
+```r
+sample(candies, 1)
+```
+
+```
+[1] "red"
+```
+
+```r
+sample(candies, 1)
+```
+
+```
+[1] "blue"
+```
+
+```r
+sample(candies,1)
+```
+
+```
+[1] "red"
+```
+
+```r
+sample(candies,1)
+```
+
+```
+[1] "blue"
+```
+
+
+
+]
+
+.pull-right[
+### Sampling 100,000 Times
+
+
+```r
+b = 100000
+
+events = replicate(b, sample(candies),1)
+
+tab = table(events)
+
+
+prop.table(tab )
+```
+
+```
+events
+blue  red 
+ 0.6  0.4 
+```
+
+
+
+]
+???
+
+
+
+This is pretty neat! with our simple math we can show this holds in our toy problem! 
+
+
+However this can start to change if the events are not independent of each other. Think of a deck of card. Where there are 52 cards with 4 face cards for each suit. As the dealer deals out cards the probabilty of you getting a face card goes down. Or in the case we are about to see what is the probability of something happening given that something else happened. 
+
+
+---
+
+---
+## Monty Hall
+
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/QGxyIQzLeUc" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+
+
+
+
+---
+
+
+---
+## So Who Was Right
+
+.pull-left[
+
+```r
+B = 10000
+monty_hall = function(strategy){
+  doors = as.character(1:3)
+  prize = sample(c("car", "goat", "goat"))
+  prize_door = doors[prize == "car"]
+  my_pick  = sample(doors, 1)
+  show = sample(doors[!doors %in% c(my_pick, prize_door)],1)
+  stick = my_pick
+  stick == prize_door
+  switch = doors[!doors%in%c(my_pick, show)]
+  choice = ifelse(strategy == "stick", stick, switch)
+  choice == prize_door
+}
+```
+
+
+]
+
+--
+
+
+```r
+stick = replicate(B, monty_hall("stick"))
+mean(stick)
+```
+
+```
+[1] 0.3286
+```
+
+```r
+switch = replicate(B, monty_hall("switch"))
+
+mean(switch)
+```
+
+```
+[1] 0.6673
+```
+
+???
+In the 1970s, there was a game show called “Let’s Make a Deal” and Monty Hall was the host. At some point in the game, contestants were asked to pick one of three doors. Behind one door there was a prize. The other doors had a goat behind them to show the contestant they had lost. After the contestant picked a door, before revealing whether the chosen door contained a prize, Monty Hall would open one of the two remaining doors and show the contestant there was no prize behind that door. Then he would ask “Do you want to switch doors?” What would you do?
+
+We can use probability to show that if you stick with the original door choice, your chances of winning a prize remain 1 in 3. However, if you switch to the other door, your chances of winning double to 2 in 3!
+ 
+Monty hall is a good demonstration that we don't always have a good intuition on the probability of things because we are using conditional probabilities and Bayes rule to plug in where our numbers go. So there is just a bit more math that goes into it
+
+
+
+---
+
+
+
+---
+## Polling 
+
+.pull-left[
+&lt;gsu-blockquote-red&gt;
+
+Happy families are all alike; every unhappy family is unhappy in its own way.” –– Leo Tolstoy
+
+&lt;/gsu-blockquote-red&gt;
+]
+
+--
+
+
+.pull-right[
+&lt;gsu-blockquote-blue&gt;
+Good pools are all alike; every bad poll is bad in its own way.” –– Professor Allen
+&lt;/gsu-blockquote-blue&gt;
+]
+???
+This is a bit of an embellisment on my part but good polls rely on what is referred to random sampling. If we think back to our candy jar each candy has a relatively equal probability of getting picked. Good polls adopt strategies that ensure that we can get a representative sample of the different kinds of people. Good polls employ questions that are valid meaning they are measuring what we think they are meausring and are reliable meaning they produce the same response 
+
+
+---
+
+
+---
+## Bad Polls 
+
+- .bold[Leading Questions]: encourage the respondent to give a certain answer
+
+- .bold[Double Barrelled Questions]: Ask for opinions about more than one issue
+
+- .bold[Social Desirability Bias]: Frames questions in a way that it makes one believe tthat a certain answer is not preferred
+
+- .bold[Priming]: a previous question which influences answers to future questions
+
+???
+We find some some subset of problems in polling that lead us toward problems whether they are intentional or unitentional 
+
+Double Barrelled question 
+
+Do you agree or disagree with this statement? ‘In a democracy, citizens have a duty to vote and a duty to always follow the law even when they think a law is unjust.’”
+
+
+
+---
+
+---
+## How Questions are Worded
+
+
+.pull-left[
+
+### Free Speach
+&lt;gsu-blockquote-alt&gt;
+Considering the importance of the First Amendment right to free speech, do you think the KKK should be allowed to express their opinions freely at public events?
+
+&lt;/gsu-blockquote-alt&gt;
+]
+
+.pull-right[
+### Public Safety
+
+&lt;gsu-blockquote-red&gt;
+
+Considering the fact that KKK rallies often lead to violent outbursts, do you think the KKK should be allowed to express their opinions freely at public events?
+
+
+&lt;/gsu-blockquote-red&gt;
+
+]
+
+
+???
+These are examples of Framing Effects.
+
+Definition: When people react to a particular choice in different ways depending on how information is presented. 
+
+These kinds of questions can really affect what we can actually say about our quantity of interest. However just as critically how we get our sample matters
+
+---
+
+---
+## Literary Digest vs. George Gallup
+
+
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/R2vhjC5qCQk" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+
+
+???
+Would you charecterize asking what your friends think about the president a good reperesentation of the feelings of president writ large? Probably not but that is kind of the literay digest poll did 
+
+---
+
+
+
+
+
+---
+## Normal Distributions 
+
+&lt;img src="figs/unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+???
+The coolest part about when you do sampling well is that we can approximate the population parameter. There are lots of sampling distributions but today we will cover the what is called the normal distribution or the Gaussian distribution. The normal distribution is defined by the mean and standard deviation. The mean sets the center of the distribution and the standard deviation sets the width.
+
+
+
+---
+
+
+---
+## Central Limit Theorum
+
+
+&lt;img src="figs/unnamed-chunk-10-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+???
+If you have taken basic stats you know that the spread of the distribution can be described like this 
+
+Importantly, central limit theorem, itself a foundation of a lot of classical statistical testing, states that sampling distributions are effectively normal as well. I’ll belabor this one next
+
+This puppy is sort of what holds this whole thing together
+
+What is cool about the central limit theorum is that if we keep retaking random samples of the larger population throught random sampling the sample means will not only be normally distributed but we would converge to the population mean and the random sampling error would equal the standard error of the sample means. Even this one! This is just a therometer rating where people either really like trump in 2018 or really do not like him. This likely hold true for Biden as well but I didn't want to pull and clean the latest ANES data
+
+---
+
+
+---
+## The Central Limit Theorem
+
+
+&lt;img src="figs/unnamed-chunk-11-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+
+
+---
+layout: false 
+
+
+.pull-left[
+
+
+```r
+Population = rbnorm(250000, mean = 40.01578, sd = 40.24403,
+                     lowerbound = 0, 
+                     upperbound = 100,
+                     round = TRUE,
+                     seed = 1994)
+
+
+
+Popsamples = tibble(
+  samplemean=sapply(1:1000000, 
+           function(i){ x = mean(
+             dqsample(Population, 10, 
+                    replace = FALSE)) 
+           })) 
+```
+
+]
+
+.pull-right[
+&lt;img src="figs/unnamed-chunk-13-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+???
+We are going to do this by just making up some data, setting the sample mean equal to 40 and a standard deviation of 40. Than we are going to run this a million times! Each sample size is only 10 observations which generally will invite trouble if you only do it once. Put since we are doing it a million times the central limit will kick in and help us out.
+
+This is honestly still super cool to me. 
+
+---
+
+---
+## Why Should You care
+
+- In practice  we can't ever do this 
+
+- Samples are very expensive
+
+- Attitudes change so often
+
+- Sampling Error
+
+???
+Polls are insanely expensive to run and we never know the "truth" so this brings us to sampling error. The cost of doing this work is that we are bound to 
+
+of trying to infer properties of the population given a sample of it. Indeed, random sampling purposely introduces random sampling error to our estimate since there will always be differences in the sample from the population that occur just by the chance sample we obtained. This may seem bad, but statisticians and social scientists will note that random sampling error is always the lesser evil to systematic error
+
+We conceptualize random sampling error as having two components. The first is the amount of variation in the population parameter. We can’t do anything about this. Real world data can be noisy as hell, like the thermometer ratings for divisive public officials in the United States. The second component of random sampling error is the sample size component. We can do something about this: increase the number of observations in the sample. 
+
+---
+
+
+---
+## Sample Sizes 
+
+
+```r
+sample_sizes = c(10, 25, 100, 400, 1000, 2000)
+
+Samps = list() 
+set.seed(1994)
+for (j in sample_sizes) {
+   Samps[[paste0("Sample size: ", j)]] = data.frame(sampsize=j, samp=sapply(1:10, function(i){ x = sample(Population, j, replace = TRUE) }))
+}
+
+Samps = Samps %&gt;%
+  map_df(as_tibble) %&gt;%
+  gather(samp, value, samp.1:samp.10)
+```
+
+
+---
+
+---
+layout:false
+
+
+
+&lt;img src="figs/unnamed-chunk-15-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+
+???
+With this in mind, what is an ideal sample size in a situation like this (and likely other cases in a social scientific application) where there is high variation in the population and infinity trials—or even multiple trials—are not possible? In the case of the Population data we simulated above, let’s get 10 sample means from samples of varying sizes: 10, 25, 100, 400, 1000, 2000, 4000, and 10000 from this population of 250,000 observations. The following code will both execute that code and chart the 10 different sample means for each different sample size noted on the x-axis.
+
+---
+
+
+---
+## What Does that Buy us?
+
+
+- We calculate what are known as standard errors by `\(SE = \frac{\sigma}{\sqrt{n}}\)`
+
+- This affects our confidence because we calculate it `\(CI = \bar{x}\pm z \frac{\sigma}{\sqrt{n}}\)`
+
+???
+If you remember back to the first few slides we talked about confidence intervals/Margins of error. We know that a lot of the time that we can't always capture the population parameter but a lot of the time our net will one way to sure that net is tighter is to increase our sample. Our standard deviations are calculated by taking the sqrt of our sample size. our confidence interval than is just adding or subtracting a critical value typically 1.96. Notice that N appears in the denominator. This will shrink our confidence intervals! As we divide a small number by a super big number than we get a small number 
+---
+
+---
+layout:false 
+
+&lt;img src="figs/unnamed-chunk-16-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+
+---
+## Rough Heuristics
+
+- Consider possible motives of the poll organizers
+
+- Examine how questions are worded 
+
+- Check the target population and how it is sampled
+
+- Asess the sample size and margin of error 
+
+- Compare across survey houses and look at poll aggregators 
+
+???
+These are about as rough of heuristics as you can come by. As we have seen sample size doesnt neccessarily get you anywhere if the poll is junk. A junk poll with huge sample sizes will naturally have tigher margins of error, but not actually get you a good indicator of public opinion
+
+---
+
+---
+class: center, middle, inverse
+
+# Public Opinion
+
+--
+
+# Non-Stats Part
+---
+
+---
+## What is Public Opinion?
+
+We generally think of it as politically relevant opinions held by citizens that are expressed openly
+
+--
+
+- .bold[Political Values]: The basic principles that people hold about government 
+
+- .bold[Attitude]: The predisposition to act on a particular issue
+
+- .bold[Opinion]: Expression or judgement on a particular issue 
+
+
+---
+
+
+
+---
+## Political Socialization 
+
+&lt;gsu-blockquote-alt&gt; 
+
+The process through which individuals and citizens acquire their political opinions
+
+&lt;/gsu-blockquote-alt&gt; 
+
+
+???
+The process through which individuals and citizens acquire their political opinions
+
+This is a learned effect. You ARE NOT born with a political identity!
+
+
+---
+
+
+
+
+---
+## Agents of Socialization
+
+Primary agents – Those agents of socialization that are closest to you. They are often the most influential in an individual’s formative years.
+
+Secondary agents – 	Those agents of socialization that have less intimate relations with an individual. They are often most important in an individual’s later life.
+
+???
+Primary agents – think face to face interaction
+
+only ten % of young voters vote differently from their parents if their parents both had the same party id
+
+Secondary agents – groups that people are exposed to 
+
+---
+
+---
+## Types of Effects 
+
+
+
+.bold[Primacy Effect]: the phenomenon of aging and growth in which the ideas that an individual learns at a young age (primacy) are more likely to stick. 
+
+.bold[Cumulative Effect]: the phenomenon of political socialization in which an individual’s political orientation will become more firm or solidified with age. 
+
+
+???
+Primacy vs. Cumulative Effects
+
+Primacy Effect – the phenomenon of aging and growth in which the ideas that an individual learns at a young age (primacy) are more likely to stick
+
+
+Cumulative Effect – the phenomenon of political socialization in which an individual’s political orientation will become more firm or solidified with age
+---
+
+
+---
+## Frames of Reference 
+
+.bold[Frames of Reference] – the lens through which an individual or group thinks about things politically 
+
+  - Party Identification(PID)
+  - Political Ideology
+  - Group Orientation
+
+---
+
+---
+## Frames of Reference
+### Party Identification 
+
+- Loyalty or affection of an individual has for a specific political party
+- This can lead to selective perception on a specific issue or topic
+
+
+???
+Ideology and PIDare two DIFFERENT concepts. Do not conflate the two! We have had multiple realignments over the course of American history where these and other parties that have died out have aligned in various places across the political spectrum. 
+
+Parties sit on the ideological spectrum.  Draw the conservative Liberal spectrum 
+
+So how do people think about politics?
+Through frames of reference which are the means by which an individual or a  group thinks about something politically 
+
+Party identification
+Loyalty or affection an individual has for a specific political party 
+Ex. Republican or Democrat 
+
+Citizens use party cues not only in deciding how to vote, but also in deciding whose statements to trust. For example, there is a sharp partisan divide in American politics today over trust in the mainstream media
+
+Political Ideology 
+A coherent set of political beliefs that an individual has over a range of issues 
+Conservative-Liberal Spectrum 
+
+Group Orientation – 
+The phenomenon of viewing politics through a group lens 
+This may be influenced by age, race, gender, religion, etc. 
+
+
+---
+
+
+
+---
+## PID General Trends
+
+<div id="bgvfdywigq" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#bgvfdywigq .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #F6F6F6;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #40C5FF;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#bgvfdywigq .gt_heading {
+  background-color: #F6F6F6;
+  text-align: left;
+  border-bottom-color: #F6F6F6;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#bgvfdywigq .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #F6F6F6;
+  border-bottom-width: 0;
+}
+
+#bgvfdywigq .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #F6F6F6;
+  border-top-width: 0;
+}
+
+#bgvfdywigq .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bgvfdywigq .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #40C5FF;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #ECECEC;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#bgvfdywigq .gt_col_heading {
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#bgvfdywigq .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#bgvfdywigq .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#bgvfdywigq .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#bgvfdywigq .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #ECECEC;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#bgvfdywigq .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #BEBEBE;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #BEBEBE;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#bgvfdywigq .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: bold;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #BEBEBE;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #BEBEBE;
+  vertical-align: middle;
+}
+
+#bgvfdywigq .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#bgvfdywigq .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#bgvfdywigq .gt_row {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: white;
+  border-top-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#bgvfdywigq .gt_stub {
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bgvfdywigq .gt_stub_row_group {
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#bgvfdywigq .gt_row_group_first td {
+  border-top-width: 1px;
+}
+
+#bgvfdywigq .gt_summary_row {
+  color: #333333;
+  background-color: #F6F6F6;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bgvfdywigq .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#bgvfdywigq .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#bgvfdywigq .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bgvfdywigq .gt_grand_summary_row {
+  color: #333333;
+  background-color: #F6F6F6;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bgvfdywigq .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#bgvfdywigq .gt_striped {
+  background-color: #ECECEC;
+}
+
+#bgvfdywigq .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #FFFFFF;
+}
+
+#bgvfdywigq .gt_footnotes {
+  color: #333333;
+  background-color: #F6F6F6;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#bgvfdywigq .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bgvfdywigq .gt_sourcenotes {
+  color: #333333;
+  background-color: #F6F6F6;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#bgvfdywigq .gt_sourcenote {
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bgvfdywigq .gt_left {
+  text-align: left;
+}
+
+#bgvfdywigq .gt_center {
+  text-align: center;
+}
+
+#bgvfdywigq .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#bgvfdywigq .gt_font_normal {
+  font-weight: normal;
+}
+
+#bgvfdywigq .gt_font_bold {
+  font-weight: bold;
+}
+
+#bgvfdywigq .gt_font_italic {
+  font-style: italic;
+}
+
+#bgvfdywigq .gt_super {
+  font-size: 65%;
+}
+
+#bgvfdywigq .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#bgvfdywigq .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#bgvfdywigq .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#bgvfdywigq .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#bgvfdywigq .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Republican Pary</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Democratic Party</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Libertarian Party</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: white;">Favors Small Gov</td>
+<td class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: white;">Favors larger Gov</td>
+<td class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: white;">Favors minimal Gov</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Lower Taxes</td>
+<td class="gt_row gt_left gt_striped">Higher Taxes</td>
+<td class="gt_row gt_left gt_striped">Lower Taxes</td></tr>
+    <tr><td class="gt_row gt_left">Lower Spending on Social Programs</td>
+<td class="gt_row gt_left">Higher Spending on Social Programs</td>
+<td class="gt_row gt_left">Elimination of the Welfare State</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Decreasing Government regulation</td>
+<td class="gt_row gt_left gt_striped">Increased government regulation</td>
+<td class="gt_row gt_left gt_striped"> Elimination of Government regulation</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+
+
+
+---
+
+---
+## Frames of Reference 
+### Political Ideology
+
+ A coherent set of Political beliefs that an individaul has over a range of issues
+
+
+&lt;img src="ideo.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+???
+These are two DIFFERENT concepts. Do not conflate the two! We have had multiple realignments over the course of American history where these and other parties that have died out have aligned in various places across the political spectrum. 
+
+Parties sit on the ideological spectrum.  Draw the conservative Liberal spectrum 
+
+So how do people think about politics?
+Through frames of reference which are the means by which an individual or a  group thinks about something politically 
+
+Party identification
+Loyalty or affection an individual has for a specific political party 
+Ex. Republican or Democrat 
+
+Political Ideology 
+A coherent set of political beliefs that an individual has over a range of issues 
+
+Conservative-Liberal Spectrum 
+Group Orientation – 
+The phenomenon of viewing politics through a group lens 
+This may be influenced by age, race, gender, religion, etc. 
+
+
+
+---
+
+
+---
+## Ideology
+
+
+<div id="ubwjjetepn" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#ubwjjetepn .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #F6F6F6;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #40C5FF;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#ubwjjetepn .gt_heading {
+  background-color: #F6F6F6;
+  text-align: left;
+  border-bottom-color: #F6F6F6;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ubwjjetepn .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #F6F6F6;
+  border-bottom-width: 0;
+}
+
+#ubwjjetepn .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #F6F6F6;
+  border-top-width: 0;
+}
+
+#ubwjjetepn .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ubwjjetepn .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #40C5FF;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #ECECEC;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ubwjjetepn .gt_col_heading {
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#ubwjjetepn .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#ubwjjetepn .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#ubwjjetepn .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#ubwjjetepn .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #ECECEC;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#ubwjjetepn .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #BEBEBE;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #BEBEBE;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ubwjjetepn .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: bold;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #BEBEBE;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #BEBEBE;
+  vertical-align: middle;
+}
+
+#ubwjjetepn .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#ubwjjetepn .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#ubwjjetepn .gt_row {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: white;
+  border-top-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#ubwjjetepn .gt_stub {
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ubwjjetepn .gt_stub_row_group {
+  color: #333333;
+  background-color: #F6F6F6;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#ubwjjetepn .gt_row_group_first td {
+  border-top-width: 1px;
+}
+
+#ubwjjetepn .gt_summary_row {
+  color: #333333;
+  background-color: #F6F6F6;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ubwjjetepn .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#ubwjjetepn .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#ubwjjetepn .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ubwjjetepn .gt_grand_summary_row {
+  color: #333333;
+  background-color: #F6F6F6;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ubwjjetepn .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#ubwjjetepn .gt_striped {
+  background-color: #ECECEC;
+}
+
+#ubwjjetepn .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #FFFFFF;
+}
+
+#ubwjjetepn .gt_footnotes {
+  color: #333333;
+  background-color: #F6F6F6;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ubwjjetepn .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ubwjjetepn .gt_sourcenotes {
+  color: #333333;
+  background-color: #F6F6F6;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ubwjjetepn .gt_sourcenote {
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ubwjjetepn .gt_left {
+  text-align: left;
+}
+
+#ubwjjetepn .gt_center {
+  text-align: center;
+}
+
+#ubwjjetepn .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#ubwjjetepn .gt_font_normal {
+  font-weight: normal;
+}
+
+#ubwjjetepn .gt_font_bold {
+  font-weight: bold;
+}
+
+#ubwjjetepn .gt_font_italic {
+  font-style: italic;
+}
+
+#ubwjjetepn .gt_super {
+  font-size: 65%;
+}
+
+#ubwjjetepn .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#ubwjjetepn .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#ubwjjetepn .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#ubwjjetepn .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#ubwjjetepn .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+</style>
+<table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Issue Area</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Liberals</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Conservatives</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: white;">Regulating the Economy</td>
+<td class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: white;">Supports Govt Regulations</td>
+<td class="gt_row gt_left" style="border-top-width: 0px; border-top-style: solid; border-top-color: white;">Supports Less Govt Regulation</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Economic Security</td>
+<td class="gt_row gt_left gt_striped">More Supportive Programs</td>
+<td class="gt_row gt_left gt_striped">Supports Programs but at lower levels</td></tr>
+    <tr><td class="gt_row gt_left">Government Promotion of Social Equality</td>
+<td class="gt_row gt_left">Wants laws/programs to increase social standing of historically oppressed groups</td>
+<td class="gt_row gt_left">Generally favor the status quo</td></tr>
+    <tr><td class="gt_row gt_left gt_striped">Traditional Moral Values(Abortion, prayer in schools, same-sex marriage etc</td>
+<td class="gt_row gt_left gt_striped">Generally oppose</td>
+<td class="gt_row gt_left gt_striped">Supports laws/programs that uphold these traditional values</td></tr>
+    <tr><td class="gt_row gt_left">Law Enforcement and Criminal Justice</td>
+<td class="gt_row gt_left">Want body cams on police/dashboard.  Oppose: death penalty, long prison sentence, mandatory minimum sentencing laws, restrictions of felons after serving their time.</td>
+<td class="gt_row gt_left">Greater leeway to police.  More likely to support “Law &amp; Order” policies like the death penalty, long prison sentences, mandatory minimums, restricted rights for former felons.</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+
+
+---
+
+
+---
+## Frames of Reference 
+### Group Orientation
+
+The phenomenon of viewing politics through a group lens 
+
+This may be influenced by age, race, gender, religion, etc
+
+---
+
+---
+## Should Public Opinion Matter  
+
+.pull-left[
+&lt;img src="cartoon.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+
+- YES!
+--
+
+- But
+
+- Lots of people don't care or are not informed 
+]
+---
+
+
+
+---
+## What Influences Public Opinion?
+- Generational Effects
+
+- Political Knowledge 
+
+- Political Values 
+  - What the scope and function of government should be?
+
+- Attitude Consistency
+
+???
+If we put together all this stuff than this gets us toward how we answer the question "how do you think about insert topic x
+---
+
+
+---
+## Generational Effects
+
+
+&lt;gsu-blockquote-alt&gt;
+
+Environmental phenomenon outside of our control that can influence how we think about the world
+
+&lt;/gsu-blockquote-alt&gt;
+???
+
+Generataional effects entail a bunch of stuff like how changing social attituds around us shape how we feel, how the economic conditions shape how we feel and how crises shape how we feel and how we express that.K
+---
+
+
+
+---
+## Attiude Consistency
+
+.pull-left[
+&lt;gsu-blockquote-red&gt;
+when a person’s political opinions are founded on a coherent set of principles about the purpose and scope of government.
+
+
+&lt;/gsu-blockquote-red&gt;
+
+]
+
+.pull-right[
+
+Studies on public opinion show that people’s opinions are unstable and inconsistent because they lack the resources to be informed 
+
+
+]
+???
+Broadly, if someone is an ideological thinker, their attitudes will all fall in generally the same place on the “left-right spectrum” (draw on board)- this spectrum describes attitudes- on the far left, is the most liberal someone’s attitudes may be, on the far right is the most conservative someone’s attitudes may be (*in the middle would be very moderate attitudes). For example, someone who believes in very little government spending or intrusion would be very conservative (right), while someone who believes in a lot of government programs and involvement in society would be very liberal on that issue. 
+
+It’s not that people don’t have any means of organizing their attitudes about politics…But, very few of them are ideologically consistent with their beliefs, and even fewer think about politics using the ideological (left-right) spectrum
+
+
+Political elites (those who know a lot about politics)-tend to have well-structured ideologies-their ideologies bind together their positions on different policy issues- so, for example, if they are liberal, all their issue positions will be liberal. 
+
+Non-elites (average citizens) may rely on other methods of organizing their political attitudes. For example, some people know a lot about the few issue areas they think are important (ex. Teachers know a lot about education policies), others organize their opinions based on their affiliation with a particular religion or other group.
+
+---
+
+---
+## How Does This Thing Work Without an Informed Citzenry?
+
+.bold[Heuristics]: Cues or shortcuts individuals follow to make decisions in the absence of complete information 
+
+- Citizen make a limited number of choices within a constrained set of options
+
+- They form a "coherent mass in the aggregate"
+
+
+
+---
+
+
+---
+## Motivated Reasoning 
+
+&lt;gsu-blockquote-blue&gt;
+the unconscious tendency of individuals to fit their processing of information to conclusions that suite some end or goal.
+
+&lt;/gsu-blockquote-blue&gt;
+
+
+---
+
+---
+## Motivated Reasoning
+
+- Biased Information Search 
+  - Seeking out evidence that supports your prior position
+
+- Biased Confirmation of Information
+  - Crediting or discrediting evidence that conforms to that postion
+  
+  
+- Identity Protection
+  The tendency of individuals to ract negatively/dismiss things that would cause them anxiety or cognitive dissonance 
+  
+???
+biased information search - which involves seeking out (or disproportionally attending to) evidence that is congruent rather than incongruent with the motivating goal
+
+biased assimilation - which refers to the tendency to credit and discredit evidence selectively in patterns that promote rather than frustrate the goal
+
+identity-protective cognition - which reflects the tendency of people to react dismissively to information when accepting it would cause them to experience dissonance or anxiety. 
+
+cognitive dissonance The psychological discomfort somebody feels when trying to process contradictory feelings or thoughts
+---
+
+---
+## How Does Public Opinion Constrain?
+
+- Sets boundaries for policymakers to  act 
+  - Varies across issues depending on salience of issue 
+  - Salience – importance of an issue 
+
+
+
+---
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true,
+"navigation": {
+"scroll": true
+}
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
