@@ -19,7 +19,7 @@ cascade:
   type: collection
   layout: single-series
   date: 2022-06-01
-  publishDate: 2022-06-01
+  publishDate: 2022-05-01
   sidebar:
     title: "Pols 1101"
     description: | 
