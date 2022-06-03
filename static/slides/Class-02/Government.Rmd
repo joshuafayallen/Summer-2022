@@ -21,14 +21,6 @@ output:
 ```{r preamble, child=here::here("preamble.Rmd")}
 ```
 
----
-## Looming Deadlines
-
-- Syllabus Quiz 01-16
-
-- Pre-Course Survey 01-16
-
----
 
 
 
@@ -49,14 +41,15 @@ class: center, middle, inverse
 
 --
 
-- If **one** of you chooses B then that person gets **50 points** toward their final grade
+- If **one** of you chooses B then that person gets **50 points** toward their final grade but the rest of the classs gets 
+ **no** points 
 
 --
 
 - If **more than one person** choose B  than the class gets **no points**
 
 
-- Follow this [link](https://gsu.qualtrics.com/jfe/form/SV_b9hBhrLJC9203bL)
+- Follow this [link](https://gsu.qualtrics.com/jfe/form/SV_554Y8tkUhH96vi)
 
 
 
@@ -169,6 +162,9 @@ is that the pursuit of self interest leads to the collective good.
 So the way you will most often hear about this is through carrots and sticks.
 This comes from how you bribe a stubborn horse to move. You can either get it 
 to move by dangling a carrot in front of it or you can hit it with a stick. Essentially you are trying to penalize non-cooperation
+
+ selective incentives, i.e., by conditioning specific benefits on an individual’s contribution
+
 
 ---
 
@@ -421,7 +417,11 @@ We sort of like to charecterize like all the things as state socialism because i
 
 
 ???
-So Marxism arises in the Industrial revolution as a response to capitalism during the Industrial revoloution. The basic tenets of Marx are outlined in Kapital. It is honestly kind of funny book. It is really hard to read but Marx kind of just trails off randomly to rail against the Bourgeiouse clas. Which is basic crux his argument. In Kapital he argued that capital class was exploiting the proletariat to benefit from their labor. While the proletariat was not benefitting from the fruits of their labor. Marx called for the proletariat to take back the means of production (land, labor, and capital). So democratic socialists a faction that broke away from Marxism. They didn't disagree that something needed to change. Conditions in these factories were about as bad as you can imagine. Democratic socialists essentially argued that the role of government is to help deal witth the inequality and working conditions that capitilism caused.
+So Marxism arises in the Industrial revolution as a response to capitalism during the Industrial revoloution. The basic tenets of Marx are outlined in Kapital. It is honestly kind of funny book. It is really hard to read but Marx kind of just trails off randomly to rail against the Bourgeiouse clas. Which is basic crux his argument. In Kapital he argued that capital class was exploiting the proletariat to benefit from their labor. While the proletariat was not benefitting from the fruits of their labor. Marx called for the proletariat to take back the means of production (land, labor, and capital). By overthrowing the 
+
+
+
+So democratic socialists a faction that broke away from Marxism. They didn't disagree that something needed to change. Conditions in these factories were about as bad as you can imagine. Democratic socialists essentially argued that the role of government is to help deal witth the inequality and working conditions that capitilism caused.
 
 ---
 
@@ -445,7 +445,7 @@ class: section, center, middle, inverse
 
 
 pacman::p_load("sf", "ggmap", "wesanderson", "countrycode", 
-               "scico", "MetBrewer", "WDI")
+               "scico", "MetBrewer", "WDI", "vdemdata")
 
 vdem_raw = vdemdata::vdem 
 
@@ -690,7 +690,18 @@ svolik_raw  = haven::read_dta("data/leadership change in dictatorships, 1946-200
 
 
 ???
-Our folk theorem of democracy and authoritarianism a bit misguided. The book views authoritarian politics through the lens of "what is the recourse for the people." A more informative approach is figuring out who matters in these systems. The book sort of argues that the institutions in authoritarian regimes are "window dressing."  However, this is not entirely helpful. If we take the view that the book does that is not unfair. Think about this graph. I have highlighted the things we typically think of the people participating in. But notice that the bulk of exits happen because of things that happen between elite actors.  Institutions in all regimes structure the interactions of individual actors. they constrain the choices available to each actor and good ones endure across generations. The party for the CCP is an institution that constrains the President. This wasn't always the case. The sort of distinction that VDEM makes between kinds of authoritarian regimes who is allowed to compete. Authortarian regimes have elections all the time. Elections have various functions in authoritarian regimes. I feel like this was long a potentially unhelpful. Any questions?
+Our folk theorem of democracy and authoritarianism a bit misguided. The book views authoritarian politics through the lens of "what is the recourse for the people." A more informative approach is figuring out who matters in these systems. The book sort of argues that the institutions in authoritarian regimes are "window dressing."  However, this is not entirely helpful. If we take the view that the book does that is not unfair. Think about this graph. I have highlighted the things we typically think of the people participating in. But notice that the bulk of exits happen because of things that happen between elite actors. 
+
+Institutions in all regimes structure the interactions of individual actors. they constrain the choices available to each actor and good ones endure across generations. The sort of distinction that VDEM makes between kinds of authoritarian regimes who is allowed to compete. Authortarian regimes have elections all the time. Elections have various functions in authoritarian regimes. Whether they are gathering information about the opposition. Performance of various ministers and how they are distributing patronage. This is sort of my rant about the book
+
+However what i think is critical and will be reocurring is that the behavior of individuals is one thing we will talk about, but we also must understand what institutions do and how they reinforce the rules of the game.
+
+
+Any questions?
+
+
+
+
 ---
 
 ---
@@ -753,7 +764,13 @@ Governments, like the United States, that are effectively bound by fundamental l
 - **Fundamental law**: The federal government is bound by the laws declared in the Constitution. If a statute is in conflict with the law of the constitution, then the statute is considered unlawful. ] 
 
 ???
-In particular the American flavor of Liberal democracy is all about the our Constitution. In other liberal democracies interpretation of the founding documents is less of a thing. In some cases like in England there is an informal Constitution but not like a piece of paper you can go see in the national archive. The idea of rule of law is sort of intuitive regardless and that is everybody is bound to the same laws. Put another way. Me and Joe Biden can both go shop lift stuff. If we get caught stealing shit we will both be prosecuted by the law. Fundamental law is just the idea that no basic ass laws are higher can take precedence oveer the constitution. The book uses establishing an official religion as an example. It is in clear conflict with the first amendment. However, if a state decides to say fuck it and makes WAP, All to Well(Taylor's Version), or something else as their official state anthem over the star spangled banner their is no conflict between fundamental and ordidnary law because the constitution doesnt say anything about an official song.
+In particular the American flavor of Liberal democracy is all about the our Constitution. In other liberal democracies interpretation of the founding documents is less of a thing. In some cases like in England there is an informal Constitution but not like a piece of paper you can go see in the national archive. The idea of rule of law is sort of intuitive regardless and that is everybody is bound to the same laws.
+
+
+Put another way. Me and Joe Biden can both go shop lift stuff. If we get caught stealing shit we will both be prosecuted by the law. Fundamental law is just the idea that no basic ass laws are higher can take precedence over the constitution. The book uses establishing an official religion as an example. It is in clear conflict with the first amendment's establishment clause. 
+
+
+However, if a state decides to say fuck it and makes WAP, All to Well(Taylor's Version), or something else as their official state anthem over the star spangled banner their is no conflict between fundamental and ordidnary law because the constitution doesnt say anything about an official song.
 
 
 ---

@@ -98,7 +98,7 @@ I mean if we are going to be honest I probably will respond to various versions 
 
 - Number of Times I have taught this class: 1 
 
-- Number of Times I have taught this class in person: 0]
+- Number of Times I have taught this class in person: 1]
 
 --
 
@@ -153,14 +153,13 @@ class: center, middle,  inverse
 ---
 # Where are the Slides?
 
-- The slides live on the website I put in the announcement [here](https://sppols110122.netlify.app/)
+- The slides live on the website I put in the announcement [here](https://spols110122.netlify.app/)
 
 - Practically the HTML version of the slides are gonna be the ones I use in class. 
 
 - The PDF versions of the slides will just be there for you guys to take notes on if you would like. 
 
-- If you are curious about how they are made just visit [this link](https://github.com/joshuafayallen/pols-1101-spring22/tree/main/static/slides) and click on the file with the ".Rmd" extension
-
+- If you are curious about how they are made just visit [`r icons::fontawesome("github")`](https://github.com/joshuafayallen/Summer-2022-Website/tree/main/static/slides)
 
 ???
 Without getting into the the technical stuff to much basically each of the presentations are there own self contained webpage. The only difference between the HTML and PDF versions are going to be that some of the media and gifs are not gonna show up. This shouldn't be to big of an issue because for the most part it is just going to be pictures and what not that I am done fighting. 
@@ -174,36 +173,29 @@ Without getting into the the technical stuff to much basically each of the prese
 ```{r, include = TRUE, echo= FALSE}
 
 
-mon <- ymd(20220110)
+mon <- ymd(20220606)
 
-tues = ymd(20220111)
-
-# What are some dates you won't be here? In this example, I had a conference on 7 January 2022.
-# Spring Break was 15 March 2022 to 19 March 2022.
-not_here_dates <- c(
-  # SPSA 2022,
-  ymd(20220210),
+# What are some dates you won't be here? In this example, I had a conference on 7 January 2021.
+# Spring Break was 15 March 2021 to 19 March 2021.
+ not_here_dates <- c(
+  # SPSA 2021,
+#  ymd(20210107),
   # Spring Break
-  seq(ymd(20220314),ymd(20220320), by=1))
-
+#  seq(ymd(20210315),ymd(20210319), by=1))
+  ymd(20220620),
+  ymd(20220704))
 # You can adjust this as you see fit. Basically: add assignment types (e.g. papers, quizzes).
 # My intro class was fairly simple: just exams.
-exam_dates <- c(ymd(20220207), ymd(20220321), ymd(20220425))
+exam_dates <- c(ymd(20220622), ymd(20220713), ymd(20220725))
 
 
-ncchr_extra = ymd(20220227)
-
-
-activities = c(ymd(20220130), ymd(20220306), ymd(20220417))
-
-
-exam_weeks = c(6, 12, 17)
+activities = c(ymd(20220619, 20220710, 20220717))
 
 # What are the full dates of the semester? Here, I'll exclude exam week as I like to do.
 # In this case: 6 January to 23 April
-semester_dates <- seq(ymd(20220110), ymd(20220503), by=1)
+semester_dates <- seq(ymd(20220606), ymd(20220727), by=1)
 
-# Custom function for treating the first day of the month as the first week
+# Custom function for treating the first day of the month as the first week 
 # of the month up until the first Sunday (unless Sunday was the start of the month)
 wom <- function(date) {
     first <- wday(as.Date(paste(year(date),month(date),1,sep="-")))
@@ -211,64 +203,55 @@ wom <- function(date) {
   }
 
 # Create a data frame of dates, assign to Cal
-tibble(date = seq(ymd(20220101), ymd(20220430), by=1))  %>%
+tibble(date = seq(ymd(20220606), ymd(20220727), by=1))  %>%
   mutate(mon = lubridate::month(date, label=T, abbr=F), # get month label
          wkdy = weekdays(date, abbreviate=T), # get weekday label
-         wkdy = fct_relevel(wkdy, "Sun", "Mon", "Tue", "Wed", "Thu","Fri","Sat"),
-         weeks = lubridate::isoweek(date),# make sure Sunday comes first
+         wkdy = fct_relevel(wkdy, "Sun", "Mon", "Tue", "Wed", "Thu","Fri","Sat"), # make sure Sunday comes first
          semester = ifelse(date %in% semester_dates, 1, 0), # is date part of the semester?
          exams = ifelse(date %in% exam_dates, 1, 0), # is it an exam?
-         not_here = ifelse(date %in% not_here_dates, 1, 0), # is it a day off?
+         not_here = ifelse(date %in% not_here_dates, 1, 0),
+         activity = ifelse(date %in% activities, 1,0),# is it a day off?
          day = lubridate::mday(date), # get day of month to add later as a label
          # Below: our custom wom() function
-         week = wom(date),
-         exam_week = case_when(weeks %in% exam_weeks ~ "1",
-                               !weeks %in% exam_weeks ~ "0"),
-         ncchr = ifelse(date == ncchr_extra, 1, 0),
-         activities = ifelse(date %in% activities, 1, 0)) -> Cal
+         week = wom(date)) -> Cal
 
+# Create a category variable, for filling.
+# I can probably make this a case_when(), but this will work.
 
-
-
-
-Cal = Cal %>%
+Cal %>%
   mutate(category = NA,
          category = ifelse(semester == 1, "Semester", category),
-         category = ifelse(semester == 1 & wkdy %in% c("Tue", "Thu"), "Class Day", category),
-         category = ifelse(exam_week == 1, "Exams", category),
-         category = ifelse(is.na(category) | (semester == 1 & not_here == 1), "NA", category),                 
-         category = ifelse(ncchr == 1, "Extra Credit NCCHR", category),
-      category = ifelse(activities == 1, "Activity", category)) 
+         category = ifelse(semester == 1 & wkdy %in% c("Mon", "Wed"), "Class Day", category),
+         category = ifelse(exams == 1, "Exams", category),
+         category = ifelse(activity == 1, "Activity", category),
+         category = ifelse(is.na(category) | (semester == 1 & not_here == 1), "NA", category)) -> Cal 
 
-calendar = Cal %>%
+Cal %>% 
   ggplot(.,aes(wkdy, week)) +
-  theme_allen() +
-  theme(panel.grid.major.x = element_blank(),
-        panel.grid.major.y = element_blank(),
-        axis.line.y = element_blank(),
-        axis.line.x = element_blank(),
-        panel.border = element_blank(),
-        axis.ticks.x = element_blank(),
-        legend.position = "right") +
+  # custom theme stuff below
+  # theme_steve_web() + 
+  theme_bw() +
+  theme(panel.grid.major.x = element_blank()) +
   # geom_tile and facet_wrap will do all the heavy lifting
-  geom_tile(alpha=0.8, aes(fill=category), color="black", size=.5) +
-  facet_wrap(vars(mon), scales="free", ncol=3) +
+  geom_tile(alpha=0.8, aes(fill=category), color="black", size=.45) +
+  facet_wrap(~mon, scales="free", ncol=3) +
   # fill in tiles to make it look more "calendary" (sic)
-  geom_text(aes(label=day),family="Roboto Condensed") +
+  geom_text(aes(label=day),family="Lato") +
   # put your y-axis down, flip it, and reverse it
   scale_y_reverse(breaks=NULL) +
   # manually fill scale colors to something you like...
-  scale_fill_manual(values=c("Class Day"="steelblue",
+  scale_fill_manual(values=c( "Activity" = "cadetblue",
+                              "Class Day"="steelblue", 
                              "Semester"="lightsteelblue",
-                             "NA" = "white", # I like these whited out...
-                             "Exams"="indianred4",
-                             "Extra Credit NCCHR" = "coral",
-                             "Activity" = "darkgoldenrod"),
-                    breaks=c("Class Day","Exams", "Extra Credit NCCHR", "Activity")) +
-  labs(fill = "", x="", y="", caption = "Note Exams Close at 11:59 Pm")  
+                              "NA" = "white", # I like these whited out...
+                             "Exams"="indianred4"),
+                    #... but also suppress a label for a non-class semester day
+                    breaks=c("Activity", "Class Day","Exams", "Not Here")) +
+  labs(fill = "", x="", y="", caption = "We do not have class on June 20 or July 4")  -> class_cal
 
 
-calendar
+class_cal 
+
 
 ```
 
@@ -285,83 +268,15 @@ Apologies that it is a little smushed. I tried fighting with the aspect ratios. 
 
 
 ```{r echo = F}
-library(gt)
-gt_theme_espn <- function(data, ...){
-  data %>% 
-    opt_all_caps()  %>%
-    opt_table_font(
-      font = list(
-        google_font("Lato"),
-        default_fonts()
-      )
-    )  %>% 
-    opt_row_striping() %>% 
-    tab_options(
-      row.striping.background_color = "#fafafa",
-      table_body.hlines.color = "#f6f7f7",
-      source_notes.font.size = 12,
-      table.font.size = 16,
-      table.width = px(700),
-      heading.align = "left",
-      heading.title.font.size = 24,
-      table.border.top.color = "#0000ffff",
-      table.border.top.width = px(3),
-      data_row.padding = px(7),
-      ...
-    ) 
-}
+grades_df = tribble(~Assignment, ~Weight,
+                    "Highest Exam Score", "22%",
+                    "Second Highest Exam Score", "16%",
+                     "Lowest Exam", "12%",
+                    "Chapter Readings and probes in Area9", "35%",
+                    "Activities", "15%")
 
-gt_theme_538 <- function(data,...) {
-  data %>%
-  opt_all_caps()  %>%
-  opt_table_font(
-    font = list(
-      google_font("Chivo"),
-      default_fonts()
-    )
-  ) %>%
-    tab_style(
-      style = cell_borders(
-        sides = "bottom", color = "#0000ffff", weight = px(2)
-      ),
-      locations = cells_body(
-        columns = everything(),
-        # This is a relatively sneaky way of changing the bottom border
-        # Regardless of data size
-        rows = nrow(data$`_data`)
-      )
-    )  %>% 
-  tab_options(
-    column_labels.background.color = "white",
-    table.border.top.width = px(3),
-    table.border.top.color = "#0000ffff",
-    table.border.bottom.color = "#0000ffff",
-    table.border.bottom.width = px(3),
-    column_labels.border.top.width = px(3),
-    column_labels.border.top.color = "#0000ffff",
-    column_labels.border.bottom.width = px(3),
-    column_labels.border.bottom.color = "black",
-    data_row.padding = px(3),
-    source_notes.font.size = 12,
-    table.font.size = 16,
-    heading.align = "left",
-    ...
-  ) 
-}
-
-grades = tribble(~Item, ~Percentage,
-                 "Syllabus Quiz", .02,
-                 "Surveys", .05,
-                  "Readings and Question Area9", .23,
-                 "Exams", .42,
-                 "Online Activities", .09,
-                 "NCCHR", .14,
-                 "End of Semester Assesment Quiz", .05)
-
-
-gt(grades) %>% 
-  gt_theme_538() %>% 
-	fmt_percent(columns = "Percentage", decimals = 0)
+gt(grades_df) |> 
+  gtExtras::gt_theme_guardian()
 
 ```
 
@@ -460,9 +375,10 @@ Typically we think of government as focused within these individuals. Which is f
 pacman::p_load("here", "gameofthrones", 
                "scico")
 
-clean_list = read_csv(here::here("data", "class_list_majors.csv"))
+clean_list = read_csv("majors.csv", skip = 14)
 
-plot_data  = clean_list %>% 
+plot_data  = clean_list %>%
+  rename(major = Major) %>%
   group_by(major) %>% 
   summarise(total = n()) %>% 
   arrange(desc(total)) 
