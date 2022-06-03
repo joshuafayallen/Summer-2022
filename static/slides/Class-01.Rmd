@@ -90,13 +90,13 @@ I mean if we are going to be honest I probably will respond to various versions 
 
 .pull-left[
 ## Professional Stuff
-- I am a 3rd Year PhD Student in the Political Science Department
+- I am a $4^{th}$ Year PhD Student in the Political Science Department
 
 - Research Interests: Political Legacies of Repression and Political violence
 
-- Grade: 23?
+- Grade: 24?
 
-- Number of Times I have taught this class: 1 
+- Number of Times I have taught this class: 2 
 
 - Number of Times I have taught this class in person: 1]
 
@@ -159,10 +159,17 @@ class: center, middle,  inverse
 
 - The PDF versions of the slides will just be there for you guys to take notes on if you would like. 
 
+- These slides were made using the programming language `R` with the [`xaringan` package](https://slides.yihui.org/xaringan/#1)
+
 - If you are curious about how they are made just visit [`r icons::fontawesome("github")`](https://github.com/joshuafayallen/Summer-2022-Website/tree/main/static/slides)
 
 ???
-Without getting into the the technical stuff to much basically each of the presentations are there own self contained webpage. The only difference between the HTML and PDF versions are going to be that some of the media and gifs are not gonna show up. This shouldn't be to big of an issue because for the most part it is just going to be pictures and what not that I am done fighting. 
+Without getting into the the technical stuff to much basically each of the presentations are there own self contained webpage. The only difference between the HTML and PDF versions are going to be that some of the media and gifs are not gonna show up. 
+
+
+
+
+
 
 ---
 
@@ -236,7 +243,7 @@ Cal %>%
   geom_tile(alpha=0.8, aes(fill=category), color="black", size=.45) +
   facet_wrap(~mon, scales="free", ncol=3) +
   # fill in tiles to make it look more "calendary" (sic)
-  geom_text(aes(label=day),family="Lato") +
+  geom_text(aes(label=day),family="Roboto Condensed") +
   # put your y-axis down, flip it, and reverse it
   scale_y_reverse(breaks=NULL) +
   # manually fill scale colors to something you like...
@@ -257,8 +264,7 @@ class_cal
 
 
 ???
-These next two slides are basically like the tl;dr of the syllabus. This calendar is just taken directly from the syllabus. For February 10 I will try and get somebody to cover the class. March 10th I don't anticipate many of you will be here since it is the class before spring break. So I will try and figure out a lecture that is kind of fun and useful. I will let you know closer to the actual date, but I wouldn't anticipate y'all having class.
-Apologies that it is a little smushed. I tried fighting with the aspect ratios. I can post this and the table in the announcements for your purpose 
+These next two slides are basically like the tl;dr of the syllabus. This calendar is just taken directly from the syllabus. The third exam is going to be a tight turnaround. My grades are due on thursday of that week. So please talk to me in advance if you will miss it.  
 ---
 
 
@@ -281,7 +287,10 @@ gt(grades_df) |>
 ```
 
 ???
-While exams make up like the biggest item I just weight them. So your highest score is going to count for more and your lowest score is going to count for less. In my experience if you do all the readings and questions in AREA 9 and the rest of the work it will count towards a lot for your final grade. The NCCHR assignment is a short writing assignment basd on your visit toward the national center for civil and human rights. We have you go through various exhibits and experiences that help you learn about the American civil rights movement. THe writing assignment is only like 400 words and I give you questions to answer.
+So if you look at the breakdown of the class half of your grade is going to be determined by exam grades and the other half on the stuff you do outside of class. It is going to be critical that you do all the stuff. Unfortunately we are kind of constrained by the fact that this is shortened class so lots of the things that offset exam grades just simply are not available for this class. 
+
+
+
 ---
 
 ---
