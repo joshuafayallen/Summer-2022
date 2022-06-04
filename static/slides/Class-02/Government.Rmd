@@ -376,7 +376,7 @@ by the "market"
 
 ]
 ???
-Capitalism grows up alongside other enlightenment ideas. Prior to this system Europe had what was known as mercantilism were the main economic actor was the crown. The sole purpose of the economy was to enrich the nation. The power of the state is interconnected very deeply with the wealth of the state. Smith comes along in an age where the focus turns toward the individual. He argues that for economies to progress the individual must set off to maximize their personal profit. The pursuit of this profit by every leads to what Smith calls the social good. In the classic liberal economy. The invisible hand is when under perfect factor mobility and perfect competition the market will determine the most efficient because of supply and demand. Sellers want to sell their stuff that benefits them the most. Buyers want to buy stuff at a price that is advantageous to them. Crucially the owners of the factors of the production are private actors rather than the state. This is like the quickest and dirtiest explanation of Macroeconomics possible. For more thorough explanations you are going to take some classes in our Econ department or with Dr. Hankla. The role of the state in this case is to correct market failures. These arise for various reasons and are altogether pretty common. 
+Capitalism grows up alongside other enlightenment ideas. Prior to this system Europe had what was known as mercantilism were the main economic actor was the crown. The sole purpose of the economy was to enrich the nation. The power of the state is interconnected very deeply with the wealth of the state. Smith comes along in an age where the focus turns toward the individual. He argues that for economies to progress the individual must set off to maximize their personal profit. The pursuit of this profit by every leads to what Smith calls the social good. In the classic liberal economy. The invisible hand is when under perfect factor mobility and perfect competition the market will determine the most efficient allocation of land labor and capital because of supply and demand. Sellers want to sell their stuff that benefits them the most. Buyers want to buy stuff at a price that is advantageous to them. Crucially the owners of the factors of the production are private actors rather than the state. This is like the quickest and dirtiest explanation of Macroeconomics possible. For more thorough explanations you are going to take some classes in our Econ department or with Dr. Hankla. The role of the state in this case is to correct market failures. These arise for various reasons and are altogether pretty common. 
 
 
 ---
@@ -440,7 +440,7 @@ class: section, center, middle, inverse
 
 
 
-```{r, echo=FALSE, warning=FALSE}
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
 
 
 
@@ -658,9 +658,6 @@ that for this class we are going to set aside is how do we measure that stuff.
 VDEM embraces what is known as Dahl's polyarchy. In the early days of political science a lot of theorizing went into what we meant by "Democracy" and "Authoritarianism" one of the most prominent of these theories was Dahl's polyarchy. In our sort of folk theories of democracy we these things are fairly intuitive. Liberal democracies do all these things but as citizens are mostly in disagreement about the how they do this and how much leeway they have to do this. But it is very much informed by the Enlightenment. \
 ---
 
----
-
-## Authoritarianism
 
 ---
 
@@ -720,7 +717,7 @@ class: section, center, middle, inverse
 
 
 ---
-## Demcracy
+## Democracy
 
 .pull-left[
 <gsu-blockquote-blue> Direct Democracy: “pure” democracy - one in which the people make the decisions in the manner in which political powers should be exercised. </gsu-blockquote-blue>

@@ -89,7 +89,7 @@ I mean if we are going to be honest I probably will respond to various versions 
 ## About Me 
 
 .pull-left[
-## Professional Stuff
+### Professional Stuff
 - I am a $4^{th}$ Year PhD Student in the Political Science Department
 
 - Research Interests: Political Legacies of Repression and Political violence
@@ -103,12 +103,12 @@ I mean if we are going to be honest I probably will respond to various versions 
 --
 
 .pull-right[
-## Personal Stuff  
+### Personal Stuff  
 - Makes Graphs for Fun
 
 - Bay Area Expat
 
-- Walk up song: Act Up- Rich Brian 
+- Walk up song: Simon Says: Pharoahe Monach
 
 - Generally can be found at a gym, my couch, or at the dog park with my dog Melonie
 ]
@@ -153,7 +153,7 @@ class: center, middle,  inverse
 ---
 # Where are the Slides?
 
-- The slides live on the website I put in the announcement [here](https://spols110122.netlify.app/)
+- The slides live on this website [https://spols110122.netlify.app/](https://spols110122.netlify.app/)
 
 - Practically the HTML version of the slides are gonna be the ones I use in class. 
 

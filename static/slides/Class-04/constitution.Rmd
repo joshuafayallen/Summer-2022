@@ -39,7 +39,7 @@ class: center, middle, inverse
 ]
 --
 .col[
-  # How we Got the Institutions we Have
+  # How We Got the Institutions We Have
 
 ]
 
