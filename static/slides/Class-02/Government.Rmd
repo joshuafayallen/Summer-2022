@@ -49,7 +49,7 @@ class: center, middle, inverse
 - If **more than one person** choose B  than the class gets **no points**
 
 
-- Follow this [link](https://gsu.qualtrics.com/jfe/form/SV_554Y8tkUhH96vi)
+- Follow this [link](https://gsu.qualtrics.com/jfe/form/SV_554Y8tkUhH96vie)
 
 
 
