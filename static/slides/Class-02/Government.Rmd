@@ -159,11 +159,14 @@ is that the pursuit of self interest leads to the collective good.
 ]
 
 ???
+
+selective incentive are  specific benefits extended to the individual conditional on a contribution
+
 So the way you will most often hear about this is through carrots and sticks.
 This comes from how you bribe a stubborn horse to move. You can either get it 
 to move by dangling a carrot in front of it or you can hit it with a stick. Essentially you are trying to penalize non-cooperation
 
- selective incentives, i.e., by conditioning specific benefits on an individual’s contribution
+ 
 
 
 ---
@@ -216,10 +219,14 @@ knitr::include_graphics("images/tragedy-of-the-commons.png")
 ???
 As is the case in the class the world is complicated and the book tries to distill
 an entire graduate class into like a chapter or paragraph. Free riding is the most common problem
-that arises in this literature. Generally people want to reap as much as possible without
+that arises in this literature. 
+
+Generally people want to reap as much as possible without
 paying into stuff. If this happens at a scale the good will be underprovided, overused, or degraded
+
+
 The tragedy of the commons is a kind problem that arises when the good is rivalrious but non-excludable.
-This comes up in environmental politics and economics a lot. 
+This comes up in environmental politics and economics a lot. In this case an inidividual's consumption decreases the supply and the good is non-excludable
 ---
 
 
@@ -246,8 +253,16 @@ knitr::include_graphics("images/ostrom-design.png")
 
 
 ???
-the cop out answer is usually just to make things private goods. But that isn't really an option in most cases so  governments have to get more creative than that. Not that there is a lot that 
-goes into both of them. Ostrom actually got her Nobel Prize in 2009 for her work on the common pool problem. So this is very much an active research area. Governments have to step into solve these problems. And the tools by which they do that is often tricky.
+the cop out answer is usually just to make things private goods. But that isn't really an option in most cases so  governments have to get more creative than that. 
+
+Note that there is a lot that 
+goes into both of them. Ostrom actually got her Nobel Prize in 2009 for her work on the common pool problem. So this is very much an active research area. Governments have to step into solve these problems. And the tools by which they do that is often tricky. Ostrom demonstrates that it is not as big of an issue and there are often community based solutions
+
+How would a government work to solve this?
+
+regulations on use. quotas etc. 
+
+
 
 ---
 ## What Other Kinds of Goods Are There??
@@ -518,7 +533,7 @@ from two of the most popular measures of regime to color our discussion
 ---
 ## Regimes According to Polity IV
 
-```{r echo = FALSE, warning=FALSE}
+```{r echo = FALSE, warning=FALSE, message=FALSE}
 
 remotes::install_github("xmarquez/democracyData")
 
@@ -655,7 +670,10 @@ that for this class we are going to set aside is how do we measure that stuff.
 
 
 ???
-VDEM embraces what is known as Dahl's polyarchy. In the early days of political science a lot of theorizing went into what we meant by "Democracy" and "Authoritarianism" one of the most prominent of these theories was Dahl's polyarchy. In our sort of folk theories of democracy we these things are fairly intuitive. Liberal democracies do all these things but as citizens are mostly in disagreement about the how they do this and how much leeway they have to do this. But it is very much informed by the Enlightenment. \
+VDEM embraces what is known as Dahl's polyarchy. In the early days of political science a lot of theorizing went into what we meant by "Democracy" and "Authoritarianism" one of the most prominent of these theories was Dahl's polyarchy. In our sort of folk theories of democracy we these things are fairly intuitive. Liberal democracies do all these things but as citizens are mostly in disagreement about the how they do this and how much leeway they have to do this. But it is very much informed by the Enlightenment. 
+
+Without saying it the book very much sees the U.S. way of government closely adhereing to these principles. 
+
 ---
 
 
@@ -733,7 +751,9 @@ Representative democracy – where the authority of the governments lies with th
 
 ???
 Direct democracy is the original form of democracy. Democracy like 0.1 or raw dogging democracy. There is an important distinction between direct democracy and 
-representative democracy. The key distinction is that we delegate some our power to our elected officials. We will talk about this more later on, but this is essentially a principal-agent problem. For direct democracy you gotta determine like all the things. If any of you have ever voted at like the end of your ballot you have various things like "Do you want to enact this tax? It pays for schools" You cast your ballot and then boom its law. Just start expanding it out more. As a Californian we have a lot of these. Sometimes they are kind of innocuous like every election cycle somebody tries to get CA seceding on the ballot. Other times civil rights like Gay marriage are put on the ballot. I was like little when this happened. I dont know if this will be brought up in the Civil Rights/Civil Libertis weeks. But Prop 8 was defeated and gay marriage was not legalized in CA. But Prop 8 was crafted to be as like confusing as possible, but with the end goal of homophobia
+representative democracy. 
+
+The key distinction is that we delegate some our power to our elected officials. We will talk about this more later on, but this is essentially a principal-agent problem. For direct democracy you gotta determine like all the things. If any of you have ever voted at like the end of your ballot you have various things like "Do you want to enact this tax? It pays for schools" You cast your ballot and then boom its law. Just start expanding it out more. As a Californian we have a lot of these. Sometimes they are kind of innocuous like every election cycle somebody tries to get CA seceding on the ballot. Other times civil rights like Gay marriage are put on the ballot. I was like little when this happened. I dont know if this will be brought up in the Civil Rights/Civil Libertis weeks. But Prop 8 was defeated and gay marriage was not legalized in CA. But Prop 8 was crafted to be as like confusing as possible, but with the end goal of homophobia
 
 ---
 

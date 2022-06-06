@@ -114,7 +114,7 @@ I mean if we are going to be honest I probably will respond to various versions 
 ]
 
 ???
-So this is like my first time teaching this class in person so there will no doubt be some struggles lecturing and responding to questions. So while I know it may be frustrating at times but I promise you I am trying my best. I have been in school for longer than some way have you been alive. My research interests are focused on the enduring legacy of violence. Outside of class you will generally find me in like three or four places
+This is my second time teaching this class so hopefully there will be less kinks than last year.  I have been in school for longer than some way have you been alive. My research interests are focused on the enduring legacy of violence. Outside of class you will generally find me in like three or four places
 ---
 
 
@@ -166,7 +166,7 @@ class: center, middle,  inverse
 ???
 Without getting into the the technical stuff to much basically each of the presentations are there own self contained webpage. The only difference between the HTML and PDF versions are going to be that some of the media and gifs are not gonna show up. 
 
-
+Outside of asking for help with this class if this summer or in the future you are using R i am happy to help in whatever capacity I can.
 
 
 
@@ -546,7 +546,7 @@ So the most common way we start to understand the state in Political Science is 
 - Popular Sovereignty 
 
 ???
-There are huge debates about the state and statemaking, but in general it is accepted that the stuff that the book mentions is wrapped up in Weber. The debate is long and honestly kind of boring. But what you need to know is that the book has lots of opinions. Most of which I kind of disagree with The Federalism thing is also technically wrong because Weber says that other things can use force if and only if the state delegates them that authority. The reason it takes issue with this is that under federalism there are lots of "competing authorities. The book also makes the point that highest authority aka sovereignty resides in the people. And that there is an inherent tension between the government and the people in this arrangement 
+ But what you need to know is that the book has lots of opinions. Most of which I kind of disagree with The Federalism thing is also technically wrong because Weber says that other things can use force if and only if the state delegates them that authority. The reason it takes issue with this is that under federalism there are lots of "competing authorities. The book also makes the point that highest authority aka sovereignty resides in the people. And that there is an inherent tension between the government and the people in this arrangement 
 ---
 
 
