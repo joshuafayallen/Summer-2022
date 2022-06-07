@@ -496,26 +496,7 @@ For people who do not live and breath politics typically they may have on or mor
 
 ---
 
----
-class: center, middle, inverse 
 
-# Partisianship 
-
----
-
----
-## Social Identity
-
- Group Orientation: The phenomenon of viewing politics through a groups lens
-
-
-???
-Finally, American politics, and thus ideology, is highly impacted by group orientation, and the number of groups that are present in American society.
-
-Group orientation is the phenomenon of viewing politics through a group lens. This is most influenced by age, race, and gender; but several other groups have a significant impact as well.
-
-
----
 
 ---
 ## Social Identity Theory
@@ -558,11 +539,21 @@ vembedr::embed_url("https://www.youtube.com/watch?v=mBDULN6Jtn0")
 - Formal occasions to express this identity
 
 ???
+
+
+Finally, American politics, and thus ideology, is highly impacted by group orientation, and the number of groups that are present in American society.
+
+Group orientation is the phenomenon of viewing politics through a group lens. This is most influenced by age, race, and gender; but several other groups have a significant impact as well.
+
+
+
 Why this is a good analytical approach is because social identity arises for a lot less reasons. The conflict between groups is almost always relevant and is periodically. We are frequently primed to think about various political stimuli along these lines. How we feel about universal healthcare is a good example of this. 
 
 
-We hear a lot of partisanship colloqually but the form it takes has sort of fundamentally change. In the past when political science and others have talked about partisanship they are talking about the policy disagreements that we have. However, much of the research that has been conducted for close to 20 years now shows that increasingly partisanship is a salient political identity. In this case politics becomes a zero sum game where a gain for one side is a loss for the other side. This affects our life in other ways. Partisianship bleeds into our life in various other ways when it becomes a social identity. IN surveys scholars have found results that indicate not only are people less willing to live in a neighborhood that is predominatly made up another party, but people increasingly say that they are less likely to date somebody from the other political party. In some respects you can see this born out in the data but there are likely lots of confounding factor 
+We hear a lot of partisanship colloqually but the form it takes has sort of fundamentally change. In the past when political science and others have talked about partisanship they are talking about the policy disagreements that we have. However, much of the research that has been conducted for close to 20 years now shows that increasingly partisanship is a salient political identity. In this case politics becomes a zero sum game where a gain for one side is a loss for the other side. This affects our life in other ways. Partisianship bleeds into our life in various other ways when it becomes a social identity. 
 
+
+IN surveys scholars have found results that indicate not only are people less willing to live in a neighborhood that is predominatly made up another party, but people increasingly say that they are less likely to date somebody from the other political party.
 
 
 
@@ -578,11 +569,75 @@ We hear a lot of partisanship colloqually but the form it takes has sort of fund
 knitr::include_url("https://projects.fivethirtyeight.com/republicans-democrats-cities/")
 ```
 
+???
+
+if we start to look at census block level data we can see some evidence of this as a static image, but this doesnt tell the whole story. What are presumably some confounding variables to this? A  confounder is a variable that influences both the dependent variable and independent variable, causing a spurious association. 
+
+
+Notice the location of these cities. 
+
+One other thing is that some evidence suggests that this behavior is not born out when it is placed against actual behavior of people. 
+
+---
 
 
 ---
 
 
+```{r cache= TRUE, warning= FALSE, message=FALSE, results= 'hide'}
+pacman::p_load("tmap", "tidycensus", "sf", "scico")
+
+
+
+atl_race <- get_decennial(
+  geography = "tract",
+  state = "GA",
+  county = c("Cobb", "Fulton", "Dekalb"),
+  variables = c(
+    White = "P2_005N",
+    Black = "P2_006N"
+  ),
+  summary_var = "P2_001N",
+  year = 2020,
+  geometry = TRUE
+) %>%
+  mutate(percent = 100 * (value / summary_value))
+
+
+map = tm_shape(atl_race) + 
+  tm_facets(by = "variable", scale.factor = 4) + 
+  tm_fill(col = "percent",
+          style = "quantile",
+          n = 6,
+          palette = "-magma",
+          title = "Percent (2020 US Census)",
+          legend.reverse = TRUE) + 
+  tm_layout(bg.color = "white", 
+            legend.position = c(0.1, 0.15),
+            panel.label.bg.color = "white",
+            aes.palette = "-")
+
+
+
+
+
+
+
+
+
+
+
+```
+
+
+
+
+```{r}
+map
+```
+
+
+---
 
 
 
