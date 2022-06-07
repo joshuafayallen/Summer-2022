@@ -324,7 +324,12 @@ knitr::include_graphics("images/ideaology-one-dimension.jpg")
 
 
 ???
-We typically view political ideology in American politics as one dimensional. Which is kind of just fancy for it falls along one line. However, this intuitively this seems pretty simplistic. American political scientists since the 60's have been fighting over the components of ideology and what it actually means for politics since like the 60's with Campbell and Converse. If you take a class with Dr. Thornton he has some work on this. 
+We typically talk about political ideology in American politics as one dimensional. Which is kind of just fancy for it falls along one line. However, this intuitively this seems pretty simplistic. American political scientists since the 60's have been fighting over the components of ideology and what it actually means for politics since like the 60's with Campbell and Converse. If you take a class with Dr. Thornton he has some work on this. 
+
+
+
+
+
 
 ---
 
@@ -480,6 +485,15 @@ knitr::include_graphics("images/ideology-multi-dimensions.png")
 Instead, we can think about ideology as being dependent on the level of government power that one prefers (ranging from authoritarianism to libertarianism) and economic freedom (with the economic-left preferring more government/societal control, and the economic-right preferring less) As I mentioned we have some faculty that kind of looks at this exact question. When we collapse ideology to one dimension we start lumping stuff together in ways that aren't necessarily capturing the full range of variation. 
 
 When we think of the issues and issue areas they can kind of range the span of whether it is more social or more economic. Importantly it is also kind of difficult to group these preferences because they may not always fit together in a neat way. Stuff we kind of don't care about or don't know much about are going to be more sensitive. 
+
+However I should note that this is still the subject of lots of debate. What is clear is that people who are more engaged politically typically conform to the uni-dimensional framework we started this section off with. People who are more politically engaged i.e. Elites are can better group the various policies to one of these bins
+
+
+For people who do not live and breath politics typically they may have on or more sets of preferences that they can best identify where they belong but when you start poking at what rest of their positions are and whether they can group them it is about as good as throwing a dart at the dart board. This is not to say that only feeling really strongly about a small set of issues where elites can find votes. 
+
+
+
+
 ---
 
 ---
@@ -547,7 +561,7 @@ vembedr::embed_url("https://www.youtube.com/watch?v=mBDULN6Jtn0")
 Why this is a good analytical approach is because social identity arises for a lot less reasons. The conflict between groups is almost always relevant and is periodically. We are frequently primed to think about various political stimuli along these lines. How we feel about universal healthcare is a good example of this. 
 
 
-We hear a lot of partisanship colloqually but the form it takes has sort of fundamentally change. In the past when political science and others have talked about partisanship they are talking about the policy disagreements that we have. However, much of the research that has been conducted for close to 20 years now shows that increasingly partisianship is a salient political identity. In this case politics becomes a zero sum game where a gain for one side is a loss for the other side. This affects our life in other ways. Partisianship bleeds into our life in various other ways when it becomes a social identity. IN surveys scholars have found results that indicate not only are people less willing to live in a neighborhood that is predominatly made up another party, but people increasingly say that they are less likely to date somebody from the other political party. In some respects you can see this born out in the data but there are likely lots of confounding factor 
+We hear a lot of partisanship colloqually but the form it takes has sort of fundamentally change. In the past when political science and others have talked about partisanship they are talking about the policy disagreements that we have. However, much of the research that has been conducted for close to 20 years now shows that increasingly partisanship is a salient political identity. In this case politics becomes a zero sum game where a gain for one side is a loss for the other side. This affects our life in other ways. Partisianship bleeds into our life in various other ways when it becomes a social identity. IN surveys scholars have found results that indicate not only are people less willing to live in a neighborhood that is predominatly made up another party, but people increasingly say that they are less likely to date somebody from the other political party. In some respects you can see this born out in the data but there are likely lots of confounding factor 
 
 
 
