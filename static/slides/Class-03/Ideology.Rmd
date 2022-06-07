@@ -23,21 +23,6 @@ output:
 
 
 
----
-
-## Looming Deadlines 
-
-
-- Pre-Course Survey 01/21
-
-- Syllabus Quiz 01/21
-
-- Chapters 01 & 02 01/25
-
-
----
-
-
 
 ---
 ## Where We Have Been 
@@ -113,7 +98,11 @@ knitr::include_graphics("images/vc.jpg")
 ```
 
 ???
-We talked about state socialism and its sort of related equivalent the command economy. Where the factors of production are allocated by the state. However, a lot of the political discourse about the role of the government in the economic sphere happens along this spectrum. There is a sliding scale of the coordination of labor unions sometimes referred to Coordinated Market Economies. To the area on the far right where there is a much larger social safety net. We are on the far left of the sliding continuum. Where among industrialized nations in the WEIRD countries the US has sort of the most pro-business approach to politics. Where we see government intervention in the economy kind of ranges along this spectrum. From more generous public goods to how governments deal with industry
+We talked about state socialism and its sort of related equivalent the command economy. Where the factors of production are allocated by the state. However, a lot of the political discourse about the role of the government in the economic sphere happens along this spectrum. 
+
+There is a sliding scale of the coordination of labor unions sometimes referred to Coordinated Market Economies. To the area on the far right where there is a much larger social safety net. 
+
+We are on the far left of the sliding continuum. Where among industrialized nations in the WEIRD countries the US has sort of the most pro-business approach to politics. Where we see government intervention in the economy kind of ranges along this spectrum. From more generous public goods to how governments deal with industry
 
 ---
 
@@ -184,7 +173,9 @@ Nonviolent, open, and free activities through which people, bound by the same st
 
 
 ???
-How we define politics differs. The book defines it this way however we have taken a stab at it throughout the development of the study of politics. Fundamentally politics is a struggle of preferences and the tactics we use to get them. Clausewitz is perhaps oft quoted because it is kind of provocative. I consider myself a conflict scholar so Clausewitz comes up as like a throw away citation. But it highlights that even the most gruesome of human endeavors boils down to contention among competing preferences. 
+How we define politics differs. The book defines it this way however we have taken a stab at it throughout the development of the study of politics. Fundamentally politics is a struggle of preferences and the tactics we use to get them. 
+
+Clausewitz is perhaps oft quoted because it is kind of provocative. I consider myself a conflict scholar so Clausewitz comes up as like a throw away citation. But it highlights that even the most gruesome of human endeavors boils down to contention among competing preferences. 
 
 The book sort of makes the distinction that in the American political arena violence is not a part of politics. But as a conflict scholar this is not entirely true. War, the application of violence, and the allocation of resources to the coercive apparatus of the state is inherently political. 
 
@@ -215,8 +206,12 @@ Finally, in American politics at least, this is generally thought of as a libera
 
 ---
 
+
+
 ---
-## Political Culture 
+## American Political Culture 
+
+.pull-left[
 
 <gsu-blockquote-alt>
 
@@ -226,27 +221,34 @@ Collection of beliefs and values about the justification and operation of a coun
 </gsu-blockquote-alt>
 
 
+]
 
 
-
-
-???
-Political culture is kind of interesting area of study in Comparative politics. Culturalist perspectives are no doubt powerful but hard to operationalize in statistical studies and in qualitative studies. Culture gives meanings to otherwise innocuous stimuli. 
-
-Culture is the practice of making meanings from external stimuli and investing in those meanings. The sort of canonical example in the literature is with Gertz who uses a wink between people. The wink can signal mischeaviousness between people a joke etc. Or think of the (do the thing where you point at your arm). Political culture is important because it is how we parse certain stuff in our political lives and helps us orient how to think of new stimuli. Whether these are things that arise due to maturing or political events that arise. 
-
-
---- 
-
----
-## American Political Culture 
-
+.pull-right[
 - Size and Age
 
-- Unique among nations 
+- Unique among nations] 
 
 ???
-NATION SIZE & AGE: America’s political culture is somewhat unusual to the extent that it defines such a large and diverse democracy and has done so for over 200 years. This makes us both one of the younger countries on the world stage, and also one of the oldest democracies. Additionally, with a population of (approximately) 330 million people, it is far more populous than most countries with developed democracies. Finally, America occupies a much larger landmass than many other democracies, which has a large impact on how citizens view the government and it’s proper role (i.e. the South, is really different from the Western plains, which is the opposite of the Northeast, which are all different from the West coast, which is even different from the Pacific Northwest).
+
+
+Political culture is kind of interesting area of study in Comparative politics. Culturalist perspectives are no doubt powerful but hard to operationalize in statistical studies and in qualitative studies. Culture gives meanings to otherwise innocuous stimuli. 
+
+Culture is the practice of making meanings from external stimuli and investing in those meanings. The sort of canonical example in the literature is with Gertz who uses a wink between people. The wink can signal mischeaviousness between people a joke etc. Or think of the (do the thing where you point at your arm). 
+
+Culture is a shared understanding and memory of certain things. Think about the emojis you may use in your texting and your tik tok. These are stimuli that you the youths 
+
+Political culture is important because it is how we parse certain stuff in our political lives and helps us orient how to think of new stimuli. Whether these are things that arise due to maturing or political events that arise. 
+
+
+
+
+NATION SIZE & AGE: America’s political culture is somewhat unusual to the extent that it defines such a large and diverse democracy and has done so for over 200 years. This makes us both one of the younger countries on the world stage, and also one of the oldest democracies.
+
+Additionally, with a population of (approximately) 330 million people, it is far more populous than most countries with developed democracies.
+
+
+Finally, America occupies a much larger landmass than many other democracies, which has a large impact on how citizens view the government and it’s proper role (i.e. the South, is really different from the Western plains, which is the opposite of the Northeast, which are all different from the West coast, which is even different from the Pacific Northwest).
 
 UNIQUE AMONG NATIONS: Americans (more often than many people in other nations) agree on basic assumptions about the nature of a good society, they also heavily value liberty, individual responsibility, equality and religious faith – these values determine Americans’ political culture & impact policy making.  
 
@@ -275,7 +277,7 @@ beliefs which are central in American political culture, and which people often 
 2. Free enterprise
 3. Egalitarianism
 4. Humanitarianism
-5. Limited Goernment & Popular Sovereignty
+5. Limited Government & Popular Sovereignty
 
 ]
 ???
@@ -475,7 +477,9 @@ knitr::include_graphics("images/ideology-multi-dimensions.png")
 
 ]
 ???
-Instead, we can think about ideology as being dependent on the level of government power that one prefers (ranging from authoritarianism to libertarianism) and economic freedom (with the economic-left preferring more government/societal control, and the economic-right preferring less) As I mentioned we have some faculty that kind of looks at this exact question. When we collapse ideology to one dimension we start lumping stuff together in ways that aren't neccesarily capturing the full range of variation. When we think of the issues and issue areas they can kind of range the span of whether it is more social or more economic. Importantly it is also kind of difficult to group these preferences because they may not always fit together in a neat way. Stufff we kind of don't care about or don't know much about are going to be more sensitive. 
+Instead, we can think about ideology as being dependent on the level of government power that one prefers (ranging from authoritarianism to libertarianism) and economic freedom (with the economic-left preferring more government/societal control, and the economic-right preferring less) As I mentioned we have some faculty that kind of looks at this exact question. When we collapse ideology to one dimension we start lumping stuff together in ways that aren't necessarily capturing the full range of variation. 
+
+When we think of the issues and issue areas they can kind of range the span of whether it is more social or more economic. Importantly it is also kind of difficult to group these preferences because they may not always fit together in a neat way. Stuff we kind of don't care about or don't know much about are going to be more sensitive. 
 ---
 
 ---
@@ -514,9 +518,24 @@ Social Identity theory has become a huge part of the present day literature on p
 
 ---
 
+---
+
+```{r}
+vembedr::embed_url("https://www.youtube.com/watch?v=mBDULN6Jtn0")
+```
+
+
+
+---
+
+
 
 ---
 ## Partisianship and Social Identity
+
+
+- .bold[Affective Polarization: the tendency of people identifying as Republicans or Democrats to view opposing partisans negatively and co-partisans positively (Iyengar & Westwood 2015)]
+
 
 - Acquired at a young age and rarely changes 
 
@@ -527,4 +546,31 @@ Social Identity theory has become a huge part of the present day literature on p
 ???
 Why this is a good analytical approach is because social identity arises for a lot less reasons. The conflict between groups is almost always relevant and is periodically. We are frequently primed to think about various political stimuli along these lines. How we feel about universal healthcare is a good example of this. 
 
+
+We hear a lot of partisanship colloqually but the form it takes has sort of fundamentally change. In the past when political science and others have talked about partisanship they are talking about the policy disagreements that we have. However, much of the research that has been conducted for close to 20 years now shows that increasingly partisianship is a salient political identity. In this case politics becomes a zero sum game where a gain for one side is a loss for the other side. This affects our life in other ways. Partisianship bleeds into our life in various other ways when it becomes a social identity. IN surveys scholars have found results that indicate not only are people less willing to live in a neighborhood that is predominatly made up another party, but people increasingly say that they are less likely to date somebody from the other political party. In some respects you can see this born out in the data but there are likely lots of confounding factor 
+
+
+
+
+
+
 ---
+
+
+---
+
+
+```{r}
+knitr::include_url("https://projects.fivethirtyeight.com/republicans-democrats-cities/")
+```
+
+
+
+---
+
+
+
+
+
+
+
