@@ -128,9 +128,30 @@ In the little polyarchy slide and the authoritatrian exit slide I wanted to emph
 ## Participation 
 
 
-```{r censorship, echo=FALSE, fig.align='center', fig.cap= "Figure derived from King, Pan, and Roberts(2013)", out.width="60%"}
+```{r censorship, echo=FALSE, fig.align='center', fig.cap= "Figure derived from King, Pan, and Roberts(2013)"}
 
-knitr::include_graphics("images/censorship.jpg")
+library(stringr)
+dat <- read.table("Figure3Data.csv", header=T)
+
+dat <- subset(dat, dat$Conclusion %in% c("collective action", "criticism of the censors", "news", "policy", "pornography")) |> 
+  mutate(Conclusion = str_to_title( Conclusion))
+
+
+
+
+
+ggplot(dat, aes(x = censor,  fill = Conclusion)) +
+  geom_histogram(aes(y = ..density.. ), alpha = 0.6) +
+  theme_allen() +
+  labs(x = "Censorship Magnitude", y = "Density") +
+  MetBrewer::scale_fill_met_d(name = "Veronese") +
+  guides(fill = guide_legend(title = "Topics Censored"))
+
+
+
+
+
+
 
 ```
 
@@ -604,7 +625,7 @@ atl_race <- get_decennial(
   mutate(percent = 100 * (value / summary_value))
 
 
-map = tm_shape(atl_race) + 
+ tm_shape(atl_race) + 
   tm_facets(by = "variable", scale.factor = 4) + 
   tm_fill(col = "percent",
           style = "quantile",
@@ -631,10 +652,6 @@ map = tm_shape(atl_race) +
 
 
 
-
-```{r}
-map
-```
 
 
 ---
