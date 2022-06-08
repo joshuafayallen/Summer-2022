@@ -138,7 +138,7 @@ In the little polyarchy slide and the authoritatrian exit slide I wanted to emph
 ## Participation 
 
 
-```{r censorship, echo=FALSE, fig.align='center', fig.cap= "Figure derived from King, Pan, and Roberts(2013)"}
+```{r censorship, echo=FALSE, fig.align='center'}
 
 library(stringr)
 dat <- read.table("Figure3Data.csv", header=T)
