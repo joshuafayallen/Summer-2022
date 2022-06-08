@@ -153,7 +153,7 @@ dat <- subset(dat, dat$Conclusion %in% c("collective action", "criticism of the 
 ggplot(dat, aes(x = censor,  fill = Conclusion)) +
   geom_histogram(aes(y = ..density.. ), alpha = 0.6) +
   theme_allen() +
-  labs(x = "Censorship Magnitude", y = "Density") +
+  labs(x = "Censorship Magnitude", y = "Density", title = "Figure derived from King, Pan, and Roberts(2013)") +
   MetBrewer::scale_fill_met_d(name = "Veronese") +
   guides(fill = guide_legend(title = "Topics Censored"))
 
@@ -534,7 +534,7 @@ For people who do not live and breath politics typically they may have on or mor
 
 <gsu-blockquote-blue>
 
-Holds that individuals derive their self-concept from knowledge of their membership in a group (or groups) and that they place value and emotional significance that group membership, with resulting perceptual and attitudinal biases
+Social identity is the portion of an individual's self-concept derived from perceived membership in a relevant social group
 
 </gsu-blockquote-blue>
 
