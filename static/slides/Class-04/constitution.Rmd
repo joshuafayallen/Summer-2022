@@ -22,13 +22,7 @@ output:
 
 
 
----
-## Looming Deadlines 
 
-- Your readings
-
-
----
 
 
 ---
@@ -65,7 +59,7 @@ class: center, middle, inverse
 --
 
 .pull-right[
-## The Second Founding
+### The Second Founding
 
 - $13^{th}$ Amendment (ratified 1865)
 
@@ -163,13 +157,17 @@ We will not get into how instrumental variables work. While many have critiqued 
 
 
 ---
-## Early Interst Groups 
+## Early Interest Groups 
 
-1. New England merchants
-2. Southern Planters
-3. Royalists 
-4. Shopkeepers, artisans, and laborers
-5. Small farmers 
+- New England merchants
+
+- Southern Planters
+
+- Royalists 
+
+- Shopkeepers, artisans, and laborers
+
+- Small farmers 
 
 
 
@@ -184,7 +182,8 @@ We will not get into how instrumental variables work. While many have critiqued 
 
 --
 
-- British Parliament Enforces taxes on the colonies to amend war debt
+- British Parliament enforces taxes on the colonies to amend war debt
+
 
 - Philosophical issue over these new taxes 
 
@@ -287,43 +286,22 @@ List of Grievances
 
 ## The American Creed & Self Evident "Truths" from the Declaration 
 
-1. All $men^*$ are created equal. 
-2. Life, Liberty, and the Pursuit of Happiness 
-3. To secure these rights and deriving their just powers from the consent of the governed
-4. Whenever any form of Government becomes destructive we have the right to overthorw it 
+1. "We hold these truths to be self evident, that all Men are created equal, that they are endowed by their Creator certain inalienable rights, that among these are"
+  - Life
+  - Liberty,
+  - and the Pursuit of Happiness 
+3. "To secure these rights and deriving their just powers from the consent of the   governed"
+4. "that whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government"
+
+
+???
+
+This document was founded on the principles of the Social Contract (Discussed before) of John Locke and promoted the Natural Rights of man (fill in the blanks). This statement is considered by far the most influential political statement made in the history of the modern world.  The document was the official declaration of freedom from the rule of the British for the colonies even though the physical fighting still raged on. While it provide the opportunity for freedom, it in no way provided the means (a system of government) to replace the monarchy. 
+
 ---
 
 
----
-## Self Evident Truths & What they Really Meant 
 
-.panelset[
-.panel[.panel-name[All men are created equal]
-
-- Minimum is that there are no divine kings or nobles
-
-- Did they really mean all people?
-
-]
-
-.panel[.panel-name[Government Derive Their powers from the consent of the governed]
-
-- Purpose of government is to secure those rights
-
-- Government is only legitimate when it has the consent of the people
-
-]
-
-.panel[.panel-name[It is the Right of the People to Alter or Abolish it]
-
-- Ultimate sovereignty belongs with the people. 
-
-]
-
-
-
-]
----
 
 
 ---
@@ -402,9 +380,13 @@ each state maintained autonomy and reserved the ultimate powers of governing and
 To be fair to the articles of confederation there are lots of systems that do not have an executive branch. The problem was that there was no ability to coordinate anything 
 
 No power to tax – effect: the central government had no money 
+
 No power to regulate interstate or foreign commerce – Effect: the states were constantly quarreling over tariff and levies on trade. Treaties between states and foreign bodies were numerous, varied, and confusing as hell to both parties. 
+
 No power of enforcement – Effect: the states were often spotty or non-reactive to statutory laws that had been passed 
+
 Approval of 9 states (2/3) needed to enact laws – Effect: little to no laws were actually passed or effective 
+
 Amendments required unanimous consent – Effect: they were stuck in an endless spiral of doom with no way to change their powers/structures of government
 No national court system -  effect: scattered and shody judgment at both the individual level by states and at the national level in case of state vs. state 
 
@@ -481,7 +463,7 @@ Commitment problems arise all the time because we do not know whether the other 
    
 --
 
-- The Three-Fifths Compromise
+- Slavery
   - South vs North 
 
 
@@ -494,8 +476,8 @@ Commitment problems arise all the time because we do not know whether the other 
 ### Federalists
 
 - Property owners, creditors, merchants
--Favored stronger central government
--Feared excessive democracy and promotion of political elites
+- Favored stronger central government
+- Feared excessive democracy and promotion of political elites
 - Members: Alexander Hamilton, John Adams
 
 ]
