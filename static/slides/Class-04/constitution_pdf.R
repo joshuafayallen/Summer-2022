@@ -1,1 +1,0 @@
-renderthis::to_pdf(from = "constitution.Rmd", to = "constitution.pdf")

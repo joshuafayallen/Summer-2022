@@ -167,6 +167,17 @@ We will not get into how instrumental variables work. While many have critiqued 
 
 - Shopkeepers, artisans, and laborers
 
+<<<<<<< HEAD
+=======
+- New England merchants
+
+- Southern Planters
+
+- Royalists 
+
+- Shopkeepers, artisans, and laborers
+
+>>>>>>> main
 - Small farmers 
 
 
@@ -279,13 +290,12 @@ The general sketch of the American Creed
 
 List of Grievances 
 
+???
 
----
+This document was founded on the principles of the Social Contract (Discussed before) of John Locke and promoted the Natural Rights of man (fill in the blanks). This statement is considered by far the most influential political statement made in the history of the modern world.  The document was the official declaration of freedom from the rule of the British for the colonies even though the physical fighting still raged on. While it provide the opportunity for freedom, it in no way provided the means (a system of government) to replace the monarchy. 
 
----
 
-## The American Creed & Self Evident "Truths" from the Declaration 
-
+<<<<<<< HEAD
 1. "We hold these truths to be self evident, that all Men are created equal, that they are endowed by their Creator certain inalienable rights, that among these are"
   - Life
   - Liberty,
@@ -298,6 +308,24 @@ List of Grievances
 
 This document was founded on the principles of the Social Contract (Discussed before) of John Locke and promoted the Natural Rights of man (fill in the blanks). This statement is considered by far the most influential political statement made in the history of the modern world.  The document was the official declaration of freedom from the rule of the British for the colonies even though the physical fighting still raged on. While it provide the opportunity for freedom, it in no way provided the means (a system of government) to replace the monarchy. 
 
+=======
+---
+
+---
+
+## The American Creed & Self Evident "Truths" from the Declaration 
+
+- We hold these truths to be self evident, that all Men are created equal, that they are endowed by their Creator certain inalienable rights, that among these are 
+  - Life,
+  - Liberty,
+  - and the Pursuit of Happiness 
+
+-  “…Governments are instituted among Men, deriving their just powers from the consent of the governed...”
+
+
+-  “...that whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government...”
+ 
+>>>>>>> main
 ---
 
 
