@@ -542,6 +542,8 @@ Social identity is the portion of an individual's self-concept derived from perc
 Social Identity theory has become a huge part of the present day literature on partisanship. This was developed in the 70's by Tajfel & Turner. Membership of the group is self-perceived and reinforced by meaning making and practices. The recent literature posits that interpreting contemporary politics just as a bundle of preferences along these dimensions kind of misses the point. Increasingly how we view members of the other party holds up this way
 
 
+
+Group orientation is the phenomenon of viewing politics through a group lens. This is most influenced by age, race, and gender; but several other groups have a significant impact as well.
 ---
 
 ---
@@ -574,7 +576,7 @@ vembedr::embed_url("https://www.youtube.com/watch?v=mBDULN6Jtn0")
 
 Finally, American politics, and thus ideology, is highly impacted by group orientation, and the number of groups that are present in American society.
 
-Group orientation is the phenomenon of viewing politics through a group lens. This is most influenced by age, race, and gender; but several other groups have a significant impact as well.
+
 
 
 
