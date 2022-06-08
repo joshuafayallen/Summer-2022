@@ -65,7 +65,7 @@ class: center, middle, inverse
 --
 
 .pull-right[
-## The Second Founding
+### The Second Founding
 
 - $13^{th}$ Amendment (ratified 1865)
 
@@ -165,11 +165,15 @@ We will not get into how instrumental variables work. While many have critiqued 
 ---
 ## Early Interst Groups 
 
-1. New England merchants
-2. Southern Planters
-3. Royalists 
-4. Shopkeepers, artisans, and laborers
-5. Small farmers 
+- New England merchants
+
+- Southern Planters
+
+- Royalists 
+
+- Shopkeepers, artisans, and laborers
+
+- Small farmers 
 
 
 
@@ -287,43 +291,20 @@ List of Grievances
 
 ## The American Creed & Self Evident "Truths" from the Declaration 
 
-1. All $men^*$ are created equal. 
-2. Life, Liberty, and the Pursuit of Happiness 
-3. To secure these rights and deriving their just powers from the consent of the governed
-4. Whenever any form of Government becomes destructive we have the right to overthorw it 
+- We hold these truths to be self evident, that all Men are created equal, that they are endowed by their Creator certain inalienable rights, that among these are 
+  - Life,
+  - Liberty,
+  - and the Pursuit of Happiness 
+
+-  “…Governments are instituted among Men, deriving their just powers from the consent of the governed...”
+
+
+-  “...that whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government...”
+ 
 ---
 
 
----
-## Self Evident Truths & What they Really Meant 
 
-.panelset[
-.panel[.panel-name[All men are created equal]
-
-- Minimum is that there are no divine kings or nobles
-
-- Did they really mean all people?
-
-]
-
-.panel[.panel-name[Government Derive Their powers from the consent of the governed]
-
-- Purpose of government is to secure those rights
-
-- Government is only legitimate when it has the consent of the people
-
-]
-
-.panel[.panel-name[It is the Right of the People to Alter or Abolish it]
-
-- Ultimate sovereignty belongs with the people. 
-
-]
-
-
-
-]
----
 
 
 ---
