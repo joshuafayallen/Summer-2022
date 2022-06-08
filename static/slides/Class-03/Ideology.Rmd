@@ -100,9 +100,19 @@ knitr::include_graphics("images/vc.jpg")
 ???
 We talked about state socialism and its sort of related equivalent the command economy. Where the factors of production are allocated by the state. However, a lot of the political discourse about the role of the government in the economic sphere happens along this spectrum. 
 
-There is a sliding scale of the coordination of labor unions sometimes referred to Coordinated Market Economies. To the area on the far right where there is a much larger social safety net. 
 
 We are on the far left of the sliding continuum. Where among industrialized nations in the WEIRD countries the US has sort of the most pro-business approach to politics. Where we see government intervention in the economy kind of ranges along this spectrum. From more generous public goods to how governments deal with industry
+
+Coordinated market economies rely more heavily on non-market forms of interaction in the coordination of their relationships with other actors. The authors considered five spheres in which firms must develop relationships with others
+
+Industrial relations — Companies have to coordinate with their workers, trade unions and other employers over wage and productivity. CMEs generally have a higher level of membership in trade unions and employers organizations, and bargaining over wages tends to happen at the industry, sectoral, or national level. Conversely in LMEs, workers and employers are often less organized, and wage negotiations take place at the company level (the interview and hiring process).
+Vocational training and education — In CMEs, workers tend to have specific skills that are tied to the firm or the industry they are working in. In LMEs, workers have more general skills that easily can be used to work at other companies.
+
+Corporate governance — Firms in CMEs rely more on patient capital, i.e. capital that does not totally depend on financial openness and short-term return on investment (ROI). LMEs tend to rely more heavily on public information about finances and short-term capital, such as stock markets.
+
+
+Inter-firm relations — Inter-firm relations in CMEs tend to be more collaborative, while inter-firm relations in LMEs are more competitive and arms-length.
+Relations with employees — In CMEs, managers often have to cooperate with employees to reach major decisions, while in LMEs, there are often more adversarial relations between management and employees, in which managers are the prime decision-makers.
 
 ---
 
