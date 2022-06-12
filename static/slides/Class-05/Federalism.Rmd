@@ -237,12 +237,21 @@ Fosters democratic citizenship
 ???
 There are kind of two competing visions for what kind of union we benefit most from with adovcates from both sides
 
+
+preserving the union 
+
+According to this argument, when states are allowed to have too much independent authority and power, they can threaten the stability of the union. Since the union is the basis of peace, prosperity, cooperation, and so on, it follows that a strong national government (and weaker, subordinated states) is necessary for attaining all of those benefits.
+
+
 Generally speaking, uniform national rules and standards reduce the opportunity costs associated with complying with government laws and regulations. Consequently, an argument made for greater national government authority is that the national government is best positioned to create these uniform national rules and standards and, thus, to provide the benefit of reduced compliance costs.
 
 
 reduce negative externalities:
 
 Proponents of a strong national government contend that the national government is more likely than state governments to identify and provide nationwide public goods. The states, according to this argument, are too limited in their views and/or too selfish in their motives to overcome the temptation to free ride.
+
+
+Pollution is a good example of a negative externality. In economics, externalities are a cost or benefit that is imposed onto a third party that is not incorporated into the final cost. If you pollute a ton by just dumping waste into a river or run really cheap but dirty production your costs are going to be lower and you don't have to charge your customers for it but it is not really 
 
 
 preventing races to the bottom 
@@ -253,7 +262,22 @@ However this is not always the case. Imagine that the states are pseudo countrie
 
 arguments for greater state authority 
 
-protecting liberty. the national government would need to develop the capacity to enforce all of the laws that are currently enforced by state and local governments. This would require the creation of a massive federal executive branch of government that stretches out all over the country. if state governments do not retain a certain amount of independence and autonomy, then they cannot serve as a check on the power and influence of the national government. Without state governments serving as a check on the national government’s power, the argument goes, the national government will dominate the people and strip them of their freedom
+protecting liberty. the national government would need to develop the capacity to enforce all of the laws that are currently enforced by state and local governments. This would require the creation of a massive federal executive branch of government that stretches out all over the country.
+
+
+if state governments do not retain a certain amount of independence and autonomy, then they cannot serve as a check on the power and influence of the national government. Without state governments serving as a check on the national government’s power, the argument goes, the national government will dominate the people and strip them of their freedom
+
+diverstiyt arugment 
+
+According to this argument, since there is much diversity in values and interests throughout the country, it can be better to allow decisions to be made at the most local level possible.
+
+
+foot voting 
+
+
+If individuals or businesses dislike the package of policies enacted by their state or city governments, they can “vote with their feet” by moving to states or cities with policies they find more acceptable. Even better, the argument goes, the mere possibility that people and businesses might relocate can serve as a powerful deterrent against state governments enacting unjust or inefficient public policies in the first place
+
+
 
 
 ---
@@ -401,6 +425,8 @@ If there is going to be one thing you take away from todays class it is going to
 ???
 Dillon's Rule: It subordinates municipal level governmnts 
 
+county) governments are fully subordinate to the will of state legislatures. This means state legislatures have complete authority to create, destroy, and alter the geographic boundaries and legal powers of all municipal governments within the state’s jurisdiction. And municipal governments are said to only have the powers that are clearly and explicitly granted to them by state legislatures
+
 Police Power: States may enact any law with the aim of promoting the health, safety, welfare, and morals of the people unless the law violates a limit on the states’ authority provided in the U.S. Constitution or their state constitution. The limits of state police power has been in a constant push and pull with the federal government 
 
 
@@ -428,6 +454,10 @@ knitr::include_graphics("images/cake.jpg")
 Dual Federalism – Layer Cake – the view of federalism in which the national government is limited to a strict interpretation of the powers granted in the constitution while states have a broader  policy power within their own territories.  Clear concise lines between the two national and state. “States rights”  
 
 This thought dominated the first 150 years of American history. It was a period characterized by strong actions of the Supreme Court against national power especially when it came to regulating commerce. It wasn’t till the 1930’s and the New Deal that things began to change. 
+
+
+Specifically, nearly every time during this period when the federal government attempted to regulate activities related to economic production—for example, workplace safety, wages, working hours, and so on—the Court declared the regulation unconstitutional. According to the Supreme Court at the time, the Constitution delegated to Congress authority to regulate interstate commerce but not economic production. Since economic production is local and, therefore, not in itself a part of interstate commerce, the regulation of economic production is a power reserved exclusively to the states
+
 
 Cooperative Federalism –  Marble Cake – a  view on federalism in which the national government expands its powers and blurs the lines between national and state authority. The new deal opened many doors between the roles to state and federal government, mostly giving the national government a long needed boost in support and power. This time is also characterized by protection of minority rights (Child labor laws, women working laws, and eventually Civil Rights Legislation). 
 
@@ -469,7 +499,21 @@ Supreme Court We will see in the next 3 slides
 - The system of government that dominated the US for the first 150 years in which the powers were shared equally between the two levels of government, state and federal
 
 ???
-There are much clearer divisions of authority. During the federal government regulated foreign affairs and interstate commerce, and soloed coordination issues where roads or canals spanned more than one area
+Under dual federalism, states tended to dominate most aspects of American government.
+
+For ex:  State legislatures were actively involved in economic regulation (also regulated the practice of important professions such as law and medicine).
+
+The national government focused primarily on the promotion of commerce, leaving most 
+other government functions to the states.
+
+In addition, book points out that none of the government’s policies directly coerced citizens.  The emphasis of government programs was on assistance, promotion, and encouragement—the allocation of land or capital where they were insufficiently available for economic development.
+
+
+Key point:  most of fundamental governing in this country was done by the states during this time.  State and national governments were also performing highly different functions (like a “layer cake”).
+
+This arrangement is basically what was intended by the framers (recall they wanted to limit the power of the central government). 
+
+Arrangement had some benefits:  by making the national government small, they were able to keep it out of divisive issues of the day (such as slavery
 
 ---
 
@@ -487,6 +531,12 @@ There are much clearer divisions of authority. During the federal government reg
 McCullough v. Maryland – The US decided to charter a bank and open branches in several states including Maryland. At the time, a variety of thoughts were running rampant through the states about government corruption and scandal. The quickest way to corruption and scandal was concerning issues of money. Placing money in a bank provided no guarantees and only further scared those individuals that were afraid of a massive centralized government. 
 
 The state of Maryland decided to pass a law as a way to rectify this and hopefully force the bank of the United States to close. So they proposed an astronomical yearly tax upon any bank that did not originate within the state. Well one of the federal employees at the bank, James McCullough refused to pay the tax and he decided to sue.  The case made it all the way to the SC, where it ran into the Chief Justice of the Supreme Court, John Marshall. Marshall was a known Federalist supporter so it was no surprise that he found the tax by Maryland unconstitutional.  The federal government was perfectly within its job description by passing new laws so that they could faithfully execute the enumerated powers (coin money, raise taxes, etc.) found in Article I, Section 8. 
+
+
+ Congress has implied Constitutional powers that allow it to implement its expressed powers
+
+ State action cannot impede valid exercises of federal power (i.e. producing bank notes)
+
 
 ---
 
