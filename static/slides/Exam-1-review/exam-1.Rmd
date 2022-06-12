@@ -47,11 +47,15 @@ class: center, middle, inverse
 
 A Set of institutions that 
 
+
+
+???
+
 - Endure overtime 
---
+
 
 - Has **authority over the people** of a specific territory
---
+
 
 - Authoritatively **makes and enforces laws**
 
@@ -63,13 +67,21 @@ A Set of institutions that
 ---
 ## Authoritative 
 
-.pull-left[
-- The ability to issue commands with the *expectation* that they will be followed
-
-- .bold[Legitimate] Authority: A rightful or justified authority to claim authority over another]
+- Legitmate Authority: 
 
 
-.pull-right[
+- .bold[Ordinances]:
+
+???
+
+
+
+Where does the US government derive their legitimate authority to make and enforce laws? 
+
+
+
+.bold[Legitimate] Authority: A rightful or justified authority to claim authority over another
+
 
 - .bold[Ordinances]: A law made by a city (or municipal) legislature (such as the Atlanta City Council).
 
@@ -78,10 +90,8 @@ A Set of institutions that
 - .bold[Regulations]: Rules made by bureaucratic agencies that have the force of law
 
 
-]
 
-???
-Where does the US government derive their legitimate authority to make and enforce laws. The book frames laws as the way governments formally issue commands. The enforcement  can have lots of interpretations making regulations slightly inconcsistent. When you get to the federal levels there are lots of lawyers who spend their time figuring this stuff out. And like really good ones who once they leave will go and teach at fancy law schools
+The book frames laws as the way governments formally issue commands. The enforcement  can have lots of interpretations making regulations slightly inconcsistent. When you get to the federal levels there are lots of lawyers who spend their time figuring this stuff out. And like really good ones who once they leave will go and teach at fancy law schools
 
 
 
@@ -103,9 +113,9 @@ We have to say that a state is a human community that (successfully) claims the 
 .pull-right[
 ### Why Does the Book Not Like Weber?
 
-- Emphasis on the *Executive* function of government
+- Emphasis on the 
 
-- The concept of the  *monopoly* of the use of force 
+- The concept of 
 
 - Sovereignty
 
@@ -116,6 +126,15 @@ We have to say that a state is a human community that (successfully) claims the 
 Can some body remind us what sovereignty is? 
 
 Sovereignty: To have sovereignty is to be the highest authority to rule over a given territory
+
+
+- Emphasis on the *Executive* function of government
+
+- The concept of the  *monopoly* of the use of force 
+
+- Sovereignty
+
+
 
 The book in particular gets huffy about this. Because ultimately the U.S government derives its ultimate authority from the people. The book kind of sees Weber as the state inherently having the ultimate authority. This is not an unfair reading of Weber. There are parts of the same piece that elude to popular sovereignty but it not really elucidated. Conceptually we can kind of think of this difference as like how is the power to use force elucidated
 
@@ -168,15 +187,19 @@ Multiple individuals would benefit from a certain action,  but this action has a
 ```{r examples}
 
 
-selective_incentives = tribble(~`Positive Incentives`, ~`Negative Incentives`,
+selective_incentives = tribble(~Incentives,
                                "Tax Credits", "Fines",
                                "Tax Breaks", "Higher Taxes",
                                "Convincing", "Shaming",
                                "Production Based Incentives", "Jail Time")
 
 
-gt(selective_incentives) %>% 
-  gtExtras::gt_theme_nytimes()
+pacman::p_load("ggwordcloud")
+
+
+ggplot(selective_incentives, aes(label = Incentives )) +
+  geom_text_wordcloud() + 
+  theme_minimal()
 
 
 ```
@@ -206,7 +229,7 @@ class: center, middle, inverse
 <gsu-blockquote-alt>
 
 
-Governments, like the United States, that are effectively bound by fundamental laws are called “constitutional governments.”
+Governments, like the United States, that are effectively bound by ___  are called “constitutional governments.”
 
 
 
@@ -217,13 +240,16 @@ Governments, like the United States, that are effectively bound by fundamental l
 
 .pull-right[
 
-- **Rule of Law**: The idea that **all** citizens, **including government officials**, are bound by laws
+- **Rule of Law**: 
 
-- **Fundamental law**: The federal government is bound by the laws declared in the Constitution. If a statute is in conflict with the law of the constitution, then the statute is considered unlawful. ] 
+- **Fundamental law**:  ] 
 
+???
+Fundamental law 
 
+**Rule of Law**: The idea that **all** citizens, **including government officials**, are bound by laws
 
-
+**Fundamental law**: The federal government is bound by the laws declared in the Constitution. If a statute is in conflict with the law of the constitution, then the statute is considered unlawful.
 ---
 
 
@@ -246,13 +272,17 @@ If men were angels, no government would be necessary. If angels were to govern m
 
 The purpose of constitutional government is to empower and limit its power
 
-Done Through auxiliry precautions 
-  - Dependence of the people
-  - Checks and Balances 
+Done Through auxiliary precautions 
+ 
 
 
 
 ]
+???
+is to empower and limit its power
+
+Done Through auxiliry precautions  Dependence of the people Checks and Balances 
+
 
 ---
 
@@ -266,7 +296,7 @@ class: center, middle, inverse
 ---
 
 ---
-## A Ideological Positions 
+## Ideological Positions 
 
 ```{r echo= FALSE}
 ideology_dt = tribble(~`Issue Area`, ~Liberals, ~Conservatives, 
@@ -288,6 +318,10 @@ Politics of Interest: Struggle to exert influence over government emanating from
 
 Politics of Principle: Political conflicts emanating from genuine disagreements over ideology, justice (e.g. what rights we have), and/or what will truly be advantageous for the people.
 
+
+
+
+
 ---
 
 
@@ -305,6 +339,24 @@ class: center, middle, inverse
 ---
 ## Design Principles (AOC)
 
+What were the weaknesses:
+
+-
+
+
+- 
+
+-
+
+-
+
+- 
+
+
+
+
+???
+
 - Confederacy 
 
 - Weak Central Authority
@@ -315,7 +367,7 @@ class: center, middle, inverse
 
 - **No** Direct Authority Over the People
 
-???
+
 The articles of confederation is interesting. The last bullet point limits the way in which the government has power over people. Instead, it only claims authority, and seeks to exercise power, over the state governments. In this sense, the central government in a confederacy is best described as a government over governments instead of a government over individuals
 
 This is kind of bold because if you have done the chapter you know that states could only be requistioned. Which is just fancy for "be asked nicely to pay the federal government" 
@@ -328,6 +380,21 @@ The great vice of that the study guide refers to is the first bullet point. Effe
 ---
 ## Design Principles of The Constitution
 
+- 
+
+
+- 
+
+
+- 
+
+-
+
+-
+
+
+???
+
 - Federalism 
 
 - Popular Sovereignty 
@@ -339,7 +406,7 @@ The great vice of that the study guide refers to is the first bullet point. Effe
 - Small List of Civil Liberties
 
 
-???
+
 Federalism: Splits the difference  between full unitary or full confederacy 
 The early federalism kind of made clearer distinctions over what policy areas should be handled by the Federal gov and what responsibilities were the states. While also making sure there was a clear mechanism between resolving conflicts between state and federal law.
 
@@ -396,6 +463,20 @@ class: center, middle, inverse
 
 .pull-left[
 ### Greater National Authority
+
+
+]
+
+.pull-right[
+### Greater State Authority
+
+
+
+
+]
+???
+Greater national authority bit 
+
 Preserves the union
 
 Reduces compliance costs
@@ -408,10 +489,9 @@ Protects minority rights
 
 Prevents races to the bottom
 
-]
 
-.pull-right[
-### Greater State Authority
+Greater State Authority 
+
 
 Protects liberty
 
@@ -424,8 +504,8 @@ Benefits from foot voting
 Fosters democratic citizenship
 
 
-]
-???
+
+
 Preserving the union: If we give to much power to the states they start acting like their own mini countries making the union weaker
 
 reducing compliance costs: if we have one set of rules it makes things easier to monitor and there are clearer red lines. Rather than lots of different red lines
@@ -467,22 +547,4 @@ vembedr::embed_url("https://www.youtube.com/watch?v=J0gosGXSgsI&t=5s")
 ---
 
 
----
-## The Phase of Federalism I didn't Cover
 
-
-- Grants in Aid: money or land provided to state or local governments conditional on meeting federal requirements 
-
-- Categorical grants: a type of federal grant-in-aid that provides relatively strict and specific guidelines on how the state or local government receiving the money must spend it.
-
-- Block Grants: A block grant is a federal grant-in-aid that provides states and/or local governments with significant freedom to decide how to spend the money.
-
-- unfunded mandates: Federal regulatory or spending requirements placed on states that states need to pay for with their own funds
-
-???
-Once we move to the great society program lots of federal funds to the state took the form of grant money. The federal government started to use these to get states closer aligned to federal priorities. However, conservatives did not like this because they thought that states should have more public policy power and that the liberal approach to providing funds to the state were coercive. 
-
-One particular example is how the federal government made the drinking age 21 across the nation. States were required to enforce the current drinking age or risk losing out of 10% of federal highway funds. Louisana was like the last state to do this with the Clinton administration threatening to withhold 17 million dollars in federal highway funds.
-
-
----
