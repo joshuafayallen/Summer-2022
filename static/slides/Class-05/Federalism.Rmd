@@ -28,25 +28,6 @@ class: center, middle
 # The Constitution 
 
 
----
-
-
-
-
----
-## The Branches 
-
-```{r branches, echo=FALSE, out.width= "80%"}
-
-knitr::include_graphics("images/Branches.jpg")
-
-```
-
-
-???
-I kind of ran out of steam last week making the slides and kind of just figured we all knew. But it is important to get the mechanics right. As you can kind of gather you can see the ways in which each branch has checks. Treaties are interesting because the executive goes out and deals with other countries but the senate has to approve of the treaty by two-thirds. This creates interesting bargaining dynamics because those doing the negotiating have to very mindful of this. 
-
----
 
 ---
 class: center, middle
