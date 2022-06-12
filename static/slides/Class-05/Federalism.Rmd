@@ -32,22 +32,6 @@ class: center, middle
 
 
 
----
-class: center, middle 
-
-.col[## The Virginia Plan]
---
-.col[## The New Jersey Plan]
-
-???
-During the drafting of the Constitution I don't think I did a good enough job highlighting that there lots of competing intersts during our founding. These are informed not only by the contemporary political considerations of the time and there experience with the crown. 
-
-We generally focus on the representation plans. Where the Virginia Plan focused on proportional representation and the New Jersey Plan where each state would get the same number of delegates. Critically however they also differ on how we elect our representatives. The New Jersey plan largely kept the spirit of the of the Articles of confederation. People would not directly elect their representatives. Whereas the Virginia Plan there was a more direct role for the people to elect their representatives 
-
-The representation issue is highlighted because fundamentally this would shape the allocation of legislative, executive, and judicial power. In the coming century how senate seats were elected would change. However the original plan only allowed for people to directly elect their member or the house (This was in the Virginia plan) while senators would be elected by the state legislatures(New Jersey Plan).
-
----
-
 
 ---
 ## The Branches 
@@ -103,6 +87,19 @@ knitr::include_graphics("images/federalism.png")
 
 ???
 Modern applied economists love federalism because of states make policy that allow them to talk about how policy causes certain outcomes. One of the economists that won this years noble prize in economics wrote a very influential paper on the effect of minimum wage because New Jersey increased minimum wage in 1992. However we for quite a while we have referred to states as laboratories of democracy. This was a term coined by Walter Brandeis and has stuck. Federalism allows states to implement various public policy. Theoretically efficient policies enacted by one state will lead to staggered adoption by other states while inefficient policies will not be enacted by other states 
+
+
+As one of your colleagues pointed out last week concealed carry permits in some states are not recognized by some states. This is essentially a licensing issues. While all states recognize marriage licenses and driver licenses these differ in critical ways. For drivers licenses in all states you have to meet a similar minimum safety standard. 
+
+To the contrary, concealed carry standards vary dramatically across the country — including on gun safety training, disqualifying violent criminal convictions, and even the requirement to get a permit at all.
+
+For example, 23 states allow concealed carry by many people with violent misdemeanor convictions, 19 states don’t require firearm safety training, and twelve states don’t require a permit at all
+
+Some states have concealed carry reciprocity. However this varies which makes it a tricky one to one comparison. 
+
+
+
+
 ---
 
 
@@ -134,7 +131,7 @@ vembedr::embed_url("https://www.youtube.com/watch?v=J0gosGXSgsI&t=5s")
 
 - GEORGIA: 14% ABV cap on beer.
 
-- Indiana: Prohibits the sale of cold beer
+- INDIANA: Prohibits the sale of cold beer
 
 - KENTUCKY: Malt beverages may be sold at any establishment with a liquor license.  Wine and liquor may only be sold in liquor stores, which require an independent  entrance.
 
