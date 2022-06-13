@@ -40,7 +40,15 @@ class: center, middle
 So I showed you guys this slide without really going over it. The interesting thing about our version of liberal democracy is that we have conflict built into the system. The legislative branch checks the executive branch by approving executive appointments and appropriating money to presidential priorities. It can override presidential vetoes (needs 2/3's in both the house and senate). 
 
 
-Congress can impeach both the president and the judicial branch. Right laws or amendments that circumvent judicial decisions. The judicial branch can declare executive actions and laws as unconstitutional. We will go over a lot more procedure when we 
+Congress can impeach both the president and the judicial branch.
+
+Write laws or amendments that circumvent judicial decisions.
+
+The judicial branch can declare executive actions and laws as unconstitutional. We will go over a lot more procedure when we get to institutions 
+
+The executive branch can veto legislation. Interpret the laws and enforce them in various ways. Makes nominations and negotiates treaties
+
+
 ---
 
 
