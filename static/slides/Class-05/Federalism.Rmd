@@ -23,7 +23,7 @@ output:
 
 
 ---
-class: center, middle
+class: center, middle, inverse
 
 # The Constitution 
 
@@ -53,7 +53,7 @@ The executive branch can veto legislation. Interpret the laws and enforce them i
 
 
 ---
-class: center, middle 
+class: center, middle, inverse
 
 .col[# Federalism]
 
@@ -185,16 +185,16 @@ Federalism means that states relinquish some of their sovereignty to the federal
 
 - A system of power in which power is divided, by a Constitution, between local, state, and federal governments 
 
-- promotes individual intention 
+- promotes individual attention 
 
 
 ]
 
 .pull-right[ ### Alternatives
 
-- .bold[Unitary System]: A centralized government system in which lower levels have little power or autonomy from central government
+- **Unitary System**: A centralized government system in which lower levels have little power or autonomy from central government
 
-- .bold[Confederacy]: Authority is held by individual states, and powers are delegated to the central government sparingly 
+- **Confederacy**: Authority is held by individual states, and powers are delegated to the central government sparingly 
 
 ]
 
@@ -217,9 +217,7 @@ Preserves the union
 
 Reduces compliance costs
 
-Provides national public goods
-
-Reduces negative externalities
+Provides national public goods & reduce negative externalities
 
 Protects minority rights
 
@@ -254,12 +252,12 @@ According to this argument, when states are allowed to have too much independent
 Generally speaking, uniform national rules and standards reduce the opportunity costs associated with complying with government laws and regulations. Consequently, an argument made for greater national government authority is that the national government is best positioned to create these uniform national rules and standards and, thus, to provide the benefit of reduced compliance costs.
 
 
-reduce negative externalities:
+public goods and reduce negative externalities:
 
 Proponents of a strong national government contend that the national government is more likely than state governments to identify and provide nationwide public goods. The states, according to this argument, are too limited in their views and/or too selfish in their motives to overcome the temptation to free ride.
 
 
-Pollution is a good example of a negative externality. In economics, externalities are a cost or benefit that is imposed onto a third party that is not incorporated into the final cost. If you pollute a ton by just dumping waste into a river or run really cheap but dirty production your costs are going to be lower and you don't have to charge your customers for it but it is not really 
+Similarly, due to shortsightedness and/or selfishness, states are often tempted to impose costs and risks on other states. Pollution is a good example of a negative externality. In economics, externalities are a cost or benefit that is imposed onto a third party that is not incorporated into the final cost. If you pollute a ton by just dumping waste into a river or run really cheap but dirty production your costs are going to be lower and you don't have to charge your customers for it but it is not really 
 
 
 preventing races to the bottom 
@@ -289,6 +287,22 @@ If individuals or businesses dislike the package of policies enacted by their st
 
 
 ---
+
+
+---
+## Races to the Bottom
+
+```{r }
+
+vembedr::embed_url("https://youtu.be/3XE5m_meLVw?t=81")
+
+```
+
+
+
+---
+
+
 
 ---
 ## Who Has Authority Over What?
