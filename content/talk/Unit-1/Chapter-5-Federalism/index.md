@@ -11,6 +11,10 @@ links:
   icon_pack: fas
   name: Slides html
   url: "slides/Class-05/Federalism.html"
+- icon: door-open
+  icon_pack: fas
+  name: Slides PDF
+  url: "slides/Class-05/Federalism.pdf"
 show_post_time: false
 subtitle: Federalism
 title: Chapter 5
