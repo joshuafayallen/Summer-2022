@@ -1,0 +1,1 @@
+xaringan::decktape("https://spols110122.netlify.app/slides/class-04/constitution", output = "Class-04/constitution.pdf")
