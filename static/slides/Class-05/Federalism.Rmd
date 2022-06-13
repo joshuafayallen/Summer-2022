@@ -104,6 +104,9 @@ vembedr::embed_url("https://www.youtube.com/watch?v=J0gosGXSgsI&t=5s")
 
 ```
 
+
+???
+(9:13)
 ---
 
 
@@ -561,6 +564,34 @@ The state of Maryland decided to pass a law as a way to rectify this and hopeful
 
 
 ---
+
+---
+## Gibbons v Ogden
+
+- **Commerce Clause**: Congress has the right to regulate intrastate commerce between states
+
+
+- **Supreme Court decision**: The Federal government has the power to regulate steamboat permits under the Commerce Claus:
+
+
+???
+The State of New York passed a law giving Robert Fulton and Robert Livingston a monopoly on steamboat traffic on the Hudson Bay, "navigating all boats that might be propelled by steam, on all waters within the territory, or jurisdiction of the State, for the term of twenty years." Fulton and Livingston issued permits and seized boats that operated without their endorsement.
+
+Aaron Ogden had a license from the State of New York to navigate between New York City and the New Jersey Shore. Ogden found himself competing with Thomas Gibbons, who had been given permission to use the waterways by the federal government. After the State of New York denied Gibbons access to the Hudson Bay, he sued Ogden.
+
+The case went to the Supreme Court, and Chief Justice Marshall's opinion carried out the clear original intent of the Constitution to have Congress, not the states, regulate interstate commerce. Marshall’s decision sustained the nationalist definition of federal power and ruled that Congress could constitutionally regulate many activities that affected interstate commerce.
+
+
+Federal government was issuing permits to run steamboats in New York
+
+This upset others who had state-issued permits from New York.
+
+Allowed Congress the power to regulate commerce under the Commerce Clause of the Constitution
+
+
+---
+
+
 
 
 ---
