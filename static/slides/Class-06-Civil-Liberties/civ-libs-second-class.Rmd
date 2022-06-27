@@ -86,6 +86,9 @@ Mapp v. Ohio – incorporation to the states - Ms. Dollaree Mapp, was at home ha
 
 Mapp took the warrant and shoved it down her dress so  she could later verify its legitimacy. The officer wrestled her to the ground and she was placed in handcuffs. The officers executed the search and found nothing but a box of porn that map claimed belonged to a former tenant. It was still illegal in Ohio so they tacked it onto her other charges.  She sued and the Court said, your Fourth Amendment rights were violated. So sorry, and we are glad you were not making a bomb in your basement or garage. 
 
+
+T "all evidence obtained by searches and seizures in violation of the Constitution is, by that same authority, inadmissible in a state court."[15] Justice Clark stated that without the exclusionary rule, the Fourth Amendment's protections against unreasonable searches and seizures would be merely "a form of words" that would be "valueless and undeserving of mention in a perpetual charter of inestimable human liberties
+
 Exclusionary rule – evidence that is seized during violations of the fourth amendment are excluded from use as evidence in the court of law. As it was stated by one Felix Frankfurter – “it becomes fruit of the poisonous tree” and is useless
 
 ---
@@ -245,11 +248,16 @@ In other words, the remedy for a Miranda violation is to suppress any un-Mirandi
 ---
 ## $6^{th}$ Amendment: Fair Trial
 
-Trial by Jury
+- Right to a speedy trial 
+- Must be a reasonable delay that is not considered prejudicial 
+- Right to a jury of peers within a venue of the jurisdiction of the crime 
+- Right to a public trial 
+- Media interference 
+- Right to an impartial jury 
+- Right to be informed of charges 
+- Right to confront witnesses 
+- Right to counsel or self-representation 
 
-Speedy Trial
-
-Right to an Attorney
 ---
 
 
@@ -315,7 +323,7 @@ Additional video about currently accepted methods in picture (if discussion move
 ---
 ## The History of The Death Penalty 
 
-Justice Brennan's Four Qualifications: 
+.bold[Justice Brennan's Four Qualifications]: 
 
 The punishment shall not degrade human dignity. 
 
