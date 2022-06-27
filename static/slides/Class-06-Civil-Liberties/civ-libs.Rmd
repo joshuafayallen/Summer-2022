@@ -281,7 +281,7 @@ Lemon v. Kurtzman(1971)
 ]
 
 .pull-right[
-According to the Lemon Test, the Law must:
+### According to the Lemon Test, the Law must:
 
 1. Have a non-religious Purpose
 2. Neither Advances nor prohibits religion
@@ -300,7 +300,13 @@ Thomas Jefferson wrote in 1803 , That religion is a matter that lies solely betw
 
 To take it even further, he wrote often of a wall that should be present between the two creating a clear divide or wall between the state and established religion. This wall was to be built between the federal government and religion not between the states. Actually, at the time many of the states had declared religions (Massachusetts, Virginia, etc.). This would obviously very clearly change and the line between Secular and Non-Secular states would disappear and states would lose their religious classifications. 
 
-Everson – the case that selectively incorporates the Establishment Clause to the States. Once again, this does not incorporate the entire First Amendment, but instead only this part.  From this point on the Supreme Court has created a variety of tests to make sure that the wall between the state and religion is not breached. The Lemon test is the most comprehensive and current of these tests. 
+Everson – the case that selectively incorporates the Establishment Clause to the States. Once again, this does not incorporate the entire First Amendment, but instead only this part. The question in Everson was 
+
+Can taxpayer money be used to fund transportation of children to Catholic parochial schools?
+
+Yes.
+
+From this point on the Supreme Court has created a variety of tests to make sure that the wall between the state and religion is not breached. The Lemon test is the most comprehensive and current of these tests. 
 
 Lemon – Pennsylvania passed a law that allowed for the Superintendent of schools to reimburse private schools (mostly Catholic) for the salaries of their teachers and the cost of their books.  This was in clear violation of Federal law, so it was brought to the Court. The Court said, this is very clearly a bad thing.  The government and the church cannot be this entangled in one another, and if it happens again here is a test that will tell us whether or not it is a violation of the Establishment Clause. 
 
@@ -318,19 +324,13 @@ vembedr::embed_url("https://www.youtube.com/watch?v=zSQCH1qyIDo")
 ???
 Congress enacted the Religious Freedom Restoration Act (RFRA) in 1993. This statute required governments to exempt persons from laws and regulations that had the effect of interfering with their free exercise of religion unless the interferences could withstand strict scrutiny. This applied regardless of whether the law was neutral or generally applicable. In other words, the RFRA sought to require all courts and levels  to follow the Sherbert Test.
 
-
-Thus, it is understood that, under the RFRA, courts are essentially required to apply the Sherbert Test to all federal government actions that potentially infringe upon religious freedom
+Sherbert Test: Test used for determining whether a government action interferes with the legal right to the free exercise of religion. By this test, if a government action imposes an actual burden on the ability for a person to act upon a sincere religious belief, then the government action is unlawful unless it can withstand strict scrutiny. (See also Strict Scrutiny.)
 
 strict scrutiny: 
 The action is then ruled constitutional only if the government can prove the action in question was 
 
 (1) in furtherance of a compelling government interest and 
 (2) the least restrictive option available to the government for pursuing that compelling government interest.
-
-
-
-
-Sherbert test: used for determining whether a government action interferes with the legal right to the free exercise of religion. By this test, if a government action imposes an actual burden on the ability for a person to act upon a sincere religious belief, then the government action is unlawful unless it can withstand strict scrutiny. 
 
 
 It does not, to reiterate, apply the Sherbert Test to state government actions. For state government law and actions, the Court follows the approach established in the Peyote case. That is, it applies strict scrutiny only if it appears the state government lacked neutrality among religions or showed hostility toward a particular religion or religion in general.
@@ -420,19 +420,36 @@ Answer: Obscenity/Fighting Words; Libel and Slander; Hate Speech (that probably 
 ## Hate Speech 
 
 - Gitlow v. New York (1925) : Incorporation
+  - Clear and Present Danger Test
+  - Government can prevent speech that will bring about a “substantive evil”
+  - Example: yelling "fire" in a crowded theater 
 
 
-- Bradenburg v. Ohio (1969) : Iminent Lawless Action
+
+- Bradenburg v. Ohio (1969) : Imminent Lawless Action
+  - Imminent lawless Action Test
+  - Government  cannot suppress/punish inflammatory speech unless it is likely to result in or directly related to “lawlessness” or violence 
+
 
 
 ???
-Gitlow – Member of the Socialist Party Post WWI. Red Scare and fear of communism, socialism, and revolution rampant in the United States.  Published his “Left Wing Manifesto”.  It advocated for a change from democracy to socialism and was considered anti-government so he was thrown in jail. The words were found to provide a clear and present danger to government interests and were thought to have inspired anarchy.  This led to incorporation to the states of the freedom of speech clause. 
+Gitlow – Member of the Socialist Party Post WWI. Red Scare and fear of communism, socialism, and revolution rampant in the United States.  Published his “Left Wing Manifesto”.  It advocated for a change from democracy to socialism and was considered anti-government so he was thrown in jail. The words were found to provide a clear and present danger to government interests and were thought to have inspired anarchy.  This led to incorporation to the states of the freedom of speech clause. The court found that 
+
+The Fourteenth Amendment prohibits states from infringing free speech, but the defendant was properly convicted under New York's Criminal Anarchy Law because he disseminated newspapers that advocated the violent overthrow of the government.
 
 Brandenburg – Bradenburng was a member of his local chapter of the Ku Klux Klan or the KKK. Well Brandenburg and his fellow Masters and Wizards (no I am not joking…that is what their organization members are called) decided they wanted to hold a rally, and at this rally they said some horrible things about the government, Congress, and of course most people that weren’t white or male and someone recorded it. Well Ohio had a law, that stated such action was illegal under the Criminal Syndicalism act because it “promoted the duty, necessity, or propriety of crime, sabotage, violence, or unlawful methods of terrorism as a means of accomplishing industrial or political reform”. So Brandenburg and his wizards were sent to jail and they decided to sue. 
 
 So the Court finally came back with a decision (unfortunately) in their favor creating a new test. 
 
+holding 
+
+
+Ohio's criminal syndicalism statute violated the First Amendment, as applied to the state through the Fourteenth, because it broadly prohibited the mere advocacy of violence rather than the constitutionally unprotected incitement to imminent lawless action
+
 The government cannot punish inflammatory speech (essentially they thought Brandenburg was just making a bunch of noise he wouldn’t/couldn’t follow through on) unless that speech is directed to inciting, and is likely to incite imminent lawless action (essentially an actual violent over throw of the government/military coup/junta etc.) 
+
+
+
 
 
 ---
