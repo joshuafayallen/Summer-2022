@@ -467,8 +467,11 @@ knitr::include_graphics("images/bong-hits.jpg")
 .pull-right[
 - Tinker v. Des Moines(1969) :
   - Action/Speech that purposely conveys a particular message to those that are viewing it
+  - using symbols are a form of speech
   
-- Morse v. Frederick(2007) ] 
+- Morse v. Frederick(2007)
+  - Students have a right/freedom to speak, but those rights can be limited when the speech promotes illicit activity 
+] 
 
 ???
 Tinker - Iowa public school students (4 – The Tinker Family) decided in protest of the Vietnam War and in support of the Christmas Truce decided to wear black armbands to school. They were a symbolic protest as well as in honor of the fallen soldiers.  
@@ -486,10 +489,8 @@ But students in school (or at school-sponsored events) can constitutionally face
 
 - Chaplinsky v. New Hamphsire(1942)
   - Fighting Words Doctrine 
-  
   - A narrowly defined type of speech made up of lewd, profane, and insulting words which are not protected under the First Amendment. 
-
-- Hate Speech
+  - Hate Speech
 
 ???
 In late November 1941, Walter Chaplinsky, a Jehovah's Witness was using the public sidewalk as a pulpit in downtown Rochester passing out pamphlets and calling organized religion a "racket." After a large crowd had begun blocking the roads and generally causing a scene, a police officer removed Chaplinsky to take him to police headquarters. 
@@ -508,6 +509,14 @@ But stated There are certain well-defined and narrowly limited classes of speech
 Fighting words in practice just means that the only reasonable action is in light of this speech is to punch them in the face. Which is pretty tough
 
 Also not a form of protected speech, Hate speech refers to expression that belittles or intimidates persons based on race, color, religion, national origin, or sexual orientation, or that may, because of its content, have the effect of inciting violence or prejudicial action against people based on those traits. The problem is that hate speech can practically only be regulated if there is a direct tie to action 
+
+
+Legally protected form of speech according to the Supreme Court 
+
+The Court relies on the belief that the power to condemn this speech does not lie in the government to prevent it, but rather in the people when creating a free and open discussion in a democratic society 
+
+
+This protection does not extend if the speech turns to violence 
 
 ---
 
@@ -559,6 +568,32 @@ Miller, was the owner and operator of a mail order pornographic magazine company
 ---
 
 ---
+## Sometimes Obscenity is Okay...
+
+Cohen v. California(1970)
+
+  - Speech cannot be censored simply to make society more “civil” 
+  - Vulgarity and fighting words are the same
+  - No direct victim intended by the speech 
+  - Political Speech is an essential part of democracy
+
+
+
+???
+COHEN v. CALIFORNIA (1970)- A 19-year-old department store worker expressed his opposition to the Vietnam War by wearing a jacket emblazoned with "FUCK THE DRAFT. STOP THE WAR"  at the local court house. The young man, Paul Cohen, was charged under a California statute that prohibits "maliciously and willfully disturb[ing] the peace and quiet of any neighborhood or person [by] offensive conduct." Cohen was found guilty and sentenced to 30 days in jail.  Mr. Cohen sued and the court found  that his right to expression/free speech was violated. That the expletive, while provocative, was not directed toward anyone; besides, there was no evidence that people in substantial numbers would be provoked into some kind of physical action by the words on his jacket.  The Court agreed stating that with no direct “victim” the words could not be considered “fighting words
+
+No state can censor their citizens simply to make society more “civil” and less “offensive”. 
+
+A clear line has to be drawn between vulgarity/fighting words and simple statements from heightened emotions. 
+
+Passion in politics is what this society is founded upon and promoting the free exchange of ideas that takes place in a society is a good thing. No matter how radical they may be. Harlan recognized that "one man's vulgarity is another mans lyric.“
+
+
+---
+
+
+
+---
 
 ## Freedom of the press 
 
@@ -580,6 +615,9 @@ knitr::include_graphics("images/falwell.jpg")
   
 ???
 New York Times v. Sullivan – established the standard of actual malice in First amendment standards concerning the press. When discussing/writing/etc. about an individual the press much avoid making statements of malice (knowledge that they are false or in reckless disregard of their truth or falsity) especially against public figures. If such statements are made then the individual has the right to sue/you are not protected by first amendment.  This is partially where the Snyder v. Phelps decision rises from. 
+
+
+A newspaper cannot be held liable for making false defamatory statements about the official conduct of a public official unless the statements were made with actual malice
  
 Falwell - Hustler Magazine, for those that don’t know, is a magazine known for its display of nudity and often outrageous and humorous content. Well one day Hustler went a little bit too far and they published an ad for Campari Liquor with the catch phrase “you will never forget your first time”. The subject of the ad was Jerry Falwell, a prominent fundamentalist minister, and it detailed a story in which his first time happened in an outhouse with his mother when they were drunk on Campari. (Yes, the double entendre is there). Supposedly this was not uncommon behavior for his mother, who had a very active sex life (with all the boys in town) or so the ad implied.   Well of course, Mr. Falwell was less then pleased about this so he sued Hustler for libel and infliction of emotional distress. Unfortunately, the Court didn’t believe Mr. Falwell either. 
 
@@ -596,6 +634,8 @@ The First Amendment is about provoking the free expression and exchange of ideas
 
 - .bold[Libel]: defamation of an individual that takes place by written or printed words or pictures. 
 
+???
+The standards for these are extremely tough, since it must be proven that the speech had “actual malice” or intent to harm
 
 ---
 
