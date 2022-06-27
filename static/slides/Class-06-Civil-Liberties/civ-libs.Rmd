@@ -70,6 +70,8 @@ In fact, several of these individuals refused to sign the Constitution because o
 
 .pull-right[
 
+### How Many Times Has This Happened?
+
 - 18 Times throughout history
 
 - $1^{st}$ was the Bill of Rights  
@@ -268,11 +270,11 @@ They sued under the Free Exercise Clause as a violation of their religious right
 ---
 
 ---
-## Freedom of Religion
-### Establishment Clause 
+## Establishment Clause 
+
 
 .pull-left[
-Separation of Church and State
+### Separation of Church and State
 
 Everson V. Board of Education (1947)
 
@@ -309,6 +311,20 @@ Yes.
 From this point on the Supreme Court has created a variety of tests to make sure that the wall between the state and religion is not breached. The Lemon test is the most comprehensive and current of these tests. 
 
 Lemon – Pennsylvania passed a law that allowed for the Superintendent of schools to reimburse private schools (mostly Catholic) for the salaries of their teachers and the cost of their books.  This was in clear violation of Federal law, so it was brought to the Court. The Court said, this is very clearly a bad thing.  The government and the church cannot be this entangled in one another, and if it happens again here is a test that will tell us whether or not it is a violation of the Establishment Clause. 
+
+
+
+Have a Secular (non–religious) Purpose 
+
+Example: Law provides money  for textbooks 
+
+Neither advances nor prohibits religion 
+
+Example: Law gives textbooks to more than just one school from one religion and to other public schools 
+
+Not promote excessive government entanglement 
+
+Example: The procedure to purchase textbooks must be explicit and not handled by 3rd parties, and allocation must be equal to all schools. 
 
 ---
 
