@@ -241,7 +241,7 @@ datatable(incorporation_dat)
 
 
 ---
-class: center, middle
+class: center, middle, inverse 
 
 .col[# The First Amendment]
 --
@@ -272,7 +272,7 @@ They sued under the Free Exercise Clause as a violation of their religious right
 ### Establishment Clause 
 
 .pull-left[
-Sepeartion of Church and State
+Separation of Church and State
 
 Everson V. Board of Education (1947)
 
