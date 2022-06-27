@@ -21,280 +21,6 @@ output:
 ```
 
 ---
-
-## Looming Deadlines 
-
-- Extra Credit for completing NCCHR early .bold[02/27]
-
-- Chapters
-
----
-
-
----
-class: center, middle
-
-# Public Opinion
---
-
-# The Stats Part
-
----
-
----
-class: center, middle
-
-<gsu-blockquote-red>
-It seems to me that statistics is often sold as a sort
-of alchemy that transmutes randomness into certainty, an “uncertainty laundering” that begins with data and concludes with success as measured by statistical significance - Andrew Gelman(2016)
-</gsu-blockquote-red>
-
-???
-The book tends to spend a bit to much time on the stats part of public opinion while not really giving you guys an intuition. If you have questions speak up. I also kind of decided to put this before everything else because I figured this would be painful for some of you and just to get it over with.
----
-
----
-
-## The Basics 
-
-- .bold[Population]: all the cases of interest in existence, all of something, group, large or small, that we are interested in
-
-- .bold[Sample]: a selected subset of the population from which data is collected for study
-
-- .bold[Parameter]: measurements of population quantities
-
-- .bold[Statistics]: measurements of the sample quantities are called
-
-
-???
-The book tries to skirt around "scary concepts like these". In public opinion we are trying to understand what the broader population of the United States feels like but it is a bit more difficult than asking each and every person what they think about the something. In the next few classes we will cover why that is. What is important to keep in mind that the book doesn't talk about is that it covers one very widely used paradigm very poorly. The paradigm that it uses is what is known as frequentism. In frequentism we assume that the sample is random but the world is fixed. The population parameter in frequentist statistics is essentially an unknowable thing that we are trying to figure out. 
----
-
----
-## Basics Continued
-
--  .bold[Probability]: is the proportion of times that the outcome would occur in a very long sequence of observations
-
-
-- .bold[Confidence-Interval]: the probability that a population parameter will fall between a set of values for a certain proportion of times. 
-
-- .bold[Random Sampling]: With random selection, every person in the population has equal probability of being selected into the sample.
-
-???
-These concept s are depeely interconnected not only to how we conduct statistics in polling but to each other. The p-value is a threshold that we apply all the time in when doing statististics in political science, economics, sociology, psychology, epidemiology, education, and biostatistics literature. The p-value is a threshold that we often use to set a minimal standard that there is a relationship between our variables. If we reject the null hypothesis than this is a weak test that the thing we say is there is there. 
-
-
-The confidence interval is just essentially a net. What ever quanitity of interst we are calculating there is going to be some error in real life analysis that will make our sample quantity differ from the population quanitity. The key question is whether or not that deviation is so extreme that we aren't actually capturing the population parameter.
-
-The problem with the statistics we normally used and what is widely taught is kind of encapsulated for bu the confidence interval. What do you think that the plain english interpretation of the confidence interval is? 
-
-
-The problem is that the confidence interval is us saying that 95% of the time we believe that our net captures the true population parameter. The stats we use do not really track with how we think or in practice what we are doing. 
----
-
----
-## Confidence Intervals in Practice
-
-```{r}
-p <- 0.45
-N <- 1000
-B <- 10000
-inside <- replicate(B, {
-  x <- sample(c(0,1), size = N, replace = TRUE, prob = c(1-p, p))
-  x_hat <- mean(x)
-  se_hat <- sqrt(x_hat * (1 - x_hat) / N)
-  between(p, x_hat - 1.96 * se_hat, x_hat + 1.96 * se_hat)
-})
-
-tab <- replicate(100, {
-  x <- sample(c(0,1), size = N, replace = TRUE, prob = c(1-p, p))
-  x_hat <- mean(x)
-  se_hat <- sqrt(x_hat * (1 - x_hat) / N)
-  hit <- between(p, x_hat - 1.96 * se_hat, x_hat + 1.96 * se_hat)
-  c(x_hat, x_hat - 1.96 * se_hat, x_hat + 2 * se_hat, hit)
-})
-
-
-tab <- data.frame(poll=1:ncol(tab), t(tab))
-names(tab)<-c("poll", "estimate", "low", "high", "hit")
-tab <- mutate(tab, p_inside = ifelse(hit, "Yes", "No") )
-
-ggplot(tab, aes(poll, estimate, ymin=low, ymax=high, color = p_inside)) + 
-  geom_point()+
-  geom_errorbar(alpha = 0.7) + 
-  coord_flip() + 
-  geom_hline(yintercept = p) +
-  labs(title = "Look at how often our confidence intervals\n capture what we say it captures", 
-       caption = "The line in this case denotes the  0.45") +
-  theme_allen() +
-  scale_color_manual(values = c("#e76254", "#1e466e")) +
-  guides(color = guide_legend("0.45 Inside The Net"))
-
-```
-
-
-???
-You are going to see a lot of simulations because that is what I find most intuitive. Here is what is going on. I set a value for the population parameter and then took random samples from that population. Than what i did was calculte the 95% confidence intervals. About 95% of the time I capture the true value with my net. There are a few times where I don't. Effectively when polls report margin of errors they are in effect reporting a confidence interval
-
-Even when we are conducting polls in the best way possible our net is not going to capture what we say it captures from time to time. Or even if we say that it is .45 due to things out of control the quanitity in our sample will be slightly off
-
----
-
-
-
-
----
-## Probability 
-
-.pull-left[
-
--	We think of probability is indicated as number between 0 (never happens) and 1 (always happened) repeated over an infinite number of times
-
-- The probability of picking a certain color candy from a jar given a set of candies in the jar
-
-- Lets say we have 2 red candies and 3 blue candies and we want to know the probability of picking a red one. 
-]
-
---
-
-
-.pull-right[
-
-```{r echo = TRUE}
-
-set.seed(1994)
-
-candies = rep(c("red","blue"), times = c(2,3))
-
-candies 
-
-
-
-```
-
-]
-
-
-???
-This is pretty easy! it is just 2/5 or 40% and this should be true as we pick candies. So lets test this out with some simulations! 
-
-
----
-
----
-layout: false
-
-.pull-left[
-### Sampling Once
-```{r echo = TRUE}
-sample(candies, 1)
-
-sample(candies, 1)
-
-sample(candies,1)
-
-sample(candies,1)
-```
-
-
-
-]
-
-.pull-right[
-### Sampling 100,000 Times
-
-```{r echo =TRUE}
-
-b = 100000
-
-events = replicate(b, sample(candies),1)
-
-tab = table(events)
-
-
-prop.table(tab )
-
-
-```
-
-
-
-]
-???
-
-
-
-This is pretty neat! with our simple math we can show this holds in our toy problem! 
-
-
-However this can start to change if the events are not independent of each other. Think of a deck of card. Where there are 52 cards with 4 face cards for each suit. As the dealer deals out cards the probabilty of you getting a face card goes down. Or in the case we are about to see what is the probability of something happening given that something else happened. 
-
-
----
-
----
-## Monty Hall
-
-```{r}
-vembedr::embed_url("https://youtu.be/QGxyIQzLeUc")
-```
-
-
-
-
----
-
-
----
-## So Who Was Right
-
-.pull-left[
-```{r echo = TRUE}
-B = 10000
-monty_hall = function(strategy){
-  doors = as.character(1:3)
-  prize = sample(c("car", "goat", "goat"))
-  prize_door = doors[prize == "car"]
-  my_pick  = sample(doors, 1)
-  show = sample(doors[!doors %in% c(my_pick, prize_door)],1)
-  stick = my_pick
-  stick == prize_door
-  switch = doors[!doors%in%c(my_pick, show)]
-  choice = ifelse(strategy == "stick", stick, switch)
-  choice == prize_door
-}
-
-```
-
-
-]
-
---
-
-```{r echo = TRUE}
-stick = replicate(B, monty_hall("stick"))
-mean(stick)
-
-switch = replicate(B, monty_hall("switch"))
-
-mean(switch)
-
-```
-
-???
-In the 1970s, there was a game show called “Let’s Make a Deal” and Monty Hall was the host. At some point in the game, contestants were asked to pick one of three doors. Behind one door there was a prize. The other doors had a goat behind them to show the contestant they had lost. After the contestant picked a door, before revealing whether the chosen door contained a prize, Monty Hall would open one of the two remaining doors and show the contestant there was no prize behind that door. Then he would ask “Do you want to switch doors?” What would you do?
-
-We can use probability to show that if you stick with the original door choice, your chances of winning a prize remain 1 in 3. However, if you switch to the other door, your chances of winning double to 2 in 3!
- 
-Monty hall is a good demonstration that we don't always have a good intuition on the probability of things because we are using conditional probabilities and Bayes rule to plug in where our numbers go. So there is just a bit more math that goes into it
-
-
-
----
-
-
-
----
 ## Polling 
 
 .pull-left[
@@ -393,6 +119,235 @@ Would you charecterize asking what your friends think about the president a good
 
 
 
+---
+class: center, middle, inverse
+
+# Public Opinion
+--
+
+# The Stats Part
+
+---
+
+---
+class: center, middle
+
+<gsu-blockquote-red>
+It seems to me that statistics is often sold as a sort
+of alchemy that transmutes randomness into certainty, an “uncertainty laundering” that begins with data and concludes with success as measured by statistical significance - Andrew Gelman(2016)
+</gsu-blockquote-red>
+
+???
+The book tends to spend a bit to much time on the stats part of public opinion while not really giving you guys an intuition. If you have questions speak up.
+---
+
+---
+
+## The Basics 
+
+- .bold[Population]: all the cases of interest in existence, all of something, group, large or small, that we are interested in
+
+- .bold[Sample]: a selected subset of the population from which data is collected for study
+
+- .bold[Parameter]: measurements of population quantities
+
+- .bold[Statistics]: measurements of the sample quantities are called
+
+
+???
+The book tries to skirt around "scary concepts like these". In public opinion we are trying to understand what the broader population of the United States feels like but it is a bit more difficult than asking each and every person what they think about the something. In the next few classes we will cover why that is. What is important to keep in mind that the book doesn't talk about is that it covers one very widely used paradigm very poorly. The paradigm that it uses is what is known as frequentism. In frequentism we assume that the sample is random but the world is fixed. The population parameter in frequentist statistics is essentially an unknowable thing that we are trying to figure out. 
+---
+
+---
+## Basics Continued
+
+-  .bold[Probability]: is the proportion of times that the outcome would occur in a very long sequence of observations
+
+
+- .bold[Confidence-Interval]: the probability that a population parameter will fall between a set of values for a certain proportion of times. 
+
+- .bold[Random Sampling]: With random selection, every person in the population has equal probability of being selected into the sample.
+
+???
+These concept s are depeely interconnected not only to how we conduct statistics in polling but to each other. The p-value is a threshold that we apply all the time in when doing statististics in political science, economics, sociology, psychology, epidemiology, education, and biostatistics literature. The p-value is a threshold that we often use to set a minimal standard that there is a relationship between our variables. If we reject the null hypothesis than this is a weak test that the thing we say is there is there. 
+
+
+The confidence interval is just essentially a net. What ever quanitity of interst we are calculating there is going to be some error in real life analysis that will make our sample quantity differ from the population quanitity. The key question is whether or not that deviation is so extreme that we aren't actually capturing the population parameter.
+
+The problem with the statistics we normally used and what is widely taught is kind of encapsulated for bu the confidence interval. What do you think that the plain english interpretation of the confidence interval is? 
+
+
+The problem is that the confidence interval is us saying that 95% of the time we believe that our net captures the true population parameter. The stats we use do not really track with how we think or in practice what we are doing. 
+---
+
+
+
+
+
+
+---
+## Probability 
+
+.pull-left[
+
+-	We think of probability is indicated as number between 0 (never happens) and 1 (always happened) repeated over an infinite number of times
+
+- The probability of picking a certain color candy from a jar given a set of candies in the jar
+
+- Lets say we have 2 red candies and 3 blue candies and we want to know the probability of picking a red one. 
+]
+
+--
+
+
+.pull-right[
+
+```{r echo = TRUE}
+
+set.seed(1994)
+
+candies = rep(c("red","blue"), times = c(2,3))
+
+candies 
+
+
+
+```
+
+]
+
+
+???
+This is pretty easy! it is just 2/5 or 40% and this should be true as we pick candies. So lets test this out with some simulations! This definition is not technically correct but it is useful for our purposes. 
+
+
+---
+
+---
+layout: false
+
+.pull-left[
+### Sampling Once
+```{r echo = TRUE}
+sample(candies, 1)
+
+sample(candies, 1)
+
+sample(candies,1)
+
+sample(candies,1)
+```
+
+
+
+]
+
+.pull-right[
+### Sampling 100,000 Times
+
+```{r echo =TRUE}
+
+b = 100000
+
+events = replicate(b, sample(candies),1)
+
+tab = table(events)
+
+
+prop.table(tab )
+
+
+```
+
+
+
+]
+???
+
+
+
+This is pretty neat! with our simple math we can show this holds in our toy problem! 
+
+
+A more rigiourous definition of probability is that probability is a function that maps events to a real number obeying the axioms of probability
+
+
+
+
+
+
+
+
+
+---
+
+
+
+---
+## Monty Hall
+
+```{r}
+vembedr::embed_url("https://youtu.be/QGxyIQzLeUc")
+```
+
+
+
+
+---
+
+
+---
+## So Who Was Right
+
+.pull-left[
+```{r echo = TRUE}
+B = 10000
+monty_hall = function(strategy){
+  doors = as.character(1:3)
+  prize = sample(c("car", "goat", "goat"))
+  prize_door = doors[prize == "car"]
+  my_pick  = sample(doors, 1)
+  show = sample(doors[!doors %in% c(my_pick, prize_door)],1)
+  stick = my_pick
+  stick == prize_door
+  switch = doors[!doors%in%c(my_pick, show)]
+  choice = ifelse(strategy == "stick", stick, switch)
+  choice == prize_door
+}
+
+```
+
+
+]
+
+--
+
+```{r echo = TRUE}
+stick = replicate(B, monty_hall("stick"))
+mean(stick)
+
+switch = replicate(B, monty_hall("switch"))
+
+mean(switch)
+
+```
+
+???
+In the 1970s, there was a game show called “Let’s Make a Deal” and Monty Hall was the host. At some point in the game, contestants were asked to pick one of three doors. Behind one door there was a prize. The other doors had a goat behind them to show the contestant they had lost. After the contestant picked a door, before revealing whether the chosen door contained a prize, Monty Hall would open one of the two remaining doors and show the contestant there was no prize behind that door. Then he would ask “Do you want to switch doors?” What would you do?
+
+We can use probability to show that if you stick with the original door choice, your chances of winning a prize remain 1 in 3. However, if you switch to the other door, your chances of winning double to 2 in 3!
+ 
+Monty hall is a good demonstration that we don't always have a good intuition on the probability of things because we are using conditional probabilities and Bayes rule to plug in where our numbers go. So there is just a bit more math that goes into it
+
+
+
+---
+
+
+
+
+
+
 
 
 ---
@@ -443,7 +398,7 @@ Importantly, central limit theorem, itself a foundation of a lot of classical st
 
 This puppy is sort of what holds this whole thing together
 
-What is cool about the central limit theorum is that if we keep retaking random samples of the larger population throught random sampling the sample means will not only be normally distributed but we would converge to the population mean and the random sampling error would equal the standard error of the sample means. Even this one! This is just a therometer rating where people either really like trump in 2018 or really do not like him. This likely hold true for Biden as well but I didn't want to pull and clean the latest ANES data
+What is cool about the central limit theorum is that if we keep retaking random samples of the larger population through random sampling the sample means will not only be normally distributed but we would converge to the population mean and the random sampling error would equal the standard error of the sample means. Even this one! This is just a therometer rating where people either really like trump in 2018 or really do not like him. This likely hold true for Biden as well but I didn't want to pull and clean the latest ANES data
 
 ---
 
@@ -545,6 +500,54 @@ We conceptualize random sampling error as having two components. The first is th
 
 ---
 
+---
+## Confidence Intervals in Practice
+
+```{r}
+p <- 0.45
+N <- 1000
+B <- 10000
+inside <- replicate(B, {
+  x <- sample(c(0,1), size = N, replace = TRUE, prob = c(1-p, p))
+  x_hat <- mean(x)
+  se_hat <- sqrt(x_hat * (1 - x_hat) / N)
+  between(p, x_hat - 1.96 * se_hat, x_hat + 1.96 * se_hat)
+})
+
+tab <- replicate(100, {
+  x <- sample(c(0,1), size = N, replace = TRUE, prob = c(1-p, p))
+  x_hat <- mean(x)
+  se_hat <- sqrt(x_hat * (1 - x_hat) / N)
+  hit <- between(p, x_hat - 1.96 * se_hat, x_hat + 1.96 * se_hat)
+  c(x_hat, x_hat - 1.96 * se_hat, x_hat + 2 * se_hat, hit)
+})
+
+
+tab <- data.frame(poll=1:ncol(tab), t(tab))
+names(tab)<-c("poll", "estimate", "low", "high", "hit")
+tab <- mutate(tab, p_inside = ifelse(hit, "Yes", "No") )
+
+ggplot(tab, aes(poll, estimate, ymin=low, ymax=high, color = p_inside)) + 
+  geom_point()+
+  geom_errorbar(alpha = 0.7) + 
+  coord_flip() + 
+  geom_hline(yintercept = p) +
+  labs(title = "Look at how often our confidence intervals\n capture what we say it captures", 
+       caption = "The line in this case denotes the  0.45") +
+  theme_allen() +
+  scale_color_manual(values = c("#e76254", "#1e466e")) +
+  guides(color = guide_legend("0.45 Inside The Net"))
+
+```
+
+
+???
+We not only care about the likelihood that something happens but we also care about the uncertainty around the event. This is something our simple definition of probability does not handle well. Lets say we randomly assign an increase in medicare coverage(something that acutally happened). We are interested in the likelihood that we see an update in use of insurance, how many people increase the use, but we also care about the other outcomes of the expansion and the uncertainty around those numbers 
+
+Even when we are conducting polls in the best way possible our net is not going to capture what we say it captures from time to time. Or even if we say that it is .45 due to things out of control the quanitity in our sample will be slightly off
+
+---
+
 
 ---
 ## Sample Sizes 
@@ -602,7 +605,7 @@ With this in mind, what is an ideal sample size in a situation like this (and li
 
 - We calculate what are known as standard errors by $SE = \frac{\sigma}{\sqrt{n}}$
 
-- This affects our confidence because we calculate it $CI = \bar{x}\pm z \frac{\sigma}{\sqrt{n}}$
+- This affects our confidence intervals because this is the forumula $CI = \bar{x}\pm z \frac{\sigma}{\sqrt{n}}$
 
 ???
 If you remember back to the first few slides we talked about confidence intervals/Margins of error. We know that a lot of the time that we can't always capture the population parameter but a lot of the time our net will one way to sure that net is tighter is to increase our sample. Our standard deviations are calculated by taking the sqrt of our sample size. our confidence interval than is just adding or subtracting a critical value typically 1.96. Notice that N appears in the denominator. This will shrink our confidence intervals! As we divide a small number by a super big number than we get a small number 

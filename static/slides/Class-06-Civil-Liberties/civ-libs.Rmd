@@ -21,18 +21,7 @@ output:
 ```
 
 
----
-## Looming Deadlines:
 
-- Check in survey .bold[02-20-2022]
-
-- Chapters
-
-???
-Overall the Tests went really well! The average was a 77% with. I still have to look at the question data to go over and see what the contents of the questions were that the class writ large did not do as well on. From there I will go through and adjut your scores accordingly. I have the data I just need to actually transform it and then upload it into icollege. 
-
-I have a first cut of the data but I just need to go through it a little more thoroughly
----
 
 
 
@@ -405,7 +394,7 @@ In the Hobby lobby case they ruled in favor of Hobby Lobby
 
 
 ```{r, echo = FALSE}
-countdown::countdown(minutes = 5, play_sound = TRUE)
+countdown::countdown(minutes = 10, play_sound = TRUE)
 ```
 
 
@@ -510,7 +499,9 @@ knitr::include_graphics("images/bong-hits.jpg")
 - Morse v. Frederick(2007) ] 
 
 ???
-Tinker - Iowa public school students (4 – The Tinker Family) decided in protest of the Vietnam War and in support of the Christmas Truce decided to wear black armbands to school. They were a symbolic protest as well as in honor of the fallen soldiers.  They were sent home and suspended from school since it was considered to disturb the classroom setting. So they decided to go to court, and the Court says that this is a protected form of speech. This case is important b/c it defines symbolic speech, but also because it protects (for the first time) students and their constitutional rights in school. 
+Tinker - Iowa public school students (4 – The Tinker Family) decided in protest of the Vietnam War and in support of the Christmas Truce decided to wear black armbands to school. They were a symbolic protest as well as in honor of the fallen soldiers.  
+
+They were sent home and suspended from school since it was considered to disturb the classroom setting. So they decided to go to court, and the Court says that this is a protected form of speech. This case is important b/c it defines symbolic speech, but also because it protects (for the first time) students and their constitutional rights in school. 
 
 Morse – Frederick was a student at a public school in Alaska and during the Olympic Torch relay (a school sponsored event) thought it would be a good idea to go across the street and display this sign. Morse, the principal suspended him and Frederick decided to sue saying his constitutional rights had been violated. The court said, yes this is considered school speech, but since it was promoting the use of illicit drugs it was not considered protected speech. 
 

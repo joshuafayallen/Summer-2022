@@ -23,7 +23,7 @@ output:
 
 
 ---
-class: center, middle
+class: center, middle, inverse 
 .col[# Rights of the Criminally Accused]
 
 ---
@@ -78,9 +78,13 @@ This is the first of the amendments in a series (4 through 8) that discuss the r
   
 ???
 Search – The main point I want you all to take away when we are talking about the fourth amendment and the element concerning search is that an individual has a reasonable expectation of privacy into which the government cannot intrude. This is a moveable bubble, and covers an individual rather then a specific location. (Prior cases had limited to only the home). Privacy is portable!!! 
+
+
 One exception to this rule is in the case of a Terry stop or what you and I know it as “a stop and frisk”. A stop and frisk is a legal warrantless search by the police due to the police’s belief that one is about to commit a criminal activity. The officer can perform a pat down looking for a weapon because he fears for his safety as well as the safety of others. (Case facts: An individual was walking down the street doing a little window shopping (aka looking to see which stores lacked security and were easy to break into without alerting the police) and he was stopped by the police for suspicious behavior.) 
 
-Mapp v. Ohio – incorporation to the states - Ms. Dollaree Mapp, was at home hanging out when she heard a knock on the door. It was the police and Ms. Mapp was under suspicion for being in possession of materials with which to make a bomb and as well some illegal gambling equipment.  The police asked nicely if they could come in but she refused. So one of the officers left, and a few hours later returned with a few extra officers and a random piece of paper they called a warrant. Mapp took the warrant and shoved it down her dress so  she could later verify its legitimacy. The officer wrestled her to the ground and she was placed in handcuffs. The officers executed the search and found nothing but a box of porn that map claimed belonged to a former tenant. It was still illegal in Ohio so they tacked it onto her other charges.  She sued and the Court said, your Fourth Amendment rights were violated. So sorry, and we are glad you were not making a bomb in your basement or garage. 
+Mapp v. Ohio – incorporation to the states - Ms. Dollaree Mapp, was at home hanging out when she heard a knock on the door. It was the police and Ms. Mapp was under suspicion for being in possession of materials with which to make a bomb and as well some illegal gambling equipment.  The police asked nicely if they could come in but she refused. So one of the officers left, and a few hours later returned with a few extra officers and a random piece of paper they called a warrant.
+
+Mapp took the warrant and shoved it down her dress so  she could later verify its legitimacy. The officer wrestled her to the ground and she was placed in handcuffs. The officers executed the search and found nothing but a box of porn that map claimed belonged to a former tenant. It was still illegal in Ohio so they tacked it onto her other charges.  She sued and the Court said, your Fourth Amendment rights were violated. So sorry, and we are glad you were not making a bomb in your basement or garage. 
 
 Exclusionary rule – evidence that is seized during violations of the fourth amendment are excluded from use as evidence in the court of law. As it was stated by one Felix Frankfurter – “it becomes fruit of the poisonous tree” and is useless
 
@@ -145,7 +149,9 @@ knitr::include_graphics("images/jay-z.png")
 ???
 The right to a grand jury 
 Protection against double jeopardy 
+
 Protection against self incrimination (pleading the fifth) 
+
 DPC –applicable only to the federal government 
 Takings without just compensation – goes back to Barron v. Baltimore 
 
@@ -167,7 +173,10 @@ Takings without just compensation – goes back to Barron v. Baltimore
 .hiro-dark-blue[Habeas Corpus]: a protection against illegal imprisonment requiring that those detained have access to a court of law concerning the reasons for their detention
 
 ???
-So states violating double jeopardy was not uncommon! However, it didn’t take the form of defendant wins case against the state so then the turns around and retries the case. From my conversation with our state courts scholar they said this “more like defendent wins and there is some procedural defect in trial so state appeals, wins, and retries.” The actual case that would eventually incorporate double jeopardy, Benton v. Maryland, the Benton is retried for larceny and convicted of larceny. The actual details of the Benton case are kind of interesting,. One of the other issues with double jeopardy is that there isn’t like a consistent test like the Lemon test. This is why, I think, the book kind of skates over double jeopardy.
+So states violating double jeopardy was not uncommon! However, it didn’t take the form of defendant wins case against the state so then the turns around and retries the case. 
+
+
+From my conversation with our state courts scholar they said this “more like defendent wins and there is some procedural defect in trial so state appeals, wins, and retries.” The actual case that would eventually incorporate double jeopardy, Benton v. Maryland, the Benton is retried for larceny and convicted of larceny. The actual details of the Benton case are kind of interesting,. One of the other issues with double jeopardy is that there isn’t like a consistent test like the Lemon test. This is why, I think, the book kind of skates over double jeopardy.
  
 
 
@@ -186,11 +195,27 @@ You have the right to remain silent. Anything you say can and will be used again
 </center>
 
 ???
-On March 13, 1963, Ernesto Miranda was arrested, by the Phoenix Police Department based on evidence linking him to theft of $8 dollars from a bank employee.  After several hours of interrogation, Miranda not only confessed to the theft but also to the rape and kidnapping of a 18 year old girl nearly 10 days before. Miranda both confessed verbally and via a written confession to the crimes. However, at no time was Miranda told of his right to counsel (Sixth Amendment) Prior to being presented with the form on which he was asked to write out the confession he had already given orally, he was not advised of his right to remain silent, nor was he informed that his statements during the interrogation would be used against him. At trial, when prosecutors offered Miranda's written confession as evidence, Miranda’s lawyer objected that because Miranda was not advised of his rights, the confession was not truly voluntary and should be excluded. Moore's objection was overruled and based on this confession and other evidence, Miranda was convicted of rape and kidnapping and sentenced to 20 to 30 years imprisonment on each charge, with sentences to run concurrently. Moore filed Miranda's appeal to the Arizona Supreme Court claiming that Miranda's confession was not fully voluntary and should not have been admitted into the court proceedings.  And the court said, while you are an unfortunate human being, you still deserve to have your rights read to you. 
+On March 13, 1963, Ernesto Miranda was arrested, by the Phoenix Police Department based on evidence linking him to theft of $8 dollars from a bank employee.  After several hours of interrogation, Miranda not only confessed to the theft but also to the rape and kidnapping of a 18 year old girl nearly 10 days before. 
+
+
+Miranda both confessed verbally and via a written confession to the crimes. However, at no time was Miranda told of his right to counsel (Sixth Amendment) Prior to being presented with the form on which he was asked to write out the confession he had already given orally, he was not advised of his right to remain silent, nor was he informed that his statements during the interrogation would be used against him. At trial, when prosecutors offered Miranda's written confession as evidence, Miranda’s lawyer objected that because Miranda was not advised of his rights, the confession was not truly voluntary and should be excluded. Moore's objection was overruled and based on this confession and other evidence, Miranda was convicted of rape and kidnapping and sentenced to 20 to 30 years imprisonment on each charge, with sentences to run concurrently. Moore filed Miranda's appeal to the Arizona Supreme Court claiming that Miranda's confession was not fully voluntary and should not have been admitted into the court proceedings.  And the court said, while you are an unfortunate human being, you still deserve to have your rights read to you. 
 
 This covers both the 5th and the rights of the 6th amendment. 
 
 Specifically, the right to counsel is a guarantee that extends to any trial, with or without a jury, which holds the possibility of imprisonment. This is generally a felony charge, but others apply as well. (Such as traffic court).
+
+However, as of June 23rd there have been severe limitations of Miranda Rights 
+
+Vega v. Tekoh. For a 6-3 majority (with the liberal Justices dissenting), Justice Alito holds that Miranda rights *can't* be enforced through civil rights damages suits:
+
+
+Victims of civil rights violations are eligible to receive various forms of monetary damages. One form of damages is called “economic damages.” Economic damages represent lost money—things like lost income, loss of future income, past medical expenses, and the future costs of care. Another form of damages is called “non-economic” or “general” damages. These damages represent intangible harm and are designed to compensate a victim for things like pain and suffering, mental and emotional distress, disfigurement, and loss of enjoyment of life. Economic and non-economic damage can be very substantial in a case involving serious injuries.
+
+But there is also another form of damages called “punitive damages.” Punitive damages are literally meant to punish someone who violates another’s civil rights and to deter that person or others from committing future civil rights violations. Punitive damages can be sought in the appropriate case by victims of excessive force by police, or by victims of civil rights violations by jail personnel.
+
+
+
+In other words, the remedy for a Miranda violation is to suppress any un-Mirandized statements from a criminal trial, and nothing more (which is a real problem for cases that don't go to trial or in which the government doesn't try to use the un-Mirandized statement at trial)
 
 ---
 
@@ -280,6 +305,7 @@ The punishment shall not be considered unnecessary
 
 ???
 Ironically, the State of Georgia has taken a very crucial role in this issue before the Courts. They were party to both cases Furman v. Georgia (1972) and Gregg v. Georgia (1976), which first abolished the death penalty and then reinstated it. 
+
 Justice Brennan’s standards for considering capital punishment established in Furman v. Georgia. No state should pass a law concerning capital punishment that violated any of these 4 test prongs. Specifically the court has faced many cases concerning the third part of this test. They have found that many types of execution that have been utilized throughout history can be defined as excessive or unnecessary including drawing and quartering, dissection, beheading, disembowelment, and burning alive. 
 
 The court has made several other stances on the death penalty including that children under the age of 18 shall not be sentenced with it and specifically that no one with mental handicaps will be considered eligible. The death penalty is also considered an excessive punishment for crimes in which a life has not been taken, such as rape of adult or child. 
@@ -325,11 +351,16 @@ The court has found that while the rights in the first 8 amendments are basic an
   - Griswold v. Connecticut(1973)
 
 - Abortion 
-  - Roe v. Wade(1973)
-  - Planned Parenthood v. Casey
+  - ~~Roe v. Wade(1973)~~
+  - ~~Planned Parenthood v. Casey(1992)~~
+  - Dobbs v. Jackson Women's Health(2022) 
 
 - LGBTQIA Rights
   - Lawrence v. Texas(2003)
+  - Obergefell v Hodges(2015)
+  
+- Interracial Marriage
+  - Loving v Virginia(1967)
   
 ???
 The right to privacy is not established or enumerated clearly within the Bill of Rights, but the courts have found the means to protect it in the 4th, 5th, 9th, and 14th amendments. It is essential defined as the protection from government intrusion. We are going to talk about several of these areas. Once again the same warning is extended about classroom behavior. We are in a “safe environment” and opinions shall not be trampled upon simply because you think or someone thinks they are wrong. 
@@ -338,17 +369,25 @@ Griswold – There was an old Connecticut law placed on the books in the 1850’
 
 Roe – 1969 a young woman (using the alias of Jane Roe) found out she was pregnant with her third child. Without the financial means to support the coming child Roe sought out alternatives for terminating the pregnancy and had no luck. At this time every state had some form of anti-abortion law in place since roughly the 1900’s. So she decided to go to court. Eventually her case made it to the Supreme Court (by this time the case would be moot, since the child was turning 3 years old at the time). The Supreme Court reaffirmed her right to privacy and that this was a decision to be made between a woman and her doctor. But limitations were put on the abortions, the reason must be because a detriment to the mother’s health and that the abortion can occur no later then the 2nd trimester, to avoid interfering with the potentiality of life. 
 
+The Due Process Clause of the Fourteenth Amendment to the U.S. Constitution provides a fundamental "right to privacy" that protects a pregnant woman's liberty to abort her fetus. This right is not absolute, and has to be balanced against the government's interest in protecting women's health and protecting prenatal life. Texas's statutes making it a crime to procure an abortion violated this right.
+
 in Casey the the court applied the undue burden standard. In short, the undue burden standard states that a legislature cannot make a particular law that is too burdensome or restrictive of one's fundamental rights.
 
-Modern complications – the states have begun creating new laws that are slowly chipping away the Roe standard.  Some of these standards include a 24 hour waiting period prior to an abortion, having pre-abortion counseling and requiring parental consent for minors. Public opinion data shows that the United states is very clearly divided on the issue 48% that are pro-choice and 46% that are pro-life.  Some state have enacted trigger laws that if Roe were overturned would automatically make abortion illegal, and others has specifically stated they will continue with legalization by state law. 
 
-The court has granted cert to Dobbs v. Jackson Women's Health Organization which over the question of Whether all pre-viability prohibitions on elective abortions are unconstitutional
+
+
+Modern complications – the states have begun creating new laws that are slowly chipping away the Roe standard.  Some of these standards include a 24 hour waiting period prior to an abortion, having pre-abortion counseling and requiring parental consent for minors. As of last June 24 the Supreme court  returned the Dobb's decisions arguing that Abortion laws will be decided by the state. At that moment 22 States trigger laws were activated automatically banning abortion. Abortion is currently banned in 27 states with bans still on the books pre-Roe. 
 
 Lawrence – Legal punishment for sodomy often came with heavy fines and jail time up to life imprisonment.  By 1960 every state had anti-sodomy laws on the books. 1986 dealt a huge blow to gay rights movements when the court refused to strike down anti-Sodomy laws as a violation of sexual privacy stating that the right to privacy only extended to sexual acts that were procreative in nature.  Until Mr. Lawrence came along. He just happened to be the apple of two different men’s eye. Well one of his lovers didn’t like not being the center of attention so knowing that Mr. Lawrence was having the other man over he called the cops and reported that a crazy man was waving a gun around and making threats. The cops were immediately dispatched and entered his home. They found the two men engaged in sexual acts and immediately arrested them for violations of sodomy laws and being engaged in acts of deviant sexual behavior. So they decided to go to Court, and the court said that you are right. We were incorrect and that sexual privacy is a right as part of the 9th amendment. 
 
 Oberfell v Hodges was the landmark decision where the court ruled 5-4  that requires all states to issue marriage licenses to same-sex couples and to recognize same-sex marriages validly performed in other jurisdictions
 
 Modern perspective – Georgia still has sodomy laws on the books, but they are mainly to be utilized as tools in rape cases. The sentences for sodomy law were so severe here that an individual could go to jail longer for what was considered deviant sexual acts (anal and oral sex) then they would for being convicted of necrophilia and bestiality at the same time. By the way these deviant sexual behavior laws still exist making it illegal to have sex in any position other than missionary. (Fortunately the state does not take the time to enforce them otherwise a whole lot more people would be in jail today).
+
+
+interracial marriage 
+
+Chief Justice Earl Warren wrote at the time. The right to marry was considered to be protected under the right to privacy.
 
 ---
 
@@ -367,6 +406,8 @@ A well regulated militia being necessary to the security of a free state, the ri
 The origin of the second amendment traces back long past that of the Bill of Rights. It stretches itself all the way to the natural right of self defense that each man is endowed with. This is of course an extension of the right to life that Thomas Jefferson expounded upon in the Declaration of Independence. Along with what two other rights? (Liberty and pursuit of happiness). Its English origins arise from the English Bill of Rights from 1689, in which the citizens were trying to avoid the encroaching powers of the British Monarchy. Fearing such power they required a guarantee to insure that their arms could not be removed outside the bounds of proper behavior and accordance with the laws. 
 
 These feeling carried over to the colonies, and became an even further necessity for the people after the Revolution much of which the British spent trying to disarm the disgruntled colonists. They very clearly failed in this endeavor for the most part. 
+
+
 As far as the militia, some of the founders (Patrick Henry in particular) believed the only true way to liberty was through a properly trained and armed populace. In fact this belief was so rampant, that the founders also felt that the federal government could never actually raise a standing army strong enough to actual defeat a local well armed and organized militia. How many of you think this is the truth today? 
 
 ---
@@ -407,7 +448,7 @@ This is very important, since this was the original way the Founders thought to 
 
 ---
 ## Gun Rights Today 
-- What kinds of challenges are open to gun rights today? 
+### What kinds of challenges are open to gun rights today? 
 
 - Does this kind of thing include assault rifles?
 
@@ -415,11 +456,9 @@ This is very important, since this was the original way the Founders thought to 
 
 - What about Magazine size restrictions? 
 
-- Does it include grenades? 
 
-- Missile/rocket launchers? 
-
-- What about open carry? What kind of restrictions should this have? 
+- ~~What about open carry/concealed carry? What kind of restrictions should this have?~~     
+  - NEW YORK STATE RIFLE & PISTOL ASSOCIATION V BRUEN, SUPERINTENDENT OF NEW YORK STATE POLICE
 
 - What about Castle laws?
 
@@ -435,6 +474,10 @@ Stand Your Ground laws – the right an individual has to self-defense when they
 Peaceable Journey laws- a Law in which If an individual is in legal possession in their home location as well as their destination, then they may Peaceably transport their firearms through the intervening jurisdictions without fear of violating law. 
 
 These are all issues that a current issues in the United States concerning gun rights today. 
+
+in the Bruen case 
+
+Justice Thomas holds that the Second Amendment protects a right to carry arms in public, striking down NY law
 
 ---
 
