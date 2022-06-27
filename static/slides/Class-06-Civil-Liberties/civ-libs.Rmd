@@ -112,7 +112,7 @@ Thankfully (in many of these cases) only 27 amendments have actually been ratifi
 ---
 
 ---
-## What are Civil Liberties
+## What are Civil Liberties?
 
 .pull-left[
 ```{r echo = FALSE}
@@ -123,7 +123,7 @@ knitr::include_graphics("images/gate.jpg")
 
 .pull-right[
 
-The political freedoms that protect individuals from abuses of powers by the federal government 
+.bold[Civil Liberties]: The political freedoms that protect individuals from abuses of powers by the federal government 
 
 These are restraints found in the Bill of Rights for the federal government, that are applicable to the states under the $5^{th}$ and $14^{th}$ Amendment Due Process Clause.
 
@@ -133,11 +133,16 @@ These are restraints found in the Bill of Rights for the federal government, tha
 ]
 
 ???
+S. Supreme Court held that the Fifth Amendment, along with every other part of the Bill of Rights, was only concerned with actions taken by the federal government
+
 Gate Analogy – 
 
 Here are the people. Here is the government. Between them is a gate. This gate represents civil liberties. Civil liberties are those protections that keep the government “out” of the lives of the people. They prevent them from getting too involved. 
 
 Let me make this very clear statement: THESE RIGHTS ARE NOT ABSOLUTE!!! And as we will discuss in the coming days they have lots of limitations. 
+
+
+
 
 ---
 
@@ -177,13 +182,15 @@ These two terms while often conflated, mean very different things and the next f
 ## Baron v. Baltimore and Incorporation 
 
 .pull-left[
-<gsu-blockquote-blue> .bold[Selective Incorporation]: A constitutional doctrine under which certain rights and freedoms of the Bill of Rights are selectively applied to the states through various vehicles of the 14th amendment, specifically the Due Process Clause.  
+### Selective Incorporation
+<gsu-blockquote-blue> A constitutional doctrine under which certain rights and freedoms of the Bill of Rights are selectively applied to the states through various vehicles of the 14th amendment, specifically the Due Process Clause.  
 
 </gsu-blockquote-blue> 
 ]
 
 .pull-right[
 Due Process Clause 
+  - which prohibits arbitrary deprivation of "life, liberty, or property" by the government except as authorized by law.
 
 Can anyone name one of the freedoms in the Bill of Rights that the Supreme Court has yet to incorporate to the states? 
 
@@ -214,81 +221,24 @@ layout: false
 
 incorporation_dat = read_csv("data/years_incorporated.csv")
 
-incororation_1900 = incorporation_dat %>% 
-  filter(Year_Incorporated > 1900 & Year_Incorporated <= 2000)
 
-not_incorporate = incorporation_dat %>% 
-  filter(Year_Incorporated == "not incorporated")
+pacman::p_load("DT")
+
+
+datatable(incorporation_dat)
+
+```
+
+
+
+
+---
+
+
   
-incorporation_1800 = incorporation_dat %>% 
-  filter(Year_Incorporated >= 1800 & Year_Incorporated <= 1900)
-
-incorporation_2000 = incorporation_dat %>% 
-  filter(Year_Incorporated == 2010 | Year_Incorporated == 2019)
-
-```
+  
 
 
-```{r echo = FALSE}
-gt(incorporation_1800) %>% 
-  gtExtras::gt_theme_nytimes()
-```
-
-
----
-
----
-layout:false 
-
-```{r echo = FALSE}
-incororation_1900 %>% 
-slice(1:11) %>% 
-gt() %>% 
-gtExtras::gt_theme_nytimes()
-```
-
-
----
-
----
-layout:false
-
-
-```{r echo = FALSE}
-incororation_1900 %>% 
-slice(12:22) %>% 
-gt() %>% 
-gtExtras::gt_theme_nytimes()
-```
-
-
-
-
----
-
----
-layout: false
-
-```{r echo =FALSE}
-gt(incorporation_2000) %>% 
-  gtExtras::gt_theme_nytimes()
-```
-
-
-
-
----
-
----
-
-layout:false
-```{r echo = FALSE}
-gt(not_incorporate) %>% 
-   gtExtras::gt_theme_nytimes() 
-```
-
-
----
 
 ---
 class: center, middle
