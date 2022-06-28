@@ -20,16 +20,7 @@ output:
 ```
 
 
----
-## Looming Deadlines 
 
-
-- .bold[NCCHR] Extra Credit 02-27
-
-
-
-
-----
 
 ---
 class:center, middle,inverse
@@ -152,42 +143,27 @@ As a political violence scholar I would remissed if I didnt add that political v
 ---
 
 ---
-## Political Participation the Volume it speaks
+## When Do People Participate?
+### When They Have 
 
-```{r}
+- The Resources
+  - Time
+  - Skills
+  - Money
+  
+- Interest 
+  - Policy Interest 
+  - Candidate Appeal
 
-pol_par = tibble::tribble(~Activity, ~`Capacity for conveying Info`, ~Impact, ~`Requirments`,
-                          "Voting", "Low", "Low", "Time",
-                          "Campaign Work", "Mixed", "High", "Time and Skill",
-                          "Campaign Contributions", "Mixed", "Highest", "Money",
-                          "Interst Group Contribution", "Mixed", "Highest", "Money", "Contacting Public/Political Officials", "High", "Medium", "Time, Skill",
-                          "Protesting", "High", "Medium", "Time",
-                          "Community Work", "High", "High", "Time and Skill",
-                          "Serving on Local Boards/Councils", "High", "High", "Time and Skills", "Joining Political Organizations", "Mixed", "High", "Time, Skills, and Money")
+- Recuritment
+  - When people are asked to get involved 
 
-gt::gt(pol_par) %>% 
-  gtExtras::gt_theme_guardian()
-
-
-```
-
-???
-So not all political participation is equal
-
-They require different things and they accomplish different things. This chart is taken from a book called Voice and Equality, which surveyed 15,000 Americans about political participation.
-
-Here we see the different levels of information that forms of participation can communicate to public officials, which communicate the loudest (in other words, which do public officials and politicians pay the most attention to) and what each form of participation requires.
-
-So looking at this table, we can see that while voting is the easiest form of participation (requiring only time) it is the lowest in its ability to convey specific information (because it is so general) and in its volume (because so many people vote). Voting is often called “the great equalizer” because every citizen has the same voice with voting, but when voting does not speak as specifically or loudly to public officials as less equal activities, there may be a reason to be concerned.
-
-So why does this matter? What’s the big deal about the variation in these types of participation?
-
-Because different groups of people participate in different activities to different extents. Those that participate in the most information rich and loudest activities will have their needs heard the most by public officials, and will receive more representation than those that participate in the least loud and information rich activities
-
-
-Today we are focusing on row one. mostly 
 
 ---
+
+
+
+
 
 ---
 class: center, middle, inverse
@@ -204,26 +180,14 @@ class: center, middle, inverse
 
 - What drives people to vote?
 
-- What determines vote choice
+- What determines vote choice?
 
 ???
 Picking up on a broad theme of this class is you could take a graduate class just on voting and then dedicate an entire academic career to that. Today will be a tour de force of this and will largely think of it as like a neat little prediction problem. Than we are going to move onto next week where we will focus on the barriers in practice 
 
 ---
 
----
-## Voting
 
-```{r}
-vembedr::embed_url("https://youtu.be/Vr-ZeToI4R8?t=738")
-```
-
-
-???
-end 22:22
-
-Now we’re going to focus on voting. While we just talked about how voting is one of the less effective means of participation, it is something that all citizens are equally able to do, and it is the basis of electoral politics
----
 
 
 ---
@@ -234,10 +198,8 @@ Now we’re going to focus on voting. While we just talked about how voting is o
 
 - .bold[Retrospective Voting]: voter behavior that evaluates candidates based on their experience or past performance. 
 
-Mediated Retrospective Evaluations
-
-
-Simple Retrospective Evaluations
+  - Mediated Retrospective Evaluations
+  - Simple Retrospective Evaluations
 
 
 ???
@@ -246,7 +208,7 @@ prospective voting: voting on the promise of the future
 
 Retrospective voting tends to be used more by voters, and can be used in two ways
 
-MRE’s: Mediated through personal predispositions (PID) and experiences
+MRE’s: Mediated through personal predispositions (PID) and experiences of the voter 
 
 SRE’s: Has a direct effect on vote choice
 
@@ -254,7 +216,7 @@ SRE’s: Has a direct effect on vote choice
 
 
 ---
-## Why Do We Not  Vote? 
+## Why Do We Not Vote? 
 
 Lack of Mandatory registration
 
@@ -306,6 +268,36 @@ So people end up being free riders, because their individual vote will not influ
 
 Downs essentially argues that the indivdual is better of free-riding 
 
+---
+
+
+--- 
+## An Example 
+
+```{r}
+pacman::p_load("namedropR")
+
+
+
+htmltools::includeHTML(drop_name("ref/ref.bib", cite_key = "schaferWhenTimeEssence2020", export_as = "html", use_xaringan = TRUE))
+
+
+
+```
+
+
+???
+These articles use a really cleaver research design exploiting time zones to look at the effects on time and voting behavior 
+
+often we think about the constraints of time based on the things that go on in our lives but the amount time in our day. They look at states that split inbetween two time zones. There dependent variable is Proportion of individuals who turn out in a given county. They find that lower time allocations decrease 
+
+
+In this article, we have shown that local differences in time
+allocations have significant effects on levels of turnout and
+the composition of the electorate. Individuals who are exogenously
+nudged one hour forward in their daily schedules
+by time zone boundaries vote 1.5–3 percentage points less
+than all-else-equal individuals on the other side of the cutoff
 ---
 
 ---
@@ -419,25 +411,15 @@ Education level is the strongest predictor of an individuals voting behavior. Th
 
 ---
 layout: false 
+class: middle 
 
-.pull-left[
+
 
 ```{r out.width="80%"}
 knitr::include_graphics("images/race.png")
 ```
 
-]
 
-
-.pull-right[
-- Other Predictors of Voting Behavior: 
-- Race 
-- Religion 
-- Marital Status 
-- Ethnicity 
-
-
-]
 ???
 Race: 
 African American: While African American turnout is the highest it has ever been historical in the last two elections (2008 and 2012) it still is generally well below that of the national average. 
@@ -452,17 +434,92 @@ Religion:  Is a codependent factor of voting. We often associate voting with rel
 Marital Status: Those that are married are far more likely (10x) to vote than those that are single or divorced
 ---
 
+---
+## Who Actually Votes? 
+
+```{r}
+
+htmltools::includeHTML(drop_name("ref/ref.bib", cite_key = "barber400MillionVoting2022", export_as = "html", use_xaringan = TRUE))
+
+
+
+
+```
+
+
+???
+The problem with the figures I just showed you is that there these are based on self reported estimates from survey data. Using a proprietery dataset these authors find that this. Their data is super unique  
+
+In the United States, whether a citizen votes (but not
+who they vote for) is public record. Individual states publish this information. The voter file
+data that we use in this manuscript has been collated by the data and analytics firm The Data
+Trust LLC. Much like other large-scale voter-file vendors—like Catalist, L2, and Aristotle—
+The Data Trust appends voting information from all 50 US states and the District of Columbia.
+However, unlike other firms that share 1% samples of their voter files with researchers, we
+have access to the entire Data Trust file, which contains just over 200 million individuals in a single year snapshot. Looking at two elections they have some super interesting stuff
+
+
+
+---
+
+
+---
+class: center, middle 
+
+
+```{r out.width= "80%"}
+
+knitr::include_graphics("images/turnout_real_2016.png")
+
+```
+
+???
+
+the dark grey bars are the validated vote share by their 
+
+
+---
+
+---
+layout: false 
+class: center, middle
+
+```{r out.width= "80%"}
+
+knitr::include_graphics("images/turnout_real_2014.png")
+
+```
+
+??? 
+
+It is important to note that another of their key findings is looking for so called turnout deserts 
+
+explore the location and types of people who live in what we term a turnout desert
+—a local community where comparatively few individuals around them vote. In this core part
+of our analysis, we focus our attention on the electoral precinc
+
+These results show that voter turnout is highly segregated by race, politics, and age in the
+United States; minorities, young people, and democrats are much more likely to live in turnout
+deserts. This finding holds if we define a turnout desert based on arbitrary thresholds or cutoffs.
+
+
+
+
+For example, if we define a turnout desert as a precinct where turnout was one standard
+deviation lower than the national average, Black, Hispanic, and Asian individuals are 3, 4, and
+2.5 times more likely to live in a turnout desert than whites, respectively
+
+---
 
 
 
 
 ---
-## What factors in Influence our Vote 
-
-- PID
+## What factors in Influence our Vote? 
 
 
-```{r out.width= "40%"}
+
+```{r out.width= "80%"}
 knitr::include_graphics("images/clinton-trump.png")
 ```
 
@@ -489,16 +546,20 @@ Retrospective: Voters keep a tally of the good/bad things each party has done (e
 ## What Factors Influence our Vote
 
 - Different issues may affect individual voters
+
 - Nationally salient issues may significantly impact vote choice
+
 - Major event
+
 - Media
+
 - Candidate
 
 One issue that always influences vote choice:
 
 
 
-```{r out.width="40%"}
+```{r out.width="20%"}
 knitr::include_graphics("images/econ.png")
 ```
 
@@ -535,7 +596,7 @@ The Economy – single more important flux topic when it comes to voter decision
 
 
 ---
-## Declining Voter Turnout since the $20^{th}$
+## Declining Voter Turnout
 
 - Growing Mobility of Voters
 
@@ -599,5 +660,5 @@ vembedr::embed_url("https://youtu.be/rHFOwlMCdto")
 
 
 ???
-we have sort of discussed the voting population in way that doesnt acknowledge some of the other structural issues that impact people who do want to vote but face barriers to do so. I want to leave you with this as we move to talk about campaingss and elections next week
+we have sort of discussed the voting population in way that doesnt acknowledge some of the other structural issues that impact people who do want to vote but face barriers to do so. I want to leave you with this as we move to talk about campaings and elections next week
 ---

@@ -4,7 +4,7 @@
     <title>Chapter 9</title>
     <meta charset="utf-8" />
     <meta name="author" content="Josh Allen" />
-    <meta name="date" content="2022-02-22" />
+    <meta name="date" content="2022-06-28" />
     <script src="public-opinion_files/header-attrs/header-attrs.js"></script>
     <link href="public-opinion_files/remark-css/default.css" rel="stylesheet" />
     <link href="public-opinion_files/panelset/panelset.css" rel="stylesheet" />
@@ -23,10 +23,18 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
+.title[
 # Chapter 9
+]
+.subtitle[
 ## Public Opinion
+]
+.author[
 ### Josh Allen
-### 2022-02-22
+]
+.date[
+### 2022-06-28
+]
 
 ---
 
@@ -66,7 +74,7 @@ a, a &gt; code {
 
 /* color tweak */
 .inverse {
-  background-color: #8f9186;
+  background-color: #0039A6;
   color: #FFFFFF;
   text-shadow: 0 0 20px #333;
 }
@@ -368,8 +376,8 @@ gsu-blockquote-alt {
   margin-bottom: 1em;
   margin-left: 40px;
   margin-right: 40px;
-  border-left: solid 20px #776E64;
-  border-right: solid 20px #776E64;
+  border-left: solid 20px #97CAEB;
+  border-right: solid 20px #97CAEB;
   background-color: #dadfe1	;
   padding: 1em;
   color: #000000;
@@ -409,6 +417,11 @@ gsu-blockquote-alt {
 .bold-last-item &gt; ol &gt; li:last-of-type {
   font-weight: bold;
 }
+
+
+.my-one-page-font {
+  font-size: 18px;
+}
 &lt;/style&gt;
 
 &lt;style type="text/css"&gt;
@@ -428,10 +441,10 @@ I am just borrowing fonts used in the https://www.andrewheiss.com/blog/
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&amp;display=swap');
 
-body { font-family:'Roboto', 'Barlow Semi Condensed', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+body { font-family:'Roboto Condensed','Roboto', 'Barlow Semi Condensed', 'Palatino Linotype', 'Book Antiqua', 'Palatino', 'Microsoft YaHei', 'Songti SC', serif; }
 
 h1, h2, h3 {
-  font-family: 'Archivo Narrow';
+  font-family: 'Roboto Condensed';
   font-weight: normal;
 }
 
@@ -451,18 +464,7 @@ h2, h3 {
 
 
 ---
-
-## Looming Deadlines 
-
-- Extra Credit for completing NCCHR early .bold[02/27]
-
-- Chapters
-
----
-
-
----
-class: center, middle
+class: center, middle, inverse
 
 # Public Opinion
 --
@@ -480,254 +482,8 @@ of alchemy that transmutes randomness into certainty, an “uncertainty launderi
 &lt;/gsu-blockquote-red&gt;
 
 ???
-The book tends to spend a bit to much time on the stats part of public opinion while not really giving you guys an intuition. If you have questions speak up. I also kind of decided to put this before everything else because I figured this would be painful for some of you and just to get it over with.
+The book tends to spend a bit to much time on the stats part of public opinion while not really giving you guys an intuition. If you have questions speak up.
 ---
-
----
-
-## The Basics 
-
-- .bold[Population]: all the cases of interest in existence, all of something, group, large or small, that we are interested in
-
-- .bold[Sample]: a selected subset of the population from which data is collected for study
-
-- .bold[Parameter]: measurements of population quantities
-
-- .bold[Statistics]: measurements of the sample quantities are called
-
-
-???
-The book tries to skirt around "scary concepts like these". In public opinion we are trying to understand what the broader population of the United States feels like but it is a bit more difficult than asking each and every person what they think about the something. In the next few classes we will cover why that is. What is important to keep in mind that the book doesn't talk about is that it covers one very widely used paradigm very poorly. The paradigm that it uses is what is known as frequentism. In frequentism we assume that the sample is random but the world is fixed. The population parameter in frequentist statistics is essentially an unknowable thing that we are trying to figure out. 
----
-
----
-## Basics Continued
-
--  .bold[Probability]: is the proportion of times that the outcome would occur in a very long sequence of observations
-
-
-- .bold[Confidence-Interval]: the probability that a population parameter will fall between a set of values for a certain proportion of times. 
-
-- .bold[Random Sampling]: With random selection, every person in the population has equal probability of being selected into the sample.
-
-???
-These concept s are depeely interconnected not only to how we conduct statistics in polling but to each other. The p-value is a threshold that we apply all the time in when doing statististics in political science, economics, sociology, psychology, epidemiology, education, and biostatistics literature. The p-value is a threshold that we often use to set a minimal standard that there is a relationship between our variables. If we reject the null hypothesis than this is a weak test that the thing we say is there is there. 
-
-
-The confidence interval is just essentially a net. What ever quanitity of interst we are calculating there is going to be some error in real life analysis that will make our sample quantity differ from the population quanitity. The key question is whether or not that deviation is so extreme that we aren't actually capturing the population parameter.
-
-The problem with the statistics we normally used and what is widely taught is kind of encapsulated for bu the confidence interval. What do you think that the plain english interpretation of the confidence interval is? 
-
-
-The problem is that the confidence interval is us saying that 95% of the time we believe that our net captures the true population parameter. The stats we use do not really track with how we think or in practice what we are doing. 
----
-
----
-## Confidence Intervals in Practice
-
-&lt;img src="figs/unnamed-chunk-1-1.png" width="100%" style="display: block; margin: auto;" /&gt;
-
-
-???
-You are going to see a lot of simulations because that is what I find most intuitive. Here is what is going on. I set a value for the population parameter and then took random samples from that population. Than what i did was calculte the 95% confidence intervals. About 95% of the time I capture the true value with my net. There are a few times where I don't. Effectively when polls report margin of errors they are in effect reporting a confidence interval
-
-Even when we are conducting polls in the best way possible our net is not going to capture what we say it captures from time to time. Or even if we say that it is .45 due to things out of control the quanitity in our sample will be slightly off
-
----
-
-
-
-
----
-## Probability 
-
-.pull-left[
-
--	We think of probability is indicated as number between 0 (never happens) and 1 (always happened) repeated over an infinite number of times
-
-- The probability of picking a certain color candy from a jar given a set of candies in the jar
-
-- Lets say we have 2 red candies and 3 blue candies and we want to know the probability of picking a red one. 
-]
-
---
-
-
-.pull-right[
-
-
-```r
-set.seed(1994)
-
-candies = rep(c("red","blue"), times = c(2,3))
-
-candies 
-```
-
-```
-[1] "red"  "red"  "blue" "blue" "blue"
-```
-
-]
-
-
-???
-This is pretty easy! it is just 2/5 or 40% and this should be true as we pick candies. So lets test this out with some simulations! 
-
-
----
-
----
-layout: false
-
-.pull-left[
-### Sampling Once
-
-```r
-sample(candies, 1)
-```
-
-```
-[1] "red"
-```
-
-```r
-sample(candies, 1)
-```
-
-```
-[1] "blue"
-```
-
-```r
-sample(candies,1)
-```
-
-```
-[1] "red"
-```
-
-```r
-sample(candies,1)
-```
-
-```
-[1] "blue"
-```
-
-
-
-]
-
-.pull-right[
-### Sampling 100,000 Times
-
-
-```r
-b = 100000
-
-events = replicate(b, sample(candies),1)
-
-tab = table(events)
-
-
-prop.table(tab )
-```
-
-```
-events
-blue  red 
- 0.6  0.4 
-```
-
-
-
-]
-???
-
-
-
-This is pretty neat! with our simple math we can show this holds in our toy problem! 
-
-
-However this can start to change if the events are not independent of each other. Think of a deck of card. Where there are 52 cards with 4 face cards for each suit. As the dealer deals out cards the probabilty of you getting a face card goes down. Or in the case we are about to see what is the probability of something happening given that something else happened. 
-
-
----
-
----
-## Monty Hall
-
-<div class="vembedr">
-<div>
-<iframe src="https://www.youtube.com/embed/QGxyIQzLeUc" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
-</div>
-</div>
-
-
-
-
----
-
-
----
-## So Who Was Right
-
-.pull-left[
-
-```r
-B = 10000
-monty_hall = function(strategy){
-  doors = as.character(1:3)
-  prize = sample(c("car", "goat", "goat"))
-  prize_door = doors[prize == "car"]
-  my_pick  = sample(doors, 1)
-  show = sample(doors[!doors %in% c(my_pick, prize_door)],1)
-  stick = my_pick
-  stick == prize_door
-  switch = doors[!doors%in%c(my_pick, show)]
-  choice = ifelse(strategy == "stick", stick, switch)
-  choice == prize_door
-}
-```
-
-
-]
-
---
-
-
-```r
-stick = replicate(B, monty_hall("stick"))
-mean(stick)
-```
-
-```
-[1] 0.3286
-```
-
-```r
-switch = replicate(B, monty_hall("switch"))
-
-mean(switch)
-```
-
-```
-[1] 0.6673
-```
-
-???
-In the 1970s, there was a game show called “Let’s Make a Deal” and Monty Hall was the host. At some point in the game, contestants were asked to pick one of three doors. Behind one door there was a prize. The other doors had a goat behind them to show the contestant they had lost. After the contestant picked a door, before revealing whether the chosen door contained a prize, Monty Hall would open one of the two remaining doors and show the contestant there was no prize behind that door. Then he would ask “Do you want to switch doors?” What would you do?
-
-We can use probability to show that if you stick with the original door choice, your chances of winning a prize remain 1 in 3. However, if you switch to the other door, your chances of winning double to 2 in 3!
- 
-Monty hall is a good demonstration that we don't always have a good intuition on the probability of things because we are using conditional probabilities and Bayes rule to plug in where our numbers go. So there is just a bit more math that goes into it
-
-
-
----
-
-
 
 ---
 ## Polling 
@@ -745,11 +501,11 @@ Happy families are all alike; every unhappy family is unhappy in its own way.”
 
 .pull-right[
 &lt;gsu-blockquote-blue&gt;
-Good pools are all alike; every bad poll is bad in its own way.” –– Professor Allen
+Good polls are all alike; every bad poll is bad in its own way.” –– Professor Allen
 &lt;/gsu-blockquote-blue&gt;
 ]
 ???
-This is a bit of an embellisment on my part but good polls rely on what is referred to random sampling. If we think back to our candy jar each candy has a relatively equal probability of getting picked. Good polls adopt strategies that ensure that we can get a representative sample of the different kinds of people. Good polls employ questions that are valid meaning they are measuring what we think they are meausring and are reliable meaning they produce the same response 
+This is a bit of an embellishment on my part but good polls rely on what is referred to random sampling Good polls employ questions that are valid meaning they are measuring what we think they are measuring and are reliable meaning they produce the same response 
 
 
 ---
@@ -760,16 +516,16 @@ This is a bit of an embellisment on my part but good polls rely on what is refer
 
 - .bold[Leading Questions]: encourage the respondent to give a certain answer
 
-- .bold[Double Barrelled Questions]: Ask for opinions about more than one issue
+- .bold[Double Barreled Questions]: Ask for opinions about more than one issue
 
-- .bold[Social Desirability Bias]: Frames questions in a way that it makes one believe tthat a certain answer is not preferred
+- .bold[Social Desirability Bias]: Frames questions in a way that it makes one believe that a certain answer is not preferred
 
 - .bold[Priming]: a previous question which influences answers to future questions
 
 ???
-We find some some subset of problems in polling that lead us toward problems whether they are intentional or unitentional 
+We find some some subset of problems in polling that lead us toward problems whether they are intentional or unintentional 
 
-Double Barrelled question 
+Double Barreled question 
 
 Do you agree or disagree with this statement? ‘In a democracy, citizens have a duty to vote and a duty to always follow the law even when they think a law is unjust.’”
 
@@ -826,7 +582,316 @@ These kinds of questions can really affect what we can actually say about our qu
 ???
 Would you charecterize asking what your friends think about the president a good reperesentation of the feelings of president writ large? Probably not but that is kind of the literay digest poll did 
 
+
+What is going on is that this is a form of sample selection bias 
+
+
+
+Participants in research may differ systematically from the population of interest.  For example, participants included in an influenza vaccine trial may be healthy young adults, whereas those who are most likely to receive the intervention in practice may be elderly and have many comorbidities, and are therefore not representative
+
+
+Taking an example from my causal inference class lets look at the relationhsip between niceness and attractiveness. I am just going to fake some data and then fit a line through it.
+
 ---
+
+---
+## So What is Going On?
+
+
+
+
+
+.pull-left[
+
+&lt;img src="figs/unnamed-chunk-3-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+--
+
+.pull-right[
+
+&lt;img src="figs/unnamed-chunk-4-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+???
+Does this relationship make any sense? No of course not. So lets look at what each of the four quadrants represent.
+
+So what is happening is that the way we drew our sample distorts the true effect of niceness on attractiveness. We can start to think of the literary digest polls around these lines. There are lots of other kinds of examples we can draw. The hypothetical sample we are using is
+
+
+
+---
+
+---
+layout: false 
+
+&lt;img src="figs/unnamed-chunk-5-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+
+???
+
+How we do the stats really really matters. There is sort of malicious form of this that is embodied by a quote by Ronald Coase who once said that the data will confess to anything if you torture it enough. However, it is important for us to think about what is going on. In your cases you should think carefully about who is being sampled. How the sample is being drawn. If we apply this framework we can think of lots of real world applications. What do you think would happen if we conducted a survey asking what the public thinks of president Biden. But we only conduct the survey on instagram or we only conduct the survey via landlines. 
+
+
+---
+
+
+
+
+
+---
+
+## Statsy Stuff
+
+- .bold[Population]: all the cases of interest in existence, all of something, group, large or small, that we are interested in
+
+- .bold[Sample]: a selected subset of the population from which data is collected for study
+
+- .bold[Parameter]: measurements of population quantities
+
+- .bold[Statistics]: measurements of the sample quantities are called
+
+
+???
+The book tries to skirt around "scary concepts like these". In public opinion we are trying to understand what the broader population of the United States feels like but it is a bit more difficult than asking each and every person what they think about the something. 
+
+
+In the next few classes we will cover why that is. What is important to keep in mind that the book doesn't talk about is that it covers one very widely used paradigm very poorly. The paradigm that it uses is what is known as frequentism. In frequentism we assume that the sample is random but the world is fixed. The population parameter in frequentist statistics is essentially an unknowable thing that we are trying to figure out.  
+---
+
+---
+## Statsy Stuff continued... 
+
+-  .bold[Probability]: is the proportion of times that the outcome would occur in a very long sequence of observations
+
+
+- .bold[Confidence-Interval]: the probability that a population parameter will fall between a set of values for a certain proportion of times. 
+
+- .bold[Random Sampling]: With random selection, every person in the population has equal probability of being selected into the sample.
+
+???
+These concept  are deeply interconnected not only to how we conduct statistics in polling but to each other. The p-value is a threshold that we apply all the time in when doing statistics in political science, economics, sociology, psychology, epidemiology, education, and biostatistics literature. The p-value is a threshold that we often use to set a minimal standard that there is a relationship between our variables. If we reject the null hypothesis than this is a weak test that the thing we say is there is there. 
+
+
+The confidence interval is just essentially a net. What ever quantity of interst we are calculating there is going to be some error in real life analysis that will make our sample quantity differ from the population quantity. The key question is whether or not that deviation is so extreme that we aren't actually capturing the population parameter. When polls report a margin of error they are just reporting a confidence interval. 
+
+The problem with the statistics we normally used and what is widely taught is kind of encapsulated for by the confidence interval. What do you think that the plain english interpretation of the confidence interval is? 
+
+
+The problem is that the confidence interval is us saying that 95% of the time we believe that our net captures the true population parameter. Confidence intervals tell us that there is a 95% probability that this range contains the true value of the population parameter 
+---
+
+
+
+
+
+
+---
+## Probability 
+
+.pull-left[
+
+-	We think of probability is indicated as number between 0 (never happens) and 1 (always happened) repeated over an infinite number of times
+
+- The probability of picking a certain color candy from a jar given a set of candies in the jar
+
+- Lets say we have 2 red candies and 3 blue candies and we want to know the probability of picking a red one. 
+]
+
+--
+
+
+.pull-right[
+
+
+```r
+set.seed(1994) ## This just makes everything reproducible 
+
+candies = rep(c("red","blue"), times = c(2,3)) ## lets make the jar 
+
+candies 
+```
+
+```
+[1] "red"  "red"  "blue" "blue" "blue"
+```
+
+]
+
+
+???
+This is pretty easy! it is just 2/5 or 0.4 or  40% and this should be true as we pick candies. So lets test this out with some simulations! This definition is not technically correct but it is useful for our purposes. 
+
+
+---
+
+---
+layout: false
+
+.pull-left[
+### Sampling Once
+
+```r
+sample(candies, 1) ## pick out one candy
+```
+
+```
+[1] "red"
+```
+
+```r
+sample(candies, 1)
+```
+
+```
+[1] "blue"
+```
+
+```r
+sample(candies,1)
+```
+
+```
+[1] "red"
+```
+
+```r
+sample(candies,1)
+```
+
+```
+[1] "blue"
+```
+
+
+
+]
+
+.pull-right[
+### Sampling 100,000 Times
+
+
+```r
+b = 100000
+
+events = replicate(b, sample(candies),1) ## pick one candy 100,000 times 
+
+tab = table(events)
+
+
+prop.table(tab )
+```
+
+```
+events
+blue  red 
+ 0.6  0.4 
+```
+
+
+
+]
+???
+
+
+
+This is pretty neat! with our simple math we can show this holds in our toy problem! 
+
+
+A more rigiourous definition of probability is that probability is a function that maps events to a real number obeying the axioms of probability
+
+
+
+
+
+
+
+
+
+---
+
+
+
+---
+## Monty Hall
+
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/QGxyIQzLeUc" width="533" height="300" frameborder="0" allowfullscreen="" data-external="1"></iframe>
+</div>
+</div>
+
+
+
+
+---
+
+
+---
+## So Who Was Right
+
+.pull-left[
+
+```r
+B = 10000 ### Just the number of times we are going to run this 
+monty_hall = function(strategy){
+  doors = as.character(1:3) ## make the doors
+  prize = sample(c("car", "goat", "goat")) ## set the choices
+  prize_door = doors[prize == "car"] ## set the prize
+  my_pick  = sample(doors, 1)  ## make the pick 
+  show = sample(doors[!doors %in% c(my_pick, prize_door)],1) ## show a door with a goat behind it 
+  stick = my_pick 
+  stick == prize_door 
+  switch = doors[!doors%in%c(my_pick, show)]
+  choice = ifelse(strategy == "stick", stick, switch)
+  choice == prize_door
+}
+```
+
+]
+
+--
+
+.pull-right[
+
+
+```r
+stick = replicate(B, monty_hall("stick"))  ### run the simulation if we stick with our choice 
+mean(stick)
+```
+
+```
+[1] 0.3286
+```
+
+```r
+switch = replicate(B, monty_hall("switch")) ## run the simulation if we change our pick
+
+mean(switch)
+```
+
+```
+[1] 0.6673
+```
+]
+???
+In the 1970s, there was a game show called “Let’s Make a Deal” and Monty Hall was the host. At some point in the game, contestants were asked to pick one of three doors. Behind one door there was a prize. The other doors had a goat behind them to show the contestant they had lost. After the contestant picked a door, before revealing whether the chosen door contained a prize, Monty Hall would open one of the two remaining doors and show the contestant there was no prize behind that door. Then he would ask “Do you want to switch doors?” What would you do?
+
+We can use probability to show that if you stick with the original door choice, your chances of winning a prize remain 1 in 3. However, if you switch to the other door, your chances of winning double to 2 in 3!
+ 
+Monty hall is a good demonstration that we don't always have a good intuition on the probability of things because we are using conditional probabilities and Bayes rule to plug in where our numbers go. So there is just a bit more math that goes into it
+
+
+
+---
+
+
+
 
 
 
@@ -835,7 +900,7 @@ Would you charecterize asking what your friends think about the president a good
 ---
 ## Normal Distributions 
 
-&lt;img src="figs/unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="figs/unnamed-chunk-12-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 
 ???
@@ -850,7 +915,7 @@ The coolest part about when you do sampling well is that we can approximate the 
 ## Central Limit Theorum
 
 
-&lt;img src="figs/unnamed-chunk-10-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="figs/unnamed-chunk-13-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 
 ???
@@ -860,7 +925,7 @@ Importantly, central limit theorem, itself a foundation of a lot of classical st
 
 This puppy is sort of what holds this whole thing together
 
-What is cool about the central limit theorum is that if we keep retaking random samples of the larger population throught random sampling the sample means will not only be normally distributed but we would converge to the population mean and the random sampling error would equal the standard error of the sample means. Even this one! This is just a therometer rating where people either really like trump in 2018 or really do not like him. This likely hold true for Biden as well but I didn't want to pull and clean the latest ANES data
+What is cool about the central limit theorum is that if we keep retaking random samples of the larger population through random sampling the sample means will not only be normally distributed but we would converge to the population mean and the random sampling error would equal the standard error of the sample means. Even this one! This is just a therometer rating where people either really like trump in 2018 or really do not like him. This likely hold true for Biden as well but I didn't want to pull and clean the latest ANES data
 
 ---
 
@@ -869,7 +934,7 @@ What is cool about the central limit theorum is that if we keep retaking random 
 ## The Central Limit Theorem
 
 
-&lt;img src="figs/unnamed-chunk-11-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="figs/unnamed-chunk-14-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 
 
@@ -878,15 +943,16 @@ What is cool about the central limit theorum is that if we keep retaking random 
 
 ---
 layout: false 
+class: middle 
 
 
 .pull-left[
 
 
 ```r
-Population = rbnorm(250000, mean = 40.01578, sd = 40.24403,
-                     lowerbound = 0, 
-                     upperbound = 100,
+Population = rbnorm(250000, mean = 40.01578, sd = 40.24403, ### sets the mean at the mean value of the data 
+                     lowerbound = 0, ## Make sure the thermometer does not go below 0
+                     upperbound = 100, ## or above 100
                      round = TRUE,
                      seed = 1994)
 
@@ -903,7 +969,7 @@ Popsamples = tibble(
 ]
 
 .pull-right[
-&lt;img src="figs/unnamed-chunk-13-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="figs/unnamed-chunk-16-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 ???
 We are going to do this by just making up some data, setting the sample mean equal to 40 and a standard deviation of 40. Than we are going to run this a million times! Each sample size is only 10 observations which generally will invite trouble if you only do it once. Put since we are doing it a million times the central limit will kick in and help us out.
@@ -919,16 +985,29 @@ This is honestly still super cool to me.
 
 - Samples are very expensive
 
-- Attitudes change so often
+- Attitudes change often
 
 - Sampling Error
 
 ???
-Polls are insanely expensive to run and we never know the "truth" so this brings us to sampling error. The cost of doing this work is that we are bound to 
+Polls are insanely expensive to run and we never know the "truth" so this brings us to sampling error. The cost of doing this work is that we are bound to draw a bad sample 
 
 of trying to infer properties of the population given a sample of it. Indeed, random sampling purposely introduces random sampling error to our estimate since there will always be differences in the sample from the population that occur just by the chance sample we obtained. This may seem bad, but statisticians and social scientists will note that random sampling error is always the lesser evil to systematic error
 
 We conceptualize random sampling error as having two components. The first is the amount of variation in the population parameter. We can’t do anything about this. Real world data can be noisy as hell, like the thermometer ratings for divisive public officials in the United States. The second component of random sampling error is the sample size component. We can do something about this: increase the number of observations in the sample. 
+
+---
+
+---
+## Confidence Intervals in Practice
+
+&lt;img src="figs/unnamed-chunk-17-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+???
+We not only care about the likelihood that something happens but we also care about the uncertainty around the event. This is something our simple definition of probability does not handle well. Lets say we randomly assign an increase in medicare coverage(something that actually happened). We are interested in the likelihood that we see an update in use of insurance, how many people increase the use, but we also care about the other outcomes of the expansion and the uncertainty around those numbers 
+
+Even when we are conducting polls in the best way possible our net is not going to capture what we say it captures from time to time. Or even if we say that it is .45 due to things out of control the quantity in our sample will be slightly off
 
 ---
 
@@ -951,7 +1030,9 @@ Samps = Samps %&gt;%
   gather(samp, value, samp.1:samp.10)
 ```
 
+??? 
 
+so lets see how sample sizes effect tings again.
 ---
 
 ---
@@ -959,7 +1040,7 @@ layout:false
 
 
 
-&lt;img src="figs/unnamed-chunk-15-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="figs/unnamed-chunk-19-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 
 
@@ -975,16 +1056,36 @@ With this in mind, what is an ideal sample size in a situation like this (and li
 
 - We calculate what are known as standard errors by `\(SE = \frac{\sigma}{\sqrt{n}}\)`
 
-- This affects our confidence because we calculate it `\(CI = \bar{x}\pm z \frac{\sigma}{\sqrt{n}}\)`
+- This affects our confidence intervals because this is the forumula `\(CI = \bar{x}\pm z \frac{\sigma}{\sqrt{n}}\)`
 
 ???
 If you remember back to the first few slides we talked about confidence intervals/Margins of error. We know that a lot of the time that we can't always capture the population parameter but a lot of the time our net will one way to sure that net is tighter is to increase our sample. Our standard deviations are calculated by taking the sqrt of our sample size. our confidence interval than is just adding or subtracting a critical value typically 1.96. Notice that N appears in the denominator. This will shrink our confidence intervals! As we divide a small number by a super big number than we get a small number 
+
+standard error formula annotated 
+
+lower case sigma = sample standard deviation
+
+n = number of observation 
+
+
+CI annotation 
+
+
+x bar is the mean 
+
+z is the z score so in practice 1.96 
+
+
+lower case sigma is standard deviation 
+
+
+
 ---
 
 ---
 layout:false 
 
-&lt;img src="figs/unnamed-chunk-16-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="figs/unnamed-chunk-20-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 
 
@@ -999,12 +1100,12 @@ layout:false
 
 - Check the target population and how it is sampled
 
-- Asess the sample size and margin of error 
+- Assess the sample size and margin of error 
 
 - Compare across survey houses and look at poll aggregators 
 
 ???
-These are about as rough of heuristics as you can come by. As we have seen sample size doesnt neccessarily get you anywhere if the poll is junk. A junk poll with huge sample sizes will naturally have tigher margins of error, but not actually get you a good indicator of public opinion
+These are about as rough of heuristics as you can come by. As we have seen sample size doesnt neccessarily get you anywhere if the poll is junk. A junk poll with huge sample sizes will naturally have tighter margins of error, but not actually get you a good indicator of public opinion
 
 ---
 
@@ -1031,6 +1132,9 @@ We generally think of it as politically relevant opinions held by citizens that 
 
 - .bold[Opinion]: Expression or judgement on a particular issue 
 
+???
+
+So what is public opinion and how do we get it? 
 
 ---
 
@@ -1058,25 +1162,11 @@ This is a learned effect. You ARE NOT born with a political identity!
 
 
 ---
-## Agents of Socialization
+## Agents of Socialization and Types of Effects 
 
-Primary agents – Those agents of socialization that are closest to you. They are often the most influential in an individual’s formative years.
+.bold[Primary agents] – Those agents of socialization that are closest to you. They are often the most influential in an individual’s formative years.
 
-Secondary agents – 	Those agents of socialization that have less intimate relations with an individual. They are often most important in an individual’s later life.
-
-???
-Primary agents – think face to face interaction
-
-only ten % of young voters vote differently from their parents if their parents both had the same party id
-
-Secondary agents – groups that people are exposed to 
-
----
-
----
-## Types of Effects 
-
-
+.bold[Secondary agents] – 	Those agents of socialization that have less intimate relations with an individual. They are often most important in an individual’s later life.
 
 .bold[Primacy Effect]: the phenomenon of aging and growth in which the ideas that an individual learns at a young age (primacy) are more likely to stick. 
 
@@ -1084,23 +1174,55 @@ Secondary agents – groups that people are exposed to
 
 
 ???
+
+Political socialization is the process by which the central tenets of the political culture are transmitted from those immersed in it to those, such as children or immigrants who are not. 
+
+
+
+Primary agents – think face to face interaction
+
+
+
+Like most forms of socialization, political socialization starts when we are very young. We may first become aware of politics by watching a parent or guardian vote, or seeing a YouTube video of a politician giving a speech, or watching NFL football players kneel in protest during the national anthem
+
+family is a critical component of this only ten % of young voters vote differently from their parents if their parents both had the same party id. 
+
+School and other learning institutions are also critical factors in your early life for political socialization. Historically, churches have had a strong influence on the behavior and political views of congregants.
+
+
+Friends and peers also have a socializing effect on citizens. Communication networks are based on trust and common interests, so when we receive information from friends and neighbors, we often readily accept it because we trust them
+
+Research shows that students are less knowledgeable and less motivated to participate in politics when civics is taught as only one class. The most effective approach to civic education is when schools integrate civic knowledge and skills throughout the curriculum
+
+Secondary agents – groups that people are exposed to later in life your like peers at
+
+
+attittudes and poltical identity are also tightly connected with same, gender identity, ethnicity and race, and socio-economic status
+
+
 Primacy vs. Cumulative Effects
 
 Primacy Effect – the phenomenon of aging and growth in which the ideas that an individual learns at a young age (primacy) are more likely to stick
 
 
 Cumulative Effect – the phenomenon of political socialization in which an individual’s political orientation will become more firm or solidified with age
----
 
 
 ---
-## Frames of Reference 
+
+
+
+
+---
+## How Do We Think About Politics
 
 .bold[Frames of Reference] – the lens through which an individual or group thinks about things politically 
 
-  - Party Identification(PID)
-  - Political Ideology
-  - Group Orientation
+- Party Identification(PID)
+
+- Political Ideology
+
+- Group Orientation
 
 ---
 
@@ -1108,8 +1230,17 @@ Cumulative Effect – the phenomenon of political socialization in which an indi
 ## Frames of Reference
 ### Party Identification 
 
+
+.pull-left[
+
+![](https://media.giphy.com/media/26vUCOMzBiBZ0qW1a/giphy.gif)
+
+]
+
+.pull-right[
 - Loyalty or affection of an individual has for a specific political party
-- This can lead to selective perception on a specific issue or topic
+
+- This can lead to selective perception on a specific issue or topic]
 
 
 ???
@@ -1514,6 +1645,15 @@ html {
 
 #bgvfdywigq .gt_super {
   font-size: 65%;
+}
+
+#bgvfdywigq .gt_two_val_uncert {
+  display: inline-block;
+  line-height: 1em;
+  text-align: right;
+  font-size: 60%;
+  vertical-align: -0.25em;
+  margin-left: 0.1em;
 }
 
 #bgvfdywigq .gt_footnote_marks {
@@ -1991,6 +2131,15 @@ html {
   font-size: 65%;
 }
 
+#ubwjjetepn .gt_two_val_uncert {
+  display: inline-block;
+  line-height: 1em;
+  text-align: right;
+  font-size: 60%;
+  vertical-align: -0.25em;
+  margin-left: 0.1em;
+}
+
 #ubwjjetepn .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
@@ -2259,6 +2408,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
