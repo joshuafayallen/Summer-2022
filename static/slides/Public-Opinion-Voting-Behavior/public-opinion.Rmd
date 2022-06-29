@@ -738,7 +738,7 @@ With this in mind, what is an ideal sample size in a situation like this (and li
 
 - We calculate what are known as standard errors by $$SE = \frac{\sigma}{\sqrt{n}}$$
 
-- This affects our confidence intervals because this is the formula for confidence intervals $$CI = \bar{x}\pm z \frac{\sigma}{\sqrt{n}}$$
+- This affects our confidence intervals because this is the formula $$CI = \bar{x}\pm z \frac{\sigma}{\sqrt{n}}$$
 
 ???
 If you remember back to the first few slides we talked about confidence intervals/Margins of error. We know that a lot of the time that we can't always capture the population parameter but a lot of the time our net will one way to sure that net is tighter is to increase our sample. Our standard deviations are calculated by taking the sqrt of our sample size. our confidence interval than is just adding or subtracting a critical value typically 1.96. Notice that N appears in the denominator. This will shrink our confidence intervals! As we divide a small number by a super big number than we get a small number 
