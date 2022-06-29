@@ -273,7 +273,7 @@ How we do the stats really really matters. There is sort of malicious form of th
 
 ## Statsy Stuff
 
-- .bold[Population]: all the cases of interest in existence, all of something, group, large or small, that we are interested in
+- .bold[Population]: all the cases of interest in existence
 
 - .bold[Sample]: a selected subset of the population from which data is collected for study
 
