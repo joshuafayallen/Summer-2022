@@ -619,14 +619,11 @@ atl_race <- get_decennial(
             aes.palette = "-")
 
 
-
-
-
 ```
 
 
 ???
-On my machine it took like less than a second to collect and plot all this data. It took longer to get a census api and then figure out I had spelt Gwinett wrong than to get the actaul data. Using the last census or the last 2 census's we can very easily start to gather a ton of data for no cost at all. You can just as quickly get data on income, education, gender, and other demographic characteristics that are going to do a good job of figuring out partisanship and then just move the lines to advantage or disadvantage people. For the 538 thing all I would have to do is just pull some partisanship data. Then just start overlaying existing congressional districts. The point is that the gerrymandering we see today is so much easier and data driven than it ever was previously 
+On my machine it took like less than a second to collect and plot all this data. It took longer to get a census api and then figure out I had spelt Gwinett wrong than to get the actaul data. Using the last census or the last 2 census's we can very easily start to gather a ton of data for no cost at all. You can just as quickly get data on income, education, gender, and other demographic characteristics that are going to do a good job of figuring out partisanship and then just move the lines to advantage or disadvantage people. For the 538 thing all I would have to do is just pull some partisanship data. Then just start overlaying existing congressional districts. The point is that the gerrymandering we see today is so much easier and data driven than it ever was previously. All in all it took 32 lines of code to make these maps and part of that was just for readibility  
 
 ---
 
