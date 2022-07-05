@@ -447,7 +447,7 @@ Frames can also play up or down the frequency of an event changing our sort of i
 ---
 
 ---
-class: middle
+class: middle, center
 ## Real World Example
 
 
