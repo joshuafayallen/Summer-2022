@@ -21,16 +21,6 @@ output:
 
 
 
----
-## Looming Deadlines
-
-- Eh future you problem
-
-- Chapters
----
-
-
-
 
 ---
 class:center, middle 
@@ -151,11 +141,15 @@ powerful entity to monitor the airwaves—a seven-member (now five-member) FCC t
 layout: false
 
 - Watchdog Journalism(1973-1991)
+ 
   - The media adopts a much more aggressive and critical posture towards government 
+ 
   - Ushered in by the release of The Pentagon Papers (1971) and Watergate Scandal 
 
 - The Era of Infotainment(1992-Present)
+
 - .bold[Soft News]: a type of media that provides a combination of information and entertainment.
+
 - Ex. Trevor Noah, Samantha Bee, John Oliver
 
 ???
@@ -221,6 +215,7 @@ knitr::include_graphics("age-breakdown.jpg")
   - Content can also be regulated sometimes via prior restraint 
 - .bold[Prior Restraint]: censorship imposed, usually by a government, on publication of documents or specific information. 
   - Unconstitutional in the United States except in extremely limited circumstances such as national security. 
+- .bold[]
 
 
 ???
@@ -239,6 +234,11 @@ Some exceptions are stuff like troop movements, identities of like spies, etc th
 
 ---
 
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jK2bMrH4ezA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
 
 
 ---
@@ -273,6 +273,9 @@ The obsession with surveillance and violations of the right to the confidentiali
 
 ???
 The FCC’s goal is to regulate communications by radio, television, wire, satellite, and cable. It was created by the Communications Act of 1934.  It ensures that we all have access to affordable and reliable broadband services, that the market for such is competitive, it promotes growth in industry and technology, promotes a diversity of media, and provides media and communications during emergencies and national crisis. 
+
+The FCC requires radio stations to apply for licenses, which are granted only if stations follow rules about limiting advertising, providing a public forum for discussion, and serving local and minority communities. 
+
 
 ---
 
@@ -314,6 +317,9 @@ The FCC’s goal is to regulate communications by radio, television, wire, satel
 ]
 
 ???
+In order to maintain an FCC license you had to follow these rules 
+
+
 Introduced by the FCC in 1949 and suspended in 1987
 
 Where as the equal time rule is concerned with equal access, the fairness doctrine was concerned with making sure broadcasters provided a free and open discussion of public issues. 
@@ -355,14 +361,14 @@ so this website and amazon are to be treated equally by the internet service pro
 .bold[Agenda Setting]:  The power of the media to bring public attention to particular issues and problems
 
 .bold[Framing]: The power of the media to influence how events and issues are interpreted
-  - the  words,  images,  phrases,  and  presentation  styles  that  a speaker  (e.g.,  a  politician,  a  media  outlet)  uses  when  relaying  information  about an issue or event to an audience\
+  - the  words,  images,  phrases,  and  presentation  styles  that  a speaker  (e.g.,  a  politician,  a  media  outlet)  uses  when  relaying  information  about an issue or event to an audience.
   
 .bold[Priming]: process of preparing the public to take a particular view of an event or political actor.
 
 
 
 ???
-Agenda setting is imporant because the media can start to affect what we think of as important throught just the very act of covering things. There are sort of some issues that we can think of as sort of inherently news worthy. While other stuff maybe escape our attention because the public just isn't paying attention 
+Agenda setting is important because the media can start to affect what we think of as important throught just the very act of covering things. There are sort of some issues that we can think of as sort of inherently news worthy. While other stuff maybe escape our attention because the public just isn't paying attention 
 
 
 Framing you can kind of think of it as the how it is being covered
@@ -374,7 +380,7 @@ Framing you can kind of think of it as the how it is being covered
 
 $$
 \begin{align}
-\overbrace{A}^{\text{Attitude}} = \Sigma\overbrace{V_{i}}^\text{Dimensions used to evaluate something on} \underbrace{W_{i}}_{\text{Weight you give to individucal dimensions }}
+\overbrace{A}^{\text{Attitude}} = \Sigma\overbrace{V_{i}}^\text{Dimensions used to evaluate something on} \underbrace{W_{i}}_{\text{Weight you give to individual dimensions }}
 \end{align}
 $$
 ???

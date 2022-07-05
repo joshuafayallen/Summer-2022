@@ -20,30 +20,6 @@ output:
 ```
 
 
----
-## Looming Deadlines 
-
-- Chapters
-
-- .bold[Exam 2]
-
-???
-So as the plan stands currently we will not have class on March 11th. Depending on how we much we get through today We will do media either thursday or next tuesday. Than depending on that we will do exam 2 review either in person tuesday or I will post a recording of me doing the review. Either way we won't have class March 11th. I am sure you guys have plans to take a much needed break plus my dad is coming into town so I also have plans to start off break.
-
-To do some cleanup from last class. I mixed up sociotropic voting and pocketbook voting. I have had post comps brain and I am starting to come down from it
-
-Sociotropic voting is assesing the overall economic performance of the nations
-
-
-Pocketbook voting: is how well you are doing fincancially 
-
-We  tend to be sociotropic voters because we can start to justify why our finances are doing bad. Our boss sucks, we overspent our budget a bit. Things of that nature. 
-
-
-
-
-
----
 
 
 
@@ -77,9 +53,10 @@ Back in the day think like pre-Nixon these things existed. But more in the sense
 
 The type of contest that each state has depends on state laws and party rules
   - Some states even have both types of contests
+  - This starts to get confusing for lots of people
 
 
-.footnote[[1]:  [This](https://www.youtube.com/watch?v=_S2G8jhhUHg) is a good video for how wild this process can be]
+
 ???
 
 
@@ -94,6 +71,18 @@ superdelegates are the democrats way of doing it: they are party elites that can
 delegates in GOP conventions are usually unbound after the first round of voting. Meaning they can start voting for whoever they want 
 ---
 
+
+---
+layout: false 
+class: center, middle 
+
+```{r}
+vembedr::embed_url("https://www.youtube.com/watch?v=_S2G8jhhUHg")
+```
+
+
+
+---
 
 ---
 ## Types of Primaries 
@@ -188,11 +177,15 @@ gt::gt(primary_ca) %>%
 ---
 ## Effects of the Current System 
 
-1. More Candidates Run
-2. Frontloading 
-3. Campaings are longer
-4. Campaigns are more expensive
-5. Power fo the Media(Horserace coverage)
+- More Candidates Run
+
+-  Frontloading 
+
+-  Campaings are longer
+
+-  Campaigns are more expensive
+
+-  Power fo the Media(Horserace coverage)
 
 ???
 Way more people run- remember before, candidates had to work their way up the party structure, be beholden to party bosses, now they can have less political experience- also, many candidates who may not be the most popular in their party, but are very popular with the public will now run- that opens the field to a lot more people.
@@ -262,8 +255,10 @@ knitr::include_url("https://abcnews.go.com/Politics/2020-Electoral-Interactive-M
 
 -   Details about Electors
   - Number of Electors per state
+  
   - Qualification to be an Elector
-  - The ACTUAL Elctions
+  
+  - The ACTUAL Elections
   
 - If no candidates wins a majority or there is a tie the vote goes to the House of Representatives
   
@@ -292,10 +287,13 @@ This does not mean that every representative gets to vote rather each state only
 ---
 ## Problems with the Electoral College 
 
-1. Popular vote winner may lose the election
-2. Contingency Problem 
-3. "Constant Two"
-4. Faithless Elector 
+-  Popular vote winner may lose the election
+
+-  Contingency Problem 
+
+-  "Constant Two"
+
+-  Faithless Elector 
 
 
 ```{r}
@@ -325,11 +323,15 @@ Finally, both candidate’s campaigns went to the Supreme Court, which stopped t
 
 - Popular Vote Winner May Lose in the Electoral College
   - 1876
+  
   - 1888
+  
   - 2000
+  
   - 2016
 
 - Why does it happen?
+  
   - Winner-take-all System
 
 ???
@@ -353,9 +355,13 @@ This is also a problem when the majority of Americans vote for someone else. Whi
 ## Contingency Plan Problem 
 
 - It isn't great
+  
   - Each state only gets one vote
+  
   - Only the House of Representatives gets to votes
-  - Each delagate from each state must agreee on the vote
+  
+  - Each delegate from each state must agree on the vote
+  
   - If there is a tie the VPOTUS is the tie breaker
   
 ???
@@ -380,11 +386,11 @@ So essentially a Constitutional Crisis in 2000- need a new Plan!
 ---
 ## "Constant Two"
 
-What is it
+What is it?
 
 - $\text{Electoral College Votes} = \text{House Reps} + \text{Senators}$
 
-- Citizens from small states have relatively more representation in the electoral college than their couterparts from large states
+- Citizens from small states have relatively more representation in the electoral college than their counterparts from large states
 
 
 ???
@@ -431,9 +437,11 @@ okalhoma = 3957000
 ## Faithless Electors 
 
 - What are they?
+ 
   - Few states have laws requiring electors to vote the way the population voted
 
 - Why is it a problem?
+  
   - Especially during a controversial election, like 2000, an elector may change his or her vote, altering the election
 
 
@@ -467,6 +475,9 @@ Small states have a big incentive to keep it b/c it gives them more political po
 
 Parties want to keep it b/c winner take all system keeps 3rd parties out (explain)
 
+
+lets group up and make a political party. Come up with some policy preferences and then we will reconvene
+
 ---
 
 
@@ -499,17 +510,6 @@ class: center, middle, inverse
 ---
 
 
----
-layout:false
-
-```{r}
-vembedr::embed_url("https://youtu.be/rHFOwlMCdto")
-```
-
-
-
-
----
 
 ---
 ## Gerrymandering 
@@ -548,7 +548,7 @@ When mapped, one of the contorted districts in the Boston area was said to resem
 
 .bold[Incumbent]: When the state legislature draws district lines to keep party incumbent in office 
 
-.bold[Racial]: When state legislature draws district liines to advantage or disadvantage specific racial groups
+.bold[Racial]: When state legislature draws district lines to advantage or disadvantage specific racial groups
 
 
 ---
@@ -636,9 +636,12 @@ If there has been redistricting since the last election, usually to favor which 
 ---
 ## Theories of Midterm Voting Behavior 
 Why do citizens vote against the president’s party in midterm election?
-- Negative vote
-- Checks and balances
-- Strategic politicians
+
+  - Negative vote
+
+  - Checks and balances
+
+  - Strategic politicians
 
 
 ???
@@ -671,8 +674,11 @@ This is the most popular theory b/c we know that politicians are elites, parties
 - Campaign strategies that work in one place might not work in others. Members of Congress must develop a “home style” that meets the expectation of district voters
 
 - Metropolitan v. Rural Districts
+
 - Liberal areas v. Conservative Districts
+
 - Richer v. Poorer Districts
+
 - Homogenous v. Heterogeneous Districts
 
 
