@@ -235,6 +235,7 @@ Some exceptions are stuff like troop movements, identities of like spies, etc th
 ---
 
 ---
+class: center, middle
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jK2bMrH4ezA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
