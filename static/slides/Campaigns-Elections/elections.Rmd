@@ -167,7 +167,7 @@ primary_ca = tibble::tribble(~' ',~Caucus, ~Primary,
                              "States That Do it", "Only members who physically attend the local party meeting can participate
 Alaska, Colorado, Hawaii, Kansas, Maine, Minnesota, Nevada, North Dakota, Wyoming, and Iowa", "Pretty Much Everyone Else")
 
-gt::gt(primary_ca) %>% 
+gt::gt(primary_ca) |> 
   gtExtras::gt_theme_538()
 
 ```
@@ -387,8 +387,9 @@ So essentially a Constitutional Crisis in 2000- need a new Plan!
 ## "Constant Two"
 
 What is it?
+--
 
-- $\text{Electoral College Votes} = \text{House Reps} + \text{Senators}$
+$$\text{Electoral College Votes} = \text{House Reps} + \text{Senators}$$
 
 - Citizens from small states have relatively more representation in the electoral college than their counterparts from large states
 
@@ -575,11 +576,62 @@ knitr::include_url("https://projects.fivethirtyeight.com/redistricting-maps/geor
 
 
 ???
-Electoral maps can and should be redrawn to reflect the underlying population trends however the problem. However the problem is that these lines are drawn more strategically. The ease of this is pretty remarkable. 
+Electoral maps can and should be redrawn to reflect the underlying population trends however the problem. However the problem is that these lines are drawn more strategically. The ease of this is pretty remarkable. So lets grab some data using the census API and plot. Here are just some of the graphs that I was going to show you in the ideology chapter. 
+---
 
-All you really need in census tract level data. I didnt actually want to go through the trouble of getting that data. But like it isn't hard to find and then code up. The census has an API that  you can use to download the data it produces and then if you would maybe need precint level data and then just wrangle the data a bit. 
 
 ---
+
+```{r cache= TRUE, warning= FALSE, message=FALSE, results= 'hide'}
+
+pacman::p_load("tmap", "tidycensus", "sf", "scico")
+
+# https://api.census.gov/data/2020/acs/acs5/variables.html
+
+atl_race <- get_decennial(
+  geography = "tract",
+  state = "GA",
+  county = c("Cobb", "Fulton", "Dekalb", "Clayton", "Gwinnett"),
+  variables = c(
+    White = "P2_005N",
+    Black = "P2_006N",
+    Asian = "P2_008N",
+    Hispanic = "P2_002N"
+  ),
+  summary_var = "P2_001N",
+  year = 2020,
+  geometry = TRUE
+) %>%
+  mutate(percent = 100 * (value / summary_value)) |> 
+  filter(!is.na(percent))
+
+ tm_shape(atl_race) + 
+  tm_facets(by = "variable", scale.factor = 4) + 
+  tm_fill(col = "percent",
+          style = "quantile",
+          n = 6,
+          palette = "-magma",
+          title = "Percent (2020 US Census)",
+          legend.reverse = TRUE) + 
+  tm_layout(bg.color = "white", 
+            legend.position = c(0.1, 0.15),
+            panel.label.bg.color = "white",
+            aes.palette = "-")
+
+
+
+
+
+```
+
+
+???
+On my machine it took like less than a second to collect and plot all this data. It took longer to get a census api and then figure out I had spelt Gwinett wrong than to get the actaul data. Using the last census or the last 2 census's we can very easily start to gather a ton of data for no cost at all. You can just as quickly get data on income, education, gender, and other demographic characteristics that are going to do a good job of figuring out partisanship and then just move the lines to advantage or disadvantage people. For the 538 thing all I would have to do is just pull some partisanship data. Then just start overlaying existing congressional districts. The point is that the gerrymandering we see today is so much easier and data driven than it ever was previously 
+
+---
+
+
+
 
 
 ---
