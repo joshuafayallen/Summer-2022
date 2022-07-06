@@ -33,14 +33,14 @@ class: center, middle, inverse
 
 
 ---
-## Primary vs. General Election
+## Primary vs General Election
 
 .hiro-red[Primary Elections]: An election conducted within a party to select its nominee for the general election
 
 .hiro-dark-blue[General Election]: An election between two parties to select a candidate for office
 
 ???
-Back in the day think like pre-Nixon these things existed. But more in the sense that they were there to placate the unwashed masses. Back in the day party elites would choose the presidential candidates they thought. You had to work your way up in the party be drinking buddies with the right dudes be a dutiful member of the party you may be selected to be your parties candidate for president
+Back in the day think like pre-Nixon these things existed. But more in the sense that they were there to placate the unwashed masses. Back in the day party elites would choose the presidential candidates they thought had the best chance of winning and were in the good graces of the party. You had to work your way up in the party be drinking buddies with the right dudes be a dutiful member of the party you may be selected to be your parties candidate for president
 
 ---
 
@@ -85,12 +85,12 @@ vembedr::embed_url("https://www.youtube.com/watch?v=_S2G8jhhUHg")
 ---
 
 ---
-## Types of Primaries 
+## Types of Selection Processes
 
 
 .vero-red[Primary Election]: A type of election where voters cast secret ballots for the candidate they want to represent their party in the General Election
 
-.vero-blue[Caucus Convention]: A system of local gatherings where voters decide which candidate to support and select delegates for nominating convention
+.vero-blue[Caucus Convention]: A system of local gatherings where voters decide which candidate to support and select delegates for the nominating convention
 
 ???
 Caucus- A meeting of party leaders
@@ -148,12 +148,22 @@ knitr::include_graphics("primaries.png")
 ## Primary Elections
 
 Generally turnout is low in primaries and this doubles for caucuses. Why?
+ 
   - Rules vary on who can participates
-  - Uninformed voters lack the cues they rely on 
+  
+  - Costs
+  
   - Primary rules are often complex and not well understood
   
 What effects does this have on primary elections?
   - Candidates tend to be more extreme
+  
+  
+???
+So we talked about costs of voting last week. The costs to some extent are not fundamentally different. But the perceived benefit and to some extent is also not there.
+
+the electorate consider the stakes lower and the costs of voting greater, feel less social pressure to turn out and hold exclusionary beliefs about who should participate, and are more willing to defer to those who know and care more about the contests.
+
 
 ---
 
@@ -185,7 +195,7 @@ gt::gt(primary_ca) |>
 
 -  Campaigns are more expensive
 
--  Power fo the Media(Horserace coverage)
+-  Bandwagon Effect
 
 ???
 Way more people run- remember before, candidates had to work their way up the party structure, be beholden to party bosses, now they can have less political experience- also, many candidates who may not be the most popular in their party, but are very popular with the public will now run- that opens the field to a lot more people.
@@ -199,22 +209,12 @@ The early primaries are the most important- why? B/c candidates that win in the 
 
 Media coverage- media is crazy with primaries now- already telling us who is ahead, who is more popular, polling voters, etc. (horserace) – Contributes to how people vote in primaries….people want to vote for “winner”
 
+Bandwagon effect – When people support a candidate because “everyone else does”
 
+Candidates who win early primaries are inclined to win future primaries because of the bandwagon effect; people view this candidate as the most successful
 ---
 
----
-## Who Votes When?
 
-2020 Primary/Caucus Schedule 
-
-- .bold[Frontloading]: Process whereby states schedule their primaries earlier in the year
-
-- .bold[Bandwagon effect]: When people support a candidate because “everyone else does”
-
-
-- Candidates who win early primaries are inclined to win future primaries because of the bandwagon effect; people view this candidate as the most successful
-
----
 
 ---
 class: center, middle, inverse
@@ -226,13 +226,27 @@ class: center, middle, inverse
 ---
 ## General Election
 
-- Officially Starts following the conclusion of the national conferences of both political parties 
-  - National conferences are meetings held by both major parties to create the party platform and OFFICIALLY select the presidential candidates and their running mates
+- Officially starts following the conclusion of the national conferences of both political parties 
+  - .bold[National conferences]: are meetings held by both major parties to create the party platform and OFFICIALLY select the presidential candidates and their running mates
 
 - Most voters, however, don’t really start paying attention to the election until Labor Day
 
+-The nominee from each party faces one another at the general election (Democrat vs.    Republican)
+
+- Leading up to the General Election, candidates from either party will face each other in 
+- Presidential Debates
+
+- In the United States, election are based on the .bold[first past] the post or .bold[plurality electoral rules]
+
+- Lastly, the Electoral College casts its vote, usually based upon the popular vote, for President
+
+???
+First past the post is just winner take all. The phrase is a metaphor from British horse racing, where there is a post at the finish line (though there is no specific percentage "finish line" required to win in this voting system, only being furthest ahead in the race)
+
+the exception of this is the ranked choice systems in Maine Unlike all other states except Nebraska, Maine awards two electoral votes based on the statewide vote, and one vote for each congressional district. 
 
 ---
+
 
 
 ---
@@ -243,6 +257,30 @@ knitr::include_url("https://abcnews.go.com/Politics/2020-Electoral-Interactive-M
 ```
 
 
+???
+
+idaho = 1.87
+
+utah 3.2
+
+new mexic = 2.111
+
+colorado = 5.7
+
+
+wyoming  = 500,00
+
+montana = 1.00
+
+north dakota = 700,00
+
+South Dakota = 888,894
+
+nebraska = 1.934
+
+kansas = 2.913
+
+okalhoma = 3957000
 
 
 ---
@@ -800,6 +838,17 @@ These are less about persuading voters to support a candidate, rather than tryin
 
 
 ---
+
+---
+## Campaign Financing 
+
+<center>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ijxvjL7KJlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</center> 
+---
+
 
 ---
 
