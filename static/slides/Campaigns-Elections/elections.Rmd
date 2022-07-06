@@ -500,7 +500,7 @@ Problem because if an elector or electors alter the course of the election, ther
 
 
 ---
-## Why is this still a thing
+## Why is this still a thing?
 
 - Constitution
 
@@ -553,6 +553,28 @@ class: center, middle, inverse
 
 ---
 
+---
+## Congressional Districts
+
+- 435 Congressional Districts 
+
+- Each State has 1
+
+- Districts are based on population and district lines that are drawn by states
+
+- .vero-red[BIG] incumbency advantage 
+
+???
+Congressional districts are based on population- usually over 640,000-
+Lines are drawn by states- usually to favor majority party, but always to favor incumbents (which is why a lot of seats are not competitive after a census) (*sometimes party in power will try to redraw lines so opposing party will have to run against each other over 1 district (ex. 2 democrat incumbents, etc)- will help increase majority in House).
+
+Since house of reps elections are every two years they basically don't stop running 
+
+
+lets look at some maps of re-apportionment and weird lines. 
+
+
+---
 
 
 ---
@@ -586,7 +608,7 @@ When mapped, one of the contorted districts in the Boston area was said to resem
 ---
 
 ---
-## Types 
+## Types of Gerrymandering
 
 .bold[Partisan]: When state legislature draws district lines to favor members of a political party
 
@@ -654,7 +676,7 @@ atl_race <- get_decennial(
           style = "quantile",
           n = 6,
           palette = "-magma",
-          title = "Percent (2020 US Census)",
+          title = "Race and Ethnicity in Atlanta\n from the 2020 US Census",
           legend.reverse = TRUE) + 
   tm_layout(bg.color = "white", 
             legend.position = c(0.1, 0.15),
@@ -711,6 +733,15 @@ The number of seats that the president’s party loses varies significantly from
 ???
 Midterm elections are often considered a referendum on presidential performance on different issues- people can’t vote for or against the president, so they may vote for or against his party (b/c they don’t know very much about their representatives, so tend to vote for or against presidents’ party because they know about him)
 
+
+Sociotropic: How well you think the nation is doing economically
+
+Pocketbook: How well are you doing personally?
+
+
+People tend to blame themselves for their own financial state, so your own situation does not effect your vote that much, BUT people ten to blame the government for how well the nation as a whole is doing- so that significantly impacts vote choice (Republicans and Pres. Bush punished in 2008)
+
+
 Higher presidential popularity therefore leads to less seat loss- 
 
 Also- remember people vote sociotropically  (ask class: what does that mean?)- so when the economy is bad, people vote against president’s party.
@@ -719,7 +750,11 @@ The thing that can counteract the effect of bad economy is exception internation
 
 So in predicting where the presidents’ party will lose seats- a big part is district competition- over 80% of house seats are not competitive- many do not even have challengers, but if they are competitive (large numbers of republicans and democrats) presidents’ party may pick up seats during presidential elections, and these are the first to go to the opposite party.
 
-If there has been redistricting since the last election, usually to favor which ever party has been in power in the state legislatures- that will impact which seats are lost- ex. Redistricting in IL in 2000- political brokering led to a Democrat losing a district and the other districts becoming safer = less likelihood of loss for Rep. in those districts. 
+If there has been redistricting since the last election, usually to favor which ever party has been in power in the state legislatures- that will impact which seats are lost- ex. 
+
+
+
+Redistricting in IL in 2000- political brokering led to a Democrat losing a district and the other districts becoming safer = less likelihood of loss for Rep. in those districts. 
 
 
 ---
