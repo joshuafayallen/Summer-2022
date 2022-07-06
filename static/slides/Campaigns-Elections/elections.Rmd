@@ -816,6 +816,10 @@ This is the most popular theory b/c we know that politicians are elites, parties
 .footnote[[2]: Link to summary of study [here](https://www.vox.com/policy-and-politics/2017/9/28/16367580/campaigning-doesnt-work-general-election-study-kalla-broockman)]
 ???
 We don't really spend a ton of times on campaigns. From what I gather the American Politics literature has generally found that campaigns don't really matter. By that I mean they don't find a lot evidence that people are all that persuaded or change their minds due to campaigns
+
+
+This doesn’t mean that political campaigns never matter. Kalla and Broockman find that these activities can persuade voters in primary elections and during ballot-initiative campaigns. Campaigns can still effectively turn out voters whose minds are already made up about a candidate, and voters can and do change their opinions when prompted by politicians they already support (something a previous study of Broockman’s confirmed)
+
 ---
 
 
@@ -894,7 +898,7 @@ These are less about persuading voters to support a candidate, rather than tryin
 
 
 ---
-
+class: center, middle 
 ```{r}
 vembedr::embed_url("https://www.youtube.com/watch?v=Y_zTN4BXvYI")
 ```
