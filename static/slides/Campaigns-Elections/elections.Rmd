@@ -298,11 +298,11 @@ This does not mean that every representative gets to vote rather each state only
 
 -  Faithless Elector 
 
-
+<center>
 ```{r}
 vembedr::embed_url("https://www.youtube.com/watch?v=ZlwbTUs-17k")
 ```
-
+</center>
 ???
 
 In addition to the fact that the election may end in a tie, there are a number of problems with the electoral college. While each of these is a significant problem, they will all be discussed individually.
@@ -643,6 +643,17 @@ knitr::include_url("https://projects.fivethirtyeight.com/redistricting-maps/geor
 ???
 Electoral maps can and should be redrawn to reflect the underlying population trends however the problem. However the problem is that these lines are drawn more strategically. The ease of this is pretty remarkable. So lets grab some data using the census API and plot. Here are just some of the graphs that I was going to show you in the ideology chapter. 
 ---
+
+---
+
+```{r}
+knitr::include_graphics("gerrymandering.png")
+```
+
+
+---
+
+
 
 
 ---
