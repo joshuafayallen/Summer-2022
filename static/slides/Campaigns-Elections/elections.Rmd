@@ -231,10 +231,9 @@ class: center, middle, inverse
 
 - Most voters, however, don’t really start paying attention to the election until Labor Day
 
--The nominee from each party faces one another at the general election (Democrat vs.    Republican)
+- The nominee from each party faces one another at the general election (Democrat vs.    Republican)
 
-- Leading up to the General Election, candidates from either party will face each other in 
-- Presidential Debates
+- Leading up to the General Election, candidates from either party will face each other in the Presidential Debates
 
 - In the United States, election are based on the .bold[first past] the post or .bold[plurality electoral rules]
 
@@ -249,41 +248,7 @@ the exception of this is the ranked choice systems in Maine Unlike all other sta
 
 
 
----
-## Electoral College
 
-```{r}
-knitr::include_url("https://abcnews.go.com/Politics/2020-Electoral-Interactive-Map/")
-```
-
-
-???
-
-idaho = 1.87
-
-utah 3.2
-
-new mexic = 2.111
-
-colorado = 5.7
-
-
-wyoming  = 500,00
-
-montana = 1.00
-
-north dakota = 700,00
-
-South Dakota = 888,894
-
-nebraska = 1.934
-
-kansas = 2.913
-
-okalhoma = 3957000
-
-
----
 
 
 ---
@@ -471,6 +436,44 @@ okalhoma = 3957000
 
 1870000 + 3200000 +2111000 + 5700000 +1000000 + 700000 +888894 + 1934000 + 2913000 + 3957000 = 24,273,894
 ---
+
+---
+## Electoral College
+
+```{r}
+knitr::include_url("https://abcnews.go.com/Politics/2020-Electoral-Interactive-Map/")
+```
+
+
+???
+
+idaho = 1.87
+
+utah 3.2
+
+new mexic = 2.111
+
+colorado = 5.7
+
+
+wyoming  = 500,00
+
+montana = 1.00
+
+north dakota = 700,00
+
+South Dakota = 888,894
+
+nebraska = 1.934
+
+kansas = 2.913
+
+okalhoma = 3957000
+
+1870000 + 3200000 +2111000 + 5700000 +1000000 + 700000 +888894 + 1934000 + 2913000 + 3957000 = 24,273,894
+
+---
+
 
 ---
 ## Faithless Electors 
