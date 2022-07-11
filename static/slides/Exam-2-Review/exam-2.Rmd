@@ -284,7 +284,7 @@ The court has found that while the rights in the first 8 amendments are basic an
 
 
 ---
-class: center, middle 
+class: center, middle, inverse
 
 # Public Opinion
 ---
@@ -401,6 +401,39 @@ The problem is that the confidence interval is us saying that 95% of the time we
 
 ---
 
+---
+
+
+
+```{r}
+nice_skill_data = tibble(height = rnorm(1000000, mean = 0, sd = 1),
+                          points = rnorm(1000000, mean = 0, sd = 1))
+
+
+ggplot(nice_skill_data, aes(x = height, y = points)) +
+  geom_point(color = "grey40", size = 04, alpha = 0.8) +
+  geom_smooth(size = 2, method = "lm") +
+  labs(x = "Height", y = "Number of Points Scored", caption = "Note: Model Fitted using OLS\n Data are drawn from a standard normal distribution") +
+  theme_allen_minimal() +
+  theme(axis.ticks.x = element_blank(),
+        axis.text.x = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.y = element_blank()) 
+
+
+```
+
+
+
+
+
+
+
+???
+
+Remember this does not buy us a good sample. If the sample is drawn badly than this does nothing to affect our confidence intervals. If we draw a bad sample with over a million respondents then our confidence intervals will still look the same but just be tighter
+
+---
 
 
 
