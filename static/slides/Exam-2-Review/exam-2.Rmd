@@ -20,13 +20,10 @@ output:
 ```
 
 
----
-## Looming Deadlines
+```{r }
+options(scipen=999)
+```
 
-- Exam 02 opens .bold[03-21]
-
-
----
 
 
 ---
@@ -65,7 +62,7 @@ class: center, middle, inverse
   - What is it?
   - What are its limits?
   - What are the components of the Lemon Test?
-  - What aree the components of the Sherbert Test?
+  - What are the components of the Sherbert Test?
 
 ???
 interfere with religious practice or opinion, but laws can be made to regulate certain religious practices
@@ -78,7 +75,7 @@ the Court decided against the two employees, the law that they had been charged 
 
 The government and the church cannot be this entangled in one another, and if it happens again here is a test that will tell us whether or not it is a violation of the Establishment Clause. 
 
-When does the law violate the establishment clause? If it fails the lemon test
+When does the law violate the establishment clause? If it fails the Lemon test
 
 Have a non-religious Purpose
 
@@ -86,7 +83,12 @@ Neither Advances nor prohibits religion
 
 Not Promote excessive government entanglement 
 
-Sherbert test: used for determining whether a government action interferes with the legal right to the free exercise of religion. By this test, if a government action imposes an actual burden on the ability for a person to act upon a sincere religious belief, then the government action is unlawful unless it can withstand strict scrutiny. 
+Sherbert test: used for determining whether a government action interferes with the legal right to the free exercise of religion.
+
+By this test, if a government action imposes an actual burden on the ability for a person to act upon a sincere religious belief, then the government action is unlawful unless it can withstand strict scrutiny. 
+
+To pass strict scrutiny, the legislature must have passed the law to further a "compelling governmental interest," and must have narrowly tailored the law to achieve that interest
+
 
 ---
 
@@ -97,17 +99,26 @@ Sherbert test: used for determining whether a government action interferes with 
 - How is it limited?
   - Symbolic speech? 
   - Hate speech & Fighting Words?
-  - Iminent Lawless Action?
+  - Imminent Lawless Action(aka the Bradenburg Test)?
+    1.
+    2.
   
 ???
 
-The government cannot punish inflammatory speech (essentially they thought Brandenburg was just making a bunch of noise he wouldn’t/couldn’t follow through on) unless that speech is directed to inciting, and is likely to incite imminent lawless action (essentially an actual violent over throw of the government/military coup/junta etc.) 
+The government cannot punish inflammatory speech (essentially they thought Brandenburg was just making a bunch of noise he wouldn’t/couldn’t follow through on) unless that speech is directed to inciting, and is likely to incite imminent lawless action (essentially an actual violent over throw of the government/military coup/junta etc.)
 
 
-the limits on student speech are essentially that it can't be like really disruptive to the classroom. If you remember back to Morse v Fedrick  court said, yes this is considered school speech, but since it was promoting the use of illicit drugs it was not considered protected speech. 
+So the components of the bradenburg test are 
+
+1) The speech is “directed to inciting or producing imminent lawless action,” and
+2) The speech is “likely to incite or produce such action.”
 
 
-In practicallity these are often really squishy and hard to enforce 
+
+the limits on student speech are essentially that it can't be like really disruptive to the classroom. If you remember back to Morse v Fredrick  court said, yes this is considered school speech, but since it was promoting the use of illicit drugs it was not considered protected speech. 
+
+
+In practicality these are often really squishy and hard to enforce 
 
 ---
 
@@ -117,7 +128,7 @@ In practicallity these are often really squishy and hard to enforce
 ## Freedom of the Press
 
 - How is it limited
-  - "I know it when I see it"
+  - "I know it when I see it" (Aka the Miller Test)
   - Libel/Slander
   - defamation
 
@@ -130,8 +141,13 @@ Is the speech of lewd interest to the average person?
 
 Does the speech depict or describe sexual acts or conduct in an offensive manner?
 
- Does the speech have a serious literary, political, artistic, or scientific interest
+Does the speech have a serious literary, political, artistic, or scientific interest
 
+If you look up the actual miller test it is:
+
+1. whether the average person applying contemporary community standards would find the work, taken as a whole, appeals to the prurient interest;
+2. whether the work depicts or describes, in a patently offensive way, sexual conduct specifically defined by the applicable state law; and
+3. whether the work, taken as a whole, lacks serious literary, artistic, political or scientific value.
 
 
 Is the speech of lewd interest to the average person?
@@ -153,7 +169,7 @@ slander defamation of an individual that takes place in a transient form. It is 
 
 
 - Seizure
- - Fruit of the poison tree
+ - "Fruit of the poison tree"
  
 - Expections? 
 
@@ -173,11 +189,11 @@ Exclusionary rule – evidence that is seized during violations of the fourth am
 
 .hiro-light-blue[Grand Jury]
 
+
 .hiro-red[Double Jeopardy]
 
 
 .hiro-orange[Eminent Domain]
-
 
 
 .hiro-dark-blue[Habeas Corpus]
@@ -298,6 +314,7 @@ Priming a previous question which influences answers to future questions
 ---
 
 ---
+class: center, middle 
 
 .pull-left[
 ```{r}
@@ -316,7 +333,7 @@ Popsamples = tibble(
              dqsample(Population, 10, 
                     replace = FALSE)) 
            })) 
-sample_sizes = c(10, 25, 100, 400, 1000, 2000)
+sample_sizes = c( 10, 1000, 1000000)
 
 Samps = list() 
 set.seed(1994)
@@ -335,11 +352,11 @@ Samps %>%
   summarize(sampmean = mean(value)) %>%
   ggplot(., aes(as.factor(sampsize),sampmean)) + 
   geom_point(size=3, color="black", alpha=0.5) +
-  theme_allen() +
+  theme_allen_minimal(has_subtitle = TRUE) +
   geom_hline(yintercept = mean(Population), linetype="dashed") +
   labs(x = "Sample Size",
        y = "Sample Means",
-       title = "Ten Sample Means of Varying Sample Sizes from a Population",
+       title = "Three Sample Means of Varying Sample Sizes",
        subtitle = "The diminishing returns of increasing sample size emerge around 1,000 observations.")
 
 ```
@@ -361,13 +378,13 @@ Samps %>%
   mutate(sampsize = fct_inorder(paste0("Sample Size: ", sampsize)),
          samp = as.numeric(str_replace(samp, "samp.", ""))) %>%
   ggplot(.,aes(as.factor(samp), sampmean, ymax=ub95, ymin=lb95)) +
-  theme_allen() +
+  theme_allen_minimal() +
   facet_wrap(vars(sampsize)) +
   geom_hline(yintercept = mean(Population), linetype="dashed") +
   geom_pointrange() + coord_flip() +
   labs(y = "Sample Mean (with 95% Intervals)",
        x = "Sample Number [1:10]",
-       title = "Ten Sample Means of Varying Sizes\n (with 95% Intervals) from a Population")
+       title = "Three Sample Means of Varying Sizes\n (with 95% Intervals)")
 ```
 
 
@@ -376,19 +393,24 @@ Samps %>%
 What does this tell us about polling
 
 
-we are just showing the central limit theorem and that as we taken infinite samples our means will be normally distributed and as we increase the sample size not  only do our confidence intervals get tighter but we get closer and closer to the sample mean
+we are just showing the central limit theorem and that as we taken infinite samples our means will be normally distributed and as we increase the sample size not only do our confidence intervals get tighter but we get closer and closer to the "true mean"
+
+What this means for polling is that a large enough sample size buys us a tighter confidence interval 
+
+The problem is that the confidence interval is us saying that 95% of the time we believe that our net captures the true population parameter. The problem is that intuitively interpret it as that 95% of the time our population parameter falls between these values but that is wrong!!
+
 ---
 
 
 
 
 ---
-## Models of socialization and What we think our Reps should be
-Delegate:
+## Models of socialization and what we think our Reps should be
+Delegate: Normative conception of political representation that holds the first duty of representatives is to follow the opinions of their constituents. By this view, the people who vote for representatives are the ones who should exercise judgment over questions of public policy, and if representatives do not follow their lead, they deserve to be voted out of office in the next election.
 
-Trustee:
+Trustee: Normative conception of political representation that says an elected representative is obligated to act according to their own best judgment of what is just or what will promote the public good even if it is unpopular and leads to their being voted out of office in the next election.
 
-Funnel of Causality
+Funnel of Causality:
 ???
 Normative conception of political representation that holds the first duty of representatives is to follow the opinions of their constituents. By this view, the people who vote for representatives are the ones who should exercise judgment over questions of public policy, and if representatives do not follow their lead, they deserve to be voted out of office in the next election.
 
@@ -423,19 +445,26 @@ R = P \times B - C(B	> C)
 \end{align}
 $$
 ???
-What does this tell us about the benefit of voting 
+What does this tell us about the benefit of voting?
+
+I am looking for what each letter represents 
 
 R- The reward you get from voting
 P- The probability that your vote matters
 B- The benefit you will directly receive if your candidate wins
 C- The cost of voting
 
+This is the basic formula some people like me would prefer to wrap P x B in parenthesis to ensure precendce but it works either way
+
+basically the costs will never outweight the benefits. So the rational thing should be to never vote 
+
+remember this comes from a theory called rational choice theory. Which states that all actors have goals. All actors are rational so they maximize their utility and if you don't maximize your utility than that is irrational.
 
 ---
 
 
 ---
-## Consumptive Model of Voting
+## What Does This Tell us About Voting
 
 
 $$
@@ -446,6 +475,77 @@ $$
 
 ???
 D is equal to the amount of duty felt by an individual
+
+This  simply states that voting is rational because D will make the benefit out weigh the costs 
+
+
+
+
+
+---
+
+---
+layout: false 
+class: center, middle
+.pull-left[
+
+$$
+\begin{align}
+\text{R} = \text{B}\times \text{P} - \text{C}
+\end{align}
+$$
+
+]
+
+--
+
+
+.pull-right[
+```{r echo = TRUE}
+1/100000000 * 0.0001 -  0.0001
+```
+
+]
+
+???
+In this case I just ended up wrapping 
+
+We can kind of Think of it like this basically if C is any positive number the reward will always be negative 
+
+I just choose some arbitrary small value and did it but you can just use basic math and see that no matter what the reward will be negative. 
+---
+
+---
+layout: false 
+class: center, middle
+
+.pull-left[
+
+$$ 
+\begin{align}
+\text{R} = \text{B} * \text{P} - \text{C} + \text{D}
+\end{align}
+$$
+
+]
+
+.pull-right[
+
+
+```{r echo = TRUE}
+1/100000000 * 0.0001 -  0.0001 +  0.0001
+```
+
+
+
+]
+
+
+???
+
+Whereas if we look at the model with the D term you are just adding a small positive value which will make the reward positive 
+
+---
 
 
 ---
@@ -458,10 +558,13 @@ Sociotropic:
 
 
 ???
-Sociotropic: how well the overall econmy is doing
+Sociotropic: how well the overall economy is doing
 
 
-pocketbook voting: 
+pocketbook voting: how well you are doing 
+
+
+people tend to be sociotropic voters 
 
 ---
 
@@ -491,15 +594,15 @@ class: center, middle
 
 
 ---
-## The Doctrines
-
-## The FCC Regulates Broadcast Media through Various Rules
+## Communication Stuff
 
 - Fairness Doctrine
 
 - Equal Time Rule
 
 - Net Neutrality
+
+- Section 230 
 
 ???
 Introduced by the FCC in 1949 and suspended in 1987
@@ -529,6 +632,17 @@ The F.C.C. says that the old rules are no longer necessary because the marketpla
 The idea that Internet Service Providers must treat all web traffic equally, and therefore may not be allowed to charge different rates or discriminate against different websites in any way, is known as net neutrality.
 
 so this website and amazon are to be treated equally by the internet service providers and they can't up charge you for going to high traffic websites. Under the Trump administration that 
+
+Section 230: Section 230 says that "No provider or user of an interactive computer service shall be treated as the publisher or speaker of any information provided by another information content provider
+
+
+So if the New York times slanders somebody and then puts it on their twitter, instagram, or twitter I can't then turn around and sue Meta or Twitter for slander as well. online intermediaries that host or republish speech are protected against a range of laws that might otherwise be used to hold them legally responsible for what others say and do. 
+
+
+
+
+
+
 ---
 
 
@@ -549,68 +663,3 @@ Framing you can kind of think of it as the how it is being covered
 
 ---
 
----
-class:center, middle
-# Appendix
-
----
-
-
-
-
----
-## Agenda Seeding? 
-### Wasow(2020)
-.pull-left[
-
-<gsu-blockquote-red>
-
-News organization still set public
-agendas but social movements, like any group seeking
-greater attention or publicity, attempt to entice media to
-prioritize their concerns. Southern civil rights protests,
-for example, were often planned for mornings so
-footage could be flown to New York in time to air
-nationally on the evening news 
-
-
-</gsu-blockquote-red>
-
-]
-
---
-
-.pull-right[
-
-<gsu-blockquote-blue>
-
-Media attention, however, can be sympathetic or
-hostile. Even presented with similar facts, different
-reporters and news organizations often structure stories
-in systematically different ways
-</gsu-blockquote-blue>
-
-]
-
-???
-There are lots of arguments about what shifts the needle in public opinion. In particular whether the public is affected more by elites or social movements. The role of one versus the other is the subject of a long debate and is sort of field specific. Political scientists point out that mass opinion and positions are often dominated by elites. However, social movements can pierce these asymmetries
-
-
-What is interesting in this model is that the strategic timing of these events to not only get maximum coverage but it allows activists to generate a state response that is then covered by the media. This affects not only coverage but the frames that are used. 
-
----
-
-
----
-layout: false
-
-
-```{r  out.width= "80%"}
-knitr::include_graphics("wasow_fig_1.png")
-```
-
-???
-The verical lines denote presidential elections but the author put them on the exact date so they are slightly off kilter. 
-
-
----
