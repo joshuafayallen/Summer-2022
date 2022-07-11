@@ -442,7 +442,7 @@ Answer: Obscenity/Fighting Words; Libel and Slander; Hate Speech (that probably 
 
 
 
-- Bradenburg v. Ohio (1969) : Imminent Lawless Action
+- Brandenburg v. Ohio (1969) : Imminent Lawless Action
   - Imminent lawless Action Test
   - Government  cannot suppress/punish inflammatory speech unless it is likely to result in or directly related to “lawlessness” or violence 
 
