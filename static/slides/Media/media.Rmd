@@ -414,6 +414,21 @@ What is interesting in this model is that the strategic timing of these events t
 
 ---
 
+
+---
+layout: false
+
+
+```{r  out.width= "80%"}
+knitr::include_graphics("wasow_fig_1.png")
+```
+
+???
+The vertical lines denote presidential elections but the author put them on the exact date so they are slightly off kilter. You can see that civil rights is seen as sort of floating around 10% and then moving up and down slightly and then peaking just after the the cuban missle criss and then hitting a huge dropofff right around the the voting rights act of 1965
+
+
+---
+
 ---
 ## Attitude Formation
 
@@ -488,19 +503,6 @@ Frames can also play up or down the frequency of an event changing our sort of i
 
 
 
----
-layout: false
-
-
-```{r  out.width= "80%"}
-knitr::include_graphics("wasow_fig_1.png")
-```
-
-???
-The vertical lines denote presidential elections but the author put them on the exact date so they are slightly off kilter. 
-
-
----
 
 
 
