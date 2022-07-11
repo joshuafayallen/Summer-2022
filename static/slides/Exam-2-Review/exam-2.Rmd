@@ -406,8 +406,8 @@ The problem is that the confidence interval is us saying that 95% of the time we
 
 
 ```{r}
-nice_skill_data = tibble(height = rnorm(1000000, mean = 0, sd = 1),
-                          points = rnorm(1000000, mean = 0, sd = 1))
+nice_skill_data = tibble(height = rnorm(1000, mean = 0, sd = 1),
+                          points = rnorm(1000, mean = 0, sd = 1))
 
 
 ggplot(nice_skill_data, aes(x = height, y = points)) +
@@ -461,7 +461,7 @@ The funnel metaphor represents something called the primacy principle: the idea 
 
 
 ---
-class: middle,center
+class: middle,center,inverse 
 
 # Political Participation
 
@@ -606,7 +606,7 @@ people tend to be sociotropic voters
 ---
 
 ---
-class: center, middle 
+class: center, middle, inverse 
 
 # Media 
 
