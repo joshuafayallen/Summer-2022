@@ -664,6 +664,10 @@ Some of the offenses for which impeachment charges have been brought include: ab
 
 - .vero-brown[War Powers Resolution of 1973]
   - Federal law intended to check the president’s power to commit - the United States to an armed conflict without the consent of - Congress
+  
+- .hiro-dark-blue[Authorization for Use of Military Force 2001]
+
+  - The authorization granted the President the authority to use all "necessary and appropriate force" against those whom he determined "planned, authorized, committed or aided" the September 11 attacks, or who harbored said persons or groups
 
 
 ???
