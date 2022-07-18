@@ -254,7 +254,7 @@ The Court’s lowest standard of review, meaning it makes it the easiest to decl
 
 
 ---
-class: center, middle,reverse 
+class: center, middle, inverse  
 
 # Racial Discrimination 
 
@@ -453,7 +453,9 @@ knitr::include_graphics("images/little-rock-nine.png")
 
 ]
 .pull-right[
-- “There has been entirely too much deliberation and not enough speed in enforcing Brown...” (Justice Hugo Black - 1964)
+- “There has been entirely too much deliberation and not enough speed in enforcing Brown...”
+
+   Justice Hugo Black - 1964
  
 - The Civil Rights Act of 1964 
   - Withdrawal of federal funds from segregated schools 
