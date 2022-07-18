@@ -215,8 +215,8 @@ vembedr::embed_url("https://www.youtube.com/watch?v=A-4dIImaodQ")
 ##  How Do We Know This is a Problem?
 
 - Efficiency gap – a measure created by political scientists to show which political party is benefiting most from a gerrymandered district
-  - A gap of 7% or higher is the proposed point that unconstitutional gerrymandering may have occurred 
   - $\text{Efficiency Gap} =\frac{\text{Wasted Vote Party A} - \text{Wasted Vote Party B}}{\text{Total Votes}}$
+  - A gap of 7% or higher is the proposed point that unconstitutional gerrymandering may have occurred 
 
 - Partisan Dislocation: a measure of the difference between the partisan composition
 of a voter’s geographic nearest neighbors and the partisan composition of the district to which
