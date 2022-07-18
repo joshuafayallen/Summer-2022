@@ -21,12 +21,7 @@ output:
 ```
 
 
----
-## Looming Deadlines
 
-.bold[April 10] is the _last_ chance to submit NCCHR
-
----
 
 ---
 ## Two Dates 
@@ -42,16 +37,19 @@ knitr::include_graphics("images/loving.jpeg")
 
 
 .pull-right[
-- Loving v Virginia Decided June $12^{th}$ 1967
+- June $12^{th}$ 1967
 
 
 - June $11^{th}$ 1967]
 
 
 ???
+first date was the date loving was decided 
+
+
 Many of you have gone and done the NCCHR assignment and many of you will do so in the next week or so. One thing that still strikes me is the recency of it all. Does anybody know the case of Loving v Virginia?
 
-Mildred Delores Loving was the daughter of Musial (Byrd) Jeter and Theoliver Jeter. She self-identified as Indian-Rappahannock, but was also reported as being of Cherokee, Portuguese, and African American ancestry. During the trial, it seemed clear that she identified herself as black, especially as far as her own lawyer was concerned. However, upon her arrest, the police report identified her as "Indian".
+Mildred Delores Loving was the daughter of Musial (Byrd) Jeter and Theoliver Jeter. She self-identified as Indian-Rappahannock, but was also reported as being of Cherokee, Portuguese, and African American ancestry. 
 
 Richard Perry Loving was a white man, the son of Lola (Allen) Loving and Twillie Loving. Their families both lived in Caroline County, Virginia, which adhered to strict Jim Crow segregation laws, but their town of Central Point had been a visible mixed-race community since the 19th century. The couple met in high school and fell in love.
 
@@ -131,7 +129,23 @@ Most often the expectation or right that is wanted by these individuals is the r
 ]
 
 ---
+---
+layout: false
+class: middle
+<gsu-blockquote-blue>
+“We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.”
 
+</gsu-blockquote-blue>
+
+- _De Jure_ - Equal protection under the laws
+
+- _De Facto_ - Equal access to opportunity & societal benefits
+
+???
+Thomas Jefferson wrote that all men are created equal endowed by their creator with certain unalienble right.  Jefferson owned over 600 enslaved people during his lifetime, the most of any U.S. president. which represented an estimated 90% of his networth.  Even on his death bed he refused to free them. It is even believed that he had several illegitimate children by his slaves.  So what the framers actually meant was that all “Free White property owning men were created equal….” Thankfully we have moved past this and have eradicated almost all means of inequality under the law (de jure), but within society we still continue to struggle with De Facto discrimination. 
+
+
+---
 ---
 class: center, middle 
 
@@ -184,16 +198,16 @@ Color discrimination is treating people differently based on their skin color, b
 ---
 
 ---
-class: center  
+class: center, middle 
 
 
 ```{r}
-df = tibble::tribble(~Test, ~Application, ~`Suspect Status`, ~`Standard Used`,
+df = tibble::tribble(~`Review Standard`, ~Application, ~`Suspect Status`, ~`Standard Used`,
                      "Strict Scrutiny", "Race, Ethnicity, Religion, and Citizenship", "Suspect Class", "Law is assumed unconstitutional in the absence of an overwhelming justification", "Intermediate Scrutiny", "Gender or Sexual Orientation", "Quasi-Suspect Class", "Law is assumed  unconstitutional unless the law serves a clearly compelling and justified purpose", "Rational Bias", "Age, Disability, Wealth, Political Preference, and Criminal Background", "Not suspect category", "Law assumed constitutional unless no sound rationale for the law can be provided")
 
-gt(df) %>% 
-  tab_header(title = "How Do Judges Make Decisions") %>% 
-  opt_align_table_header(align = "center") %>% 
+gt::gt(df) |> 
+  tab_header(title = "How Do Judges Make Decisions") |> 
+  opt_align_table_header(align = "center") |> 
   gtExtras::gt_theme_guardian()
 
 ```
@@ -203,64 +217,44 @@ Strict Scrutiny – Is the most stringent standard of judicial review. It is how
 
 To use strict scrutiny the class of people in question must have a history of discrimination and be considered “politically powerless”. 
 
+ The Court’s middle-level standard of review that says a law is presumed to be unconstitutional unless the government can demonstrate it is substantially related to the promotion of an important government interest. The Supreme Court applies this standard of review to sex-based discrimination.
 
+
+The Court’s lowest standard of review, meaning it makes it the easiest to declare a government action constitutional. By this standard, the Court presumes a law to be constitutional unless it is shown that the law is not rationally related to a legitimate government interest. The Court applies this standard of review to cases involving discrimination based on age, disability, and economic status
 
 ---
 
 
 ---
-## Historical Battles of Inequality 
-
-.panelset[
-
-.panel[.panel-name[Race/Ethnicty]
+# Historical Battles of Inequality 
 
 
 - African Americans
 
-- Japanese Americans
+- Asian Americans 
 
 - Native Americans
-]
 
-.panel[.panel-name[Gender]
+- Latinx/a/o Americans
 
 - Women
 
 - Sexual Orientation
 
-]
-
-.panel[.panel-name[Physicality]
 
 - People with disabilities
 
 - Age
 
-]
-
-]
-
-
----
-
----
-layout: false
-class: middle 
-
-- _De Jure_ - Equal protection under the laws
-
-- _De Facto_ - Equal access to opportunity & societal benefits
-
-???
-Thomas Jefferson wrote that all men are created equal endowed by their creator with certain unalienble right. at the Second Continental Congress, but at the time he owned over 200 slaves at his plantation home in Virginia (Monticello). Even on his death bed he refused to free them. It is even believed that he had several illegitimate children by his slaves.  So what the framers actually meant was that all “Free White property owning men were created equal….” Thankfully we have moved past this and have eradicated almost all means of inequality under the law (de jure), but within society we still continue to struggle with De Facto discrimination. 
 
 
 ---
 
 
+
+
 ---
-class: center, middle
+class: center, middle,reverse 
 
 # Racial Discrimination 
 
@@ -271,6 +265,7 @@ class: center, middle
 
 ---
 layout: false 
+class: center
 
 ```{r}
 knitr::include_url("https://lincolnmullen.com/projects/slavery/")
@@ -301,7 +296,7 @@ August of 1619 is the first recorded instance of slavery coming to the shores of
 
 
 ???
-Dred Scott – the Supreme Court Decision declaring that blacks could not be citizens and that Congress could not ban slavery in the territories.  At this time blacks were considered of an inferior order and that they had no rights in the American system.  
+Dred Scott – the Supreme Court Decision declaring that black people could not be citizens and that Congress could not ban slavery in the territories.  At this time black people were considered of an inferior order and that they had no rights in the American system.  
 
 Lincoln avidly opposed the expansion and continuation of slavery as a part of his presidential platform. The abolition movement is support of people like Lincoln had spread their fingers throughout most of the northern states. It was Lincoln’s advocacy for the end of slavery that pushed the Southern states to secede from the Union and form the Confederate States of America beginning with South Carolina. The first of the states wrote their reasons for secession. South Carolina's is perhaps most famous but the state of Georgia stated
 
@@ -357,6 +352,13 @@ Despite this addition to the Constitution Southern states continued to create ba
 
 The Union troops withdrew their support in 1877, and shortly there after Southern states began to pass Jim Crow laws. These were social, political, and even economic restrictions meant to ramp up situations of inequality between the races. These laws included segregation, poll taxes, and prevention of intermarriage and copulation between races. 
 
+black codes would be the run up to Jim Crowe 
+
+
+Even as former enslaved people fought to assert their independence and gain economic autonomy during the earliest years of Reconstruction, white landowners acted to control the labor force through a system similar to the one that had existed during slavery.
+
+To that end, in late 1865, Mississippi and South Carolina enacted the first black codes. Mississippi’s law required Black people to have written evidence of employment for the coming year each January; if they left before the end of the contract, they would be forced to forfeit earlier wages and were subject to arrest.
+
 ---
 
 
@@ -380,7 +382,7 @@ knitr::include_graphics("images/green-book.jpg")
 
 Examples:
 
-  - Intermarriage(Miscegenation)
+  - Interracial(Miscegenation)
   
   - Separation of restrooms, water fountains, etc
   
@@ -396,23 +398,28 @@ Is anybody familiar with the Michelin Guide? The Michelin guide is an ongoing gu
 
 However a much broader set of laws would affect them and even driving etiquette was racialized "local custom prohibited blacks from overtaking whites, to prevent their raising dust from the unpaved roads to cover white-owned cars." Jim Crow laws affected a whole host of other considerations the late Representative Lewis once wrote that as a child "Our map was marked and our route was planned that way, by the distances between service stations where it would be safe for us to stop"
 
+Sun down town are all-white municipalities or neighborhoods in the United States that practice a form of racial segregation by excluding non-whites via some combination of discriminatory local laws, intimidation or violence. The term came from signs posted that "colored people" had to leave town by sundown. These were not limited to the south but there were higher concentrations of them in the south 
+
 ---
 
 
 ---
 class: middle
-## Plessy v. Feguson 
+## Plessy v. Feguson(1896)
 
 <center>
 <gsu-blockquote-blue>
 
-We consider the underlying fallacy of the plaintiff's argument to consist in the assumption that the enforced separation of the two races stamps the colored race with a badge of inferiority. If this be so, it is not by reason of anything found in the act, but solely because the colored race chooses to put that construction upon it.” `r tufte::quote_footer('--- Justice Henry Brown')`
+Every one knows that the statute in question had its origin in the purpose, not so much to exclude white people from railroad cars occupied by blacks, as to exclude colored people from coaches occupied by or assigned to white persons. ... The thing to accomplish was, under the guise of giving equal accommodation for whites and blacks, to compel the latter to keep to themselves while traveling in railroad passenger coaches. No one would be so wanting in candor as to assert the contrary..” `r tufte::quote_footer('--- John Marshall Harlan')`
 
 </gsu-blockquote-blue>
 </center>
 
 ???
 In 1880 the State of Louisiana passes a law that required separate accommodation for blacks and whites on railroads and within railway cars.  Homer Plessy was a mixed race man, and because of his lack of singular race he was classified as “black” and required to sit in the colored car even though he could pass in society on appearance as white. Taking a trip, he purchased a first class ticket and boarded the “whites only” car.  He was asked to vacate it by the conductor, he refused, and was arrested and imprisoned. He took the case to the Court as a violation of his 14th Amendment right to equal protection under the laws. Unfortunately, the Court found that his rights had not been violated by the Louisiana law since the accommodations were equal in quality ( this was not true for other accommodations that the court did not analyze).  Thus segregation law could stand and the doctrine of separate but equal became entirely legal in the United States 
+
+
+John Harlan is 
 
 ---
 
@@ -446,7 +453,7 @@ knitr::include_graphics("images/little-rock-nine.png")
 
 ]
 .pull-right[
-- “There has been entirely too much deliberation and not enough speed in enforcing Brown...” (H. Black - 1964)
+- “There has been entirely too much deliberation and not enough speed in enforcing Brown...” (Justice Hugo Black - 1964)
  
 - The Civil Rights Act of 1964 
   - Withdrawal of federal funds from segregated schools 
@@ -458,7 +465,27 @@ knitr::include_graphics("images/little-rock-nine.png")
 
 Even with the Brown decision, integration  was not an instantaneous thing. It would take years for most states to even begin procedures.  The Court had established no plan for integration, in fact they said the process should be enacted with all deliberate speed. 21 states had schools that were segregated, and by 1961 only 12 of them had actually begun integration procedures. 
 
-On the left you have a picture of Hazel brown, one of the little rock nine 
+On the left you have a picture of Elizabeth Eckford, one of the little rock nine 
+
+By 1957, the NAACP had registered nine black students to attend the previously all-white Little Rock Central High, selected on the criteria of excellent grades and attendance
+
+Melba Pattillo Beals
+
+Minnijean Brown
+
+Elizabeth Eckford
+
+Ernest Green
+
+Gloria Ray Karlmark
+
+Carlotta Walls LaNier
+
+Thelma Mothershed
+
+Terrence Roberts
+
+Jefferson Thomas
 
 The story of the Little Rock Nine was one of the most sensationalized. In this case Governor Orval Faubus of Arkansas defied federal orders and called upon the National Guard of Arkansas to support the segregationists and to prevent integration in the local high school.  President Eisenhower quickly responded by sending in federal troops in breaking up the protests and providing armed escorts to the students to get to class.  
 
@@ -489,8 +516,8 @@ civil_rights = tibble::tribble(~Date, ~Action,
                                "March 7, 1965", "'Bloody Sunday'", "August 6, 1965", "Voting Rights act of 1965"
                                )
 
- gt(civil_rights) %>% 
-  tab_header(title = "Notable Dates in the Civil Rights Movement") %>% 
+ gt(civil_rights) |> 
+  tab_header(title = "Notable Dates in the Civil Rights Movement") |> 
   gtExtras::gt_theme_538()
 
 ```
@@ -548,8 +575,17 @@ Poll Taxes
 
 Voter Intimidation or Harassment (qualifies as voter fraud) 
 
-are all forms of voter supression
+are all forms of voter suppression
 
+he marches were organized by nonviolent activists to demonstrate the desire of African-American citizens to exercise their constitutional right to vote, in defiance of segregationist repression; they were part of a broader voting rights movement underway in Selma and throughout the American South. By highlighting racial injustice, they contributed to passage that year of the Voting Rights Act, a landmark federal achievement of the civil rights movement.
+
+
+r a political subdivision of the state maintained a "test or device" restricting the opportunity to register and vote. The Act's definition of a "test or device" included such requirements as the applicant being able to pass a literacy test, establish that he or she had good moral character, or have another registered voter vouch for his or her qualifications.
+
+The second element of the formula would be satisfied if the Director of the Census determined that less than 50 percent of persons of voting age were registered to vote on November 1, 1964, or that less than 50 percent of persons of voting age voted in the presidential election of November 1964. This resulted in the following states becoming, in their entirety, "covered jurisdictions": Alabama, Alaska, Georgia, Louisiana, Mississippi, South Carolina, and Virginia. In addition, certain political subdivisions (usually counties) in four other states (Arizona, Hawaii, Idaho, and North Carolina) 
+
+
+ with a history of such actions. Any jurisdiction covered under a “formula” had to obtain federal permission before making any changes to voting procedures. At the time of enactment, the coverage formula included any jurisdiction that “had maintained a test or device as a prerequisite to voting,” such as a poll tax or literacy test.
 ---
 
 ---
@@ -558,6 +594,8 @@ layout: false
 
 
 ```{r out.width= "50%"}
+
+
 knitr::include_graphics("images/literacy_test_page_one.jpg")
 ```
 
@@ -598,7 +636,7 @@ knitr::include_url("https://archive.nytimes.com/www.nytimes.com/interactive/2013
 ```
  
 ???
-One thing that you have obviously been wondering is how do we have new stuff that disproportionately effects minorties in states that the coverage formula applies too. Historically the coverage forumula has applied to these states
+One thing that you have obviously been wondering is how do we have new stuff that disproportionately effects minorities in states that the coverage formula applies too. Historically the coverage forumula has applied to these states
 
 
 If the state was included it was required to submit all changes to voting laws for approval to the federal government

@@ -611,3 +611,5 @@ Because of the extensive time that filibusters can take, the preference in recen
 Finally, override votes are only done in the case of a bill being vetoed by the president. This vote requires a 2/3 majority in both the House and the Senate to be successful.
 
 ---
+
+

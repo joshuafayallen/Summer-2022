@@ -20,14 +20,6 @@ output:
 ```
 
 
----
-## Looming Deadlines 
-
-
-.bold[NCCHR] due Sunday
-
-
----
 
 ---
 class: center, middle, inverse
@@ -224,6 +216,7 @@ vembedr::embed_url("https://www.youtube.com/watch?v=A-4dIImaodQ")
 
 - Efficiency gap – a measure created by political scientists to show which political party is benefiting most from a gerrymandered district
   - A gap of 7% or higher is the proposed point that unconstitutional gerrymandering may have occurred 
+  - $\text{Efficiency Gap} =\frac{\text{Wasted Vote Party A} - \text{Wasted Vote Party B}}{\text{Total Votes}}$
 
 - Partisan Dislocation: a measure of the difference between the partisan composition
 of a voter’s geographic nearest neighbors and the partisan composition of the district to which
@@ -234,9 +227,15 @@ they have been assigned (DeFord et al. Forthcoming)
 ???
 There is actually a heated debate over how to best measure this. The simplest way to do this is through what is known as the efficiency gap 
 
-it uses the concept of a wasted vote. A vote is wasted if it is cast for a losing candidate or for a winning candidate but in excess of what she needed to prevail.
+it uses the concept of a wasted vote. A vote is wasted if it is cast for a losing candidate or for a winning candidate but in excess of what she needed to prevail. So if you the democratic party wins by a margin of 70% than every vote past the plurality constitutites a wasted vote. In this case all 30% of the votes for the republican candidate are waisted 
 
 This is clever in its simplicity but all together ignores lots of information that we have. One set of information would be like actual voter location n
+
+where dem_vote_sharek,v is the share of voter v’s k nearest neighbors who are Democrats, and
+dem_vote_shared, v is the Democratic vote share of v’s actual district d. Large positive values
+indicate individuals whose district is substantially more Democratic than their nearest neighbors,
+while large negative values are indicative of individuals in districts that are substantially more
+Republican than their nearest neighb
 
 Partisan vote share is the newest one where it looks at the difference between vote shares for a district where somebody votes and the nearest neighbor. Determining the nearest neighbor is done through a technique called k-nearest neighbors.  The KNN algorithm assumes that similar things exist in close proximity. In other words, similar things are near to each other. You can think of this as minimizing the distance between points on a graph. You interact with more complex implementations of this with recommendation systems or fraud detection software
 
@@ -255,12 +254,16 @@ Partisan vote share is the newest one where it looks at the difference between v
 - .bold[Partisan Sorting]: An effect in which similar voters migrate to specific areas, becoming more concentrated than in the wider electorate
 
 
+
+
 ???
 Much like KNN birds of a feather flock together
 
 One important aspect that is frequently neglected in the gerrymandering debate is the role that citizens play in this process. Bill Bishop argues in The Big Short that people are increasingly choosing their neighborhoods based on criteria that correlate highly with political preferences. This argument suggests that political segregation is a product of the movement of voters between neighborhoods—as kids grow up and move out of their parent’s homes, their subsequent choice of housing increases the political homogeneity of the American neighborhood.
 
 This theory contends that as much of a problem as gerrymandering may pose, removing gerrymandering from the political process may not necessarily result in more competitive districts, because our neighborhoods are likely to politically homogenous, regardless.
+
+Democrats more generally are a party that tends to be cluster in urban areas as well which poses a math problem in of itself. If in hypothetical state A most democratic areas are clsutered in three or four major cities but the rest of the state votes republican than 
 
 ---
 
@@ -330,6 +333,12 @@ Finally, changes to campaign finance rules in recent years have made it easier t
 
 .bold[Substantive Representation] – member of Congress that represents constituents interests on policy concerns
 
+.bold[Delegate ] a member of congress that loyally represents constituents direct interests. 
+
+
+.bold[Trustee] a member of congress that represents constituents interests while also taking into the bigger picture of national political concerns.
+
+
 ???
 The relative lack of diversity in Congress is important because it has a profound impact on how elected officials represent their constituencies. One of the more obvious ways that representatives can represent their constituencies is descriptively.
 Descriptive representation – (key term) – a member of Congress that shares the characteristics of constituents (race, gender, religion, etc.) 
@@ -364,10 +373,10 @@ Trustee – (key term) – a member of congress that represents constituents int
 Three models on the National level:
 
 .bold[Burkean Model (Edmund Burke)] – Legislators work for what they know is best for their districts and the nation
-Trustee
+  - Trustee
 
 .bold[Instructed Delegate Model] – Legislators will follow the will, or the voice, of the people in their districts exactly
-Delegate
+  - Delegate
 
 .bold[Responsible Party Model] – National party leadership with compromise between the two parties for the best outcome for the people 
 
@@ -377,11 +386,14 @@ Delegate
 These representation styles generally conform to one of three theoretical models of representation used by political scientists
 
 First, the Burkean Model, named for Edmund Burke, states that legislators work for what they know is best for their districts and the nation. This may sometimes align with the will of their constituents, but may at other times be in conflict with those interests. This model is most inline with the Trustee representation type from the previous slide.
-Delegate – (key term) – a member of congress that loyally represents constituents direct interests. 
 
-Second, the Instructed Delegate Model, contends that representatives will follow the will of their constituents at all times, exactly as they prefer, without concern for what the representative believes is best or what is in the best interest of the nation as a whole.
+
 Trustee – (key term) – a member of congress that represents constituents interests while also taking into the bigger picture of national political concerns.
 
+
+Second, the Instructed Delegate Model, contends that representatives will follow the will of their constituents at all times, exactly as they prefer, without concern for what the representative believes is best or what is in the best interest of the nation as a whole.
+
+Delegate – (key term) – a member of congress that loyally represents constituents direct interests. 
 
 However, I’m sure we can all think of problems with both of these models of representation. While we certainly want representatives that will represent our preferences and advocate for policies that we would personally prefer in Congress, doing so without regard for what the nation as a whole wants or needs is not ideal. After all, we all have to live with federal policies even if our representatives didn’t vote for them. Because of these concerns, there is a third model of representation that an elected official may strive to uphold.
 
@@ -455,7 +467,7 @@ house = read_csv("data/house_re-elect.csv")
 
 ggplot(house, aes(x = Election_Cycle, y =   relection_rate )) +
   geom_col() + coord_flip() +
-  labs(x = "Year", y = "Percent Re-Elected") + theme_allen()
+  labs(x = "Year", y = "Percent Re-Elected") + theme_allen_bw()
 
 
 
@@ -473,7 +485,7 @@ senate = read_csv("data/senate_relect.csv")
 ggplot(senate, aes(x = election_cycle, y =  re_election)) +
   geom_col() +
   coord_flip() +
-  labs(x = "Year", y = "Percent Re-Elected") + theme_allen()
+  labs(x = "Year", y = "Percent Re-Elected") + theme_allen_minimal()
 
 ```
 
@@ -529,5 +541,397 @@ This activity allows member of Congress to very directly provide tangible benefi
 
 Finally, by being a member of Congress, incumbents have a much greater ability to raise funds for their reelection campaigns than their challengers can. First, members of Congress have access to the biggest donors within their political party and can personally reach out to them in ways that challengers can’t. Secondly, these donors are extremely unlikely to contribute to politicians that may not win. Again, the best way to demonstrate that you can win an election, is to win an election. Thus, by being a member of Congress, incumbents already have a proven track record of winning elections, and are therefore much more likely to receive those donations.
 
+
+---
+
+
+
+---
+class: center, middle, inverse
+
+# Congress
+
+
+---
+
+
+
+---
+## Enumerated Powers of Congress
+
+
+- Lay and collect taxes 
+- To borrow on the credit of the US
+- To regulate Commerce 
+- To establish uniform rule of Naturalization
+- To Coin Money 
+- To Provide for Punishment of Counterfeiting Money 
+- To Establish Post Offices 
+- To Promote the Progress of Science and useful Arts– Copyrights 
+- To constitute Tribunals inferior to the  Court 
+- To define and punish Piracy and Crimes on the High Seas 
+- To Declare War
+-  To raise and support Armies 
+- To provide and maintain a Navy 
+- To make rules for governing and regulating the military 
+- To provide for militias to suppress insurrection or repel invasion
+- To organize, arm, and discipline the Militia in service to the US
+- To make laws  
+
+
+
+
+---
+
+---
+## Special Powers of Each Chamber
+
+
+- House
+  - Vote to impeach
+  - Origination of all Revenue bills
+- Senate
+  - Nominations & confirmations 
+  - Holds the trial to impeach
+  - Ratify all treaties
+
+
+
+---
+
+
+
+
+---
+## The Ones We Will Focus On
+
+- Impeachment
+
+- War Powers
+
+- Oversight
+
+- Lawmaking
+
+???
+We will not be exploring all of the enumerated powers of Congress. Rather, we will be focusing on the five listed here.
+
+
+Oversight – (key term) – efforts by congress to make sure that laws are implemented correctly by the bureaucracy after they have been passed. 
+
+
+
+War powers – Congress has to officially declare war. Does this happen every time? Are there examples of when this did not happen? 
+	Fun fact: Last official declared war by Congress was WWII.   
+
+ 
+
+---
+
+---
+## Impeachement 
+
+- The check that Congress has over the other branches that - allows them to remove officers of the United States for - various different abuses of powers
+ 
+- Does _*NOT*_ mean removal from office
+  - 4 Presidents
+  - 15 Federal Court Judges
+  - 1 Senator
+
+
+???
+Impeachment is the check that Congress has over the other branches that allows them to bring charges against and remove officers of the United States for various different abuses of powers.  
+
+THIS DOES NOT MEAN REMOVAL FROM OFFICE. Impeachment is merely the first step of bringing charges against an individual. Removal from office is a separate procedure.
+
+Impeachment proceedings begin in the House of Representatives. If an impeachment vote is passed in the House, the chargers are forwarded to the Senate. In the Senate, once the charges have been forwarded, a trial takes place on the floor of the Senate, which is presided over by the Chief Justice of the Supreme Court. At the end of the trial, a vote to remove the official is brought and must be passed with a 2/3 majority for the official to be removed from office.
+
+Impeachment proceedings have occurred for three presidents (Clinton, Johnson, and Nixon), senators (1) and Federal Judges (15).  
+
+Some of the offenses for which impeachment charges have been brought include: abuse of power, drunkenness, rebelling against the government, and perjury.  
+
+
+----
+
+
+---
+## War Powers
+
+- .vero-red[War Powers Clause]: [The Congress shall have Power…] To declare War, grant Letters of Marque and Reprisal, and make Rules - concerning Captures on Land and Water
+
+- .vero-blue[War Powers Act of 1941]
+  - American emergency law that increased Federal power during World War II
+
+- .vero-brown[War Powers Resolution of 1973]
+  - Federal law intended to check the president’s power to commit - the United States to an armed conflict without the consent of - Congress
+
+
+???
+The second enumerated power of Congress is the War Powers.
+Congress has the exclusive power to officially declare war. However, in the modern era, this power has rarely been used. The last time war was officially declared by Congress was during World War II.
+Despite it’s rare usage, Congress has passed a number of bills related to it’s war making powers.
+The first was the War Powers Act of 1941. This act dramatically increased federal power during World War II, authorizing Franklin Roosevelt to reorganize the Executive branch and the Bureaucracy to streamline the war effort. A subsequent act passed in 1942 which allowed the federal government to acquire any land within the United States for the war effort, among other things.
+
+Following the Executive branches continued willingness to engage in military conflicts without a declaration of war, Congress passed the War Powers Resolution of 1973. This act requires the president to notify Congress within 48 hours of committing armed forces to military action, and requires the president to seek continued approval for troop deployments within the first 60 days.
+
+
+---
+
+
+---
+## What About...
+
+
+
+```{r}
+
+df = tibble::tribble(~Conflict, ~`Legal Basis`,
+                     "Korea (1950-1955)", "Police Action",
+                      "Vietnam (1961 - 1975)", " Joint Resolution of Congress ",
+                     "Lebanon (1982-1983)", "Lebanon Emergency Assistance Act/UN multinational force",
+                     "Gulf War (1990 - 1991)", "UN Security Council Resolution", 
+                     "Afghanistan (2001 - 2021)", "Authorization for the Use of Military Force 2001",
+                     "Iraq (2003 - 2011)", "AUMF")
+
+gt::gt(df) %>% 
+  gtExtras::gt_theme_guardian()
+
+```
+
+
+
+---
+
+---
+## Oversight 
+
+- Oversight – over Bureaucracy
+  - Efforts by Congress to make sure that laws are implemented correctly by the bureaucracy after they have been passed
+  
+
+```{r out.width="60%"}
+knitr::include_graphics("figs/oversight-example.png")
+```
+
+.footnote[[Source](https://oversight.house.gov/news/reports)]
+???
+Congress’s oversight abilities apply to the Bureaucracy, and refers to their efforts to make sure that laws are implemented correctly after they have been passed. This is usually done through a series of hearings in which members of the bureaucracy are called to Congress to discuss the procedures that they have implemented to enact laws.
+
+These investigations can be pretty sprawling and lead to pretty significant findings or are tucked away in reports. You can go to the page and read the reports. There are a ton of them. The revealations about COINTELPRO were from a series of Senate select oversight committee hearings most commmonly refered to as the church committee 
+
+ a series of covert and illegal projects actively conducted by the United States Federal Bureau of Investigation (FBI) aimed at surveilling, infiltrating, discrediting, and disrupting domestic American political organizations. FBI records show COINTELPRO resources targets groups and individuals the FBI deems subversive, including feminist organizations, the Communist Party USA, anti–Vietnam War organizers, activists of the civil rights movement and Black Power movement (e.g. Martin Luther King Jr., the Nation of Islam, and the Black Panther Party), environmentalist and animal rights organizations, the American Indian Movement (AIM), independence movements (including Puerto Rican independence groups such as the Young Lords and the Puerto Rican Socialist Party), a variety of organizations that were part of the broader New Left, and far-right groups such as the Ku Klux Klan and the National States' Rights Party
+
+
+
+
+---
+
+
+
+---
+## How a Bill Becomes a law
+
+
+.pull-left[
+### Path of Least Resistance
+```{r}
+vembedr::embed_url("https://www.youtube.com/watch?v=OgVKvqTItto")
+```
+]
+
+
+.pull-right[
+### How the Sausage Gets Made
+
+```{r}
+vembedr::embed_url("https://www.youtube.com/watch?v=s5eILKG5oSE")
+```
+
+]
+???
+Now, the Schoolhouse Rock example is really the best case scenario. Now watch the video hyperlinked in this slide. It provides a much more realistic example of the lawmaking practice works in person, and the role that parties and party leadership can play in the process.
+
+---
+## How the Sausage Gets Made
+
+
+.pull-left[
+### House 
+
+- Speaker of the House decides where to send a bill
+  - Committee
+  - Subcommittee
+  - Subcommittee Committee Hearing
+- Report to full Chamber of House
+- Referred to Rules Committee
+  - Here they place a “rule” on the bill
+  - OPEN Rule – No limits on Amendments
+  - CLOSED Rule – No Amendments at all
+- Goes to the House floor for votes
+- If approved, the bill goes to the Senate
+
+
+
+
+]
+
+.pull-right[
+### Senate
+- President of the Senate sends to committee
+  - Committee
+  - Subcommittee
+  - Subcommittee Committee Hearing
+  - Report to full Chamber of Senate
+- .bold[NO RULES COMMITTEE IN SENATE]
+- Goes to Senate floor for votes
+  - Here Senators may filibuster bills 
+  - Filibusters are ended with a cloture vote
+- If Senate version is different from the original House - version the bill is sent to a Conference Committee: 
+  - Conference Committee - members _from both chambers review the new bill_ 
+- If the Conference Committee’s proposal is approved in both Chambers the bill is sent to the President of the United States
+
+
+]
+
+???
+Now that we’ve watched these two separate examples of two very different ways that laws can be made, let’s look at this process in detail. We are going to assume that bills begin in the House for this step-by-step explanation, but you should note that, with the exception of tax legislation and budgets, bills can begin in either the House or the Senate. The overall process is the same regardless of where a bill begins, though.
+
+So once a bill has been written and proposed, it is presented to the Speakers of the House.
+
+The Speaker of the House then decides which committees to send the bill too. The Speaker can assign the bill to as many committees and subcommittees as they wish. If the Speaker does not want the bill to come to a vote, they will frequently use this process to “kill” the bill by assigning it to as many committees as they can.
+Once the bill is assigned a committee, the committee will hold a series of hearings where they ask for testimony from those that may be affected by the legislation and any relevant bureaucratic agencies that will be impacted by the bill. Additionally, each of these committees can propose changes and amendments to the bill. These are all voted on by the committee members and are either added to the bill or rejected at this stage. Once a committee is done with their hearings and proposed changes, they will take one final vote on whether they should report favorably on a bill or not. This is a simple majority vote.
+
+If a bill is reported on favorably in all of the committees it is assigned to, then it (and all of the amendments that the committees may have added) are reported to the full Chamber of the House. However, before the full House can begin debating the bill, the piece of legislation is sent to the Rules Committee
+
+The Rules Committee is unique to the House and determines whether amendments from the full House will be allowed to be debated and added. If the Rules Committee assigns an Open rule, then there are no limits placed on the ability of any member of the House to propose an amendment. However, if the Committee assigns a Closed rule, then no amendments to the bill can be proposed, debated, or added to the piece of legislation.
+
+Assuming that an Open rule has been placed on the legislation, once the bill is reported out of the Rules Committee it goes to the floor of the House where it is debated, and amendments are proposed, debated, and voted on. Remember that the Speaker of the House controls how long legislation is debated in the House, so this can either be a very long or very slow process.
+
+However, once debate on the legislation is ended, the full House votes. If it is approved with a simple majority vote, then the legislation is passed on to the senate. If it is not approved by a majority of the House, then the bill dies, and must be re-proposed in future terms.
+
+If the bill is advanced to the Senate, it’s first stop is to the President of the Senate. The President of the Senate then assigns the committees and subcommittees that the bill will be assigned to. There the same process of hearings, amendments, and changes as in the House takes place. Again, at the end of this process, each committee votes on whether to advance the legislation to the full Senate.
+
+If the legislation is reported favorably out of each of the Senate committees it has been assigned to, it is reported to the full Chamber of the Senate. One major difference between the House and Senate processes is that the Senate does NOT have a Rules Committee. Rather, all pieces of legislation can have amendments from the full Senate proposed and voted on. Additionally, unlike the House, there is no limit on how long the Senate can debate a bill. This is due to the filibuster process that exists in the Senate; we will talk about this more in just a minute, but for now you can think of filibustering as just talking a bill to death. The only way to end debate is with a Cloture vote. Once debate has ended, a full vote on the bill takes place.
+
+Assuming that the bill also passes the Senate, it is not automatically sent to the President, even if it has already been approved by the House. At the end of this process, it is extremely likely that the pieces of legislation that have been passed by the House and the Senate are different from each other. In this case, both versions of the bill are sent to a Conference Committee, which is made up of members from both the House and the Senate. The job of the Conference Committee is not to make the two versions of the bill identical. Once these changes are made, the new version of the bill is sent back to the House AND the Senate to be voted on again.
+
+If this piece of legislation is then passed by both chambers of Congress again, the bill is FINALLY sent to the president’s desk.
+
+
+---
+
+
+---
+## How the Sausage Gets Made continued
+
+Once a bill reaches the President he has 10 days to act:
+
+- Sign the Bill and it becomes law
+-  Veto
+  - 2/3 Support from both chambers may override a veto
+
+- Not Sign
+  - Automatically becomes law after 10 days while Congress is in  session
+  - Pocket Veto – If Congress adjourns during the 10 day period and the president does NOT sign, then the bill is vetoed and does not become law
+
+
+---
+
+---
+## Committees
+
+ Committee Types:
+ 
+ 
+ 
+- Standing: Committees that exist from session to session and have the power to propose and write legislation over a - particular subject matter
+Subcommittees
+
+- Select: Non-permanent committees that are established that highlight particular issues that arise within legislation
+
+- Joint: Committees that are formed with joint membership from - the House and the Senate
+  - Four are permanent
+
+- Conference: Temporary committees appointed by Speaker and the presiding Senate leadership intended to form a consensus of legislation between the two chambers
+
+???
+The last part of Congress’s structure that we need to spend a bit more time discussing. I’ve talked a lot about committees in the last few minutes, there are important difference between different types of committees.
+
+First, committees are specialized units created in Congress to provide functionality and due process to the creation of legislation. These committees are often broken down even further into subcommittee units in order for more specialization on bill content, and take many different forms. 
+
+Standing committees–are committees that exist from session to session and have the power to propose and write legislation over a particular subject matter. They generally correlate in subject matter to specific executive branch departments or agencies. 
+
+Select committees– are non-permanent committees that are established the highlight particular issues that arise within legislation that may or may not be under the jurisdiction of other existing committees. 
+
+Joint committees– are committees that are formed with joint membership from the House and the Senate. There are 4 that exist permanently. They are powerful in the investigative sense but do not have the power to present legislation.
+
+Conference committees– temporary committees appointed by Speaker and the presiding Senate leadership. They are formed in an effort to form a consensus on legislation between the House and the Senate.  These committees are crucial during times when the House and Senate majority are of opposing parties. 
+
+---
+
+
+---
+## Most Powerful Committees in Congress
+
+.pull-left[
+### House
+
+- Appropriations 
+  - Money - regulate expenditure of US govt 
+- Budget 
+  - Reviews Federal budget process 
+- Rules 
+  - Determines all the rules of how a bill can come to the floor 
+  - “traffic cop of Congress” 
+- Ways and Means 
+  - Writes all tax legislation and revenue programs 
+  - If a member it is only committee member can serve on 
+
+
+]
+
+.pull-right[
+
+### Senate
+
+- Appropriations 
+  - Money - regulate expenditure of US govt
+- Armed Services 
+  - Legislative oversight of all US military branches 
+- Finance 
+  - Legislation concerning taxation and other revenue programs 
+- Foreign Relations 
+  - Oversees all foreign-policy legislation including foreign aid, funding, and treaty ratification 
+
+
+]
+
+---
+
+---
+## Special Votes
+
+- Filibuster: Tactic used by senators to block a bill by - holding the floor and speaking to extend debate and prevent a  vote.
+
+- Cloture: Procedure in which senators can limit the amount of  debate on a bill with a supermajority (60) votes.
+
+- Override: In the case of a president vetoes a bill each House of Congress can vote for an override (2/3) to pass the bill.
+
+
+???
+
+Finally, there are a few special kinds of votes that we’ve discussed that you will need specific definitions for.
+
+The first of these is the filibuster vote. Filibustering is a tactic used by senators to block a bill by holding the floor and speaking to extend debate and prevent a vote. Filibusters can only last for as long as a senator, or a group of senators, can hold the floor for and prevent the ending of the debate period.
+
+Cloture is a procedure in which senators can limit the amount of debate on a bill with a supermajority vote.
+Cloture was first introduced in 1917 and remained a senate rule until 1949. 
+The rule was reinstated in 1959 and required a 2/3 majority. 
+This was revised in 1975 so that 3/5 of sworn senators could limit debate, except for changes to Senate rules which still require a 2/3 vote.
+
+Because of the extensive time that filibusters can take, the preference in recent years has been to move to other business when a filibuster has been threatened and cloture attempts have failed.
+
+
+Finally, override votes are only done in the case of a bill being vetoed by the president. This vote requires a 2/3 majority in both the House and the Senate to be successful.
 
 ---
