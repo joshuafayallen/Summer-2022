@@ -1,6 +1,5 @@
 ---
 title: "The Judiciary"
-subtitle: "And Some Cleanup"
 author: "Josh Allen"
 date: '`r Sys.Date()`'
 output:
@@ -158,6 +157,7 @@ It established 6 justices for the Supreme Court as well as the offices of the at
 
 - .bold[Judicial Review] - is the implied power of the Supreme Court to have the authority to declare laws of Congress and acts of the executive branch unconstitutional. 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KwciUVLdSPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ???
 
