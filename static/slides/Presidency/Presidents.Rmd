@@ -294,9 +294,16 @@ Advise on any and usually various issues set by the president.
 
 EOP helps the president with various tasks, the Office of Management and Budget for example is responsible for coming up with a national budget, designing the president’s program, reporting on agency activities, and overseeing regulatory proposals.  The staff has grown exponential with the staff currently consisting of 2000 persons with an estimated budget of 375 million each year. 
 
+
+Budget development and execution;
+Management, including oversight of agency performance, procurement, financial management, and information technology;
+Coordination and review of all significant Federal regulations from executive agencies, privacy policy, information policy, and review and assessment of information collection requests; and
+Clearance and coordination of legislative and other materials, including agency testimony, legislative proposals, and other communications with Congress, and coordination of other Presidential actions.
+Clearance of Presidential Executive Orders and memoranda to agency heads prior to their issuance.
+
 Council of Economic Advisors constantly analyzes the economy and economic trends in order to give advice. 
 
-National Security Council meets regularly to give advice on large national security issues
+National Security Council meets regularly to give advice on large national security issues and coordinate the interagency process. 
 
 
 
@@ -363,7 +370,7 @@ knitr::include_graphics("bureau.png")
 
 
 ---
-## What is the Point of a Bureacracy 
+## What is the Point of a Bureacracy?
 
 - Implementation of the law  
 
@@ -436,7 +443,11 @@ Specialization assists bureaucratic agencies and members the opportunity to prov
 ???
 IRC’s are independent of all three branches of government in what they do, but they are headed by appointees of the president. Their main purpose is to provide regulation for large industries and businesses such as energy and nuclear. 
 
+The term 'independent regulatory agency' means the Board of Governors of the Federal Reserve System, the Commodity Futures Trading Commission, the Consumer Product Safety Commission, the Federal Communications Commission, the Federal Deposit Insurance Corporation, the Federal Energy Regulatory Commission, the Federal Housing Finance Board
+
 Independent executive agencies are also headed by presidential appointees but their main interests are to serve the executive branch (guidance) and the people/public interests. 
+
+These range from the CIA to AMTrak 
 
 
 These differ from what are known as presidential commissions which are basically just task forces that are meant to research or investigate stuff. Like the National Commision on BP oil spills 
