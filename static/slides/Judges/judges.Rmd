@@ -290,6 +290,8 @@ The Judiciary Act of 1789 authorized the party who lost at trial to appeal the r
 
 As the caseload of the federal courts proliferated, the Supreme Court was unable to handle the number of routine appeals it was receiving. In 1891, Congress created the U.S. courts of appeals to handle routine federal appeals. 
 
+En banc is a session in which a case is heard before all the judges of a court (before the entire bench) rather than by one judge or a smaller panel of judges.
+
 Not only did this action reduce the caseload of the Supreme Court, but it also allowed the Court to concentrate on the more important cases.
 
 Like the district courts, the U.S. courts of appeals are organized geographically. The
