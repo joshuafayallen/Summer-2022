@@ -21,151 +21,7 @@ output:
 ```
 
 
----
-## Looming Deadlines
 
-.bold[Exam 3]: Next Week
-
-
-
----
-
----
-class: center, middle, inverse 
-## Bureacracy
-
----
-
----
-## Structure of the Bureacracy 
-
-
-- Cabinet Departments
-
-- Independent executive agencies 
-
-- Independent regulatory commissions 
-
-
-
-
----
-
-
-
----
-layout: false 
-
-
-```{r out.width= "80%"}
-knitr::include_graphics("bureau.png")
-```
-
-
-
----
-
-
-
----
-## What is the Point of a Bureacracy 
-
-- Implementation of the law  
-
-- Provide expertise and specialization 
-
-- Provide research and information to the President 
-
-- Provide research and information to Congress
-
-- Quasi-judicial powers and responsibilities
-
-
-???
-
-
-
-implementation – 
-
-the efforts of the bureaucracy to translate sources of law/legislation into specific bureaucratic action and routine 
-
-Standard operating procedures are the rules that lower level bureaucrats must follow when implementing policies which are created through implementation. 
-
-Rule making – 
-the quasi-legislative process of “clarifying” or “producing” understanding of government regulations for implementation by other levels of bureaucratic agents. 
-
-Red tape – the excessive or unnecessary regulation that can be imposed by the bureaucracy. 
-
-Administrative adjudication – 
-
-The process of applying rules and precedents to specific cases to settle disputes or problems between or of parties. 
-
-
-
-Bureaucracies provide an increased amount of specialization and focus to problems that individuals have when they have issues with the federal government.  This can be beneficial since it speeds up the recommended processes for an action, but it can also be problematic since it lends itself to the possibility of too much oversight and red tape. 
-
-Specialization assists bureaucratic agencies and members the opportunity to provide the most accurate picture to other government officials such as the president or congress when faced with an issue. This specialization may lead to better more focused solutions where as without specialization there would have simply been generality. 
-
-
----
-
-
-
----
-## What's the Difference? 
-
-.pull-left[
-### Independent Regualatory Commissions (IRC)
-
-- Established to regulate specific economic or social interests 
-
-- Created by Congress when they feel legislation does not go “far enough”  to perform a function
-
-
-
-]
-
-.pull-right[
-### Independent Executive Agencies 
-
-
-- Bureaucratic agencies that focus on narrow areas within cabinet departments
-
-
-- They do not regulate or earn revenue from services 
-
-
-]
-
-
-???
-IRC’s are independent of all three branches of government in what they do, but they are headed by appointees of the president. Their main purpose is to provide regulation for large industries and businesses such as energy and nuclear. 
-
-Independent executive agencies are also headed by presidential appointees but their main interests are to serve the executive branch (guidance) and the people/public interests. 
-
-
-These differ from what are known as presidential commissions which are basically just task forces that are meant to research or investigate stuff. Like the National Commision on BP oil spills 
-
----
-
----
-
-
-```{r out.width= "60%"}
-knitr::include_graphics("iron-triangle.jpg")
-```
-
-???
-The Iron Triangle – key term - is the conception of bureaucratic policy making in which control is dominated by congressional committees, interest groups, and agencies in a give and take relationship. 
-
-In this relationship these three groups control substantive issue areas and policymaking procedures in an effort to best benefit their own interests. 
-Interests groups provide support and insight to congress by garnering/gathering public support for their initiatives. Congress in turn creates agencies that support these interests and their own. They fund and provide all forms of legislative support. In turn the bureaucracy gives congress (effective) results that they can share with their constituents to maintain electoral support and remain in office.  
-
-Central to the concept of an iron triangle is the assumption that bureaucratic agencies, as political entities, seek to create and consolidate their own power base.
-
-The sort of canonical example of this is the DOD. The DOD is a very active policy actor and before the reorganization in the 80's the different branches of the services were very active in their policy making effors  
-
----
 
 ---
 class: center, middle, inverse
@@ -391,6 +247,62 @@ Appellate courts – 13 courts that hear the appeals for all the cases within th
 ---
 
 ---
+## District Courts
+
+- Lowest level of the Federal Court System 
+- Hear both civil and criminal cases 
+  - 94 federal judicial districts and three - territorial courts 
+  - Georgia Courts:  Southern, Middle, and - Northern 
+  
+- ~670 judges nationwide 
+
+- Courts are individually created by - Congress (as needed) 
+
+- Deal with questions of “Fact” 
+
+???
+The district courts remain the major trial courts in the federal system. Their principal task
+is to conduct trials and hearings in civil and criminal cases arising under federal law.
+Normally, one federal judge presides at such hearings and trials, although federal law
+permits certain exceptional cases to be decided by panels of three judges. Ninety-fourfederal judicial districts now exist, with each state allocated at least one
+---
+
+---
+## Court of Appeals 
+
+- Intermediate federal appeals level  that 
+- must hear all cases appealed  to them 
+
+- 11 regional courts, DC circuit, and  the 
+- Court of Appeals for Federal District  (deals with special subject matter  jurisdiction) 
+  - 11th Circuit Court of Appeals is located  right behind Aderhold 
+- 179 judgeships 
+- Panel and En banc review of cases
+
+- Review cases for questions of law and - procedure 
+  - Can create binding precedent for all of the federal courts within their circuit 
+
+
+???
+
+The Judiciary Act of 1789 authorized the party who lost at trial to appeal the ruling to the Supreme Court. 
+
+
+As the caseload of the federal courts proliferated, the Supreme Court was unable to handle the number of routine appeals it was receiving. In 1891, Congress created the U.S. courts of appeals to handle routine federal appeals. 
+
+Not only did this action reduce the caseload of the Supreme Court, but it also allowed the Court to concentrate on the more important cases.
+
+Like the district courts, the U.S. courts of appeals are organized geographically. The
+nation is divided into twelve circuits, with a number of federal judicial districts
+comprising each circuit. Each court of appeals hears appeals from the federal districts
+within its circuit. For example, the U.S. Court of Appeals for the Eleventh Circuit, based
+in Atlanta, hears appeals from the district courts located in Alabama, Florida, and
+---
+
+
+
+
+---
 layout:false
 
 
@@ -473,6 +385,21 @@ Amicus briefs – (key term) – roughly translate to “friend of the court” 
 
 - Case Decision 
 
+???
+
+
+These are the stages that a case must go through once it is appealed to the Supreme Court. 
+It begins with the petition for cert (discussed in depth on the next slide). 
+The case is into the cert pool where it is judged by each justices law clerks whether it should be heard or not. 
+	If it is believed that it should be it will be put on the discuss list for judges to look over more thoroughly in conference. If 4 justices vote for it to be heard it is granted cert and added to the SC docket. 
+Attorneys prepare briefs (positions for argument for either side). Amicus briefs are filed by outside parties to portray their positions. 
+
+
+Oral arguments occur for each side with judges utilizing most of the time for either side to answer questions. 
+Once the case is heard, judges enter conference again to vote on the decision.  No  one is allowed into the conference chamber when initial votes are being taken. The chief justice also assigns the opinion author. 
+
+
+Opinions drafts are circulated for the next several months between all the justices chambers as they are writing. Judges can choose to sign on to an opinion (possibly changing their original vote) or offer edits to the rationale that are more in alignment with their own. 
 
 
 ---
@@ -598,6 +525,12 @@ Chief justice and/or senior justice in majority decide who writes the majority o
 .bold[Judicial Activism] – the opposing belief of judicial philosophy that posits that the Court and justices need to look beyond the words of the Constitution in interpreting the meaning of the law. 
 
 
+```{r out.width="60%"}
+knitr::include_graphics("judges-leg.png")
+```
+
+
+
 ???
 Judicial Restraint – (key term) – a judicial philosophy who adheres to the thinking that the interpretations of the law should go no further then the words of the Constitution when interpreting its meaning. 
 
@@ -612,22 +545,30 @@ comprises a relatively enduring “interrelated set of beliefs about an object o
 
 They have a life tenure and are honestly generally unconstrained actors. 
 
+
+
+
 ---
 
 
 ---
-class: center, middle 
-
-
-```{r}
-vembedr::embed_url("https://www.youtube.com/watch?v=hEntVPddsMw&feature=youtu.be")
-
-
-
-```
+## Weaknesses of The Court
+- Internal Limits
+- Precedent
+- Cannot simply become “reactionary”
+- External Limits
+  - Congress can
+  - Cut their budgets
+  - Lower future judges' wages
+  - Can seek removal of office (only happened 7 times)
+- ”Neither the Sword nor the Purse”
+  - Worcester v. Georgia (1832): finding that Georgia law to seize Cherokee land violated federal treaties.
+“John Marshall has made his decision, now let him enforce it” –President Jackson
 
 
 ---
+
+
 
 
 ---

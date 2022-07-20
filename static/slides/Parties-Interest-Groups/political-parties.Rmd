@@ -678,7 +678,7 @@ spender = spender_raw %>%
   scale_x_continuous(labels = scales::dollar) +
   labs(y = NULL, x = NULL) + 
   guides(fill = "none") +
-  theme_allen() +
+  theme_allen_minimal() +
   scico::scale_fill_scico_d(palette = "vikO") 
 
 old = spender_raw %>% 
@@ -692,7 +692,7 @@ old = spender_raw %>%
   scale_x_continuous(labels = scales::dollar) +
   labs(y = NULL, x = NULL, caption = "Data are Derived from Open Secrets.org") + 
   guides(fill = "none") +
-  theme_allen() +
+  theme_allen_minimal() +
   scico::scale_fill_scico_d(palette = "vikO")
 
     recent/old
